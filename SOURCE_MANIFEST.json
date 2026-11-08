@@ -1,0 +1,154 @@
+{
+  "candidate_id": "faceliora-local-r7-v1-candidate-1",
+  "files_root": "site/",
+  "scope": "Byte-identical copied subset of locally QA-approved candidate; final CTO acceptance pending at packaging. Branch-specific deployment controls are additional packaging, not QA-reviewed runtime.",
+  "original_reviewed_file_count": 47,
+  "omitted_nonruntime_metadata_count": 18,
+  "files": [
+    {
+      "path": "admin/admin.js",
+      "bytes": 7541,
+      "sha256": "25a4eb929cab798b50ff8f0a2823f09e28b7cb97cc15c4b16667a78125b7dd15"
+    },
+    {
+      "path": "admin/index.html",
+      "bytes": 7189,
+      "sha256": "f9ffd75ca79b8121555ac2831cf3fa475ed515fc517603ec35aa1262a0c7f9c2"
+    },
+    {
+      "path": "assets/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "assets/Manrope.ttf",
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "path": "assets/NotoSansThai-OFL.txt",
+      "bytes": 4380,
+      "sha256": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0"
+    },
+    {
+      "path": "assets/NotoSansThai.ttf",
+      "bytes": 218652,
+      "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+    },
+    {
+      "path": "assets/consultation-1440.webp",
+      "bytes": 115802,
+      "sha256": "d4637edfe3e1a6b863ccf0541ab7d450b71fa7db531f49e109b07583068ca5ce"
+    },
+    {
+      "path": "assets/consultation-2200.webp",
+      "bytes": 232474,
+      "sha256": "3508a6b69d7b19074b3785e4442930d588b4df3bdae192ff88977705c6767b2a"
+    },
+    {
+      "path": "assets/consultation-480.webp",
+      "bytes": 26902,
+      "sha256": "0d1bf05cd3fd492d8ab6602d66d7c703a5bbf39e8ca1dae9ab6e16ce93761f80"
+    },
+    {
+      "path": "assets/consultation-800.webp",
+      "bytes": 53780,
+      "sha256": "aa14e6ff35f7f61f991234ddf98079bf957bb1e2c5dc7ea3c3cdd29dfaf7e261"
+    },
+    {
+      "path": "assets/room-1200.webp",
+      "bytes": 50484,
+      "sha256": "40cc873cfb5d366389ab3f0152463a2e9a88eb2c29c26e883022782e83791918"
+    },
+    {
+      "path": "assets/room-480.webp",
+      "bytes": 13480,
+      "sha256": "6f1889150b5463c51f1c117a29bc54b376e989880c09def6d2c71ca5614a0bbf"
+    },
+    {
+      "path": "assets/room-800.webp",
+      "bytes": 28912,
+      "sha256": "dff381ce5178855281bb39d1e40b609d6cacde871152c5cad8077ed235e71337"
+    },
+    {
+      "path": "assets/sources.json",
+      "bytes": 2835,
+      "sha256": "1df99db6862af330901a6067f5f47d7bde05af1fac2751babd6192777e27dacc"
+    },
+    {
+      "path": "en/clinic/index.html",
+      "bytes": 5636,
+      "sha256": "9b858ab2f92eedc92c4b91feea28b97fc96d8ce9e9af0858c21cfcc9ded36370"
+    },
+    {
+      "path": "en/faq/index.html",
+      "bytes": 5616,
+      "sha256": "0796eeb30294d0588afce756ca07211f589126321c5de6388af7a218decd7f45"
+    },
+    {
+      "path": "en/for-you/index.html",
+      "bytes": 4706,
+      "sha256": "1eb15ae2c3e19a46c9c11ffc24c8ef4eba7d00f80b82909e5290eb980e5dc04a"
+    },
+    {
+      "path": "en/index.html",
+      "bytes": 5091,
+      "sha256": "9f4288fe2e0ea2f09c3576ac79730c086979d45fec976375219d8e15c300e852"
+    },
+    {
+      "path": "en/pricing/index.html",
+      "bytes": 4719,
+      "sha256": "44286681df071b3532fa1bbba0041ae030b509523de89e89a4ec6ed992b51eeb"
+    },
+    {
+      "path": "evidence/PHOTO_LICENSE.md",
+      "bytes": 3390,
+      "sha256": "293545adba90cc0cca87d05bc684e199d21baf1515a3232173df444d7ef66b77"
+    },
+    {
+      "path": "evidence/PHOTO_LICENSE_INHERITED.md",
+      "bytes": 3390,
+      "sha256": "293545adba90cc0cca87d05bc684e199d21baf1515a3232173df444d7ef66b77"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1221,
+      "sha256": "40d8a7fdf6765c697c972f86cc9030608b30696511e44dac89bb65a5914329f1"
+    },
+    {
+      "path": "preview.js",
+      "bytes": 3869,
+      "sha256": "f5091ffb998c5f99b2c0190d141768ed1eb0e3af70073f9fc2e60f9d3943f774"
+    },
+    {
+      "path": "style.css",
+      "bytes": 18183,
+      "sha256": "83eb809361266c36e2279e2389bb862d5cba1b2d388f0f05484ebb7151b88a72"
+    },
+    {
+      "path": "th/clinic/index.html",
+      "bytes": 8829,
+      "sha256": "78369718d07fea583ab2d257fc4ea01bb8f3416a2d4cc94621c6f2b3f0696600"
+    },
+    {
+      "path": "th/faq/index.html",
+      "bytes": 8707,
+      "sha256": "4726eede6b0e9ac898812245955859ed66579aefab4713abb83e09854ba334f3"
+    },
+    {
+      "path": "th/for-you/index.html",
+      "bytes": 7115,
+      "sha256": "c48b4859ad535cbaa78973d14e6b84c04d3e55ee16f4c29ce2842a9d46c27eda"
+    },
+    {
+      "path": "th/index.html",
+      "bytes": 7475,
+      "sha256": "be0974ab0e61c9c54c60ef3e1de04a0276f6cd00b3c4f841b77e9e18013eea73"
+    },
+    {
+      "path": "th/pricing/index.html",
+      "bytes": 6707,
+      "sha256": "498bb4420bc1a78eb7dcb2aa09ede797b11e6bc00e6465d36ef132f07c1d173e"
+    }
+  ]
+}
