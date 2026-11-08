@@ -1,0 +1,23 @@
+[
+  {
+    "asset": "/Users/jeddilok/c/DOODEE/faceliora/design/round-2-b/assets/Manrope.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "license": "SIL Open Font License 1.1",
+    "license_file": "/Users/jeddilok/c/DOODEE/faceliora/design/round-2-b/assets/Manrope-OFL.txt",
+    "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+  },
+  {
+    "asset": "/Users/jeddilok/c/DOODEE/faceliora/design/round-2-b/assets/NotoSansThai.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansthai/NotoSansThai%5Bwdth%2Cwght%5D.ttf",
+    "license": "SIL Open Font License 1.1",
+    "license_file": "/Users/jeddilok/c/DOODEE/faceliora/design/round-2-b/assets/NotoSansThai-OFL.txt",
+    "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+  },
+  {
+    "asset": "/Users/jeddilok/c/DOODEE/faceliora/design/round-2-b/assets/Prata.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/prata/Prata-Regular.ttf",
+    "license": "SIL Open Font License 1.1",
+    "license_file": "/Users/jeddilok/c/DOODEE/faceliora/design/round-2-b/assets/Prata-OFL.txt",
+    "sha256": "3b2b880737be3bda5f03554297b758516876157c88f9e3b3bae8fa1fc96a2c2c"
+  }
+]

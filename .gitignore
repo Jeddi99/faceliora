@@ -1,0 +1,31 @@
+# Local editor / OS / dependencies
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+__pycache__/
+*.py[cod]
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.p8
+
+# Internal project records and generated review evidence
+/REQUIREMENTS.md
+/STATUS.md
+/handoffs/
+/design/
+/implementation/
+/qa/
+/verification/
+
+# Generated archives, logs, renderer captures
+*.log
+*.zip
+.hallmark/
+.cache/
