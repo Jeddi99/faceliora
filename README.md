@@ -1,32 +1,55 @@
-# Faceliora — selected A, full-page design preview
+# Faceliora — round7 multipage implementation snapshot
 
-Branch: `design/r5-a-preview` · Artifact: `ux-round-5-a-v1`.
+- Branch: `feat/round7-multipage`
+- Candidate: `faceliora-local-r7-v1-candidate-1`
+- Approved design baseline: `ux-round-7-four-offers-v1`
 
-This branch stores the **UX/UI mockup**, expanded from the owner's R4-A / Quiet cinema selection. It is not an independently QA-approved implementation, final design approval, or release. Runtime files in `site/` are byte-for-byte copies of the delivered UX artifact. The existing `main` branch and the separate, locally edited `feat/landing-a-clinic-trust` workspace are not replaced by this source push.
+This is the **implemented local frontend**, not the older single-page design preview. Independent team QA accepted this candidate within its local scope. Final CTO verification is still pending at the time of this source snapshot. This push does not authorize or perform production publication, deployment, live backend setup or trial/license activation.
 
-## View locally
+## Run locally
+
+Requires Python 3 and a browser. No package installation or build step is needed.
 
 ```sh
-git clone --branch design/r5-a-preview --single-branch https://github.com/Jeddi99/faceliora.git
+git clone --branch feat/round7-multipage --single-branch https://github.com/Jeddi99/faceliora.git
 cd faceliora
 python3 -m http.server 8770 --bind 127.0.0.1 --directory site
 ```
 
-Open http://127.0.0.1:8770/ (Thai) or http://127.0.0.1:8770/?lang=en (English). Stop with Ctrl+C. No dependencies/build step required.
+Open:
+- Thai: http://127.0.0.1:8770/th/
+- English: http://127.0.0.1:8770/en/
+- Review launcher: http://127.0.0.1:8770/
+- Simulated link manager: http://127.0.0.1:8770/admin/
 
-## Contents
+Stop the server with Ctrl+C. If port 8770 is busy, choose a different free port. For a future separately authorized static host, the serving/document root is **`site`**, not the repository root. No hosting settings are changed by this branch.
 
-- `site/index.html` — full-page hero, audience split, consumer workflow, Clinic/Scan, draft consumer prices, limitations/FAQ, closing and footer.
-- `site/style.css` — selected photographic Quiet cinema visual direction and responsive layout.
-- `site/preview.js` — language preview and non-submitting pending Clinic controls.
-- `site/assets/` — local photo derivatives, fonts, credits/provenance and font licenses.
+## Included frontend
 
-The page retains `noindex,nofollow`. It uses illustrative stock interiors, not real product captures, patients, treatment outcomes or a clinic owned by the product team. Consumer links point to https://www.doodee.app/. Clinic demo/trial actions are pending and do not submit/save information. No lead form, checkout, analytics or backend is present.
+- Five genuine page types in Thai and English: Home, For-you, Clinic, Pricing and FAQ.
+- Four distinct offers: DooDee web, DooDee mobile, Faceliora iPhone 3D scanner and DooDeeClinic desktop.
+- Real document navigation, current-page locale switching, responsive menu/dropdown, FAQ and reduced-motion behavior.
+- A separate **simulated** link-management screen: edit/validation/preview/unsaved changes/mock save. Drafts exist only in current-page memory and reset on refresh. It is not a secured admin, shared database or publishing service.
+- Local images/fonts, font licenses, image attribution and inherited license evidence.
 
-Prices and commercial terms, entitlements, iPhone availability/link, Clinic destinations/trial/pricing, real product imagery, legal/privacy/contact and production SEO remain unresolved. Designer checks are not independent implementation QA or WCAG certification. Safari, physical iPhone and VoiceOver are untested.
+The runtime files are copied unchanged from the QA-reviewed candidate. Source-only metadata sidecars and redundant historical usage manifests are omitted; `SOURCE_MANIFEST.json` identifies the exact copied subset. The only additions around the candidate are this README, source manifest and branch-specific Vercel deployment controls. No framework migration or new application behavior is introduced by packaging.
 
-## Source-only branch
+## Local verification and limitations
 
-`vercel.json` at repository root and under `site/` disables automatic Vercel Git deployment for **this branch only**, per `git.deploymentEnabled`. This covers either repository-root or `site` Root Directory setups. No production/root-directory/domain setting is changed. Do not merge these branch-specific files blindly or treat this branch as release authorization.
+Team QA independently accepted the original candidate after build/static/JS and browser checks, including both languages, navigation, menu/FAQ interaction, admin simulation, reduced motion, no-JS and no-send boundaries. Private test reports, machine-specific test harnesses, owner approvals and generated screenshots are retained locally and **not published** in this repository snapshot. This branch publishes a directly runnable static source selection, not the private evidence/test workspace; those QA results are not a claim that a GitHub CI workflow ran.
 
-Internal team conversations, task handoffs, approval records, raw review evidence and generated screenshots/ZIPs are not uploaded. Font licenses cover their own assets, not the application as a whole.
+Two approved English text-density advisories remain. Safari, Firefox, physical iPhone, VoiceOver/full assistive technology, production performance, medical accuracy and live service readiness are not certified by this snapshot. The candidate launcher retains its historical pre-QA status text; this README states the later source-snapshot status without modifying reviewed runtime bytes.
+
+## Non-live boundaries
+
+All public pages remain `noindex,nofollow`. The web destination is https://www.doodee.app/. Unverified mobile/scanner/desktop download, demo and trial destinations remain pending and do not initiate requests or downloads. A desired 30-day clinic trial is not an implemented license or activation service.
+
+Consumer 2D front/45/90 views are not rotatable 3D. The scanner creates models; desktop consumes them. Simulation is not diagnosis or a treatment guarantee. Web price examples remain provisional and do not establish prices/entitlements for other platforms. Clinic photos are illustrative stock interiors, not real product captures, patients or our own clinic. See `site/assets/sources.json` and the photo-license evidence; fonts retain their SIL OFL texts.
+
+No live login, backend, shared persistence, payments, patient records, analytics, uploads, installer hosting or publishing endpoint is included. Production origin/SEO migration/redirects, compatibility, terms, legal/contact and service links still need separate decisions and authorization.
+
+## Source-only push / no automatic deployment intended
+
+`vercel.json` at repository root and under `site/` adds `git.deploymentEnabled["feat/round7-multipage"] = false`, preserving the existing branch rule. This is narrowly scoped to suppress Vercel Git-triggered deployment of this branch for either known serving-root arrangement. It does not change the Vercel project, domain, production branch or default branch. Configuration presence is not a claim of an independently verified hosting event.
+
+No merge, force-push, production deploy or repository visibility change is part of this source push. Keep final review and release approval separate.
