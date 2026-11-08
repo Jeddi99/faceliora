@@ -1,37 +1,32 @@
-# Faceliora
+# Faceliora — selected A, full-page design preview
 
-Responsive Thai/English landing page based on the approved Faceliora B design.
+Branch: `design/r5-a-preview` · Artifact: `ux-round-5-a-v1`.
 
-## Run locally
+This branch stores the **UX/UI mockup**, expanded from the owner's R4-A / Quiet cinema selection. It is not an independently QA-approved implementation, final design approval, or release. Runtime files in `site/` are byte-for-byte copies of the delivered UX artifact. The existing `main` branch and the separate, locally edited `feat/landing-a-clinic-trust` workspace are not replaced by this source push.
 
-Requires Python 3. No package installation or compilation is needed.
+## View locally
 
 ```sh
-git clone https://github.com/Jeddi99/faceliora.git
+git clone --branch design/r5-a-preview --single-branch https://github.com/Jeddi99/faceliora.git
 cd faceliora
-python3 -m http.server 8765 --bind 127.0.0.1 --directory site
+python3 -m http.server 8770 --bind 127.0.0.1 --directory site
 ```
 
-Open http://127.0.0.1:8765/ for Thai, or http://127.0.0.1:8765/?lang=en for English. Use the language buttons to switch. Stop the server with Ctrl+C.
+Open http://127.0.0.1:8770/ (Thai) or http://127.0.0.1:8770/?lang=en (English). Stop with Ctrl+C. No dependencies/build step required.
 
-## Source
+## Contents
 
-- `site/index.html` — semantic single-page content and concept diagrams.
-- `site/style.css` — responsive visual styles, including keyboard-focus correction.
-- `site/app.js` — language selection and pending-action behavior.
-- `site/assets/` — local fonts, attribution and font licenses.
+- `site/index.html` — full-page hero, audience split, consumer workflow, Clinic/Scan, draft consumer prices, limitations/FAQ, closing and footer.
+- `site/style.css` — selected photographic Quiet cinema visual direction and responsive layout.
+- `site/preview.js` — language preview and non-submitting pending Clinic controls.
+- `site/assets/` — local photo derivatives, fonts, credits/provenance and font licenses.
 
-No framework, backend, remote stylesheet, cookies or analytics are required. The page uses locally bundled fonts. Font licenses are included alongside their files; no application license is granted by those font licenses.
+The page retains `noindex,nofollow`. It uses illustrative stock interiors, not real product captures, patients, treatment outcomes or a clinic owned by the product team. Consumer links point to https://www.doodee.app/. Clinic demo/trial actions are pending and do not submit/save information. No lead form, checkout, analytics or backend is present.
 
-## Current delivery status
+Prices and commercial terms, entitlements, iPhone availability/link, Clinic destinations/trial/pricing, real product imagery, legal/privacy/contact and production SEO remain unresolved. Designer checks are not independent implementation QA or WCAG certification. Safari, physical iPhone and VoiceOver are untested.
 
-The local implementation passed independent QA re-review and CTO verification. This does not mean it is production-ready or tested on every browser/device. Safari, physical iPhone and VoiceOver testing remain outstanding.
+## Source-only branch
 
-- Product diagrams are labeled concepts, not real app captures or treatment results.
-- Consumer actions point to https://www.doodee.app/.
-- Clinic demo/trial controls are intentionally unavailable and do not submit or save data.
-- Consumer price figures are draft baselines; entitlements, billing/taxes and platform details remain to be validated.
-- App Store availability, Clinic pricing/trial terms/contact destinations and legal/privacy content remain unresolved.
-- The page retains `noindex,nofollow` for review. Production URLs, localized SEO, real imagery and release authorization are separate work.
+`vercel.json` at repository root and under `site/` disables automatic Vercel Git deployment for **this branch only**, per `git.deploymentEnabled`. This covers either repository-root or `site` Root Directory setups. No production/root-directory/domain setting is changed. Do not merge these branch-specific files blindly or treat this branch as release authorization.
 
-This repository contains website source and local-run instructions. Internal task handoffs, approval records, generated screenshots/review artifacts and local tooling are intentionally not published. No deployment workflow is configured by this commit.
+Internal team conversations, task handoffs, approval records, raw review evidence and generated screenshots/ZIPs are not uploaded. Font licenses cover their own assets, not the application as a whole.
