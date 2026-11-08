@@ -1,0 +1,13 @@
+{
+  "version": "ux-round-5-a-v1",
+  "inherited_from": "design/round-4-four/assets/",
+  "photos": {
+    "consultation": "Hero only, 76% uniform scrim, 60%55% desktop /60%50% phone",
+    "room": "Clinic atmosphere only, crop55%66%, not product evidence"
+  },
+  "provenance": "Copied existing derivatives and their unmodified provenance sidecars. Mirror mapping, not byte-original CDN equality. Original license evidence is inherited, not newly retrieved this run.",
+  "fonts": [
+    "Manrope variable",
+    "Noto Sans Thai variable"
+  ]
+}
