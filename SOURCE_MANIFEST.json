@@ -1,8 +1,9 @@
 {
-  "candidate_id": "faceliora-local-r7-v1-candidate-1",
+  "candidate_id": "faceliora-local-r12-refresh-v1-candidate-1",
   "files_root": "site/",
-  "scope": "Byte-identical copied subset of locally QA-approved candidate; final CTO acceptance pending at packaging. Branch-specific deployment controls are additional packaging, not QA-reviewed runtime.",
-  "original_reviewed_file_count": 47,
+  "source_fingerprint_sha256_of_full_reviewed_candidate": "826d8a92f82dbea9e17add7c46e8c71089bae445fab5b328d39717bcb2c3f0d0",
+  "scope": "Byte-identical runtime subset of the locally QA-approved and CTO-verified R12 candidate. Source-only image metadata/provenance sidecars and historical usage manifests are omitted, as in the R7 snapshot.",
+  "original_reviewed_file_count": 50,
   "omitted_nonruntime_metadata_count": 18,
   "files": [
     {
@@ -77,28 +78,33 @@
     },
     {
       "path": "en/clinic/index.html",
-      "bytes": 5636,
-      "sha256": "9b858ab2f92eedc92c4b91feea28b97fc96d8ce9e9af0858c21cfcc9ded36370"
+      "bytes": 5714,
+      "sha256": "fc54a8761d176530c115949b4137dd09afc336b210a180b8c5d5a3a1d0f4e659"
     },
     {
       "path": "en/faq/index.html",
-      "bytes": 5616,
-      "sha256": "0796eeb30294d0588afce756ca07211f589126321c5de6388af7a218decd7f45"
+      "bytes": 5694,
+      "sha256": "7b5f407b20f3ebf3c89a4bbedf5985abdb1a4ecd4ac8b281c966a07bc498a545"
     },
     {
       "path": "en/for-you/index.html",
-      "bytes": 4706,
-      "sha256": "1eb15ae2c3e19a46c9c11ffc24c8ef4eba7d00f80b82909e5290eb980e5dc04a"
+      "bytes": 4784,
+      "sha256": "3f1045fb2de7b736445994d4129296690f010727cd1c3dffc92cbc4b547d0246"
     },
     {
       "path": "en/index.html",
-      "bytes": 5091,
-      "sha256": "9f4288fe2e0ea2f09c3576ac79730c086979d45fec976375219d8e15c300e852"
+      "bytes": 5604,
+      "sha256": "d438c90eeaa7557e19cd09bf6752d4bb3e8c4a6319b9c39ed531bc8f92c01bb7"
     },
     {
       "path": "en/pricing/index.html",
-      "bytes": 4719,
-      "sha256": "44286681df071b3532fa1bbba0041ae030b509523de89e89a4ec6ed992b51eeb"
+      "bytes": 4797,
+      "sha256": "465127d53d17b2ae29f6692188913c75e7a558e043bfc6ca5ae8312cd3e104c8"
+    },
+    {
+      "path": "entry.js",
+      "bytes": 934,
+      "sha256": "15a02f89cfc975f0adf28a475372c5ee28623e113b4227d3cf2fcc671ec14515"
     },
     {
       "path": "evidence/PHOTO_LICENSE.md",
@@ -112,8 +118,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 1221,
-      "sha256": "40d8a7fdf6765c697c972f86cc9030608b30696511e44dac89bb65a5914329f1"
+      "bytes": 987,
+      "sha256": "1f15176d9b54065a337519d44cb69a9f2c9b99f0d72c5df76df62e1cffdd5721"
+    },
+    {
+      "path": "intro.css",
+      "bytes": 2919,
+      "sha256": "0eb434a8f5aa5a103c1aca237240228a181e59e0673465dab41dc9f42e8df9da"
+    },
+    {
+      "path": "intro.js",
+      "bytes": 3598,
+      "sha256": "e10e5e17bbf90051aec750178135bfe293a6196f04c69e0e6944eaf859f2c2c6"
     },
     {
       "path": "preview.js",
@@ -127,28 +143,28 @@
     },
     {
       "path": "th/clinic/index.html",
-      "bytes": 8829,
-      "sha256": "78369718d07fea583ab2d257fc4ea01bb8f3416a2d4cc94621c6f2b3f0696600"
+      "bytes": 8907,
+      "sha256": "1d3e60e747f8e54b3fd01c54042f7d285b7195cb5520d286b92ec09f54a54d87"
     },
     {
       "path": "th/faq/index.html",
-      "bytes": 8707,
-      "sha256": "4726eede6b0e9ac898812245955859ed66579aefab4713abb83e09854ba334f3"
+      "bytes": 8785,
+      "sha256": "c39abb831def2dd65dfe6e518874c1f15685b88bc4e2ccf3f3ec52f8f0749e1a"
     },
     {
       "path": "th/for-you/index.html",
-      "bytes": 7115,
-      "sha256": "c48b4859ad535cbaa78973d14e6b84c04d3e55ee16f4c29ce2842a9d46c27eda"
+      "bytes": 7193,
+      "sha256": "f33c05347f93a903dc5eae035c941cd165f82ea258a29e0e8a0963f69ba7d95a"
     },
     {
       "path": "th/index.html",
-      "bytes": 7475,
-      "sha256": "be0974ab0e61c9c54c60ef3e1de04a0276f6cd00b3c4f841b77e9e18013eea73"
+      "bytes": 8071,
+      "sha256": "6378000bfdc59f546a01541a1fe4ec3c077a09aadd39542182983654c43b7da2"
     },
     {
       "path": "th/pricing/index.html",
-      "bytes": 6707,
-      "sha256": "498bb4420bc1a78eb7dcb2aa09ede797b11e6bc00e6465d36ef132f07c1d173e"
+      "bytes": 6785,
+      "sha256": "cbeba372afb2c92e4da616b1e11ba60dd4a61237de2be914bc411ad8a0bad04c"
     }
   ]
 }
