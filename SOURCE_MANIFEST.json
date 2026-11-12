@@ -1,19 +1,40 @@
 {
-  "candidate_id": "faceliora-local-r7-v1-candidate-1",
+  "candidate_id": "faceliora-local-r31-privacy-credits-candidate-2",
   "files_root": "site/",
-  "scope": "Byte-identical copied subset of locally QA-approved candidate; final CTO acceptance pending at packaging. Branch-specific deployment controls are additional packaging, not QA-reviewed runtime.",
-  "original_reviewed_file_count": 47,
+  "source_fingerprint_sha256_of_full_reviewed_candidate": "7ea84aecb8bc784f6fb1f2fd1ce83c9cc4ef94e13dd174caed83cc2c7a9fe095",
+  "scope": "Byte-identical runtime subset of the locally QA-approved and CTO-verified R31 candidate (all 66 pages TH/EN). Source-only image metadata/provenance sidecars and historical usage manifests are omitted, as in R7/R12. noindex and 'Design review only' footer intentionally kept (not a public release).",
+  "original_reviewed_file_count": 432,
   "omitted_nonruntime_metadata_count": 18,
+  "omitted": [
+    "assets/consultation-1440.webp.json",
+    "assets/consultation-1440.webp.provenance.json",
+    "assets/consultation-2200.webp.json",
+    "assets/consultation-2200.webp.provenance.json",
+    "assets/consultation-480.webp.json",
+    "assets/consultation-480.webp.provenance.json",
+    "assets/consultation-800.webp.json",
+    "assets/consultation-800.webp.provenance.json",
+    "assets/consultation-source.jpg.provenance.json",
+    "assets/room-1200.webp.json",
+    "assets/room-1200.webp.provenance.json",
+    "assets/room-480.webp.json",
+    "assets/room-480.webp.provenance.json",
+    "assets/room-800.webp.json",
+    "assets/room-800.webp.provenance.json",
+    "assets/room-source.jpg.provenance.json",
+    "assets/round5-usage.json",
+    "assets/round7-usage.json"
+  ],
   "files": [
     {
       "path": "admin/admin.js",
-      "bytes": 7541,
-      "sha256": "25a4eb929cab798b50ff8f0a2823f09e28b7cb97cc15c4b16667a78125b7dd15"
+      "bytes": 7586,
+      "sha256": "7e764503e99e018705e0e5f6423d9103df00f2dde6b0bdf2259853aa4dc198bc"
     },
     {
       "path": "admin/index.html",
-      "bytes": 7189,
-      "sha256": "f9ffd75ca79b8121555ac2831cf3fa475ed515fc517603ec35aa1262a0c7f9c2"
+      "bytes": 7108,
+      "sha256": "3376d5d026bcd120e1f4bdd8f4b84da94bea904ef7843c85ca82840d9d0c4e28"
     },
     {
       "path": "assets/Manrope-OFL.txt",
@@ -56,6 +77,1516 @@
       "sha256": "aa14e6ff35f7f61f991234ddf98079bf957bb1e2c5dc7ea3c3cdd29dfaf7e261"
     },
     {
+      "path": "assets/legacy/editorial/consultation-questions.svg",
+      "bytes": 2003,
+      "sha256": "0bbcc1c5a336855ccfea89f05cae9c181a33eb1232f09da5464fa091a49e01dd"
+    },
+    {
+      "path": "assets/legacy/editorial/demo-evidence.svg",
+      "bytes": 1560,
+      "sha256": "028894ea9183583afbd061f2c103c05ae05ac8257db102241b95a7eb38b9a80f"
+    },
+    {
+      "path": "assets/legacy/editorial/external-model-workflow.svg",
+      "bytes": 1987,
+      "sha256": "c2b25f538684e4e1054fc98b6712e28c49545b4082ccada1b53d0a4ae1688847"
+    },
+    {
+      "path": "assets/legacy/editorial/facial-data-path.svg",
+      "bytes": 1713,
+      "sha256": "af4f6a8423d9c580144e950d548e65052914e5fc4e4c88c3aabaa9523c2595c5"
+    },
+    {
+      "path": "assets/legacy/editorial/fat-retention-over-time.svg",
+      "bytes": 2714,
+      "sha256": "f6cdbd8711cf80c2b8a2dbc2a6b344fce4509d243e7471ecc593286098e0dca5"
+    },
+    {
+      "path": "assets/legacy/editorial/filler-volume-per-ml.svg",
+      "bytes": 2521,
+      "sha256": "d4c4029dfe220474fbc22fe26ff3004b4cd4cb91b1b97a05b0129719ef932b04"
+    },
+    {
+      "path": "assets/legacy/editorial/masseter-width-day-90.svg",
+      "bytes": 2060,
+      "sha256": "ebddfcc1eb21e110cf77c063d0fef2057dc3f34365799c90082784c964d724e5"
+    },
+    {
+      "path": "assets/legacy/editorial/phone-scan-steps.svg",
+      "bytes": 2061,
+      "sha256": "afefbabd6ff13347af268236390f8bdde15239ed6d5f80d9b39f47090a10be22"
+    },
+    {
+      "path": "assets/legacy/editorial/photos-for-consultation.svg",
+      "bytes": 1934,
+      "sha256": "74844a517d9def9f4609ec5a167e8527ed4815895cd59044b9ee20e936fbe19b"
+    },
+    {
+      "path": "assets/legacy/editorial/ten-consultation-questions.svg",
+      "bytes": 1338,
+      "sha256": "afc4c85d9f05ead71765ffa3ec319c3cfcd26ecda29230c7ac1b0563f5b6f94c"
+    },
+    {
+      "path": "assets/legacy/editorial/two-d-and-three-d.svg",
+      "bytes": 2080,
+      "sha256": "759a0b90034c78fd4475319474387c99555325a37614f1d93a3947b21d3ffd28"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-1200.avif",
+      "bytes": 42740,
+      "sha256": "4948b95a238826afa528ad50fbc7369b3564ac56afc5fecfd6804ec37a5f2e88"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-1200.webp",
+      "bytes": 59836,
+      "sha256": "08da21af24c83c237e67fa5e1496873b292f06699ccbafcb02f866855396f149"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-1600.avif",
+      "bytes": 59949,
+      "sha256": "66569311fe276502eaa67b261318d38b8c3e4b7392e62a3baf49806d728083e9"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-1600.webp",
+      "bytes": 81106,
+      "sha256": "2f368aba6734e64dddd0ea769c57d9dfb428b3bb59fc87e8d8ad4c46f31e6094"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-2000.avif",
+      "bytes": 82429,
+      "sha256": "8cee0f8f506b5dbd65d188324b07894de2b83d6a8c37ca851047ff7ee83081c6"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-2000.webp",
+      "bytes": 105778,
+      "sha256": "fe195437703075f3d230567c8236485c0c3dca3afc700926a9246f91e621f739"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-480.avif",
+      "bytes": 13522,
+      "sha256": "fd83e28c6cbcc3918afc7a934bdd75ed248665ad09c10b36a33e4dc3080f2a85"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-480.webp",
+      "bytes": 19528,
+      "sha256": "a09257275c1aabc8386664002c7ccdcfad6a1fd22c9b8dec7eec899844022116"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-800.avif",
+      "bytes": 26363,
+      "sha256": "62bc1d6fab727eeeb85ff8d314a2c9df89df7848aec1e959d013267c3ad9935d"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-announcement-800.webp",
+      "bytes": 36590,
+      "sha256": "e23db8dc8c3178006696d8eacbaee83654c7cf6768a2533018243779e7472a15"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-1200.avif",
+      "bytes": 29997,
+      "sha256": "e6962f54bbff5c5bcf910d10484a4d05afa36986c1e30ea243d23dba29bd14eb"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-1200.webp",
+      "bytes": 36090,
+      "sha256": "5785e54b77217d539dff4905d8d1ae04ffc52a43cd535262f03ee544429b8dc1"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-1600.avif",
+      "bytes": 41808,
+      "sha256": "e5303b5867d6b31f6d0be927ebb223de563f888ab4573fe927a4def5edbee813"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-1600.webp",
+      "bytes": 49590,
+      "sha256": "7bbc75960c7bc19e6b86d0b1c1a7378d53da306d2593a870d3905874ed430b56"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-1920.avif",
+      "bytes": 55263,
+      "sha256": "555e8eb72e1b26edea9d5b5dadb7fdd28111802e08db2b8b986287bedcfd1378"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-1920.webp",
+      "bytes": 63866,
+      "sha256": "86d946733fdc7501634206b5c87800abe0eefce1f866b12d25b3876635b39f45"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-480.avif",
+      "bytes": 9199,
+      "sha256": "3367e50b9ca83e6854fd6b0316bd37ba6988772606c2c3c0d5524969ec29de3e"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-480.webp",
+      "bytes": 11466,
+      "sha256": "c2b5b7c0486281c2e49ed915f9fb830aa810363af75f4bc6261d6215a5a778da"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-800.avif",
+      "bytes": 17787,
+      "sha256": "798dea42e7f408dac472ccb310bab1e757dea9abc4c8d2c3e2bb4ae133b34367"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-group-800.webp",
+      "bytes": 21728,
+      "sha256": "e4ae326ce89044d050aead22101a3b0a21b84966dd15dda0c95abfd233f6dec0"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-1200.avif",
+      "bytes": 31336,
+      "sha256": "551685d4a9dd463dc40b5557f6fa8da75e26d090c1a87bb95121a6a0414a4b60"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-1200.webp",
+      "bytes": 38680,
+      "sha256": "5f62832aba44134557132d36b5ce1c6a7b50ab8ee774c2e61d6a8ffa173b335f"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-1600.avif",
+      "bytes": 45737,
+      "sha256": "bdb150992a753095e2296d4210601c745c9bb52e8c7d871c1fcfeca7cad64f25"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-1600.webp",
+      "bytes": 53484,
+      "sha256": "2f6e00da94f9949260b809197c5b1b5607efedfc5ba46602cef21d5a3a61bd68"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-1920.avif",
+      "bytes": 59146,
+      "sha256": "2eb31bcf0a2acdc848951560ec2de732fd1e7e15454024ae00ea67cd25c385dd"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-1920.webp",
+      "bytes": 70802,
+      "sha256": "db289cd903ab924e9e688adc44e6ce15a460bc590e1c8d83df7ab0c89c007cc1"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-480.avif",
+      "bytes": 9263,
+      "sha256": "206233c3897f5b5cc966722d1c7030120b3d204f832d4a9ff1af48ea936ac2bd"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-480.webp",
+      "bytes": 13004,
+      "sha256": "caa5317ad40981535e2828e05de9792eb4e332948f4338c5f0f51b29befcc859"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-800.avif",
+      "bytes": 18871,
+      "sha256": "3f09084d530357e9bc935d51e1891ee663f729b555100c29e59c32c03d10b2d0"
+    },
+    {
+      "path": "assets/legacy/events/elp-season-4-portrait-800.webp",
+      "bytes": 24420,
+      "sha256": "6bfae98f01dba1837d7875bd27e3147c34bca1588bb13720e6a38d2f06d23695"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-1200.avif",
+      "bytes": 42813,
+      "sha256": "c5d54850d23a1386c6483a160dc1e201b7aece4bc5ab4db49fdf59d1c844e12d"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-1200.webp",
+      "bytes": 58006,
+      "sha256": "f7ef42646e670b6e5453e61d4316e168807aed838bf897b4ebd450a71c78bdfb"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-1600.avif",
+      "bytes": 61158,
+      "sha256": "ea84dccae35325625b251bcda7e4dcba465603bdd1c0d1548facd7b5cc0e9b9b"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-1600.webp",
+      "bytes": 78740,
+      "sha256": "e5157621033c732d78df4c627f97693573902d8f2fd587b4b0d85de329ad8857"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-1920.avif",
+      "bytes": 79091,
+      "sha256": "0b84891d1f901cda7667159609723eb3df544cdd15d77bc3279fa3ad1985454e"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-1920.webp",
+      "bytes": 98774,
+      "sha256": "0b6ae42aecffcc1854b08b983bc366cfa979e81d41534a34c16c344e449740e4"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-480.avif",
+      "bytes": 12038,
+      "sha256": "483e32ad8183856a21603416ce05ba899f0ebf114b224813325e0bc82e412804"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-480.webp",
+      "bytes": 17674,
+      "sha256": "92b310e2b78879b18c6849af94fae67f69c3168972bd796d1307d9f4d0c7a1db"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-800.avif",
+      "bytes": 25490,
+      "sha256": "043808dfe373b2df5610c10eb80b22258eb6affac1e00b0a91fdd393bb964287"
+    },
+    {
+      "path": "assets/legacy/events/p1-regional-startup-2026-800.webp",
+      "bytes": 34626,
+      "sha256": "013df07ab81b4f422873d4a96618d76c079085d3055ba640a49d740033d65bfd"
+    },
+    {
+      "path": "assets/legacy/features/consultation-exports.svg",
+      "bytes": 1898,
+      "sha256": "8a4995f69223c4c2a670b1bf78b1bcc8add4bb11f0bfef8065a5c470482677cc"
+    },
+    {
+      "path": "assets/legacy/features/injection-simulation.svg",
+      "bytes": 2051,
+      "sha256": "e07889eec5fb8236c7563c7ba46140e0e5d2ee48dbd66508b62d98b294df059d"
+    },
+    {
+      "path": "assets/legacy/features/skin-analysis-lights.svg",
+      "bytes": 1820,
+      "sha256": "586e07add246db08f8284b6e3a36bf9a39dee8a98dab60ced50221ae212f389b"
+    },
+    {
+      "path": "assets/legacy/features/surgery-13-zones.svg",
+      "bytes": 3429,
+      "sha256": "c1570a58b93ce0fe26923f60327cde1baf9d608061d3d244888e45fc4e8ca160"
+    },
+    {
+      "path": "assets/legacy/features/thread-lift-simulation.svg",
+      "bytes": 2111,
+      "sha256": "c206cc1498f56cf5de6feda744235a2d6fb219bfc27746d676ebc835a2dc3255"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-1200.avif",
+      "bytes": 32077,
+      "sha256": "87f9e5e76d8b7da4fec7ad57131cc9c583d38e4a1d55b56cbdd9e38cd474f111"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-1200.webp",
+      "bytes": 39218,
+      "sha256": "b64aa631df072375aad97a5119f164bac3f661bc9fa836970391ae735b331f84"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-1536.avif",
+      "bytes": 44002,
+      "sha256": "6c695a9d62454bac63579fe9c6d2e510b21dfdec4ab08eb209b93a75a83ac32a"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-1536.webp",
+      "bytes": 54006,
+      "sha256": "85c8aa0a14044dca853a53fe56c3cffd1ef7a28962710540d50297cf0915311b"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-480.avif",
+      "bytes": 8921,
+      "sha256": "ce41dfccffde475672b744ce9a6772c9e1d86c4a5c447ea63ea24415a24a5a1c"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-480.webp",
+      "bytes": 11574,
+      "sha256": "6a673673a0e3feb6679dc5e581b2ca4a1a4e8787614b19ae556c5d6b6e322a2d"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-800.avif",
+      "bytes": 18271,
+      "sha256": "59660b4ca5ce4c312c5de6dc15d2b187cc4208675586462b6476f9104d1e9fae"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-consultation-800.webp",
+      "bytes": 23072,
+      "sha256": "fc6c7bb1d1dbd414155d5526b674037260154d9d12a90ccd1cd78b3436823af8"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-1200.avif",
+      "bytes": 28995,
+      "sha256": "e5c859d7a4f4ab8fbf434d1cdbbbc9103dc4d4226b295305bc46ffa4e908fbe5"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-1200.webp",
+      "bytes": 35544,
+      "sha256": "46491dca4eec2ea5f43c1376f3b92639517e1fb9883fa4af1ffe59a512bde66f"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-1536.avif",
+      "bytes": 40699,
+      "sha256": "ca218d10f79e97c29154864c66dddb036cd6fda37c17e812a761ada61406a857"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-1536.webp",
+      "bytes": 49398,
+      "sha256": "515cb32526ab52cb6f15acce9b93ae21f74dfa7f4f20054849406f900ea5be2f"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-480.avif",
+      "bytes": 8447,
+      "sha256": "6257c79fbeff28f66d11db725fc10620e8379ed56194ce740c6bfb2a31f3bc76"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-480.webp",
+      "bytes": 11272,
+      "sha256": "2ef3a81a7b1e565a3a8e28ffa883be0791d77678751c63374ac047e4d4ce8cdc"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-800.avif",
+      "bytes": 16728,
+      "sha256": "395642bd8168a0d0c44083fa7890ddaee7a75e9a2ec749ad0707bf87cb22b6ba"
+    },
+    {
+      "path": "assets/legacy/generated/ai-clinic-coordinator-800.webp",
+      "bytes": 21260,
+      "sha256": "274fb5195cbb6a5c45b5fffd23869bcc7597bcec6bc3160a21c2fac96f4e477e"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-1200.avif",
+      "bytes": 36214,
+      "sha256": "0534381daeed70380397e0baf6f02e6c41b0f4292766e3aaa7bd4e2a830b0736"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-1200.webp",
+      "bytes": 45452,
+      "sha256": "3b543a156190bf34e9d5d10253e635d8dd416b610fabee603cf0fb83a808740a"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-1536.avif",
+      "bytes": 52141,
+      "sha256": "143e041a7fb31bbc6ab3682e7d487b84fb33904aacd348b00345fad35f5cfa59"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-1536.webp",
+      "bytes": 64134,
+      "sha256": "778f68c8d3a9adee605bd6b5a4f039dd1021b9c2235abe8148567d27d2c97712"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-480.avif",
+      "bytes": 9020,
+      "sha256": "d907230b06640635994d63831d3b8d04c1a42d0f1f5b20ad217b16f9918f0237"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-480.webp",
+      "bytes": 12380,
+      "sha256": "53ce2d3b187516660cdf53a56d982a1aa9815df44d0ea8f6210400fbd1f2639b"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-800.avif",
+      "bytes": 19626,
+      "sha256": "5e757e70759321a507a537d4efd96992c36f45877f6ade502df770ea973f5c35"
+    },
+    {
+      "path": "assets/legacy/generated/ai-digital-workspace-800.webp",
+      "bytes": 25428,
+      "sha256": "e516dbcac29a2e2e23bb5bb0db851f5b4f45a3d7f2989e5109157529df904758"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-1200.avif",
+      "bytes": 45700,
+      "sha256": "36c15e8c2732357a8acd86c164fa8addd09ff4e58b052f5156dc3d556e3eb696"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-1200.webp",
+      "bytes": 58782,
+      "sha256": "8f9dc2263fa50a6a5adef1c67fcd80e0db358b32f3d6ec5c31c96c4eba61f004"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-1536.avif",
+      "bytes": 67088,
+      "sha256": "4f1a61834ce65a6b192bca88eaf32f86bcb83b7cb7ba5e82e64ea7d21218af99"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-1536.webp",
+      "bytes": 84280,
+      "sha256": "c8cd7aa794c8a78d55b973c30d967407b05c8f04a8a2beac2a1566421e031348"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-480.avif",
+      "bytes": 10613,
+      "sha256": "56cb8346c911ec29fb6df38f07963f2eff608006376f7d27c35e92245b573430"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-480.webp",
+      "bytes": 15234,
+      "sha256": "8bc103bfad8d3c8f6265b0c27a1049e56d7980031a58409393789f59534a5057"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-800.avif",
+      "bytes": 23981,
+      "sha256": "ccff38011b2a6f862789cb2c45126f522af9715960b0340cd0487b132da0747d"
+    },
+    {
+      "path": "assets/legacy/generated/ai-personal-app-800.webp",
+      "bytes": 31386,
+      "sha256": "d61b4fa68f1ef3ed5daaed6791801fcdc71fb0d0f35750773bd25c9ab2e2665d"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-1200.avif",
+      "bytes": 41121,
+      "sha256": "6fe304bea86e3fea429d5249f38d75f40574a6e77689a16811d952f9e1753656"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-1200.webp",
+      "bytes": 55560,
+      "sha256": "c5272541f4072bbfc97a9949ba09e70291d39ea8bfcc3312ebebf429c3fb786a"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-1536.avif",
+      "bytes": 59706,
+      "sha256": "a623355bb47229bf7e55c58a9ae6e06d3fdbd4be77ae9fd0c482affff36b80a4"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-1536.webp",
+      "bytes": 77262,
+      "sha256": "1fbb499926a3a3cdfb25439d8d0c5d52193a4dd797dfba6c357075e2e1f5f2ee"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-480.avif",
+      "bytes": 10079,
+      "sha256": "23ef8836fe46746039df7e7c41c44ea168a5d69bd52b1eb2fd785164dace141e"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-480.webp",
+      "bytes": 14242,
+      "sha256": "c6f993496e8414ea423cf2ece07c8ae08b3cc1e48ab87b9a2532b7b2817ef831"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-800.avif",
+      "bytes": 22264,
+      "sha256": "26fdc3e18553b65feddf1d6f667a6ef2350b13d5e6bb7a6b42940c2562ad0fd1"
+    },
+    {
+      "path": "assets/legacy/generated/article-clinic-software-demo-800.webp",
+      "bytes": 31822,
+      "sha256": "253d483a06e4ae7b605798b7f6b527e39c3a5f72cde3c2df51f4971d73bc110e"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-1200.avif",
+      "bytes": 34855,
+      "sha256": "43bccdac946998309af6d236368bf5d6f5495a1402b149d63e221859e76fa03f"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-1200.webp",
+      "bytes": 41116,
+      "sha256": "618375df8aae2877b680aa45209d92e2aa935ddcabef44e8c0f529a3b00aa512"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-1536.avif",
+      "bytes": 49744,
+      "sha256": "ba2475bd94941593e8aa442448a418aedde7ec47815e98c0d98a412ec6368d49"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-1536.webp",
+      "bytes": 60034,
+      "sha256": "3cd3ce7045d6fac42ede6e84a2413f1b3ee836e63c430fd3c0b3909116f2520f"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-480.avif",
+      "bytes": 9448,
+      "sha256": "81ff5b6969443bf97cc9c5c76aa8dc63bc79ac9cba1950e3554a2151b128a29e"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-480.webp",
+      "bytes": 11956,
+      "sha256": "98db96cdbc9b92263160e1b004a8ca153d0fa45361d5853e2b32d94e40f9feec"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-800.avif",
+      "bytes": 19617,
+      "sha256": "d58860eb59318227c832060ed7a8ab9eda22c8eac7ffa2026e52a7bfd4f547ec"
+    },
+    {
+      "path": "assets/legacy/generated/article-consultation-questions-800.webp",
+      "bytes": 24050,
+      "sha256": "133f36ca09f1bbdb4a33da92756aa56e65e6202e3ccef649c92368447b0b3446"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-1200.avif",
+      "bytes": 30060,
+      "sha256": "3e4a27bbf1a68119612c4cb6bc34662b8aa161453ca54f33501be29464a6dfc0"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-1200.webp",
+      "bytes": 37410,
+      "sha256": "a7f7d3ad3a7c709437a013ce824c4892dca2aeab67f664fd6495397b87a6cc9e"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-1536.avif",
+      "bytes": 41580,
+      "sha256": "d891f9abfc6e1e01607714a6a529b6f63926a88f215dd16c969742c16825f41b"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-1536.webp",
+      "bytes": 51518,
+      "sha256": "4cd99c3f26be20f6967b9b2c8fd51c628d81530a7c954317cb86246763b27aa2"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-480.avif",
+      "bytes": 8940,
+      "sha256": "23c2a8f6f93b0c23dd2ef2dd77246b860eb007901f148d68627063ba2f477088"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-480.webp",
+      "bytes": 12048,
+      "sha256": "39e4508c62e0a0c6d9898e9798ad63a75645e883b1843504f5a5e5beb8ffbc34"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-800.avif",
+      "bytes": 17749,
+      "sha256": "dca68e0663bf1af1c1eb371300201d0217b154a17f42acbba4f8a827fe2c62f8"
+    },
+    {
+      "path": "assets/legacy/generated/article-facial-data-privacy-800.webp",
+      "bytes": 22336,
+      "sha256": "3f0d9d1ab0c714c8157c09301ccedba68cf6e3c270e1dc97329ae9513d796065"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-1200.avif",
+      "bytes": 30162,
+      "sha256": "4a01eb9ae73fe69e94b0b4c4352d60685af36236da820d8f61dd0c9a1cb8ce45"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-1200.webp",
+      "bytes": 37492,
+      "sha256": "ed668595c56bee08c57c6f2e7eecdcb024e61a506a618c3636746d36f29f0669"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-1536.avif",
+      "bytes": 43074,
+      "sha256": "a4fd53510ea8d01b27ad3d82a03353d1669a93002e901ae616998c08d32e88d2"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-1536.webp",
+      "bytes": 52682,
+      "sha256": "0bb31ead5fdbfe616f09b9bebd5dcfdebcc492b9b7512f6ecdaf7cb34a9f37f0"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-480.avif",
+      "bytes": 8586,
+      "sha256": "8db22375c1d2818ffb9d657b949e544405f73f6cc56ebedabac8ba7b3015997e"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-480.webp",
+      "bytes": 11384,
+      "sha256": "1a56cc1969fad02b94b4d5797461d03268af913910ef068a06c1fef4a661f066"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-800.avif",
+      "bytes": 17209,
+      "sha256": "a199c577041d75395ec783bf75a39eb35defd6f00ed5cb065134bc745eefdf0b"
+    },
+    {
+      "path": "assets/legacy/generated/article-photo-preparation-800.webp",
+      "bytes": 21916,
+      "sha256": "33f48d51de20d6afcaf8ea56c229894a0de959124f1d304a188ba5ac47cd24b7"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-1200.avif",
+      "bytes": 48698,
+      "sha256": "6911db3327626126add2bd55070f50375420f1d0cc936c7ba1866cea9651e34c"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-1200.webp",
+      "bytes": 64736,
+      "sha256": "4fb2eb0c88f3360eaaa719f093b580f589acf08e57368f5b6e1081526f290aae"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-1536.avif",
+      "bytes": 72688,
+      "sha256": "9e40378bd26213fff8321d5f829be0c6bead3f216106980657ec4d570cdc6ee4"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-1536.webp",
+      "bytes": 93352,
+      "sha256": "40c413f47efba1a3a97e82b84d7c675e898d515dd5968f80fe7c1663f0adf038"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-480.avif",
+      "bytes": 12035,
+      "sha256": "8d21b1707e8e6574f62a7b139c0b583ef434f8edad4e2a890969dd1c9a69f0a3"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-480.webp",
+      "bytes": 17554,
+      "sha256": "64a0c06021ea402c82909c93063f8aaabd72c8e2173d5eda7113b272ce4a3f8f"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-800.avif",
+      "bytes": 25838,
+      "sha256": "3f7754461d579d23a90164f9169158e37a4a4378b16ca2321b93a0334b56e81a"
+    },
+    {
+      "path": "assets/legacy/generated/retired-layout-review-800.webp",
+      "bytes": 35530,
+      "sha256": "52e5f9c2f431ca10c04fe2f3465bb23c8bb8777114d91960ccc25c834d08a9e7"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-1200.avif",
+      "bytes": 42001,
+      "sha256": "0e3bf012ff47ac93f2624033dda6c224ccb8cb83df06996a569c993f9a517fbb"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-1200.webp",
+      "bytes": 53748,
+      "sha256": "efad51677816c9401c7208f4176c0e1659283c5d6be175aea8a843a28fbffaef"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-1536.avif",
+      "bytes": 60045,
+      "sha256": "59cbeaf421fecd95030de509a4bdd9479c8385e56dbc8203eda31225331a9c87"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-1536.webp",
+      "bytes": 74670,
+      "sha256": "42b72e4d46f77799bd19dd2f2cfac16b20f3b4aa509c06ba3ae50ea154c0eb49"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-480.avif",
+      "bytes": 11343,
+      "sha256": "d6bbd5ac83394ad885a49da9c3ceefed3fb890db07407699440dd72b248f877e"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-480.webp",
+      "bytes": 16226,
+      "sha256": "8e65cd88fe53e58e8143a56a0aeae3ba7ee89dbcf120aa9d0e187ef1ad004fdd"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-800.avif",
+      "bytes": 23492,
+      "sha256": "11c8221e7c53b14c4210f509dd438469f7dff57c30f484227aaf622d8d351204"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-client-view-sharing-800.webp",
+      "bytes": 31742,
+      "sha256": "3ef9f37afc25d2d154af2af9610008e1f9064ee66e772b2d261150b3bb99c2de"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-1200.avif",
+      "bytes": 27882,
+      "sha256": "d0cb31ca4781d6b16140791e84f99943555c351a6045133b7e14706b723a3bc4"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-1200.webp",
+      "bytes": 34302,
+      "sha256": "5a91aee6d206db99429b883af77808aec5a54155211fbec40379fe8e42342820"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-1536.avif",
+      "bytes": 40322,
+      "sha256": "5490efb21046fd9fef93d19f929e8b5dd0c206ce815a55a8fde9fcbfe575c186"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-1536.webp",
+      "bytes": 49142,
+      "sha256": "8f7b008215e1ae494a9befef1f4ca723f68e032dd32b5e9abbb70cb23b64c2ae"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-480.avif",
+      "bytes": 7883,
+      "sha256": "be116e0376201d41fca5fc04e048c54d8ca9d98c11a63fa0f3c4f0052bb3ed7e"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-480.webp",
+      "bytes": 9908,
+      "sha256": "88a88ad0fbf4dea5c612ed00509a8ea56c1fbbcd930819562d59f98d9ea6e561"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-800.avif",
+      "bytes": 15807,
+      "sha256": "c651b44c5245bb582b98784613dba3747955f1703733839359fc96ddb78081b8"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-software-demo-800.webp",
+      "bytes": 19798,
+      "sha256": "eb0ffc4b65dda225145a2261edacf972a8b99d51a835ca18aaea2b541b1f92f6"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-1200.avif",
+      "bytes": 29428,
+      "sha256": "fc7884708be333fac2004cb51322672cd6e21fc3acfc05e98665f2d264917cfd"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-1200.webp",
+      "bytes": 34624,
+      "sha256": "aa34fd9fcadf19c1cae5342e1492dd0d7eaf86b2b11d8c3f53826820f4188f81"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-1536.avif",
+      "bytes": 41743,
+      "sha256": "292adeb75ea1f5445312347c74d23f899b77ea584bea81fc4e9b111bb07a805f"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-1536.webp",
+      "bytes": 49316,
+      "sha256": "aae8b0d945d7192e5c1b7c3007dfe217bdc259d9cf12d72931e775efef720b80"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-480.avif",
+      "bytes": 8554,
+      "sha256": "545ffe247a9d3744c50d82d1519335b6bfd0cc4f5240f5b41fe6166fc0b63a28"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-480.webp",
+      "bytes": 10918,
+      "sha256": "3aa7b1ec5db91c646c2d65d0e49282266fa0d174825d8440968f59f5618af71c"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-800.avif",
+      "bytes": 16865,
+      "sha256": "92d3691abbfe5f6433ce17acc87aa7ec27c2dae00eb58d21c7e047a55c80c6eb"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-clinic-team-workflow-800.webp",
+      "bytes": 20240,
+      "sha256": "d8702f7f6d4a46bfd67861a0812c5a694b3c4db6e2b332f6617cd1799c755d06"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-1200.avif",
+      "bytes": 39892,
+      "sha256": "bfd757de34c55f202682f560e9bd681f5ef98b13279c40992f817e71da224118"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-1200.webp",
+      "bytes": 50798,
+      "sha256": "c12d77b5f79cb7dc6ef4565d35328f2837d8de8e578754e9a5d153a14eae7ba6"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-1536.avif",
+      "bytes": 59886,
+      "sha256": "f0b940ca716189ce9f0487d026b9f5dad6dae69e6b0d80ba96373960b1a3f9ba"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-1536.webp",
+      "bytes": 74878,
+      "sha256": "4f65d2b01abf388a00fa27d9dfd037be5f0c213a94bd64476bb084a723404b79"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-480.avif",
+      "bytes": 9351,
+      "sha256": "75670fdf5f6c52eaadb49157f832c4d650c1ea4df983c79aa11de6c1e9e86362"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-480.webp",
+      "bytes": 12452,
+      "sha256": "f02a0544a336d699abe832c258c15c814b89b6e2760d17ab1c828dcc97fecf04"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-800.avif",
+      "bytes": 20658,
+      "sha256": "47cf260954b9aaf704e364873dec1b66a583e14859a50f5423780d18b5a138f9"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-consultation-questions-800.webp",
+      "bytes": 26382,
+      "sha256": "2693a4cc50464f7ec5caac13cd89c0d4899bb2bb71fe2643d7521b1e01ab5971"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-1200.avif",
+      "bytes": 23258,
+      "sha256": "b969caf52ccd66acb3bffdf1508d3627b56a7e6fc2549138c89989acda6071c3"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-1200.webp",
+      "bytes": 32364,
+      "sha256": "3ab8765fc6cfa1d3d496ec9c8920ddd17f60dbbc3b335f1b10917002dc195275"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-1536.avif",
+      "bytes": 31933,
+      "sha256": "88046e060da2695b0ee4e6c2ac8a64f6f529b45e678b210c1fa06bcc5eb6b138"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-1536.webp",
+      "bytes": 43248,
+      "sha256": "1bdbf0f920d87284f976b3f76ffa48a334e222abc4549bfc67efcbd8f8a876a3"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-480.avif",
+      "bytes": 7387,
+      "sha256": "7ae0f6598016a303c6b0679a7904fff4d9c887ab12fda818fe4e318bd09b95ff"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-480.webp",
+      "bytes": 11198,
+      "sha256": "163a6756d00bd17573b107b70b3b92941c71cd610c88daaaf1f4ded71f449c2f"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-800.avif",
+      "bytes": 14092,
+      "sha256": "d10e6dfe5590bb50f9c33871f456a537836fb65739e326e5a2224f0d1e834dd0"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-facial-data-privacy-800.webp",
+      "bytes": 20320,
+      "sha256": "67092f2a135f11c6cdbaa4bc7a80e6531435c31a572e78aa8d5292a0fa9ff03b"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-1200.avif",
+      "bytes": 24948,
+      "sha256": "35bb73cecbdc33c0c29d9bd7d46648cede7c94cbf8236e52517da89f9ed148ed"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-1200.webp",
+      "bytes": 29164,
+      "sha256": "a31d8f7a73b613ce61171869fad0e7ff116cffc71b2c6e7d612a580642ba6a43"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-1536.avif",
+      "bytes": 35166,
+      "sha256": "80a83c031878427fcd55e58621019e8b5c59b3b2b768a66ddf08791eefce01cf"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-1536.webp",
+      "bytes": 41044,
+      "sha256": "12242a7517624546be1f996542d54634cfc75ec9f42303a48f74bb8a141b509d"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-480.avif",
+      "bytes": 7280,
+      "sha256": "687413f74482fdf280257fb67886bb387ba8329a4a1f642976d70148d4978bbe"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-480.webp",
+      "bytes": 9130,
+      "sha256": "afebf0b6df542c1b2566fd3d6f2aa55a0df27908b78a0e25d37015135e0b2b2f"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-800.avif",
+      "bytes": 14174,
+      "sha256": "a9348516729b5636dd5804adfb2237624a6df7e7b3a653787e2f820ab1e49df1"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-photo-preparation-800.webp",
+      "bytes": 17768,
+      "sha256": "248256bd52c8efc62310ed7eaf652b84cdb2f719753db69e4cb2a5c1aca17730"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-1200.avif",
+      "bytes": 30178,
+      "sha256": "c80041143c80e54ba751dce14b3aeeb4d6cc2beafba3d198cfe616d95a1d9de4"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-1200.webp",
+      "bytes": 41708,
+      "sha256": "b3f49dcb191f2d89bf378664119377f73ce8e98bd2346ac75578d8834ec632e8"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-1536.avif",
+      "bytes": 43293,
+      "sha256": "b3389d35b147000dd113c01a53b9d9f893b403ec7300921d2342d7da6b0fd919"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-1536.webp",
+      "bytes": 58438,
+      "sha256": "cf030ff1562a178826adcae16c40453fc8bfbcd66bcc32050aaeb98b34fccf6e"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-480.avif",
+      "bytes": 8224,
+      "sha256": "cb984a8928ddebb8a5f192e120815c2466b92580d4671af5f99d838eec6abb19"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-480.webp",
+      "bytes": 11206,
+      "sha256": "f0b9f3cbec3985b171273d5da93fa865a42206fd75db3585127b6bfff3d31628"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-800.avif",
+      "bytes": 16529,
+      "sha256": "162adf1a0f0bee1d605a55564e7423193a6e203059fb2f5dfd9b30e07cb11e80"
+    },
+    {
+      "path": "assets/legacy/generated/thumb-visualization-consultation-800.webp",
+      "bytes": 23200,
+      "sha256": "90e72400cda7f4f8a996c843d373702a7f6eac456ca184acf449ca3b7cb9de96"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-1200.avif",
+      "bytes": 33796,
+      "sha256": "7ba398c17afd5f98d402f6f212473b15224f38821434b03f4bf6897fa90e1a5b"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-1200.webp",
+      "bytes": 45610,
+      "sha256": "fe20096c1862966c40638e014cc33c085f76726f7cea7f423926ac9dae6755f4"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-1536.avif",
+      "bytes": 48274,
+      "sha256": "75988dee7082ce02ebf9780d5626741f907d2169b94cbf7115532b57d33e7b92"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-1536.webp",
+      "bytes": 62476,
+      "sha256": "466785779d855093d80735ff58cc18e5587a3e369de6da874bddb92088e2776f"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-480.avif",
+      "bytes": 8755,
+      "sha256": "ef6725087c6080e3fc243feac5d689092c747bc90467a8bb5df279da7ea17bc0"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-480.webp",
+      "bytes": 13116,
+      "sha256": "691f96367aa92ed2199a5d4cf5234ef51130fd095b943aef146639d2280a2b30"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-800.avif",
+      "bytes": 18924,
+      "sha256": "9920de81df97e43a0d5161609363bb6c80df06c92518fa4a37fd420f274e569a"
+    },
+    {
+      "path": "assets/legacy/generated/unique-about-panorama-800.webp",
+      "bytes": 26708,
+      "sha256": "3dd2f0c5e3a13ba4c66f6dd9eff5f86912709bdae9df20ec39f38e18b2e38aa5"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-1200.avif",
+      "bytes": 38918,
+      "sha256": "eeb1454be0246fde742fe294567ea7d670a68949754067576c941d405abc4cab"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-1200.webp",
+      "bytes": 49592,
+      "sha256": "af07742d1bd0ff693c47ecd079dce115f4365a24b07afc95203c5e8a2747dbd7"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-1536.avif",
+      "bytes": 55856,
+      "sha256": "42021c19c53df54ff16f3061d74ecdf01e0d96a2fe253aef6033605024922b90"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-1536.webp",
+      "bytes": 69074,
+      "sha256": "23d8e3ce150a8bae23335dfa6d858ed4c8b88c97951031dad621b5ba6a222365"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-480.avif",
+      "bytes": 10325,
+      "sha256": "b62b88cc4884b90ec3570ed144bb98823d4270bdda3c7aee13210300c3e2d8de"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-480.webp",
+      "bytes": 15242,
+      "sha256": "d0c147a06351f324926fc1d0932fa114313fb95b1055ec8cb431eb8416d8ec15"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-800.avif",
+      "bytes": 21541,
+      "sha256": "d5951c0f161ef4ee086a6574ccb66825ba721ca53cb40b5a9f8ffa2246a9cee4"
+    },
+    {
+      "path": "assets/legacy/generated/unique-app-product-800.webp",
+      "bytes": 29312,
+      "sha256": "e6aba9967bba2a074ddb3cac0f668efaee0f80a146b4ea6982465f8e65300595"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-1200.avif",
+      "bytes": 27007,
+      "sha256": "6f0b7d1e1d06d4005cf3ae770cc8ef85da5e4fa6b736ff0316d6a81e8a330eb8"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-1200.webp",
+      "bytes": 33160,
+      "sha256": "3196c24e4ded97a362843528384a1b889e87498316df185932d983176679f99a"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-1536.avif",
+      "bytes": 38144,
+      "sha256": "f8364d69cbb5e295af209f4f0288cb820233c03a9a32ea3d6cf0a13eb5c14f8f"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-1536.webp",
+      "bytes": 46530,
+      "sha256": "a0a259be010401cfc835904d467045d8ac371a57e8efd37bf721ce49df1a3edc"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-480.avif",
+      "bytes": 7414,
+      "sha256": "3827d4a698e4fe86c19774e64c94e237e021b92323972a7f1e45d9aec8ea64de"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-480.webp",
+      "bytes": 10200,
+      "sha256": "9f775fe0b82d3a609d52a615c07c5365d7fdf5f7aebab3f83ba2a25ab386ecaa"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-800.avif",
+      "bytes": 15423,
+      "sha256": "130fa2e52c490dd6dbd37431a8bdfd0a3e16b65d7fbc4dbeb41d330d8a08fc49"
+    },
+    {
+      "path": "assets/legacy/generated/unique-clinic-product-800.webp",
+      "bytes": 19718,
+      "sha256": "91620ae9442d844487d16809dd5aa06509c6f56ebc37bc6bc45895146fb9069b"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-1200.avif",
+      "bytes": 30098,
+      "sha256": "6a959fccd82cc148609553df7af793f027502e26bc916faeea07b71bc452c5ff"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-1200.webp",
+      "bytes": 45522,
+      "sha256": "b30a5294c5fda30315165e3f50e36f2500645fcb4bd13b9fdc678f7ec10ea285"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-1600.avif",
+      "bytes": 48480,
+      "sha256": "2ce77ade64b4899241bd716758123c2bb1f21b66a15631401fda30273b757ade"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-1600.webp",
+      "bytes": 69498,
+      "sha256": "2d16b3117d55ab7f9f1277998a664aa799ce22750a66e559175e0c94dc2f4eec"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-480.avif",
+      "bytes": 6784,
+      "sha256": "b3889c1f106a794192e96c828557701515fd79c7c86b0235dc333294ddfcf22d"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-480.webp",
+      "bytes": 10336,
+      "sha256": "9e64f09c8a2f2835b9f04fdfc2fc3b7e5ff73f8976d86f6b72378a2b9c050f0a"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-800.avif",
+      "bytes": 15998,
+      "sha256": "f33f30d80aa6a064587f3d06abf6a5fbc1777462ed7f7e32aa6db0d39da06c43"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-consultation-desk-800.webp",
+      "bytes": 24826,
+      "sha256": "ea2813d3e7579201878f9da4b29422ffc9bcc3dc131b8992be8d75c147413699"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-1200.avif",
+      "bytes": 23812,
+      "sha256": "9c78998363f6d4bbdb498c23c0e3f9eb291ee29535a104ec475fdceec43faa15"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-1200.webp",
+      "bytes": 34488,
+      "sha256": "65e24be79174befd94d097a98d27ed534c92472166c2b08e10e45ff1e704b43e"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-1600.avif",
+      "bytes": 38759,
+      "sha256": "edfa59d8b849e9385129c07f55f3e00bff32eaef7b9f50c81f74bbc0f2d4d79b"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-1600.webp",
+      "bytes": 52858,
+      "sha256": "51f87fac875662f65788f8eb5b92344f734b310a55363d52516461e5e18fff33"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-480.avif",
+      "bytes": 6551,
+      "sha256": "2209437e08d587ec99302e93ce46dadf752ace49b7d0f3905e6d455d6e3f5d51"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-480.webp",
+      "bytes": 9146,
+      "sha256": "75cbb39a8f5703fbab97fc8ce2d12c48ad5f290f2180eaf7ab01d54356432fbb"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-800.avif",
+      "bytes": 13269,
+      "sha256": "ba6df02f481d81f16f572552710a5203520a04e622296ddca451a5dbe639fc11"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-digital-workspace-800.webp",
+      "bytes": 19320,
+      "sha256": "6f1ac1745858fa507021b68c222b56d9f4497a10384cc5981ad589e35822cbbc"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-1200.avif",
+      "bytes": 42648,
+      "sha256": "45a05e8267428ea929bb2c0eec98cf44668118e457f03bcd4e6980ed58861734"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-1200.webp",
+      "bytes": 52784,
+      "sha256": "67c01eb14e8545e7dc316d419c296da7562fc6f78ccbfb2793d9bd7c7803dcaf"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-1600.avif",
+      "bytes": 65104,
+      "sha256": "c1aacfd659fe2b5848d405d6c6b7852c757e580bd65d805bdbdbb3ea29cd73a8"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-1600.webp",
+      "bytes": 76496,
+      "sha256": "f763914e2646e827e4819b9b2827f6c549abb126339329a52b58af569d25f558"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-480.avif",
+      "bytes": 12828,
+      "sha256": "8c3336f8deb9be75a6661ddf59e8295385324bf12ba327a58004bad1ef6ca46e"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-480.webp",
+      "bytes": 17236,
+      "sha256": "79fa682b8879d6ae57d7c93a7dea4499d919b061e4647eb5620a70a02599f0c9"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-800.avif",
+      "bytes": 25341,
+      "sha256": "541f5631337ebac6484fe33180942c89cc08cb7e8c89ad46101755b75d44379f"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-examination-detail-800.webp",
+      "bytes": 32218,
+      "sha256": "0f2cc248a0f04ab537a2e66a4e7f4a3dbccd89fb8c2a1a805695292351c4d91a"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-1200.avif",
+      "bytes": 22883,
+      "sha256": "b9c54dc76ff0a000f8df141cfa78c2e3c14a1cd7c6467e4e698c56830aee2dc6"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-1200.webp",
+      "bytes": 29758,
+      "sha256": "0f6942d917756253840bc25cf47023211ee1dd7774a7f30cf31068eb8c99dc2a"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-1600.avif",
+      "bytes": 35833,
+      "sha256": "f64a75b7a6b8d47f9fe7d02e3436cf83662c058b79e17ddf8e77123ee709c956"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-1600.webp",
+      "bytes": 45516,
+      "sha256": "f231317f46a3249e54aa3dc2f9ae583f9970cc46e31602f4361276e3ce8f42cb"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-480.avif",
+      "bytes": 6254,
+      "sha256": "51270684f5a935d66e16fda514bf432ed97295dfc4461f09691c13ce2646b39d"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-480.webp",
+      "bytes": 8012,
+      "sha256": "c3dbb31a388d5a9d97f49e75ba37400c6dbcceac1ad5d0f8601783a752edad79"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-800.avif",
+      "bytes": 12760,
+      "sha256": "6e20edf0ed9e6bcd2b36f7d9ef14ded4c890cbd111e99e84b4975050e74bf8cb"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-treatment-room-800.webp",
+      "bytes": 16546,
+      "sha256": "24990ffa4de45c53812b3fbe5215990ea8d0919c58f5d9c9f08c28b2ec089be9"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-1200.avif",
+      "bytes": 46902,
+      "sha256": "25231e4ab4cffff7f547a77f8db111a3ecedc4feb0ac4e992800e807025a87b5"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-1200.webp",
+      "bytes": 60224,
+      "sha256": "dad784f72da7a972b7c4943d5045a418fa82e97c65620f22f165d59ffde1ab55"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-1600.avif",
+      "bytes": 74275,
+      "sha256": "8708a5b157182aa878fd6623443fb7c52ed3c92ee5c4b1c064e1fc290238203c"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-1600.webp",
+      "bytes": 89840,
+      "sha256": "216fe921b8d9f2514979fd37cec9b2b4c7d4fb8e7c413a7fd9b1f6393f50c2b5"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-480.avif",
+      "bytes": 12456,
+      "sha256": "570400ce9f17c670509fd8db0e6f67e3a5644e06eecc634e3cd0ba5d95a538d7"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-480.webp",
+      "bytes": 17158,
+      "sha256": "a022a6aa2173414fe2c5e670c25e9029082d66c5666e82e4ce8622956429e42d"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-800.avif",
+      "bytes": 26267,
+      "sha256": "a67d9a105cda677fae4fc7709cad357d1a6134194f2d715591e071c2d904ef8d"
+    },
+    {
+      "path": "assets/legacy/photos/clinic-waiting-area-800.webp",
+      "bytes": 34972,
+      "sha256": "2d7360ded578242a44db687794afd1967826d4df14aa2efdaedb46a6c2ec8dfa"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-1200.avif",
+      "bytes": 13684,
+      "sha256": "72f818742281a7c18d7fae36df61f2416328a6209eb39434c47eb9821f2dd427"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-1200.webp",
+      "bytes": 15582,
+      "sha256": "678fa5d9256fe8b9963c09a9d7c50418cebf3f19b849311515711beae7613107"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-1600.avif",
+      "bytes": 20840,
+      "sha256": "be071bf27b057ee3888ff9116f6710ab0438edc2659a0028d8e0e59d74a6fb8b"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-1600.webp",
+      "bytes": 23742,
+      "sha256": "7f47b1c8a1a1f4cbaf66d503ad06e2702c26378160c75d57984e6799888e9743"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-480.avif",
+      "bytes": 4311,
+      "sha256": "58e6d2d73ce9b11d7f182cd0fe9f9425b898e07cb7ec9323b2085165984e1a69"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-480.webp",
+      "bytes": 4816,
+      "sha256": "d5c54715e4e18c4be45081aa5b6a45c8b567f476fa6251b0f11086d495ef2f2a"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-800.avif",
+      "bytes": 8252,
+      "sha256": "cf9c8960dd58aac4065b3899ca0a830bcd27bba7688a957ac7c186750e62fdb1"
+    },
+    {
+      "path": "assets/legacy/photos/clinical-about-800.webp",
+      "bytes": 9504,
+      "sha256": "ca4bfc6bffc3335928e08d8fe2f537971e7a3698e01ff18b7061b5deb8211833"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-1200.avif",
+      "bytes": 15093,
+      "sha256": "6486d94f15a2ce215e7fbb59a19cbd5c188efd024517fba149068ce0faea2f37"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-1200.webp",
+      "bytes": 19352,
+      "sha256": "caa6d8e9d50fbb009fcb331c1f4a3ec0fd0a856dce48318f2a5e6fb62963bb35"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-1400.avif",
+      "bytes": 18493,
+      "sha256": "be7e1e526d323f956790b76a4073b3e7e560300c0659cc0665ef0025b8cb9992"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-1400.webp",
+      "bytes": 24840,
+      "sha256": "ab07e7eeb29975d4abb1e7875676f9191d73d2c25b63c80d722baed1ad15bb93"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-480.avif",
+      "bytes": 5391,
+      "sha256": "274a89ac9aea878cde94435a981fd86cdbe56347e44433386d12603f41f8f5d1"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-480.webp",
+      "bytes": 6366,
+      "sha256": "70aeda3b077abfd7920b5c511f3f7eca713f54257eb370a10127850ccc321a18"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-800.avif",
+      "bytes": 9344,
+      "sha256": "d826955ef6d0ceed3841aeb02fe69774ecda17df8582b7665b5be6ee1652f03b"
+    },
+    {
+      "path": "assets/legacy/photos/home-app-catalog-800.webp",
+      "bytes": 11624,
+      "sha256": "018849d5461765f11e65d9b47e32d2065c81c8d27f54bcb2786ff343f8cdb6f9"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-sharing-1200.avif",
+      "bytes": 6781,
+      "sha256": "815e37388abc230e177144e8d0b44a9f76348cbc9526ff21627e9bac4da3e4e0"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-sharing-1200.webp",
+      "bytes": 7376,
+      "sha256": "7aa4d88a43ba5004d4ba7896aaa7786aed6d6b61ee03728195b1dce18f2bcaa1"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-sharing-480.avif",
+      "bytes": 2245,
+      "sha256": "3925fe7b5aadc6e1f6d1a7d1132da586b0e45dbc9d70636ca9e7c94564c23159"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-sharing-480.webp",
+      "bytes": 2094,
+      "sha256": "59336970f6654ac06c1d32563ce4839c363843ebc74665c27243333775cb7ae0"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-sharing-800.avif",
+      "bytes": 3942,
+      "sha256": "d5b42b974aea4a67982e512665a2f4e5c58a2f54b38a8e1cd0a3c58b27d5c189"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-sharing-800.webp",
+      "bytes": 3970,
+      "sha256": "8a703f33243ccb280f34639286ba632e515dfd12cfbeaf1332fdbd2843690417"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-1200.avif",
+      "bytes": 20083,
+      "sha256": "3715d95d8f27ffb88fcec500f8240a7b87ff01574ed2199f46e83ec68292db10"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-1200.webp",
+      "bytes": 26876,
+      "sha256": "ec1f4311b7fe718d6062b1e5bb42b67a10486f89002ada2c3782a34d9ba64cfc"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-1600.avif",
+      "bytes": 29911,
+      "sha256": "c9e6a899a5118cc6162c877d504e2f09ecbf73c59aac7059e48cc849bb4fd698"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-1600.webp",
+      "bytes": 39504,
+      "sha256": "3d68f55b07a7ba761ed8ea585669578d82e448872aa0cb94f53fe48a4f3348e5"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-480.avif",
+      "bytes": 6178,
+      "sha256": "3dee49cf15040d419f0951fea78c4a76faaf55ce142413a3c5f1531a0b9efb16"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-480.webp",
+      "bytes": 7636,
+      "sha256": "2597937fcd102b34eae3902258cadf08ea50f451f8d4962a8f04160ac32635c8"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-800.avif",
+      "bytes": 12160,
+      "sha256": "82e94a40a8d476bd85d33fdcee0ac205a8e653ac60d618b6b61546184b5ac01c"
+    },
+    {
+      "path": "assets/legacy/photos/home-story-workspace-800.webp",
+      "bytes": 15912,
+      "sha256": "af04ba89795663167a1494924b8bdd4687c5f2e44f105b2ef8c772caf4000b1e"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-1200.avif",
+      "bytes": 12798,
+      "sha256": "db8b2349e2612c162a82d095ced3f6bb4c54778f6c9e05482550b9ba85f2b8e0"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-1200.webp",
+      "bytes": 15922,
+      "sha256": "e1f03e7a4e1bf9c710aa6dc9e0ebe46a2e5b6421523e74d78c0a340397e81977"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-1400.avif",
+      "bytes": 15967,
+      "sha256": "0a9d6e7d4acc5028dbe1b138bea9b2b79f3b1022a9b573c08491852802ee9f2c"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-1400.webp",
+      "bytes": 20558,
+      "sha256": "963419eed85fc734d796a4c9f6220c8fb06eda1bcfd4c30ad57b58fb54e153a7"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-480.avif",
+      "bytes": 4173,
+      "sha256": "9e2e3d6ed9d86af4209db82297c2cd71e7165ba63941d6c2f7e9dbadc74970a9"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-480.webp",
+      "bytes": 5002,
+      "sha256": "6177e792e9da744829ae25db5c3122a7bcad69f81583a37c0f03f0032e23093d"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-800.avif",
+      "bytes": 7441,
+      "sha256": "dbe4ce85bec7302839febaba146316996e2f77cfbf9433c3efb5e11d54a5cb19"
+    },
+    {
+      "path": "assets/legacy/photos/news-tablet-800.webp",
+      "bytes": 9508,
+      "sha256": "3f3c2cb0bc672d415139be5f0e1c8338a222e7f7bf2416d27dc086fd039d8d7d"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-1200.avif",
+      "bytes": 15656,
+      "sha256": "7dface71d6d572534c495bdb0e6ac9fda76483e5e160c9fd83346a0834f05d60"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-1200.webp",
+      "bytes": 18752,
+      "sha256": "22948157508c65854ae0a55b25597b20eec692d24ff5a8ee247d9cbd2893a071"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-1600.avif",
+      "bytes": 23026,
+      "sha256": "d95235554322cd137e9afd3d9acdc67c13ac642075baca0459bcead5ace9dd7f"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-1600.webp",
+      "bytes": 28118,
+      "sha256": "ccd126a42cf66542feaa37fd495440d6e7539a499cf9c0b4bcaacdff91c00fe2"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-480.avif",
+      "bytes": 5002,
+      "sha256": "f42ef798ae8e706421d8c1c78874b73781ce95a0ca154b2796bfd7176dea1956"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-480.webp",
+      "bytes": 5608,
+      "sha256": "aec09023a92127dc9a7dcbc1ab06d242e69c3b80f336f5c7e68c862df1c578ee"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-800.avif",
+      "bytes": 9395,
+      "sha256": "c94ca8359d9047b18648506bcf0c94356bed75e03e7c9d19e5da1e7d5621b6d5"
+    },
+    {
+      "path": "assets/legacy/photos/notebook-desk-800.webp",
+      "bytes": 11142,
+      "sha256": "50eb3349dc165a7bce63b0a33696b0d2030814dd3dfa247b769ef930ee39c3b3"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-1200.avif",
+      "bytes": 71272,
+      "sha256": "7923080ea94622f116ef5d59397970081ef826c9aeb5fec8c2fd8447c6dbc08a"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-1200.webp",
+      "bytes": 90088,
+      "sha256": "0b234737f33bd6efc116658bdacea95fbadf2c6f0eab88af4f5a3e967b56ec8c"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-1366.avif",
+      "bytes": 87525,
+      "sha256": "3c4ad8b920fc3395365f6601318b11985193a6356b8053ec8922f98f8a92ed8a"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-1366.webp",
+      "bytes": 108756,
+      "sha256": "3e80bb942e3a2f144af1ef93d6170f9eb33f447492e05d9ac44c4b06bb436114"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-480.avif",
+      "bytes": 19403,
+      "sha256": "3709881fe7b7590fe515b9d72544850800c1e762f24f2ecbf8c7c3c30fc999a5"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-480.webp",
+      "bytes": 28066,
+      "sha256": "d10ef9c380baa575844df78850b1a6f6d334c5a1b746b26995aa064dc619d345"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-800.avif",
+      "bytes": 39992,
+      "sha256": "1cfc90ee20b34e37f3c5445b563fb783b70f3c7db7ff5883ac42dce9e770619e"
+    },
+    {
+      "path": "assets/legacy/photos/team-zebra-camp-800.webp",
+      "bytes": 54024,
+      "sha256": "7daf2a0638daea77349923cb44a50b7b86d06572a146258b26bcb8b6567ac204"
+    },
+    {
       "path": "assets/room-1200.webp",
       "bytes": 50484,
       "sha256": "40cc873cfb5d366389ab3f0152463a2e9a88eb2c29c26e883022782e83791918"
@@ -76,29 +1607,224 @@
       "sha256": "1df99db6862af330901a6067f5f47d7bde05af1fac2751babd6192777e27dacc"
     },
     {
+      "path": "b-base.css",
+      "bytes": 12711,
+      "sha256": "0a744741784da585e4a7c7807cd03780a7a92223af1ea6d661c84f881a4152c8"
+    },
+    {
+      "path": "b-home.css",
+      "bytes": 12250,
+      "sha256": "fef07d1bbf06d2f1ae559f716ed0393530df76a1c285d07e14138e1dc55cf1d6"
+    },
+    {
+      "path": "b-hub.css",
+      "bytes": 3862,
+      "sha256": "077c5a70279c4519fc8f786a40c7ecdb2512c8936e2897655f545b73087690c0"
+    },
+    {
+      "path": "b-jump.js",
+      "bytes": 866,
+      "sha256": "d0904b0d6c8f8d016319b51d230f6b1677817553703bab28a26bcbf1afb1b489"
+    },
+    {
+      "path": "b-map.js",
+      "bytes": 574,
+      "sha256": "ed502c88c15d76dd4d93a25ca127f7876535276879beb452138e312e1d7bf776"
+    },
+    {
+      "path": "b-menu-keys.js",
+      "bytes": 1130,
+      "sha256": "2a17837e2ed5612d8bd2ccbb0d1d362465e489e80b51081dbb664db7da44edd2"
+    },
+    {
+      "path": "b-menu.js",
+      "bytes": 1567,
+      "sha256": "c4783696a25209a04e14ad3a8d3a6bb45f71ec49770178d3073c86aabca9bc17"
+    },
+    {
+      "path": "clinic-c.css",
+      "bytes": 45881,
+      "sha256": "63bfba269d59970149e6f36bcabf0cbbefbe35faa7a23e8a37f440eeac11116a"
+    },
+    {
+      "path": "company-a.css",
+      "bytes": 46480,
+      "sha256": "9bfdd628d09aa6aa8b6fa67cd69319635d75215d94a91bb8aad94b04c49cc48e"
+    },
+    {
+      "path": "company.js",
+      "bytes": 1116,
+      "sha256": "dee0a3e920db6c6832ee9089f17b96947bdb0cd8a8abc7169520f6dc334067f4"
+    },
+    {
+      "path": "en/about/index.html",
+      "bytes": 18873,
+      "sha256": "36ec08a8f200fd00ba410f58952274c8169bff03a2b50850eae5107b87968bd0"
+    },
+    {
+      "path": "en/careers/index.html",
+      "bytes": 12699,
+      "sha256": "0f6f94c661da6e9304fae891ef648282f0211edb6c7531b2cdcc62e975889d19"
+    },
+    {
+      "path": "en/clinic/consultation-exports/index.html",
+      "bytes": 20440,
+      "sha256": "9dbfbbefbde9699a8b6b1275c4dc974671b24cb75a77fdf6b97741fc55256731"
+    },
+    {
       "path": "en/clinic/index.html",
-      "bytes": 5636,
-      "sha256": "9b858ab2f92eedc92c4b91feea28b97fc96d8ce9e9af0858c21cfcc9ded36370"
+      "bytes": 28386,
+      "sha256": "caca38f17ca6cfb51574a5165b4d3c2572434c867ab257b9fc4ab6802c333e8e"
+    },
+    {
+      "path": "en/clinic/injection-simulation/index.html",
+      "bytes": 22805,
+      "sha256": "b08ffc7a329b75e987f55e4ceb7a31b1ac1d92b4f060fa0628b3e68106a17bc0"
+    },
+    {
+      "path": "en/clinic/skin-analysis/index.html",
+      "bytes": 21002,
+      "sha256": "b81145dd546432bc917fb19eace33769060e1e4cf3015c04c3a5d3eab088b803"
+    },
+    {
+      "path": "en/clinic/surgery-simulation/index.html",
+      "bytes": 21481,
+      "sha256": "7ba5514e317c60772e530726f03db580c9bf0bad0ec01d857a1d1f74359bf75e"
+    },
+    {
+      "path": "en/clinic/thread-lift-simulation/index.html",
+      "bytes": 21099,
+      "sha256": "d80361d3c6c9cbf7ef8fab3cc319d095ac2b5e6257c5fe28d6780174a78c1eaa"
+    },
+    {
+      "path": "en/contact/index.html",
+      "bytes": 14006,
+      "sha256": "7872449c3aa37810fae8f3ab9393c46a2e8ba420096e666eaecc974b37066da8"
+    },
+    {
+      "path": "en/credits/index.html",
+      "bytes": 70362,
+      "sha256": "59222aaccdbe8d7bf25dfb7c67a81ab0ae23e79d813d4c6c6bb85d6e10c3aa36"
+    },
+    {
+      "path": "en/faceliora/index.html",
+      "bytes": 21298,
+      "sha256": "fe73b0c2e7a7e9497588f47b6cf570cd2792c2dbf64ae8eb06dacf9fc938d839"
     },
     {
       "path": "en/faq/index.html",
-      "bytes": 5616,
-      "sha256": "0796eeb30294d0588afce756ca07211f589126321c5de6388af7a218decd7f45"
+      "bytes": 31522,
+      "sha256": "7da31d2c366a8b1d853bbbf7418e6f78b05babdb3f204a61b8c8198ecfc6392d"
     },
     {
       "path": "en/for-you/index.html",
-      "bytes": 4706,
-      "sha256": "1eb15ae2c3e19a46c9c11ffc24c8ef4eba7d00f80b82909e5290eb980e5dc04a"
+      "bytes": 25991,
+      "sha256": "36dbd8fc43da6166947007654d8402d840221abfb6806ac5a5f417697419c441"
     },
     {
       "path": "en/index.html",
-      "bytes": 5091,
-      "sha256": "9f4288fe2e0ea2f09c3576ac79730c086979d45fec976375219d8e15c300e852"
+      "bytes": 22088,
+      "sha256": "bb2221bb66c0a81d41464bb73bfd5d0bc3223c9f3d37b22b5182f7d220e155b1"
+    },
+    {
+      "path": "en/insights/botox-masseter-units/index.html",
+      "bytes": 27640,
+      "sha256": "7b447297bda319b96a8a2fcbe942391d141446857a2f35a777d1093f45b96dab"
+    },
+    {
+      "path": "en/insights/client-view-and-sharing/index.html",
+      "bytes": 26644,
+      "sha256": "0cc078bfc1ac30a2173be2e2060296bd8a10acc3df0d5593e30856a9be40bf3b"
+    },
+    {
+      "path": "en/insights/clinic-software-demo-checklist/index.html",
+      "bytes": 25598,
+      "sha256": "27cc3aa15e4c1be36a8c99f6f261455362dd76295a978c1a1e746d3f61fc46f0"
+    },
+    {
+      "path": "en/insights/clinic-team-workflow/index.html",
+      "bytes": 25845,
+      "sha256": "79510e75331893b9171cc0cdaaa65143d29c811aa41e3a145156571aaac3f336"
+    },
+    {
+      "path": "en/insights/facial-data-privacy/index.html",
+      "bytes": 24960,
+      "sha256": "365795f300606ca30105fe460df230932bd81aa281adcc63a3dca3f9ea728788"
+    },
+    {
+      "path": "en/insights/facial-fat-grafting-retention/index.html",
+      "bytes": 31335,
+      "sha256": "aa6d6bf910bf3533bdb33b23eca37f2d1e1bb22fbaf569a239abd8815b01465f"
+    },
+    {
+      "path": "en/insights/facial-photo-preparation/index.html",
+      "bytes": 24347,
+      "sha256": "c634c69ae566cbf90065dc33625cc5e5abd9cc81ab4a8c5d56bf3aae53d38e49"
+    },
+    {
+      "path": "en/insights/filler-1cc-by-area/index.html",
+      "bytes": 31433,
+      "sha256": "e02633ae5ca46c5acb07ff7fe4baa1f9b90a8eab4dc0a43b52a9dc6e5de873a1"
+    },
+    {
+      "path": "en/insights/index.html",
+      "bytes": 22921,
+      "sha256": "050ace743b8d1448e7b0951968ff6bb674f5e3bee112eface43e3b75cdd11154"
+    },
+    {
+      "path": "en/insights/phone-3d-face-scan/index.html",
+      "bytes": 28173,
+      "sha256": "e603bf719c80ef7ce053354c445eb0c61cb2386d338e372d9db0a8ab1a9d49f7"
+    },
+    {
+      "path": "en/insights/questions-before-aesthetic-treatment/index.html",
+      "bytes": 24982,
+      "sha256": "ef21867a972e77d457a071c458c4a748f87a17f6cbe1f65c05c26dfdf9b65a13"
+    },
+    {
+      "path": "en/insights/visualization-and-consultation/index.html",
+      "bytes": 26929,
+      "sha256": "82e7dabafe1c3a7aeaa4b5c2e5cbf4d6ba8f34958c83ef6f91a04974debf06a7"
+    },
+    {
+      "path": "en/news/dashboard-to-client/index.html",
+      "bytes": 16891,
+      "sha256": "9a018953745c5a44c46acb1560a8f692a0e1ab48d4262bf784fef6613b5b752d"
+    },
+    {
+      "path": "en/news/elp-season-4-south-korea/index.html",
+      "bytes": 19150,
+      "sha256": "41ff00837a1df31c2e470b9393d9b804a916696b98c586ba0380f23f7ad41d38"
+    },
+    {
+      "path": "en/news/index.html",
+      "bytes": 15912,
+      "sha256": "c066b8c492b5f55de207075c2715bca62f250aae20da43f586cffa14a9a974e0"
+    },
+    {
+      "path": "en/news/p1-regional-startup-2026/index.html",
+      "bytes": 16485,
+      "sha256": "d43d86c696e6cf0813e2ec862c2244a8fad7e9a2933ab987dde2adb03c4be3cc"
     },
     {
       "path": "en/pricing/index.html",
-      "bytes": 4719,
-      "sha256": "44286681df071b3532fa1bbba0041ae030b509523de89e89a4ec6ed992b51eeb"
+      "bytes": 18855,
+      "sha256": "4a50d3b3bac51be090951f018679bd9909dab36d21a3922bedef3ec711e5080f"
+    },
+    {
+      "path": "en/privacy/index.html",
+      "bytes": 11020,
+      "sha256": "ce3d2e6c4765b05c60c7c9e5a9f50af4710b607aaf1549267d642f3a421ff5f1"
+    },
+    {
+      "path": "en/products/index.html",
+      "bytes": 28132,
+      "sha256": "c24477e74a239853f5b8572799e237db7fc987c0ab0996136c66b447d5e8d8fc"
+    },
+    {
+      "path": "entry.js",
+      "bytes": 934,
+      "sha256": "15a02f89cfc975f0adf28a475372c5ee28623e113b4227d3cf2fcc671ec14515"
     },
     {
       "path": "evidence/PHOTO_LICENSE.md",
@@ -111,9 +1837,59 @@
       "sha256": "293545adba90cc0cca87d05bc684e199d21baf1515a3232173df444d7ef66b77"
     },
     {
+      "path": "faq-a.css",
+      "bytes": 42494,
+      "sha256": "5bce2c32d8cdc5c77d2e8818fd1390a3c9a0a0b52be4e1a139014e326c63f5d4"
+    },
+    {
+      "path": "faq.js",
+      "bytes": 8517,
+      "sha256": "a4b1d8d4f60c2833c1e0c164e2e1a7ca3f18bb2d4d63320dc8cfca3930c0ae46"
+    },
+    {
+      "path": "foryou-c.css",
+      "bytes": 47646,
+      "sha256": "aec2e9f25839dd3105fdc4c7f98e639b82e160c186129af7c16d705089872d7b"
+    },
+    {
       "path": "index.html",
-      "bytes": 1221,
-      "sha256": "40d8a7fdf6765c697c972f86cc9030608b30696511e44dac89bb65a5914329f1"
+      "bytes": 987,
+      "sha256": "1f15176d9b54065a337519d44cb69a9f2c9b99f0d72c5df76df62e1cffdd5721"
+    },
+    {
+      "path": "insights-a.css",
+      "bytes": 51913,
+      "sha256": "f09313e8e02ae4886ff4d90e6605e727b4d58156cdfdfbf34e114d110a242b66"
+    },
+    {
+      "path": "intro.css",
+      "bytes": 4686,
+      "sha256": "2738a74e9ff84b2ffa79cbd0e6cbaaab07b66d55f9e49142cfd6cc9835150c20"
+    },
+    {
+      "path": "intro.js",
+      "bytes": 11071,
+      "sha256": "fa134bb22453dbc6ac0012c1ace6d2aad383d8b2fb5f31751dc42e89b5b65dc6"
+    },
+    {
+      "path": "legal-a.css",
+      "bytes": 45637,
+      "sha256": "37e8e4c1de6aec7d21607f8d0c4445c0344433104eb47e038cc9e09277c6510d"
+    },
+    {
+      "path": "legal.js",
+      "bytes": 7285,
+      "sha256": "af096bdad631c02ee7af9def257789c1f5a4bb5dce1be213d4df6b23955608d5"
+    },
+    {
+      "path": "news-b.css",
+      "bytes": 50375,
+      "sha256": "fe57c0d0f69b5b072166018be4c19e646ee461d1f2f9b28513786ad158bcbfe0"
+    },
+    {
+      "path": "news.js",
+      "bytes": 1898,
+      "sha256": "3440f92d122cf17b475c47b0d29e7236b98461b1e11da7a1b7bf2077c96cd532"
     },
     {
       "path": "preview.js",
@@ -121,34 +1897,204 @@
       "sha256": "f5091ffb998c5f99b2c0190d141768ed1eb0e3af70073f9fc2e60f9d3943f774"
     },
     {
+      "path": "pricing-c.css",
+      "bytes": 45520,
+      "sha256": "281bb3c6a72071f04a4c551141c5e7a33412a2b164bdc673757650fc91f3a6b4"
+    },
+    {
+      "path": "products-a.css",
+      "bytes": 33252,
+      "sha256": "c18b0577ea192fb49714dc2b1fcf32e160eb0af54d0bb0cca6c962a1be924d96"
+    },
+    {
+      "path": "products-map.js",
+      "bytes": 574,
+      "sha256": "ed502c88c15d76dd4d93a25ca127f7876535276879beb452138e312e1d7bf776"
+    },
+    {
+      "path": "r14.css",
+      "bytes": 18522,
+      "sha256": "6ffebed014e6fddc00710b91e1204349bdde0536c72498e263a0dade7628d9e3"
+    },
+    {
+      "path": "r18-chrome.css",
+      "bytes": 10197,
+      "sha256": "0e001dc98f5c828b6e494dbb07f29f1d715eae0afab1190d269b3b2c6636563b"
+    },
+    {
+      "path": "r20-jump.js",
+      "bytes": 1023,
+      "sha256": "4dccf1752fe6b5306480b011a8dfbb1991a17054d24a4ddf410db70ee0435a2d"
+    },
+    {
       "path": "style.css",
-      "bytes": 18183,
-      "sha256": "83eb809361266c36e2279e2389bb862d5cba1b2d388f0f05484ebb7151b88a72"
+      "bytes": 18383,
+      "sha256": "6f525435bc25d06d0bd03f39f5ba69895eb9a3755ec7b5554ed31a517e3b04b0"
+    },
+    {
+      "path": "th/about/index.html",
+      "bytes": 24808,
+      "sha256": "f5e67d41ed124a39231b302c3f68351267cf99488bb3abb2d0f3a04b7d75caee"
+    },
+    {
+      "path": "th/careers/index.html",
+      "bytes": 15708,
+      "sha256": "ff841faf62a3b9d8c90a600506f2ab95d3b4cc15b1c1eca4d5d0fad2342db95d"
+    },
+    {
+      "path": "th/clinic/consultation-exports/index.html",
+      "bytes": 30290,
+      "sha256": "108c8ffede5a851e75ef19131876fbdba82f84dd38cac3446af3e5390549e94c"
     },
     {
       "path": "th/clinic/index.html",
-      "bytes": 8829,
-      "sha256": "78369718d07fea583ab2d257fc4ea01bb8f3416a2d4cc94621c6f2b3f0696600"
+      "bytes": 42651,
+      "sha256": "460f9cb5fe1bf326e586230988b067c3576e49058233754f814a86e3add07cc2"
+    },
+    {
+      "path": "th/clinic/injection-simulation/index.html",
+      "bytes": 35129,
+      "sha256": "e7d0517202ebc640660de806e3db0a4fddc6fed5c019b8daf98d280945a81a5e"
+    },
+    {
+      "path": "th/clinic/skin-analysis/index.html",
+      "bytes": 31516,
+      "sha256": "d91497b605d4abb1f1fe3629dd134de3bcfc8958dda1026f7a54dc3a9039cb62"
+    },
+    {
+      "path": "th/clinic/surgery-simulation/index.html",
+      "bytes": 32906,
+      "sha256": "bf48ea643dfee151c1d26ee5a03eba3879261b3f10b77d8551278b279b86de1a"
+    },
+    {
+      "path": "th/clinic/thread-lift-simulation/index.html",
+      "bytes": 31119,
+      "sha256": "a49aa7462cbf6d2f63306c129eb0612b253be5da87219ca46eaf843e1bbbcea8"
+    },
+    {
+      "path": "th/contact/index.html",
+      "bytes": 17725,
+      "sha256": "f303e240bf3b6bbd0a1b3b5adc6d42ed4e99babc2b52905072099cd4e9b5bb19"
+    },
+    {
+      "path": "th/credits/index.html",
+      "bytes": 94418,
+      "sha256": "7e8aad53c9f7b8aa74a82bbc2b33365ef977df485440bd057afafc97c8054736"
+    },
+    {
+      "path": "th/faceliora/index.html",
+      "bytes": 30651,
+      "sha256": "dcb6dc47cf619a0ec65608be5adb692722e8cebe8477600860a0a928cc8f058f"
     },
     {
       "path": "th/faq/index.html",
-      "bytes": 8707,
-      "sha256": "4726eede6b0e9ac898812245955859ed66579aefab4713abb83e09854ba334f3"
+      "bytes": 44948,
+      "sha256": "33dfdbe3321e9dc1b1708b13dd7260b75794777a5e6ffe77ea9ecda1bb4c218f"
     },
     {
       "path": "th/for-you/index.html",
-      "bytes": 7115,
-      "sha256": "c48b4859ad535cbaa78973d14e6b84c04d3e55ee16f4c29ce2842a9d46c27eda"
+      "bytes": 35778,
+      "sha256": "95b86b0bf768608a193b15e6d553902ab4c539911bd1e91b7669ad9aa071ea2b"
     },
     {
       "path": "th/index.html",
-      "bytes": 7475,
-      "sha256": "be0974ab0e61c9c54c60ef3e1de04a0276f6cd00b3c4f841b77e9e18013eea73"
+      "bytes": 29223,
+      "sha256": "eeb70b6b26bd4e13389fbcbaf32a8f631fb38930c65eb97cc56d3e970b45f1d4"
+    },
+    {
+      "path": "th/insights/botox-masseter-units/index.html",
+      "bytes": 40357,
+      "sha256": "45123de90def504a24bd1c0a6318f678debdc9576950c828e039410b3cfa01b3"
+    },
+    {
+      "path": "th/insights/client-view-and-sharing/index.html",
+      "bytes": 38685,
+      "sha256": "4aed2aee0db94f40d6dea30195e441c7acedd090d217026f519c454b59e959ea"
+    },
+    {
+      "path": "th/insights/clinic-software-demo-checklist/index.html",
+      "bytes": 38443,
+      "sha256": "1dab24a3eabd6165c1392699e83a5a5e143503bb58a11835a568ac05070d7a47"
+    },
+    {
+      "path": "th/insights/clinic-team-workflow/index.html",
+      "bytes": 40945,
+      "sha256": "463ddb23e4e68d6cf67e03d193975e11cb0a44d2aa25211b9bbb683ea114a5a3"
+    },
+    {
+      "path": "th/insights/facial-data-privacy/index.html",
+      "bytes": 37273,
+      "sha256": "4d7c38327e682cdad1fcff21be60ee33b7d05c70dc4f2a90761213eea9c269db"
+    },
+    {
+      "path": "th/insights/facial-fat-grafting-retention/index.html",
+      "bytes": 44906,
+      "sha256": "a16ad68632241b3b7a46508aa593ce52f934e025424fa39c9fa9aeb318f27964"
+    },
+    {
+      "path": "th/insights/facial-photo-preparation/index.html",
+      "bytes": 36010,
+      "sha256": "b1a667cb49dd3b4d358ab353786e1d233dec659c9d868d56df762e7da0c39681"
+    },
+    {
+      "path": "th/insights/filler-1cc-by-area/index.html",
+      "bytes": 46834,
+      "sha256": "37008e24233b2a691d2dabd22ba144b73e80cbf6854e1c67fd340fc3760152e2"
+    },
+    {
+      "path": "th/insights/index.html",
+      "bytes": 30386,
+      "sha256": "e0fcd1cdc718a75a93bab7a1d559ffc323a4996152f03bf676491fca80b2d073"
+    },
+    {
+      "path": "th/insights/phone-3d-face-scan/index.html",
+      "bytes": 40413,
+      "sha256": "4d2c400b74b8fcef8319dc7aa44d1cf2a06c2c2796c8b05565d26591b05ff7f8"
+    },
+    {
+      "path": "th/insights/questions-before-aesthetic-treatment/index.html",
+      "bytes": 36062,
+      "sha256": "36b7a94cb8b5ef07ca8bab3747f639e2cad92c69a72d213b4723314d11a1c020"
+    },
+    {
+      "path": "th/insights/visualization-and-consultation/index.html",
+      "bytes": 39582,
+      "sha256": "24dcc76606b32379fd48b8bc8ebb620a00ed80eb81b486c5e5e56497c66ecf93"
+    },
+    {
+      "path": "th/news/dashboard-to-client/index.html",
+      "bytes": 21368,
+      "sha256": "fd7449a9c4aeba23964ae2cbfb8fd78ba8c45eb25ef31ac38876800ba42fc5b3"
+    },
+    {
+      "path": "th/news/elp-season-4-south-korea/index.html",
+      "bytes": 25219,
+      "sha256": "727eb4e86b395cdfde66d041c307f23cef6347af2e2a0199b775c445f7610485"
+    },
+    {
+      "path": "th/news/index.html",
+      "bytes": 20374,
+      "sha256": "849172b19ad64de25f3df67027b1e2121de9f0166c82b13cae36899011dc9980"
+    },
+    {
+      "path": "th/news/p1-regional-startup-2026/index.html",
+      "bytes": 21197,
+      "sha256": "a32551078b39bce44df7a0c727b45ca9e31176ed758922d680f215eaa8029ef1"
     },
     {
       "path": "th/pricing/index.html",
-      "bytes": 6707,
-      "sha256": "498bb4420bc1a78eb7dcb2aa09ede797b11e6bc00e6465d36ef132f07c1d173e"
+      "bytes": 26391,
+      "sha256": "248ff48f5b60c3bf38a20de90105cd1a74b8792da5b7fea5d552c5039b3ca6d5"
+    },
+    {
+      "path": "th/privacy/index.html",
+      "bytes": 14564,
+      "sha256": "7cd0e66e8f399af2f8dcbaa2f19ef6e4532e1575978f53bc125980efdd48916b"
+    },
+    {
+      "path": "th/products/index.html",
+      "bytes": 37812,
+      "sha256": "0673148510fa94273f9bede3ff89191484a88c541d122c7345f21a029547404c"
     }
   ]
 }

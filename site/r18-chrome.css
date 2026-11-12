@@ -1,0 +1,103 @@
+/* R18 · approved Home B header, menu and footer (design/round-15-home-options b/, manifest 7bc86cbc…273f; R16 home-b.css + hub.css "you are here")
+   for the R14 pages that keep their body layout for now. Loaded after style.css + r14.css.
+   Rules are the Home B rules, prefixed with .header / footer.foot-b so they win over R14's global
+   details/summary/footer/credits rules without touching the page bodies. */
+:root{--color-hairline:#c9d6d6;--color-veil:rgba(10,24,29,.32);--text-small:14px;--text-lead:18px;--text-title:24px;--header-h:88px}
+
+/* ---------- header frame (base.css) */
+.header{position:relative;z-index:100;min-height:var(--header-h);display:flex;flex-wrap:nowrap;align-items:center;gap:var(--space-lg);padding:var(--space-md) var(--gutter);background:var(--color-paper)}
+html:not(.js) .header{flex-wrap:nowrap}
+.header .brand{display:inline-flex;align-items:center;min-height:44px;font-size:29px;letter-spacing:-.04em;font-weight:600;text-decoration:none;color:var(--color-ink)}
+.header .nav{margin-left:auto;display:flex;align-items:center}
+.header .nav-list{display:flex;align-items:center;gap:var(--space-xs);list-style:none;margin:0;padding:0}
+.header .nav-link,.header .nav-trigger{display:inline-flex;align-items:center;justify-content:flex-start;gap:var(--space-2xs);min-height:44px;padding:var(--space-0) var(--space-sm);font-size:var(--text-small);font-weight:400;line-height:1.75;white-space:nowrap;text-decoration:none;border-radius:var(--radius-control);list-style:none}
+.header .nav-trigger::-webkit-details-marker{display:none}
+.header .nav-link:hover,.header .nav-trigger:hover{background:var(--color-field);color:var(--color-ink)}
+.header .drop[open]>.nav-trigger{background:var(--color-field)}
+.header details,.header details:last-child{border:0}
+.header .chevron{width:16px;height:16px;flex-shrink:0;transition:transform var(--dur-menu) var(--ease-out)}
+.header .drop[open]>.nav-trigger .chevron,.header .sheet[open]>.sheet-trigger .chevron{transform:rotate(180deg)}
+.header .locale{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;border:1px solid var(--color-rule);padding:var(--space-0) var(--space-sm);border-radius:var(--radius-control);font-size:var(--text-small);text-decoration:none;white-space:nowrap}
+.header .locale:hover{background:var(--color-field)}
+.header .drop{position:relative}
+.header .panel{position:absolute;z-index:120;top:calc(100% + var(--space-xs));background:var(--color-paper);color:var(--color-ink);border-radius:var(--radius-control);box-shadow:0 18px 40px -12px var(--color-shadow);padding:var(--space-lg)}
+.header .panel-head{font-size:var(--text-label);line-height:1.7;color:var(--color-muted);font-weight:400;letter-spacing:0;margin:0 0 var(--space-xs)}
+.header .panel-link{display:flex;flex-direction:column;justify-content:center;min-height:48px;padding:var(--space-xs) var(--space-sm);margin-inline:calc(-1 * var(--space-sm));border-radius:var(--radius-control);text-decoration:none;line-height:1.5}
+.header .panel-link:hover{background:var(--color-field)}
+.header .panel-link b{font-weight:600;font-size:15px}
+.header .panel-link span{font-size:var(--text-label);color:var(--color-muted)}
+.header .panel-list{list-style:none;margin:0;padding:0}
+.header .panel-list a{display:flex;align-items:center;min-height:44px;font-size:var(--text-small);text-decoration:none;border-top:1px solid var(--color-hairline)}
+.header .panel-list a:hover{color:var(--color-accent);text-decoration:underline}
+.header .panel-foot{margin-top:var(--space-md);padding-top:var(--space-sm);border-top:1px solid var(--color-hairline);display:flex;flex-wrap:wrap;gap:var(--space-lg)}
+.header .text-link{display:inline-flex;align-items:center;gap:var(--space-xs);min-height:44px;margin-top:0;color:var(--color-accent);font-weight:600;font-size:var(--text-small)}
+.header .sheet{display:none}
+.header .sheet-trigger{display:inline-flex;align-items:center;justify-content:flex-start;gap:var(--space-xs);min-height:44px;padding:var(--space-0) var(--space-sm);border:1px solid var(--color-rule);border-radius:var(--radius-control);font-size:var(--text-small);font-weight:400;line-height:1.75;list-style:none;white-space:nowrap}
+.header .sheet-trigger:hover{color:inherit}
+.header .sheet-trigger::-webkit-details-marker{display:none}
+.header .sheet-body{position:absolute;z-index:120;left:var(--space-0);right:var(--space-0);top:100%;max-height:calc(100dvh - 72px);overflow-y:auto;overscroll-behavior:contain;background:var(--color-paper);border-top:1px solid var(--color-hairline);border-bottom:1px solid var(--color-rule);padding:var(--space-md) var(--gutter) var(--space-xl)}
+.header .sheet-group+.sheet-group{margin-top:var(--space-lg)}
+.header .sheet-plain{display:flex;flex-wrap:wrap;column-gap:var(--space-lg);border-top:1px solid var(--color-hairline);padding-top:var(--space-xs)}
+.header .sheet-plain a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+@media(prefers-reduced-motion:no-preference){
+ .header .drop[open]>.panel,.header .sheet[open]>.sheet-body{animation:r18-panel-in var(--dur-menu) var(--ease-out) both}
+}
+@keyframes r18-panel-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+/* ---------- Products panel shaped like the map (home-b.css) */
+.header .drop-wide{position:static}
+.header .drop-wide .drop{position:static}
+.header .panel-products{left:var(--gutter);right:var(--gutter);top:calc(100% - var(--space-xs))}
+.header .panel-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:var(--space-2xl)}
+.header .mini{display:grid;gap:var(--space-md)}
+.header .mini-lane{display:grid;grid-template-columns:150px minmax(0,1fr) 72px minmax(0,1fr);align-items:center;gap:var(--space-sm);padding-block:var(--space-sm);border-top:1px solid var(--color-hairline)}
+.header .mini-name{display:flex;flex-direction:column;font-weight:600;font-size:var(--text-small);line-height:1.5}
+.header .mini-name span{font-weight:400;color:var(--color-muted);font-size:var(--text-label)}
+.header .mini-wire{display:flex;align-items:center;color:var(--color-accent)}
+.header .mini-wire .wire-line{flex:1;height:1px;background:currentColor}
+.header .mini-wire .wire-head{width:10px;height:14px;flex-shrink:0;margin-left:calc(-1 * var(--space-2xs))}
+.header .mini-wire .wire-head-l{margin-left:var(--space-0);margin-right:calc(-1 * var(--space-2xs))}
+
+/* ---------- "you are here" (hub.css, plus page links and footer links) */
+.header .nav-trigger.is-current,.header .nav-link[aria-current],.header .nav-link.is-current{font-weight:600;box-shadow:inset 0 -2px 0 var(--color-ink);border-radius:var(--radius-control) var(--radius-control) var(--space-0) var(--space-0)}
+.header .panel-foot [aria-current=page],.header .sheet-plain [aria-current=page],.header .panel-list [aria-current=page]{color:var(--color-ink);font-weight:600;text-decoration:underline;text-decoration-thickness:2px}
+.header .panel-link[aria-current=page] b{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.header .panel-foot .text-link,.header .sheet-plain a{white-space:nowrap}
+
+/* ---------- footer (base.css + home-b.css) */
+footer.foot-b{padding:var(--space-2xl) var(--gutter) var(--space-xl);border-top:1px solid var(--color-rule);color:var(--color-muted);font-size:var(--text-label)}
+footer.foot-b p{margin:0}
+footer.foot-b ul{list-style:none;margin:0;padding:0}
+footer.foot-b .brand{display:inline-flex;align-items:center;min-height:44px;font-size:26px;letter-spacing:-.04em;font-weight:600;text-decoration:none;color:var(--color-ink)}
+footer.foot-b .foot-top{display:flex;align-items:baseline;gap:var(--space-lg);flex-wrap:wrap}
+footer.foot-b .foot-products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap-columns);margin-top:var(--space-xl)}
+footer.foot-b .foot-products a{display:flex;flex-direction:column;padding-top:var(--space-sm);border-top:1px solid var(--color-rule);text-decoration:none;color:var(--color-ink)}
+footer.foot-b .foot-products a:hover b,footer.foot-b .foot-products a[aria-current=page] b{text-decoration:underline}
+footer.foot-b .foot-products b{font-size:17px;font-weight:600}
+footer.foot-b .foot-links{display:flex;flex-wrap:wrap;column-gap:var(--space-lg);margin-top:var(--space-lg)}
+footer.foot-b .foot-cols a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-muted);text-decoration:none}
+footer.foot-b .foot-cols a:hover{color:var(--color-hover);text-decoration:underline}
+footer.foot-b .foot-cols a[aria-current=page]{color:var(--color-ink);font-weight:600;text-decoration:underline;text-decoration-thickness:2px}
+footer.foot-b .foot-note{margin-top:var(--space-lg)}
+footer.foot-b .credits{display:block;font-size:var(--text-label);margin-top:var(--space-lg);padding-top:var(--space-md);border-top:1px solid var(--color-hairline)}
+footer.foot-b .credits ul{display:block}
+footer.foot-b .credits li{margin-top:var(--space-2xs)}
+footer.foot-b .credits a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-accent)}
+
+@media(max-width:999px){
+ .header .nav{display:none}
+ .header .sheet{display:block;margin-left:auto}
+ .header{--header-h:72px;min-height:72px;flex-wrap:nowrap;padding-block:var(--space-xs);gap:var(--space-sm)}
+ .header .brand{font-size:24px}
+ .header .panel-grid{grid-template-columns:minmax(0,1fr)}
+ footer.foot-b .foot-products{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:699px){
+ footer.foot-b .foot-products{grid-template-columns:minmax(0,1fr);gap:var(--space-xs)}
+}
+/* R18_GUTTER320 (t_e35ba87a): R14 style.css sets --gutter:20px at <=360px for page bodies; the B header/sheet/footer keep the B value clamp(24px,5.55vw,80px)=24px as in designs R15 b/ and R16 a/ */
+@media(max-width:360px){.header,footer.foot-b{--gutter:24px}}
+
+/* ==== R31 F3: footer short links on phones get a >=44px-wide target (owner O-7). Padding only, cancelled by an equal negative margin:
+   the margin box (and so every link position and the wrap) is unchanged; adjacent targets just meet in the 24px gap. ==== */
+@media(max-width:699px){footer .foot-cols li>a{padding-inline:12px;margin-inline:-12px}}

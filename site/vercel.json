@@ -1,9 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "git": {
-    "deploymentEnabled": {
-      "design/r5-a-preview": false,
-      "feat/round7-multipage": false
-    }
-  }
-}

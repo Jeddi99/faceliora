@@ -1,11 +1,11 @@
 'use strict';
 (() => {
  const seed=[
-  {id:'web',offer:'DooDee web',platform:'Browser',url:'https://www.doodee.app/',label:'เปิด DooDee web',status:'ready',source:'ปลายทางที่ได้รับใน brief ไม่ได้ทดสอบแอป'},
-  {id:'mobile',offer:'DooDee mobile',platform:'App Store',url:'',label:'App Store (รอยืนยัน)',status:'pending',source:'URL และความพร้อมรอยืนยัน'},
-  {id:'scanner',offer:'Faceliora scanner',platform:'iPhone',url:'',label:'ดาวน์โหลด scanner (รอ)',status:'pending',source:'รุ่นเครื่อง ราคา และลิงก์รอยืนยัน'},
-  {id:'windows',offer:'DooDeeClinic desktop',platform:'Windows (ข้อเสนอแยกลิงก์)',url:'',label:'Windows (รอลิงก์)',status:'pending',source:'ยังไม่ยืนยัน OS หรือตัวติดตั้งปัจจุบัน'},
-  {id:'mac',offer:'DooDeeClinic desktop',platform:'Mac (ข้อเสนอแยกลิงก์)',url:'',label:'Mac (รอลิงก์)',status:'pending',source:'ยังไม่ยืนยัน OS หรือตัวติดตั้งปัจจุบัน'}
+  {id:'web',offer:'Faceliora Web',platform:'Browser',url:'https://www.doodee.app/',label:'เปิด Faceliora Web',status:'ready',source:'ปลายทางที่ได้รับใน brief ไม่ได้ทดสอบแอป'},
+  {id:'mobile',offer:'Faceliora App',platform:'App Store',url:'',label:'App Store (รอยืนยัน)',status:'pending',source:'URL และความพร้อมรอยืนยัน'},
+  {id:'scanner',offer:'Faceliora Scan',platform:'iPhone',url:'',label:'ดาวน์โหลด scanner (รอ)',status:'pending',source:'รุ่นเครื่อง ราคา และลิงก์รอยืนยัน'},
+  {id:'windows',offer:'Faceliora Clinic',platform:'Windows (ข้อเสนอแยกลิงก์)',url:'',label:'Windows (รอลิงก์)',status:'pending',source:'ใช้ได้ทั้ง Mac และ Windows ลิงก์ตัวติดตั้งยังรอยืนยัน'},
+  {id:'mac',offer:'Faceliora Clinic',platform:'Mac (ข้อเสนอแยกลิงก์)',url:'',label:'Mac (รอลิงก์)',status:'pending',source:'ใช้ได้ทั้ง Mac และ Windows ลิงก์ตัวติดตั้งยังรอยืนยัน'}
  ];
  const rows=seed.map(x=>({...x}));
  const $=s=>document.querySelector(s), list=$('#admin-list'), listView=$('#list-view'), editView=$('#edit-view'), form=$('#link-form');
