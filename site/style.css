@@ -169,3 +169,6 @@ footer .brand{font-size:26px;color:var(--color-ink)}
 @media(max-width:420px){.panel-offers{grid-template-columns:minmax(0,1fr);gap:var(--space-xs)}.product-panel{padding:var(--space-md)}.panel-offers a{padding:var(--space-xs)}.mobile-pages{padding-bottom:var(--space-sm)}.menu-toggle,.locale{padding-inline:var(--space-xs)}.header{gap:var(--space-xs)}.brand{font-size:24px}}
 @media(max-width:360px){:root{--gutter:20px}.brand{font-size:22px}.angles strong{font-size:36px}.angles{gap:var(--space-xs)}.angles span{font-size:13px}.hero{min-height:716px}.hero h1{font-size:38px}.main-nav{flex-wrap:wrap}.main-nav .nav-link{flex-basis:44%}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ==== R31 F3: footer short links on phones (style.css pages): keep the R29 a{min-width:44px} margin box with the F3 padding. ==== */
+@media(max-width:699px){footer .foot-cols li>a{min-width:68px}}
