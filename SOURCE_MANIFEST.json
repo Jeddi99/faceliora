@@ -1,10 +1,10 @@
 {
-  "candidate_id": "faceliora-local-r39-roi-time-plans-v1-candidate-1",
+  "candidate_id": "faceliora-local-r42-home-3d-candidate-1",
   "files_root": "site/",
-  "source_fingerprint_sha256_of_full_reviewed_candidate": "32408e7030c62a8e84c2c281db1d482ea84368c5b8e88f24fe8c303fec2a3a62",
-  "scope": "Byte-identical runtime subset of the locally QA-approved and CTO-verified R39 candidate (R34 video+stock, R35 clinic copy/฿9,900/51-point/LINE @117hipgc, R37 ROI calculator, R39 consultation time + two clinic plans + ฿100 overage). Sidecars omitted. noindex and 'Design review only' kept (not a public release).",
-  "original_reviewed_file_count": 433,
-  "runtime_file_count": 415,
+  "source_fingerprint_sha256_of_full_reviewed_candidate": "60001cc82c59e02e2dc0aebf1ab6a38d28d53e0189766a5ebaca8a166eae8225",
+  "scope": "Byte-identical runtime subset of the locally QA-approved and CTO-verified R42 candidate (R40 video pause control hidden until hover/focus; R42 Home 3D scan model band B, consented subject, rotation +/-105 deg). Sidecars omitted. noindex and 'Design review only' kept.",
+  "original_reviewed_file_count": 441,
+  "runtime_file_count": 423,
   "omitted_nonruntime_metadata": [
     "assets/consultation-1440.webp.json",
     "assets/consultation-1440.webp.provenance.json",
@@ -25,8 +25,8 @@
     "assets/round5-usage.json",
     "assets/round7-usage.json"
   ],
-  "qa": "t_5d60c3d8 run277 approved",
-  "cto": "t_39ed24a1 PASS",
+  "qa": "t_2b1909fa run285 approved",
+  "cto": "t_6fe983e4 PASS",
   "files": [
     {
       "path": "admin/admin.js",
@@ -37,6 +37,46 @@
       "path": "admin/index.html",
       "bytes": 7108,
       "sha256": "3376d5d026bcd120e1f4bdd8f4b84da94bea904ef7843c85ca82840d9d0c4e28"
+    },
+    {
+      "path": "assets/3d/r41-b.css",
+      "bytes": 1139,
+      "sha256": "8ec4bc86950e34b45d12d4987a3edc4ef31f6c13440854e1d9c791d63fe616b8"
+    },
+    {
+      "path": "assets/3d/r41-viewer.min.js",
+      "bytes": 623913,
+      "sha256": "b30125ccf024ba417385f8c34af09112d4f646cf6c09fd795d805468cc4be4a7"
+    },
+    {
+      "path": "assets/3d/r41.css",
+      "bytes": 3536,
+      "sha256": "e23e8e3ada0eed763cf3129ae3c1e09c47499cff88c67bcd1a993d8f5c0756db"
+    },
+    {
+      "path": "assets/3d/r41.js",
+      "bytes": 7163,
+      "sha256": "cefdfd8bfe80a1428d44f40a410811437ae131d5f3e778d5e60f8db871f10e6d"
+    },
+    {
+      "path": "assets/3d/scan-head-poster-1000.webp",
+      "bytes": 28954,
+      "sha256": "51392ae8876d29c7bf23f59c98ebfb30c1d07df606b77367e5bf470d87d00f51"
+    },
+    {
+      "path": "assets/3d/scan-head-poster-600.webp",
+      "bytes": 22846,
+      "sha256": "678def08e754beaf1f3709c18147648e565fa6654eb057a98a38d3cec70f9cdf"
+    },
+    {
+      "path": "assets/3d/scan-head.glb",
+      "bytes": 1078436,
+      "sha256": "73d85b08e5a9232cfdded0f23157edb5f8b23ae9fb24df6c0f0142ee6205e526"
+    },
+    {
+      "path": "assets/3d/three-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
     },
     {
       "path": "assets/Manrope-OFL.txt",
@@ -1680,8 +1720,8 @@
     },
     {
       "path": "en/credits/index.html",
-      "bytes": 76028,
-      "sha256": "09ba842ad4aa0f40bea319e463b584828b1c69b1b45c5593b2508861dcc1cc99"
+      "bytes": 77560,
+      "sha256": "54c77628df185ac25ddcc85d46709e9e1398f19b03b3be2b4b5b545d52d5052e"
     },
     {
       "path": "en/faceliora/index.html",
@@ -1700,8 +1740,8 @@
     },
     {
       "path": "en/index.html",
-      "bytes": 22428,
-      "sha256": "46dc8c399962f0e5dacf0579a55c02a5977e8745e788409afbfb165a78e9cca0"
+      "bytes": 25604,
+      "sha256": "6e8adca7bf5462054262f9e15bf60909b764f302e5967a472ee597d1ef009905"
     },
     {
       "path": "en/insights/botox-masseter-units/index.html",
@@ -1910,13 +1950,13 @@
     },
     {
       "path": "r33-hero.js",
-      "bytes": 1591,
-      "sha256": "cdb85de57eb9a0c31377f07e9735c01fa30c4f6a8c2615d3d05bc4165141ab7f"
+      "bytes": 2295,
+      "sha256": "5ae774e32351b569b97c3d71f04b54c722698bce50b27965f4567200b22f8605"
     },
     {
       "path": "r33.css",
-      "bytes": 2161,
-      "sha256": "de98582f5888b7a84e062e5771cd89960d3996bf6ecd69a9881ac588b0417249"
+      "bytes": 2706,
+      "sha256": "829bee07ee79a99ebfa2fbc1cf17276a6771d30b4ab245f98c87e213d1139396"
     },
     {
       "path": "roi.css",
@@ -1985,8 +2025,8 @@
     },
     {
       "path": "th/credits/index.html",
-      "bytes": 98617,
-      "sha256": "4189242651803c6e017d69f65dc65a8d7ed9fc8de6f08a48bd490bf10984937c"
+      "bytes": 100633,
+      "sha256": "2b3a71e72347986e23a4ff994b7248a975400cef21df0d42c52857261fafd95b"
     },
     {
       "path": "th/faceliora/index.html",
@@ -2005,8 +2045,8 @@
     },
     {
       "path": "th/index.html",
-      "bytes": 29100,
-      "sha256": "53f9350e5275ff1e181214b26d5f656af46cbe856eb2bd559820d8f7a87762ac"
+      "bytes": 33490,
+      "sha256": "0a695ff60c2736a2fba815056a0668eb78c13e24210a0a25ee2b47b512bfc877"
     },
     {
       "path": "th/insights/botox-masseter-units/index.html",

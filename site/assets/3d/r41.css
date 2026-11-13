@@ -1,0 +1,37 @@
+/* R41 3D example viewer — shared. Tokens come from the site (b-base.css); no new palette. Loaded after r33.css on Home only. */
+:root{--r41-veil:rgba(20,46,49,.74)}
+.r41{--r41-ar:1/1}
+.r41-stage{position:relative;overflow:clip;aspect-ratio:var(--r41-ar);width:100%;background:var(--color-field);border-radius:var(--radius-control);touch-action:pan-y;-webkit-user-select:none;user-select:none}
+.r41-stage[tabindex="0"]{cursor:grab}
+.r41-stage.is-drag{cursor:grabbing}
+.r41-poster,.r41-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;-webkit-mask-image:linear-gradient(to bottom,var(--color-ink) 84%,transparent 98%);mask-image:linear-gradient(to bottom,var(--color-ink) 84%,transparent 98%)}
+.r41-poster{object-fit:contain;transition:opacity 250ms var(--ease-out)}
+.r41.is-live .r41-poster{opacity:0}
+.r41-stage:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px;box-shadow:0 0 0 4px var(--color-paper)}
+.on-dark .r41-stage:focus-visible{outline-color:var(--color-focus-light);box-shadow:0 0 0 4px var(--color-dark)}
+.r41-ctl{display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-xs);margin-top:var(--space-sm)}
+.r41-ctl[hidden],.r41 [hidden]{display:none!important}
+.r41-icon{display:inline-grid;place-items:center;min-width:48px;min-height:48px;padding:0;border:1px solid var(--color-muted);border-radius:var(--radius-control);background:var(--color-clear);color:var(--color-ink);font:inherit;transition:background-color var(--dur-micro) var(--ease-out),color var(--dur-micro) var(--ease-out)}
+.r41-icon:hover{background:var(--color-field)}
+.r41-icon:active{transform:translateY(1px)}
+.r41-icon[aria-disabled=true]{opacity:.45;cursor:not-allowed}
+.r41-icon svg{width:20px;height:20px}
+.r41-deg{font-size:var(--text-small);color:var(--color-muted);min-width:5ch;margin-inline-start:var(--space-xs);font-variant-numeric:tabular-nums}
+.r41-note{font-size:var(--text-label);line-height:1.7;color:var(--color-muted);margin-top:var(--space-sm);max-width:48ch}
+.r41-note[data-s=error],.r41-note[data-s=nowebgl]{color:var(--color-ink)}
+.r41 button[aria-busy=true]{cursor:progress}
+.r41-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-sm);margin-top:var(--space-lg)}
+.r41 .r41-go[hidden]{display:none!important}
+/* without scripting there is nothing to press: hide controls, keep poster + caption */
+html:not(.r41-js) .r41-actions,html:not(.r41-js) .r41-note,html:not(.r41-js) .r41-open{display:none}
+/* pause control (B): R40 rule — transparent until hover / focus / paused / touch peek */
+.r41-pause{position:absolute;right:var(--space-md);bottom:var(--space-md);z-index:4;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid var(--color-light-muted);border-radius:var(--radius-control);background:var(--r41-veil);color:var(--color-light);opacity:0;transition:opacity 150ms var(--ease-out),background-color 150ms var(--ease-out)}
+.r41-pause:hover{background:var(--color-dark)}
+.r41-pause svg{width:20px;height:20px}
+.r41-pause .i-play{display:none}
+.r41-pause[aria-pressed=true] .i-play{display:block}
+.r41-pause[aria-pressed=true] .i-pause{display:none}
+.r41-pause:focus-visible,.r41-pause[aria-pressed=true],.r41-stage.is-peek .r41-pause{opacity:1;outline:3px solid var(--color-focus-light);outline-offset:3px;box-shadow:none}
+.r41-pause:not(:focus-visible):not([aria-pressed=true]){outline:0}
+@media(hover:hover){.r41-stage:hover .r41-pause{opacity:1}}
+@media(prefers-reduced-motion:reduce){.r41-pause,.r41-poster{transition:none}}

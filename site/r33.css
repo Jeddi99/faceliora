@@ -12,6 +12,12 @@
 .r33-pause[aria-pressed=true] .i-play{display:block}
 .r33-pause[aria-pressed=true] .i-pause{display:none}
 .r33-pause:focus-visible{outline:3px solid var(--color-focus-light);outline-offset:3px;box-shadow:none}
+/* R40: control is transparent until pointer hover on the band, keyboard focus, video paused, or a touch tap (.is-peek, set by r33-hero.js).
+   Stays in layout, DOM and tab order; aria-label / aria-pressed unchanged. */
+.r33-pause{opacity:0;transition:opacity 150ms var(--ease-out),background-color 150ms var(--ease-out)}
+.r33-pause:focus-visible,.r33-pause[aria-pressed=true],.r33-media.is-peek .r33-pause{opacity:1}
+@media(hover:hover){.r33-media:hover .r33-pause{opacity:1}}
+@media(prefers-reduced-motion:reduce){.r33-pause{transition:none}}
 
 /* band below the still hero */
 .r33-band{padding-top:var(--space-4xl)}

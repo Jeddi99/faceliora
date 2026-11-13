@@ -19,7 +19,18 @@
     btn.setAttribute('aria-label', (paused ? btn.dataset.labelPlay : btn.dataset.labelPause) || '');
    }
   };
-  if (btn) btn.addEventListener('click', () => { paused = !paused; sync(); });
+  if (btn) {
+   // R40: control is transparent until hover/focus/paused. On touch, the first tap (anywhere on the video, incl. the hidden control) only reveals it for ~3 s.
+   let peekT = 0, hiddenAtTouch = false;
+   const peek = () => { fig.classList.add('is-peek'); clearTimeout(peekT); peekT = setTimeout(() => fig.classList.remove('is-peek'), 3000); };
+   fig.addEventListener('pointerdown', e => { hiddenAtTouch = e.pointerType !== 'mouse' && !paused && !fig.classList.contains('is-peek'); }, true);
+   fig.addEventListener('pointerup', e => { if (e.pointerType !== 'mouse') peek(); });
+   btn.addEventListener('click', () => {
+    if (hiddenAtTouch) { hiddenAtTouch = false; return; }
+    paused = !paused; sync();
+    if (fig.classList.contains('is-peek')) peek();
+   });
+  }
   new IntersectionObserver(es => { inView = es[es.length - 1].isIntersecting; sync(); }, { threshold: .25 }).observe(fig);
   new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ['data-intro-state'] });
   document.addEventListener('visibilitychange', sync);
