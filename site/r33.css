@@ -1,0 +1,32 @@
+/* R34 Home video band (design option C). Loaded after intro.css on the two Home pages only. Tokens only; no new palette. */
+.r33-media{position:relative;overflow:clip;background:var(--color-field)}
+.r33-media .r33-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--r33-pos,50% 30%)}
+.r33-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--r33-pos,50% 30%);opacity:0;transition:opacity 600ms var(--ease-out)}
+.r33-video.is-on{opacity:1}
+
+/* WCAG 2.2.2: moving content > 5 s needs a pause control (48 px target, dark chip so it reads on any frame) */
+.r33-pause{position:absolute;right:var(--space-md);bottom:var(--space-md);z-index:4;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid var(--color-light-muted);border-radius:var(--radius-control);background:rgba(20,46,49,.74);color:var(--color-light)}
+.r33-pause:hover{background:var(--color-dark)}
+.r33-pause svg{width:20px;height:20px}
+.r33-pause .i-play{display:none}
+.r33-pause[aria-pressed=true] .i-play{display:block}
+.r33-pause[aria-pressed=true] .i-pause{display:none}
+.r33-pause:focus-visible{outline:3px solid var(--color-focus-light);outline-offset:3px;box-shadow:none}
+
+/* band below the still hero */
+.r33-band{padding-top:var(--space-4xl)}
+.r33-band-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap-columns);align-items:center}
+.r33-band .r33-media{grid-column:1/6;aspect-ratio:4/5;--r33-pos:50% 30%}
+.r33-band-copy{grid-column:7/13;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-lg)}
+.r33-band-copy>*{min-width:0}
+.r33-band-copy h2{max-width:14ch}
+.r33-clinic3d[hidden]{display:none!important}
+@media(max-width:999px){
+ .r33-band{padding-top:var(--space-3xl)}
+ .r33-band-grid{grid-template-columns:minmax(0,1fr);row-gap:var(--space-xl)}
+ .r33-band .r33-media,.r33-band-copy{grid-column:1/-1}
+ .r33-band .r33-media{aspect-ratio:4/5;max-width:560px}
+}
+
+/* last, so it wins over the base display rules above: reduced motion = poster only */
+@media(prefers-reduced-motion:reduce){.r33-video,.r33-pause{display:none!important}}

@@ -1,0 +1,200 @@
+/* hallmark: component in accepted Home B / Pricing C / Clinic C system; tokens inherited from style.css; stamp for lint only */
+:root{--roi-field:#fcfefe;--roi-hold:#566f71}
+/* R36 ROI calculator. Uses only the accepted site tokens (style.css). */
+.no-js .roi-live{display:none}
+.js .roi-nojs{display:none}
+.roi{--roi-gap:var(--space-lg);color:var(--color-ink);min-width:0}
+.roi *{box-sizing:border-box}
+.roi-title{font-size:var(--text-section);line-height:1.4;font-weight:400;letter-spacing:0}
+.roi-lead{margin-top:var(--space-sm);font-size:var(--text-body);line-height:1.75;color:var(--color-muted);max-width:60ch}
+.roi-form{display:grid;gap:var(--space-lg)}
+.roi-field{display:block;min-width:0}
+.roi-field label,.roi-field .roi-lbl{display:block;font-size:var(--text-small,15px);line-height:1.5;font-weight:600}
+.roi-hint{display:block;margin-top:2px;font-size:14px;line-height:1.6;color:var(--color-muted);font-weight:400}
+.roi-box{display:flex;align-items:stretch;margin-top:var(--space-xs);background:var(--roi-field);border:1px solid var(--color-muted);border-radius:var(--radius-control);min-height:52px}
+.roi-box:focus-within{outline:3px solid var(--color-focus);outline-offset:2px}
+.roi-box input{flex:1;min-width:0;border:0;background:transparent;padding:var(--space-xs) var(--space-md);font:inherit;font-size:20px;font-variant-numeric:tabular-nums;color:var(--color-ink);border-radius:var(--radius-control);outline:0}
+.roi-box input::placeholder{color:var(--roi-hold)}
+.roi-unit{display:flex;align-items:center;padding:0 var(--space-md);border-left:1px solid var(--color-light-muted);background:var(--color-field);font-size:15px;color:var(--color-muted);white-space:nowrap;border-radius:0 var(--radius-control) var(--radius-control) 0}
+.roi-unit.pre{border-left:0;border-right:1px solid var(--color-light-muted);border-radius:var(--radius-control) 0 0 var(--radius-control)}
+.roi-field.is-bad .roi-box{border-color:var(--color-error);background:var(--color-error-field);border-width:2px}
+.roi-err{margin-top:var(--space-2xs);font-size:14px;line-height:1.6;color:var(--color-error);font-weight:600}
+.roi-err::before{content:"! ";font-weight:800}
+.roi-warn{margin-top:var(--space-2xs);font-size:14px;line-height:1.6;color:var(--color-ink)}
+.roi-warn{font-weight:600}
+.roi-note{margin-top:var(--space-md);font-size:14px;line-height:1.7;color:var(--color-ink);padding-left:var(--space-sm);border-left:3px solid var(--color-accent)}
+.roi-privacy{margin-top:var(--space-2xs);font-size:13px;line-height:1.6;color:var(--color-muted)}
+.roi-reset{margin-top:var(--space-xs);background:none;border:0;padding:var(--space-xs) 0;min-height:44px;font:inherit;font-size:14px;font-weight:600;color:var(--color-accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.roi-reset:focus-visible,.roi-sum:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
+/* result */
+.roi-res{background:var(--color-field);border-radius:var(--radius-control);padding:var(--space-lg);min-width:0}
+.roi-res h3{font-size:15px;font-weight:600;line-height:1.5;color:var(--color-muted)}
+.roi-be{margin-top:var(--space-xs);font-size:clamp(26px,2.6vw,34px);line-height:1.35;font-weight:400;color:var(--color-ink);letter-spacing:0}
+.roi-be-sub{margin-top:var(--space-2xs);font-size:14px;line-height:1.6;color:var(--color-muted);min-height:1.6em}
+.roi-rows{margin-top:var(--space-md);border-top:2px solid var(--color-ink);display:grid}
+.roi-row{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-md);padding:var(--space-sm) 0;border-bottom:1px solid var(--color-rule)}
+.roi-row dt{font-size:15px;line-height:1.5;color:var(--color-ink)}
+.roi-row dt small{display:block;font-size:13px;color:var(--color-muted)}
+.roi-row dd{font-size:22px;font-variant-numeric:tabular-nums;font-weight:500;white-space:nowrap;text-align:right}
+.roi-row.net dd{font-size:30px}
+.roi-row.net.is-neg dd{color:var(--color-error)}
+.roi-row dd.dim,.roi:not(.has-result) .roi-row dd{color:var(--roi-hold);font-weight:400}
+.roi-status{margin-top:var(--space-md);font-size:15px;line-height:1.7;font-weight:600;min-height:3.4em}
+.roi-formula{margin-top:var(--space-lg);border-top:1px solid var(--color-rule);padding-top:var(--space-md)}
+.roi-formula h4{font-size:14px;font-weight:600;color:var(--color-muted)}
+.roi-formula ol{margin-top:var(--space-xs);padding-left:1.4em;font-size:14px;line-height:1.75;color:var(--color-ink)}
+.roi-formula li{padding-left:2px}
+.roi-cta{margin-top:var(--space-lg);display:flex;flex-wrap:wrap;gap:var(--space-sm)}
+.roi-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.roi-cta .primary,.roi-cta .quiet{white-space:normal;text-align:center}
+.roi-nojs{margin-top:var(--space-lg);padding:var(--space-lg);background:var(--color-field);border-radius:var(--radius-control)}
+.roi-nojs p+p{margin-top:var(--space-xs)}
+.roi-nojs .ex{margin-top:var(--space-sm);font-variant-numeric:tabular-nums}
+/* ===== A: inline, 2 columns ===== */
+.roi-a-wrap{padding-top:var(--space-2xl);padding-bottom:var(--space-2xl);border-top:2px solid var(--color-ink);margin-top:var(--space-2xl)}
+.roi-a-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap-columns);margin-top:var(--space-xl);align-items:start}
+.roi-a-grid .roi-form{grid-column:1/7}
+.roi-a-grid .roi-res{grid-column:8/13}
+.roi-a-grid .roi-form .two{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md)}
+/* ===== B: dedicated page, steps + big card ===== */
+.roi-b-head{padding-top:var(--space-2xl)}
+.roi-b-head h1{font-size:var(--text-display);line-height:1.25;font-weight:300;letter-spacing:0;max-width:20ch}
+.roi-b-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap-columns);margin-top:var(--space-xl);align-items:start;padding-bottom:var(--space-3xl)}
+.roi-b-grid>form{grid-column:1/7}
+.roi-b-steps{list-style:none;margin:0;padding:0;border-top:2px solid var(--color-ink)}
+.roi-b-steps>li{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:var(--space-md);padding:var(--space-lg) 0;border-bottom:1px solid var(--color-rule)}
+.roi-b-steps .n{font-size:var(--text-section);line-height:1.2;color:var(--color-accent);font-weight:300;font-variant-numeric:tabular-nums}
+.roi-b-steps li.is-done .n::after{content:"";display:block;width:14px;height:8px;margin-top:4px;border-left:2px solid var(--color-accent);border-bottom:2px solid var(--color-accent);transform:rotate(-45deg)}
+.roi-b-card{grid-column:8/13;position:sticky;top:var(--space-lg)}
+.roi-b-card .roi-res{padding:var(--space-xl)}
+.roi-b-card .roi-be{font-size:clamp(32px,3.4vw,48px);font-weight:300}
+.roi-prog{display:flex;align-items:center;gap:var(--space-sm);font-size:14px;color:var(--color-muted);margin-bottom:var(--space-sm)}
+.roi-prog b{color:var(--color-ink);font-variant-numeric:tabular-nums}
+.roi-bar{flex:1;height:4px;background:var(--color-light-muted);border-radius:2px;overflow:hidden}
+.roi-bar i{display:block;height:100%;width:100%;background:var(--color-accent);transform:scaleX(0);transform-origin:left;transition:transform var(--dur-answer) var(--ease-out)}
+.roi-b-bar{display:none}
+/* ===== C: compact widget ===== */
+.roi-c{margin-top:var(--space-lg);padding:var(--space-lg);background:var(--color-field);border-radius:var(--radius-control)}
+.roi-c .roi-title{font-size:20px;line-height:1.5;font-weight:600}
+.roi-c .roi-box{background:var(--roi-field)}
+.roi-c .roi-be{font-size:clamp(24px,2.2vw,30px)}
+.roi-c-out{margin-top:var(--space-md)}
+.roi-sum{display:inline-flex;align-items:center;gap:var(--space-xs);margin-top:var(--space-md);min-height:44px;padding:var(--space-xs) 0;font-size:15px;font-weight:600;color:var(--color-accent);cursor:pointer;list-style:none;text-decoration:underline;text-underline-offset:3px}
+.roi-sum::-webkit-details-marker{display:none}
+.roi-sum svg{width:16px;height:16px;transition:transform var(--dur-micro) var(--ease-out)}
+details[open]>.roi-sum svg{transform:rotate(180deg)}
+.roi-c details>.roi-more{margin-top:var(--space-md);padding-top:var(--space-md);border-top:1px solid var(--color-rule)}
+.roi-c .roi-form{gap:var(--space-md)}
+.roi-c .roi-res{background:var(--roi-field);padding:var(--space-md);margin-top:var(--space-md)}
+.roi-c .roi-row dd{font-size:20px}.roi-c .roi-row.net dd{font-size:24px}
+@media (max-width:999px){
+ .roi-a-grid,.roi-b-grid{display:block}
+ .roi-a-grid .roi-res{margin-top:var(--space-xl)}
+ .roi-b-card{position:static;margin-top:var(--space-xl)}
+ .roi-title{font-size:28px}
+}
+@media (max-width:599px){
+ .roi-a-grid .roi-form .two{grid-template-columns:1fr}
+ .roi-res{padding:var(--space-md)}
+ .roi-b-card .roi-res{padding:var(--space-md)}
+ .roi-row dd{font-size:20px}.roi-row.net dd{font-size:26px}
+ .roi-b-steps>li{grid-template-columns:36px minmax(0,1fr);column-gap:var(--space-sm)}
+ .roi-b-head h1{font-size:34px}
+ .roi-cta .primary,.roi-cta .quiet{width:100%}
+ .roi-b-bar{display:flex;position:sticky;bottom:0;z-index:5;margin:0 calc(var(--gutter)*-1);padding:var(--space-sm) var(--gutter);background:var(--color-paper);border-top:2px solid var(--color-ink);justify-content:space-between;align-items:center;gap:var(--space-sm);font-size:14px}
+ .roi-b-bar strong{font-size:18px;font-weight:600}
+ .roi-b-bar a{font-weight:600;color:var(--color-accent);min-height:44px;display:inline-flex;align-items:center}
+}
+@media (prefers-reduced-motion:reduce){.roi *{transition:none!important}}
+.roi-formula ol,.roi-nojs ol{list-style:decimal;padding-left:1.5em;margin-top:var(--space-xs);font-size:14px;line-height:1.75}
+.roi-nojs .roi-h3{font-size:20px;line-height:1.5;font-weight:600}
+.roi-nojs p,.roi-nojs li{font-size:14px;line-height:1.75}
+.roi-nojs .ex{margin-top:var(--space-sm);padding-top:var(--space-sm);border-top:1px solid var(--color-rule)}
+.roi-b-steps li.is-done .n::after{margin-left:2px}
+.roi-nojs ul{list-style:none;padding:0;margin-top:var(--space-xs)}
+.roi a:focus-visible,.roi button:focus-visible,.roi summary:focus-visible,.roi-box:has(input:focus-visible){outline:3px solid var(--color-focus);outline-offset:3px}
+.roi-reset:active,.roi-sum:active{opacity:.7}
+.roi button:disabled{opacity:.5;cursor:not-allowed}
+.roi-b-head h1{text-wrap:balance}
+.roi-row dd.empty{font-size:15px;font-weight:400}
+.roi:not(.has-be) .roi-be{font-size:18px;line-height:1.6;font-weight:400;color:var(--color-muted)}
+
+/* R38 additions on top of R37 roi.css (shared/roi-base.css). Tokens only from site style.css. */
+.roi-row[hidden]{display:none}
+.roi:not(.has-result) .roi-trow dd,.roi.has-result .roi-trow dd{color:var(--color-ink);font-weight:500}
+.roi:not(.has-result) .roi-trow dd.empty,.roi.has-result .roi-trow dd.empty{color:var(--roi-hold);font-weight:400;font-size:15px}
+.roi-trow dt small{display:block;font-size:13px;line-height:1.5;color:var(--color-muted)}
+.roi-trow.big dd{font-size:30px}
+.roi-trow.big dd.empty{font-size:15px}
+.roi-opt-tag{display:inline-block;margin-left:var(--space-xs);padding:0 var(--space-xs);font-size:13px;font-weight:600;line-height:1.7;color:var(--color-ink);background:var(--color-field);border-radius:var(--radius-control);vertical-align:2px}
+/* time group (shared look) */
+.roi-group{border:0;margin:0;padding:0;min-width:0;display:grid;gap:var(--space-lg)}
+.roi-group>legend{padding:0;font-size:20px;line-height:1.5;font-weight:600;float:left;width:100%}
+.roi-group>legend+*{clear:both}
+.roi-gdesc{font-size:14px;line-height:1.7;color:var(--color-muted);margin-top:calc(var(--space-sm) * -1)}
+.roi-echo{font-size:15px;line-height:1.7;padding:var(--space-xs) var(--space-sm);background:var(--color-field);border-radius:var(--radius-control)}
+.roi-echo b{font-variant-numeric:tabular-nums}
+.roi-echo a{margin-left:var(--space-xs);font-weight:600;color:var(--color-accent);text-underline-offset:3px}
+.roi-time-note{margin-top:var(--space-md);font-size:14px;line-height:1.7;color:var(--color-ink);padding-left:var(--space-sm);border-left:3px solid var(--color-accent)}
+.roi-res.is-none [data-out=tstatus]{color:var(--color-ink)}
+/* A: second block under the revenue block */
+.roi-a-grid+.roi-a-grid{margin-top:var(--space-2xl);padding-top:var(--space-xl);border-top:1px solid var(--color-rule)}
+.roi-a-grid .roi-group{grid-column:1/7}
+.roi-a-grid .roi-group .two{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md)}
+.roi-a-grid .roi-res.time{grid-column:8/13}
+/* B: tabs */
+.roi-b-shared{margin-top:var(--space-xl);max-width:460px}
+.roi-tabs{display:grid;grid-template-columns:1fr 1fr;margin-top:var(--space-xl);border-bottom:2px solid var(--color-ink);gap:0}
+.js .roi-tabs{display:grid}
+.no-js .roi-tabs{display:none}
+.roi-tab{min-height:56px;padding:var(--space-xs) var(--space-md);background:none;border:0;border-bottom:4px solid transparent;margin-bottom:-2px;font:inherit;font-size:17px;line-height:1.4;font-weight:600;color:var(--color-muted);cursor:pointer;text-align:left;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:0}
+.roi-tab[aria-selected=true]{color:var(--color-ink);border-bottom-color:var(--color-accent);background:var(--color-field)}
+.roi-tab:focus-visible{outline:3px solid var(--color-focus);outline-offset:-3px}
+.roi-tab .sub{font-size:13px;font-weight:400;color:var(--color-muted);min-height:1.4em;font-variant-numeric:tabular-nums}
+.roi-tab .sub:empty::before{content:attr(data-idle)}
+.roi-tab .sub:not(:empty){color:var(--color-accent);font-weight:600}
+.roi-tabpanel{margin-top:var(--space-xl)}
+.roi-tabpanel[hidden]{display:none}
+.roi-tabpanel .roi-a-grid{margin-top:0}
+.roi-tabpanel .roi-a-grid+.roi-a-grid{margin-top:0;padding-top:0;border-top:0}
+/* C: collapsible group */
+.roi-opt-c .roi-det{border:1px solid var(--color-rule);border-radius:var(--radius-control);background:var(--roi-field)}
+.roi-opt-c .roi-det>.roi-sum{display:flex;justify-content:space-between;width:100%;margin:0;padding:var(--space-sm) var(--space-md);min-height:56px;text-decoration:none;color:var(--color-ink);font-size:17px}
+.roi-opt-c .roi-det>.roi-sum .st{display:block;font-size:13px;font-weight:400;color:var(--color-muted)}
+.roi-opt-c .roi-det>.roi-sum span.t{text-decoration:underline;text-underline-offset:3px;color:var(--color-accent)}
+.roi-opt-c .roi-det[open]>.roi-sum{border-bottom:1px solid var(--color-rule)}
+.roi-opt-c .roi-det .roi-group{padding:var(--space-md);gap:var(--space-md)}
+.roi-opt-c .roi-det .roi-group .two{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md)}
+.roi-opt-c:not(.time-open):not(.has-time) [data-time-res]{display:none}
+.roi-opt-c [data-time-res]{margin-top:var(--space-lg);padding-top:var(--space-md);border-top:1px solid var(--color-rule)}
+.roi-opt-c [data-time-res]>h3{margin-bottom:0}
+@media (max-width:999px){
+ .roi-a-grid .roi-res.time{margin-top:var(--space-xl)}
+ .roi-a-grid+.roi-a-grid{margin-top:var(--space-xl);padding-top:var(--space-xl)}
+}
+@media (max-width:599px){
+ .roi-a-grid .roi-group .two,.roi-opt-c .roi-det .roi-group .two{grid-template-columns:1fr}
+ .roi-tab{padding:var(--space-xs) var(--space-sm);font-size:16px}
+ .roi-trow.big dd{font-size:26px}
+}
+/* two plans in the calculator result */
+.roi-plans-h{margin-top:var(--space-lg)}
+.roi-plan{margin-top:var(--space-sm);padding-top:var(--space-sm);border-top:2px solid var(--color-ink)}
+.roi-plan h4{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-sm);font-size:17px;line-height:1.5;font-weight:600}
+.roi-plan h4 b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.roi.roi-a .roi-plan .roi-be{font-size:20px;line-height:1.5;margin-top:var(--space-2xs)}
+.roi.roi-a:not(.has-be) .roi-plan .roi-be{font-size:15px;font-weight:400;color:var(--color-muted)}
+.roi-plan .roi-be-sub{min-height:0}
+.roi-plan .roi-rows{margin-top:var(--space-xs);border-top:1px solid var(--color-rule)}
+.roi-plan .roi-row.net dd{font-size:26px}
+.roi-plan .roi-row.net dd.empty{font-size:15px;font-weight:400}
+.roi-plan.is-over .roi-row.net dd{font-size:18px;font-weight:600;color:var(--color-ink)}
+.roi-plan-status{font-size:14px;line-height:1.7;font-weight:600;min-height:0;margin-top:var(--space-2xs)}
+.roi-plan-status:empty{display:none}
+.roi-plan.is-over{background:var(--roi-field);border-top-color:var(--color-error);padding:var(--space-sm) var(--space-sm) var(--space-xs);margin-left:calc(var(--space-sm) * -1);margin-right:calc(var(--space-sm) * -1)}
+.roi-over{padding:var(--space-xs) var(--space-sm);border-left:3px solid var(--color-error);background:var(--color-error-field)}
+/* Pricing: two plan cards */
+.c-plans{grid-template-columns:minmax(0,1fr)}
+@media (min-width:600px){.c-plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.c-plans .c-fit{margin-top:var(--space-2xs);font-size:14px;line-height:1.7;color:var(--color-muted)}
+.roi-status:empty{display:none}
