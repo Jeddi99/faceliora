@@ -1,0 +1,16 @@
+/* R41 option B — full-width dark band after the product map (same family as .close). Auto-sway when in view on desktop. */
+.r41-band{padding-block:var(--space-3xl);background:var(--color-dark);color:var(--color-light)}
+.r41-b-grid{--r41-ar:4/3;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:var(--gap-columns);align-items:center;max-width:var(--max);margin-inline:auto}
+.r41-b-grid .r41-copy{display:flex;flex-direction:column;align-items:flex-start}
+.r41-b-grid .r41-copy h2{max-width:14ch;text-wrap:balance}
+.r41-b-grid .r41-fig{margin:var(--space-0)}
+.r41-b-grid .r41-fig figcaption{margin-top:var(--space-sm);max-width:62ch}
+.r41-band .r41-note{color:var(--color-light-muted)}
+.r41-band .r41-icon{border-color:var(--color-light-muted);color:var(--color-light)}
+.r41-band .r41-icon:hover{background:var(--color-light-rule)}
+.r41-band .r41-deg{color:var(--color-light-muted)}
+.r41-band .r41-icon:focus-visible{outline-color:var(--color-focus-light)}
+@media(max-width:999px){
+ .r41-band{padding-block:var(--space-2xl)}
+ .r41-b-grid{--r41-ar:1/1;grid-template-columns:minmax(0,1fr);row-gap:var(--space-xl)}
+}
