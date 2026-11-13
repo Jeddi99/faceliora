@@ -1,11 +1,11 @@
 {
-  "candidate_id": "faceliora-local-r31-privacy-credits-candidate-2",
+  "candidate_id": "faceliora-local-r39-roi-time-plans-v1-candidate-1",
   "files_root": "site/",
-  "source_fingerprint_sha256_of_full_reviewed_candidate": "7ea84aecb8bc784f6fb1f2fd1ce83c9cc4ef94e13dd174caed83cc2c7a9fe095",
-  "scope": "Byte-identical runtime subset of the locally QA-approved and CTO-verified R31 candidate (all 66 pages TH/EN). Source-only image metadata/provenance sidecars and historical usage manifests are omitted, as in R7/R12. noindex and 'Design review only' footer intentionally kept (not a public release).",
-  "original_reviewed_file_count": 432,
-  "omitted_nonruntime_metadata_count": 18,
-  "omitted": [
+  "source_fingerprint_sha256_of_full_reviewed_candidate": "32408e7030c62a8e84c2c281db1d482ea84368c5b8e88f24fe8c303fec2a3a62",
+  "scope": "Byte-identical runtime subset of the locally QA-approved and CTO-verified R39 candidate (R34 video+stock, R35 clinic copy/฿9,900/51-point/LINE @117hipgc, R37 ROI calculator, R39 consultation time + two clinic plans + ฿100 overage). Sidecars omitted. noindex and 'Design review only' kept (not a public release).",
+  "original_reviewed_file_count": 433,
+  "runtime_file_count": 415,
+  "omitted_nonruntime_metadata": [
     "assets/consultation-1440.webp.json",
     "assets/consultation-1440.webp.provenance.json",
     "assets/consultation-2200.webp.json",
@@ -25,6 +25,8 @@
     "assets/round5-usage.json",
     "assets/round7-usage.json"
   ],
+  "qa": "t_5d60c3d8 run277 approved",
+  "cto": "t_39ed24a1 PASS",
   "files": [
     {
       "path": "admin/admin.js",
@@ -358,763 +360,723 @@
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-1200.avif",
-      "bytes": 32077,
-      "sha256": "87f9e5e76d8b7da4fec7ad57131cc9c583d38e4a1d55b56cbdd9e38cd474f111"
+      "bytes": 23970,
+      "sha256": "2aecfc1002c6494e52493421ad6fc5067a27201a8c52792417aa594c4b4fd0aa"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-1200.webp",
-      "bytes": 39218,
-      "sha256": "b64aa631df072375aad97a5119f164bac3f661bc9fa836970391ae735b331f84"
+      "bytes": 47758,
+      "sha256": "2487a635cb1ad3297d79642eb34d59d72cf8e9558e4902c5ed0eac25c33b7eb4"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-1536.avif",
-      "bytes": 44002,
-      "sha256": "6c695a9d62454bac63579fe9c6d2e510b21dfdec4ab08eb209b93a75a83ac32a"
+      "bytes": 29606,
+      "sha256": "b105b6ff7787161ac7d1a4d7cb1a0253ce0c3cd14eb44372f202089223c4915b"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-1536.webp",
-      "bytes": 54006,
-      "sha256": "85c8aa0a14044dca853a53fe56c3cffd1ef7a28962710540d50297cf0915311b"
+      "bytes": 63404,
+      "sha256": "fe03f73e357ca5376697772af1e38c15033aad8e08ab433a1b6b8dae9372aa55"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-480.avif",
-      "bytes": 8921,
-      "sha256": "ce41dfccffde475672b744ce9a6772c9e1d86c4a5c447ea63ea24415a24a5a1c"
+      "bytes": 10167,
+      "sha256": "4aeaa0c0a51a51f62d112d2b8a38645e7f1aa9bc1d0ad6a784c7e26e46ff7b91"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-480.webp",
-      "bytes": 11574,
-      "sha256": "6a673673a0e3feb6679dc5e581b2ca4a1a4e8787614b19ae556c5d6b6e322a2d"
+      "bytes": 16508,
+      "sha256": "045d20170aa06a5dfc5045ebb2f100ebf254a90b329ec317de87936b296ab98d"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-800.avif",
-      "bytes": 18271,
-      "sha256": "59660b4ca5ce4c312c5de6dc15d2b187cc4208675586462b6476f9104d1e9fae"
+      "bytes": 16469,
+      "sha256": "653372f457182a985882f13980c5995967812495d0aac286a29458b670c0e317"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-consultation-800.webp",
-      "bytes": 23072,
-      "sha256": "fc6c7bb1d1dbd414155d5526b674037260154d9d12a90ccd1cd78b3436823af8"
+      "bytes": 29876,
+      "sha256": "eed25d2fc092b6bac58479b38bb80b5392b15823148f10ff04b0512a315dfccb"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-1200.avif",
-      "bytes": 28995,
-      "sha256": "e5c859d7a4f4ab8fbf434d1cdbbbc9103dc4d4226b295305bc46ffa4e908fbe5"
+      "bytes": 18742,
+      "sha256": "45afcad2b351bd2e188f44eb0034bd1c843192e55737a19d4b7e3d6de7f9dd28"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-1200.webp",
-      "bytes": 35544,
-      "sha256": "46491dca4eec2ea5f43c1376f3b92639517e1fb9883fa4af1ffe59a512bde66f"
+      "bytes": 41704,
+      "sha256": "c032fbd6fa4ca801ff34b1d8eeb3cf75221b99e0f08b089f47b3439d4a792e50"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-1536.avif",
-      "bytes": 40699,
-      "sha256": "ca218d10f79e97c29154864c66dddb036cd6fda37c17e812a761ada61406a857"
+      "bytes": 25004,
+      "sha256": "07ce077695eb50415b56742b4bc11679a6d99d267fd2a04bc160306b88f8f41e"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-1536.webp",
-      "bytes": 49398,
-      "sha256": "515cb32526ab52cb6f15acce9b93ae21f74dfa7f4f20054849406f900ea5be2f"
+      "bytes": 58276,
+      "sha256": "408bb0355dae4abccfb30a079d35887d566a7ae58c53f3b6bacbca357026ce3b"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-480.avif",
-      "bytes": 8447,
-      "sha256": "6257c79fbeff28f66d11db725fc10620e8379ed56194ce740c6bfb2a31f3bc76"
+      "bytes": 7000,
+      "sha256": "5c796dfabc68884d7ee553477d711b94aa41c0b0a6516b5b4ec4652594678408"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-480.webp",
-      "bytes": 11272,
-      "sha256": "2ef3a81a7b1e565a3a8e28ffa883be0791d77678751c63374ac047e4d4ce8cdc"
+      "bytes": 12742,
+      "sha256": "87b1a784d554dfc301890414af94b12cc886058b9db77692c8ad84eec8c71792"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-800.avif",
-      "bytes": 16728,
-      "sha256": "395642bd8168a0d0c44083fa7890ddaee7a75e9a2ec749ad0707bf87cb22b6ba"
+      "bytes": 11907,
+      "sha256": "4318b524446b628d06f09d50da3c76c156cae7bc23cbbb9386e8069a6f5aa629"
     },
     {
       "path": "assets/legacy/generated/ai-clinic-coordinator-800.webp",
-      "bytes": 21260,
-      "sha256": "274fb5195cbb6a5c45b5fffd23869bcc7597bcec6bc3160a21c2fac96f4e477e"
+      "bytes": 24440,
+      "sha256": "5cb51b12699c3608021f2a662e7ccc6199e0582ab9e1deb7a677a544b78fac4f"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-1200.avif",
-      "bytes": 36214,
-      "sha256": "0534381daeed70380397e0baf6f02e6c41b0f4292766e3aaa7bd4e2a830b0736"
+      "bytes": 26390,
+      "sha256": "f347ce78e2858fd94727faf49be74baf0051ff503d493cae356a7adeb34f8d66"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-1200.webp",
-      "bytes": 45452,
-      "sha256": "3b543a156190bf34e9d5d10253e635d8dd416b610fabee603cf0fb83a808740a"
+      "bytes": 57904,
+      "sha256": "fdd409939a3f1c6b13229dbde3af51803ec5dce12fd4761cda1e65c866269a8d"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-1536.avif",
-      "bytes": 52141,
-      "sha256": "143e041a7fb31bbc6ab3682e7d487b84fb33904aacd348b00345fad35f5cfa59"
+      "bytes": 36219,
+      "sha256": "4415d06350c4087d9c89f045b6a9b3b5c3537b4144c84f57bb496acf4e41a5d7"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-1536.webp",
-      "bytes": 64134,
-      "sha256": "778f68c8d3a9adee605bd6b5a4f039dd1021b9c2235abe8148567d27d2c97712"
+      "bytes": 86268,
+      "sha256": "57c309c1eb1a2ded14c96f53e593fcebc7fdd4e27d200d9214103b3d0acd0c34"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-480.avif",
-      "bytes": 9020,
-      "sha256": "d907230b06640635994d63831d3b8d04c1a42d0f1f5b20ad217b16f9918f0237"
+      "bytes": 9827,
+      "sha256": "34be469fc8b192b0b59ed3043de08a61d94099ec351575356a7b89ea73e39469"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-480.webp",
-      "bytes": 12380,
-      "sha256": "53ce2d3b187516660cdf53a56d982a1aa9815df44d0ea8f6210400fbd1f2639b"
+      "bytes": 17356,
+      "sha256": "dd0fba40ce83f585744f368bc3cdbd088fd37476209a1b5f5b0cd1bc6de47c2f"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-800.avif",
-      "bytes": 19626,
-      "sha256": "5e757e70759321a507a537d4efd96992c36f45877f6ade502df770ea973f5c35"
+      "bytes": 16713,
+      "sha256": "37e43f902bde0bc247d1d26e32a8bc3bd4207a5eac4e48bdbb1f074e54857b8b"
     },
     {
       "path": "assets/legacy/generated/ai-digital-workspace-800.webp",
-      "bytes": 25428,
-      "sha256": "e516dbcac29a2e2e23bb5bb0db851f5b4f45a3d7f2989e5109157529df904758"
+      "bytes": 33050,
+      "sha256": "c174739823407a9860424f63bbb497506a4bd5cc7b4397212e80c971d11ad5e4"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-1200.avif",
-      "bytes": 45700,
-      "sha256": "36c15e8c2732357a8acd86c164fa8addd09ff4e58b052f5156dc3d556e3eb696"
+      "bytes": 13574,
+      "sha256": "6afe336d234841e795e9873137231d602d70d05ab67556a03cbadadbd6780540"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-1200.webp",
-      "bytes": 58782,
-      "sha256": "8f9dc2263fa50a6a5adef1c67fcd80e0db358b32f3d6ec5c31c96c4eba61f004"
+      "bytes": 28966,
+      "sha256": "5e4ababedcc58a897613c1b73d016b5c70329e04e2a60e832c0c9b6bb1f3c1bd"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-1536.avif",
-      "bytes": 67088,
-      "sha256": "4f1a61834ce65a6b192bca88eaf32f86bcb83b7cb7ba5e82e64ea7d21218af99"
+      "bytes": 17187,
+      "sha256": "7b6da52211c6863fd86d08a429fea5819af9c2e4f87de1a922a5af6f68dde9c0"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-1536.webp",
-      "bytes": 84280,
-      "sha256": "c8cd7aa794c8a78d55b973c30d967407b05c8f04a8a2beac2a1566421e031348"
+      "bytes": 40792,
+      "sha256": "9aa58e82db8d0756e4779ec95e157ac9714e54094ad93ce96245abc3f469dc0a"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-480.avif",
-      "bytes": 10613,
-      "sha256": "56cb8346c911ec29fb6df38f07963f2eff608006376f7d27c35e92245b573430"
+      "bytes": 5554,
+      "sha256": "bab732f5a16a83c2e801f4bfb50e973196224e7402d113118b16171405bbcae6"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-480.webp",
-      "bytes": 15234,
-      "sha256": "8bc103bfad8d3c8f6265b0c27a1049e56d7980031a58409393789f59534a5057"
+      "bytes": 9282,
+      "sha256": "04d387f77fc4e868e7840f99d28b858f1397335c9cc4033e12449ac7d3e068fa"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-800.avif",
-      "bytes": 23981,
-      "sha256": "ccff38011b2a6f862789cb2c45126f522af9715960b0340cd0487b132da0747d"
+      "bytes": 9077,
+      "sha256": "b73ba13fd0313629ffcb1b6f5ffb03397e2621749aa1ad16d8b05bf9d99b77d6"
     },
     {
       "path": "assets/legacy/generated/ai-personal-app-800.webp",
-      "bytes": 31386,
-      "sha256": "d61b4fa68f1ef3ed5daaed6791801fcdc71fb0d0f35750773bd25c9ab2e2665d"
+      "bytes": 17982,
+      "sha256": "17d19d002e9f65bcc509921b20568ef02f3bbca52e28fb55980563cca892b8d2"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-1200.avif",
-      "bytes": 41121,
-      "sha256": "6fe304bea86e3fea429d5249f38d75f40574a6e77689a16811d952f9e1753656"
+      "bytes": 33139,
+      "sha256": "cbb8614faadd46e1e4a5e69649317fc0ff87c79c1b70535c4e497ef61effa9fe"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-1200.webp",
-      "bytes": 55560,
-      "sha256": "c5272541f4072bbfc97a9949ba09e70291d39ea8bfcc3312ebebf429c3fb786a"
+      "bytes": 59142,
+      "sha256": "959b6ba2f7450360b35bcb00b9a5db8f4a7323deb76e290293ece6d6f12f0de9"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-1536.avif",
-      "bytes": 59706,
-      "sha256": "a623355bb47229bf7e55c58a9ae6e06d3fdbd4be77ae9fd0c482affff36b80a4"
+      "bytes": 45442,
+      "sha256": "6e35d58da07f885d9fc78d583c8990679b26dc27b702ac9980dd86edeaae3b04"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-1536.webp",
-      "bytes": 77262,
-      "sha256": "1fbb499926a3a3cdfb25439d8d0c5d52193a4dd797dfba6c357075e2e1f5f2ee"
+      "bytes": 84322,
+      "sha256": "705bb1f88630ce813fffca8b533fe7bc3387856b6fff2a5cbd6e4155494581c2"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-480.avif",
-      "bytes": 10079,
-      "sha256": "23ef8836fe46746039df7e7c41c44ea168a5d69bd52b1eb2fd785164dace141e"
+      "bytes": 10575,
+      "sha256": "5b7d7694562b69f99f69b123bc87c6e73f2bef813ff18c2ed0b4eb984beff2b7"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-480.webp",
-      "bytes": 14242,
-      "sha256": "c6f993496e8414ea423cf2ece07c8ae08b3cc1e48ab87b9a2532b7b2817ef831"
+      "bytes": 16534,
+      "sha256": "3b432a305b2d59cd1eab0328e26bdf2a1c209d86c81a6047443ee5d673a9b39e"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-800.avif",
-      "bytes": 22264,
-      "sha256": "26fdc3e18553b65feddf1d6f667a6ef2350b13d5e6bb7a6b42940c2562ad0fd1"
+      "bytes": 19722,
+      "sha256": "e8f50ca6e0a464ae010a42cc877bbdd7983de39263e9498ab593a6b982fdc972"
     },
     {
       "path": "assets/legacy/generated/article-clinic-software-demo-800.webp",
-      "bytes": 31822,
-      "sha256": "253d483a06e4ae7b605798b7f6b527e39c3a5f72cde3c2df51f4971d73bc110e"
+      "bytes": 33642,
+      "sha256": "35b2718bbe1f3b4fda6243b8a76578e1749c5a2a100d7544c7508a5d3a170e1e"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-1200.avif",
-      "bytes": 34855,
-      "sha256": "43bccdac946998309af6d236368bf5d6f5495a1402b149d63e221859e76fa03f"
+      "bytes": 23206,
+      "sha256": "21d0c393596ad7f992585c792563c4dbc737bddb8f46c5860b491cffe44b3fdd"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-1200.webp",
-      "bytes": 41116,
-      "sha256": "618375df8aae2877b680aa45209d92e2aa935ddcabef44e8c0f529a3b00aa512"
+      "bytes": 54640,
+      "sha256": "ea60bf988265809467963a0d944e1f7cdd8636a41dd13e90aa5e9262786c4670"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-1536.avif",
-      "bytes": 49744,
-      "sha256": "ba2475bd94941593e8aa442448a418aedde7ec47815e98c0d98a412ec6368d49"
+      "bytes": 30623,
+      "sha256": "e42dc14f798f22eab3cd8349bcab71b8b8344e7a3658ae41c41caf3f1311d3bc"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-1536.webp",
-      "bytes": 60034,
-      "sha256": "3cd3ce7045d6fac42ede6e84a2413f1b3ee836e63c430fd3c0b3909116f2520f"
+      "bytes": 79480,
+      "sha256": "a3dd3f1285008f22b5354f75af442463091acd24915ff0e2f297c5e07c68f2b2"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-480.avif",
-      "bytes": 9448,
-      "sha256": "81ff5b6969443bf97cc9c5c76aa8dc63bc79ac9cba1950e3554a2151b128a29e"
+      "bytes": 7722,
+      "sha256": "4d0d4c4ee16e7c64f6ca5cb1ceb0bea6b0a1069a92eaf57fbbac6f1d2aa19bfa"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-480.webp",
-      "bytes": 11956,
-      "sha256": "98db96cdbc9b92263160e1b004a8ca153d0fa45361d5853e2b32d94e40f9feec"
+      "bytes": 13490,
+      "sha256": "9fae12aa81d68ec6b6aecb34dffaadfa5fa8dcb74fb15301bed0b6ecee882102"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-800.avif",
-      "bytes": 19617,
-      "sha256": "d58860eb59318227c832060ed7a8ab9eda22c8eac7ffa2026e52a7bfd4f547ec"
+      "bytes": 14209,
+      "sha256": "911c36a5925b73719de920e82878b849201cd6e92481276e050d7cd0750f0a97"
     },
     {
       "path": "assets/legacy/generated/article-consultation-questions-800.webp",
-      "bytes": 24050,
-      "sha256": "133f36ca09f1bbdb4a33da92756aa56e65e6202e3ccef649c92368447b0b3446"
+      "bytes": 28432,
+      "sha256": "ed0495f8683b78e5cb980595d966bf2ef8e21421f116378b40bac888e702ecfe"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-1200.avif",
-      "bytes": 30060,
-      "sha256": "3e4a27bbf1a68119612c4cb6bc34662b8aa161453ca54f33501be29464a6dfc0"
+      "bytes": 25696,
+      "sha256": "d36212a8eb9a8aeae874fb7f133d748cc6069593f6f1a89417c3d877058e305a"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-1200.webp",
-      "bytes": 37410,
-      "sha256": "a7f7d3ad3a7c709437a013ce824c4892dca2aeab67f664fd6495397b87a6cc9e"
+      "bytes": 51378,
+      "sha256": "ad858c0168ae968c004aa3e454a96a49addcc736a0f058615574acf955ad94be"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-1536.avif",
-      "bytes": 41580,
-      "sha256": "d891f9abfc6e1e01607714a6a529b6f63926a88f215dd16c969742c16825f41b"
+      "bytes": 33033,
+      "sha256": "82d4f855e2e038c0f6c3c322cfbf21389330c7bc2f19dcaf4a6f69706fffd572"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-1536.webp",
-      "bytes": 51518,
-      "sha256": "4cd99c3f26be20f6967b9b2c8fd51c628d81530a7c954317cb86246763b27aa2"
+      "bytes": 70620,
+      "sha256": "c7db4b18c77276c8fff1be5f42728c59573ba4af0482a0667e1a462daa37ee2c"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-480.avif",
-      "bytes": 8940,
-      "sha256": "23c2a8f6f93b0c23dd2ef2dd77246b860eb007901f148d68627063ba2f477088"
+      "bytes": 10061,
+      "sha256": "5610170e51f327d88666409eb6b2c157371b5f9f46f6a97baeba1d7ff3de6975"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-480.webp",
-      "bytes": 12048,
-      "sha256": "39e4508c62e0a0c6d9898e9798ad63a75645e883b1843504f5a5e5beb8ffbc34"
+      "bytes": 16148,
+      "sha256": "8ba9d5de6b98299d521ff7049517ac4a0cfcc283e2dd64cdfbba360570afc466"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-800.avif",
-      "bytes": 17749,
-      "sha256": "dca68e0663bf1af1c1eb371300201d0217b154a17f42acbba4f8a827fe2c62f8"
+      "bytes": 16941,
+      "sha256": "5eb293c533fabda0053efc355b99a208c2198d7e60b1786021c85ae1e791027f"
     },
     {
       "path": "assets/legacy/generated/article-facial-data-privacy-800.webp",
-      "bytes": 22336,
-      "sha256": "3f0d9d1ab0c714c8157c09301ccedba68cf6e3c270e1dc97329ae9513d796065"
+      "bytes": 30344,
+      "sha256": "b92e6ed9f8f22df4367544a053180478bf36aa1991bc3b665a3d199e94af7e30"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-1200.avif",
-      "bytes": 30162,
-      "sha256": "4a01eb9ae73fe69e94b0b4c4352d60685af36236da820d8f61dd0c9a1cb8ce45"
+      "bytes": 20299,
+      "sha256": "f151c4df6014d36ae6247766c963f52b730bb089b78fe11d7b492b13f0a545df"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-1200.webp",
-      "bytes": 37492,
-      "sha256": "ed668595c56bee08c57c6f2e7eecdcb024e61a506a618c3636746d36f29f0669"
+      "bytes": 40662,
+      "sha256": "9c489594c9a9b5934356b036da937a2ba453b0ebdf9a67f500c1f3791537a8cc"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-1536.avif",
-      "bytes": 43074,
-      "sha256": "a4fd53510ea8d01b27ad3d82a03353d1669a93002e901ae616998c08d32e88d2"
+      "bytes": 27473,
+      "sha256": "a61ba8a27aaeb1738ffea1d98436851d8cac046ee56c72f385e4e91b918a757d"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-1536.webp",
-      "bytes": 52682,
-      "sha256": "0bb31ead5fdbfe616f09b9bebd5dcfdebcc492b9b7512f6ecdaf7cb34a9f37f0"
+      "bytes": 57940,
+      "sha256": "556a0dc2c4fdb60365ff914ebdeee903ff0b019f0239a457742f566023498ea9"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-480.avif",
-      "bytes": 8586,
-      "sha256": "8db22375c1d2818ffb9d657b949e544405f73f6cc56ebedabac8ba7b3015997e"
+      "bytes": 7059,
+      "sha256": "1b59c850bc28e6071829241820b2aba9f58e4e4a6caee0a4d888aac967e861cb"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-480.webp",
-      "bytes": 11384,
-      "sha256": "1a56cc1969fad02b94b4d5797461d03268af913910ef068a06c1fef4a661f066"
+      "bytes": 12258,
+      "sha256": "6ea680df7ba46c188e5bfbf922b7a17dde542bade6aa4ffae1686ba8ae65e25b"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-800.avif",
-      "bytes": 17209,
-      "sha256": "a199c577041d75395ec783bf75a39eb35defd6f00ed5cb065134bc745eefdf0b"
+      "bytes": 12613,
+      "sha256": "25283097870dab3319a0af6a59220498474ee3ef5d4729353e496b444319832f"
     },
     {
       "path": "assets/legacy/generated/article-photo-preparation-800.webp",
-      "bytes": 21916,
-      "sha256": "33f48d51de20d6afcaf8ea56c229894a0de959124f1d304a188ba5ac47cd24b7"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-1200.avif",
-      "bytes": 48698,
-      "sha256": "6911db3327626126add2bd55070f50375420f1d0cc936c7ba1866cea9651e34c"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-1200.webp",
-      "bytes": 64736,
-      "sha256": "4fb2eb0c88f3360eaaa719f093b580f589acf08e57368f5b6e1081526f290aae"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-1536.avif",
-      "bytes": 72688,
-      "sha256": "9e40378bd26213fff8321d5f829be0c6bead3f216106980657ec4d570cdc6ee4"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-1536.webp",
-      "bytes": 93352,
-      "sha256": "40c413f47efba1a3a97e82b84d7c675e898d515dd5968f80fe7c1663f0adf038"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-480.avif",
-      "bytes": 12035,
-      "sha256": "8d21b1707e8e6574f62a7b139c0b583ef434f8edad4e2a890969dd1c9a69f0a3"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-480.webp",
-      "bytes": 17554,
-      "sha256": "64a0c06021ea402c82909c93063f8aaabd72c8e2173d5eda7113b272ce4a3f8f"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-800.avif",
-      "bytes": 25838,
-      "sha256": "3f7754461d579d23a90164f9169158e37a4a4378b16ca2321b93a0334b56e81a"
-    },
-    {
-      "path": "assets/legacy/generated/retired-layout-review-800.webp",
-      "bytes": 35530,
-      "sha256": "52e5f9c2f431ca10c04fe2f3465bb23c8bb8777114d91960ccc25c834d08a9e7"
+      "bytes": 23586,
+      "sha256": "e76807a696f2817f3ab7f65add900f051c8a83d1eb79235c32058131d52c125f"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-1200.avif",
-      "bytes": 42001,
-      "sha256": "0e3bf012ff47ac93f2624033dda6c224ccb8cb83df06996a569c993f9a517fbb"
+      "bytes": 31243,
+      "sha256": "9856b628a0ed6189ac84aa1cd9bde05d0a3135f4b9617ba071f3206fe9f881d1"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-1200.webp",
-      "bytes": 53748,
-      "sha256": "efad51677816c9401c7208f4176c0e1659283c5d6be175aea8a843a28fbffaef"
+      "bytes": 66122,
+      "sha256": "442171c99f68b91863a7ef28e091676bd87234f210162cf133766d91ce1ad78d"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-1536.avif",
-      "bytes": 60045,
-      "sha256": "59cbeaf421fecd95030de509a4bdd9479c8385e56dbc8203eda31225331a9c87"
+      "bytes": 43896,
+      "sha256": "676df3be666ab9bfe35c05beccbab00f1bf76ea7ba0928c2490b58d5e668c526"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-1536.webp",
-      "bytes": 74670,
-      "sha256": "42b72e4d46f77799bd19dd2f2cfac16b20f3b4aa509c06ba3ae50ea154c0eb49"
+      "bytes": 98604,
+      "sha256": "6f87cd94c6fb9c1c402f913212bc11a322613015b87034caf6063f0187566430"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-480.avif",
-      "bytes": 11343,
-      "sha256": "d6bbd5ac83394ad885a49da9c3ceefed3fb890db07407699440dd72b248f877e"
+      "bytes": 10636,
+      "sha256": "ef2ad49819ba6d6e92d047479157570b2983666755b4df9dc66848b5750164ab"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-480.webp",
-      "bytes": 16226,
-      "sha256": "8e65cd88fe53e58e8143a56a0aeae3ba7ee89dbcf120aa9d0e187ef1ad004fdd"
+      "bytes": 18062,
+      "sha256": "e227063ade03a85cdb6af33bfd2ae36625286efe709c11effc40100f2c51aed0"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-800.avif",
-      "bytes": 23492,
-      "sha256": "11c8221e7c53b14c4210f509dd438469f7dff57c30f484227aaf622d8d351204"
+      "bytes": 18789,
+      "sha256": "3b001171ca03f8b95abb967f3bfb668a6b6a2b9b365469dae5fb3ab3325e6632"
     },
     {
       "path": "assets/legacy/generated/thumb-client-view-sharing-800.webp",
-      "bytes": 31742,
-      "sha256": "3ef9f37afc25d2d154af2af9610008e1f9064ee66e772b2d261150b3bb99c2de"
+      "bytes": 36148,
+      "sha256": "20b879bb1ab81f3b8bed806c8376253c7be978d98dce40bad6a12deb44a46b83"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-1200.avif",
-      "bytes": 27882,
-      "sha256": "d0cb31ca4781d6b16140791e84f99943555c351a6045133b7e14706b723a3bc4"
+      "bytes": 11129,
+      "sha256": "8dba3b36635c597e771b4f17585856fa88a5b81aa9576285e22c07ad2548b6c0"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-1200.webp",
-      "bytes": 34302,
-      "sha256": "5a91aee6d206db99429b883af77808aec5a54155211fbec40379fe8e42342820"
+      "bytes": 23990,
+      "sha256": "4df389d99ee6f49040c3082f58846b839beb19090c25889fa340d9552ae9ee61"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-1536.avif",
-      "bytes": 40322,
-      "sha256": "5490efb21046fd9fef93d19f929e8b5dd0c206ce815a55a8fde9fcbfe575c186"
+      "bytes": 14195,
+      "sha256": "9740fd24f3a1f99d3c1a2199cd70798a0c51122ff4b380e6e007f51c509b0729"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-1536.webp",
-      "bytes": 49142,
-      "sha256": "8f7b008215e1ae494a9befef1f4ca723f68e032dd32b5e9abbb70cb23b64c2ae"
+      "bytes": 34694,
+      "sha256": "dda052ed383f9c238a870887500bd516378ca6babee5d9a66785029cc580fa87"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-480.avif",
-      "bytes": 7883,
-      "sha256": "be116e0376201d41fca5fc04e048c54d8ca9d98c11a63fa0f3c4f0052bb3ed7e"
+      "bytes": 4507,
+      "sha256": "ade05a3eac0fde1cbddb80c04b2909d112a022f3285eaf6455f734f26f0fa219"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-480.webp",
-      "bytes": 9908,
-      "sha256": "88a88ad0fbf4dea5c612ed00509a8ea56c1fbbcd930819562d59f98d9ea6e561"
+      "bytes": 7130,
+      "sha256": "d6e6689eb88d0ba27cedffd349033e4ab536720dc4f2b3d5bba86ed3cf16311c"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-800.avif",
-      "bytes": 15807,
-      "sha256": "c651b44c5245bb582b98784613dba3747955f1703733839359fc96ddb78081b8"
+      "bytes": 7450,
+      "sha256": "aa6cbc846edeab72dd97de389e7c622f442f968e1152fe1184af1c606709321e"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-software-demo-800.webp",
-      "bytes": 19798,
-      "sha256": "eb0ffc4b65dda225145a2261edacf972a8b99d51a835ca18aaea2b541b1f92f6"
+      "bytes": 14030,
+      "sha256": "d2a57b5c3c2a8247b3d819cd18863299e0bf77e79372cdd71d78339c48e52a62"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-1200.avif",
-      "bytes": 29428,
-      "sha256": "fc7884708be333fac2004cb51322672cd6e21fc3acfc05e98665f2d264917cfd"
+      "bytes": 22756,
+      "sha256": "dbfff7170accad4a7edba7716a565569892184ba525cae78287be40b592d2c35"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-1200.webp",
-      "bytes": 34624,
-      "sha256": "aa34fd9fcadf19c1cae5342e1492dd0d7eaf86b2b11d8c3f53826820f4188f81"
+      "bytes": 47890,
+      "sha256": "98ec39459bf68af3076388f0662ed8900142f660a8f49f6ebb9a8752bd7934e8"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-1536.avif",
-      "bytes": 41743,
-      "sha256": "292adeb75ea1f5445312347c74d23f899b77ea584bea81fc4e9b111bb07a805f"
+      "bytes": 30066,
+      "sha256": "6b63b8fa6d7c34b3d19d8d6e1c60d88a0baf7d3b5c997091b4903346e7a4b69d"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-1536.webp",
-      "bytes": 49316,
-      "sha256": "aae8b0d945d7192e5c1b7c3007dfe217bdc259d9cf12d72931e775efef720b80"
+      "bytes": 66396,
+      "sha256": "8bd0f89a11abdae16cc23606712845e7c769b50eef1f40739b034d13d11be1af"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-480.avif",
-      "bytes": 8554,
-      "sha256": "545ffe247a9d3744c50d82d1519335b6bfd0cc4f5240f5b41fe6166fc0b63a28"
+      "bytes": 8948,
+      "sha256": "31b9336e257b1c33b12ac0bfb1a3f880cf4dc157347b9b5a150e153b573cb41c"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-480.webp",
-      "bytes": 10918,
-      "sha256": "3aa7b1ec5db91c646c2d65d0e49282266fa0d174825d8440968f59f5618af71c"
+      "bytes": 14658,
+      "sha256": "fb7ab96461cc7cf37e62f779c9b20f0f9c519d8d993ba27d1d3df71fe8eba292"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-800.avif",
-      "bytes": 16865,
-      "sha256": "92d3691abbfe5f6433ce17acc87aa7ec27c2dae00eb58d21c7e047a55c80c6eb"
+      "bytes": 15137,
+      "sha256": "fb9bf3973295b00725aee998ca98fbdc04d375d7010803b7f38c17de370c1d3c"
     },
     {
       "path": "assets/legacy/generated/thumb-clinic-team-workflow-800.webp",
-      "bytes": 20240,
-      "sha256": "d8702f7f6d4a46bfd67861a0812c5a694b3c4db6e2b332f6617cd1799c755d06"
+      "bytes": 28284,
+      "sha256": "3d30c5ec4ba79aaaf3d888c721de5b309094089d3a7abdee31d89b484a7d97bf"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-1200.avif",
-      "bytes": 39892,
-      "sha256": "bfd757de34c55f202682f560e9bd681f5ef98b13279c40992f817e71da224118"
+      "bytes": 20814,
+      "sha256": "d100bc98203c4436ec0ac0ca758861555fa3111e8a3b456c0e582862f403b3cf"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-1200.webp",
-      "bytes": 50798,
-      "sha256": "c12d77b5f79cb7dc6ef4565d35328f2837d8de8e578754e9a5d153a14eae7ba6"
+      "bytes": 45172,
+      "sha256": "685314859cc1bd3da0cd649fbc611e957521d81430e6079b1d404fc674a19988"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-1536.avif",
-      "bytes": 59886,
-      "sha256": "f0b940ca716189ce9f0487d026b9f5dad6dae69e6b0d80ba96373960b1a3f9ba"
+      "bytes": 26276,
+      "sha256": "b5ab25836ac0af17653998d9619009474b1c3df9b16e3fbcf441799ae3d6cad8"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-1536.webp",
-      "bytes": 74878,
-      "sha256": "4f65d2b01abf388a00fa27d9dfd037be5f0c213a94bd64476bb084a723404b79"
+      "bytes": 64134,
+      "sha256": "079760e0c08fd90b87c0a483eb56531928de98c1f5788a2e297ac8c27a0858ce"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-480.avif",
-      "bytes": 9351,
-      "sha256": "75670fdf5f6c52eaadb49157f832c4d650c1ea4df983c79aa11de6c1e9e86362"
+      "bytes": 8904,
+      "sha256": "287430339f60b0028c5ac3bf017795268fd7efeb671062dececf11f430304bd1"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-480.webp",
-      "bytes": 12452,
-      "sha256": "f02a0544a336d699abe832c258c15c814b89b6e2760d17ab1c828dcc97fecf04"
+      "bytes": 15326,
+      "sha256": "bc024402ee00b604e6b1a3928a9babd64696ca027fe74ec7e44d3c78b782f132"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-800.avif",
-      "bytes": 20658,
-      "sha256": "47cf260954b9aaf704e364873dec1b66a583e14859a50f5423780d18b5a138f9"
+      "bytes": 14363,
+      "sha256": "054403b37b98e1074aed32001d9dc1eda8faaae9aa1de232eb3a8bab839772d9"
     },
     {
       "path": "assets/legacy/generated/thumb-consultation-questions-800.webp",
-      "bytes": 26382,
-      "sha256": "2693a4cc50464f7ec5caac13cd89c0d4899bb2bb71fe2643d7521b1e01ab5971"
+      "bytes": 27280,
+      "sha256": "f8a22bab2000fd25fe3ee15cd349fed080c3ac5fa91a4fbebc414d6427ed7d89"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-1200.avif",
-      "bytes": 23258,
-      "sha256": "b969caf52ccd66acb3bffdf1508d3627b56a7e6fc2549138c89989acda6071c3"
+      "bytes": 33932,
+      "sha256": "f8dd547c16fb9f35e34f8ebc8abf2cfb81ae2f84f6b9bae8d9e969a291fd1c4b"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-1200.webp",
-      "bytes": 32364,
-      "sha256": "3ab8765fc6cfa1d3d496ec9c8920ddd17f60dbbc3b335f1b10917002dc195275"
+      "bytes": 68298,
+      "sha256": "128d6b712a5f8206feb5808716c44e8fb79a925859995328f4d6c3bb277173a6"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-1536.avif",
-      "bytes": 31933,
-      "sha256": "88046e060da2695b0ee4e6c2ac8a64f6f529b45e678b210c1fa06bcc5eb6b138"
+      "bytes": 48638,
+      "sha256": "029a68fe768e09b7a342399b2860fa23f8a799e86a8c4690369310d80084f63d"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-1536.webp",
-      "bytes": 43248,
-      "sha256": "1bdbf0f920d87284f976b3f76ffa48a334e222abc4549bfc67efcbd8f8a876a3"
+      "bytes": 100550,
+      "sha256": "f6d463f8b13c801fb4f9a067ebc978dc6e17ca8681539ece0a565d5f27f39a7a"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-480.avif",
-      "bytes": 7387,
-      "sha256": "7ae0f6598016a303c6b0679a7904fff4d9c887ab12fda818fe4e318bd09b95ff"
+      "bytes": 7554,
+      "sha256": "aa099304ace45585137a7bc6bcaea5855fa67748066c5fe60495b5c531e1b07e"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-480.webp",
-      "bytes": 11198,
-      "sha256": "163a6756d00bd17573b107b70b3b92941c71cd610c88daaaf1f4ded71f449c2f"
+      "bytes": 12832,
+      "sha256": "59b9952bdcbb02ea095aaae16cc646c6a8cc0d3610ec76322cf8661c4d17a61b"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-800.avif",
-      "bytes": 14092,
-      "sha256": "d10e6dfe5590bb50f9c33871f456a537836fb65739e326e5a2224f0d1e834dd0"
+      "bytes": 17182,
+      "sha256": "99c208c5a261bff3c1f014a1af2e0e70457e60b2ab3dcad8167b3c8ee2c021d7"
     },
     {
       "path": "assets/legacy/generated/thumb-facial-data-privacy-800.webp",
-      "bytes": 20320,
-      "sha256": "67092f2a135f11c6cdbaa4bc7a80e6531435c31a572e78aa8d5292a0fa9ff03b"
+      "bytes": 33586,
+      "sha256": "a41d25e03c1faca26c7c898cd6c096f5e343b91e4e900f84530513d743b9a664"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-1200.avif",
-      "bytes": 24948,
-      "sha256": "35bb73cecbdc33c0c29d9bd7d46648cede7c94cbf8236e52517da89f9ed148ed"
+      "bytes": 15864,
+      "sha256": "4b79b8c07e571b81b190a498e6d479c4ae25bf8897887d5a4425047ec7e90a5f"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-1200.webp",
-      "bytes": 29164,
-      "sha256": "a31d8f7a73b613ce61171869fad0e7ff116cffc71b2c6e7d612a580642ba6a43"
+      "bytes": 42084,
+      "sha256": "6aba8dd91ac804e5b5a9c568386b6415d6cf3e3e67875dec7bd537f578ba1a5b"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-1536.avif",
-      "bytes": 35166,
-      "sha256": "80a83c031878427fcd55e58621019e8b5c59b3b2b768a66ddf08791eefce01cf"
+      "bytes": 26355,
+      "sha256": "a0e5397b63e07ea95a93f82013ad2623d406e2450cdac468cada0bc1842e3bc7"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-1536.webp",
-      "bytes": 41044,
-      "sha256": "12242a7517624546be1f996542d54634cfc75ec9f42303a48f74bb8a141b509d"
+      "bytes": 78230,
+      "sha256": "839113ba12b3cb9b1ba61f54994778ca9e20c43ce90ed54af16a2da695a29309"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-480.avif",
-      "bytes": 7280,
-      "sha256": "687413f74482fdf280257fb67886bb387ba8329a4a1f642976d70148d4978bbe"
+      "bytes": 5203,
+      "sha256": "3402a5063dbe0e36ec05de3494f1feae022c76450d792800cdb5c0ad5b43c5d3"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-480.webp",
-      "bytes": 9130,
-      "sha256": "afebf0b6df542c1b2566fd3d6f2aa55a0df27908b78a0e25d37015135e0b2b2f"
+      "bytes": 9960,
+      "sha256": "7347b26252f39a085fa678e966286d21927d37c0c65812241cc7b8c1183e0cb0"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-800.avif",
-      "bytes": 14174,
-      "sha256": "a9348516729b5636dd5804adfb2237624a6df7e7b3a653787e2f820ab1e49df1"
+      "bytes": 9631,
+      "sha256": "91d482e9ed3225c052d14ead10bd6139d499ca6ed04fb22260ed8e3409e27439"
     },
     {
       "path": "assets/legacy/generated/thumb-photo-preparation-800.webp",
-      "bytes": 17768,
-      "sha256": "248256bd52c8efc62310ed7eaf652b84cdb2f719753db69e4cb2a5c1aca17730"
+      "bytes": 20918,
+      "sha256": "868a301ee40aa5c7cce69de1ca6c1da20aab7c1eaba23e57733f444c2d4129d4"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-1200.avif",
-      "bytes": 30178,
-      "sha256": "c80041143c80e54ba751dce14b3aeeb4d6cc2beafba3d198cfe616d95a1d9de4"
+      "bytes": 24745,
+      "sha256": "8896ecf41fdd56955f6c862e9fed14d8631994e1c3519132b70875a39712f8f5"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-1200.webp",
-      "bytes": 41708,
-      "sha256": "b3f49dcb191f2d89bf378664119377f73ce8e98bd2346ac75578d8834ec632e8"
+      "bytes": 53582,
+      "sha256": "0f83cb19b3c9f5e8b2b364e348e547dea866cfaa4e4328528ea94b342a78b444"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-1536.avif",
-      "bytes": 43293,
-      "sha256": "b3389d35b147000dd113c01a53b9d9f893b403ec7300921d2342d7da6b0fd919"
+      "bytes": 31304,
+      "sha256": "789d3b341b62831efa8e90f00d50fff3c09e40e2af5b3111aece4e8b7b4f11ba"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-1536.webp",
-      "bytes": 58438,
-      "sha256": "cf030ff1562a178826adcae16c40453fc8bfbcd66bcc32050aaeb98b34fccf6e"
+      "bytes": 72304,
+      "sha256": "dccd5f206fe643219e5c1a6b31c13b2f730ca78cab9f18c1f8f360ed0c004afb"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-480.avif",
-      "bytes": 8224,
-      "sha256": "cb984a8928ddebb8a5f192e120815c2466b92580d4671af5f99d838eec6abb19"
+      "bytes": 10569,
+      "sha256": "bae51353cca5b13e9001b49b6203dd1c5bb9f4bccd51e32a0f1f54350892688e"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-480.webp",
-      "bytes": 11206,
-      "sha256": "f0b9f3cbec3985b171273d5da93fa865a42206fd75db3585127b6bfff3d31628"
+      "bytes": 17970,
+      "sha256": "d784d07c8b8add22da9fc0935db2d7772d1c43a70a91a8b2f7ae975bb527ff18"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-800.avif",
-      "bytes": 16529,
-      "sha256": "162adf1a0f0bee1d605a55564e7423193a6e203059fb2f5dfd9b30e07cb11e80"
+      "bytes": 17011,
+      "sha256": "426cf1f04326f04d925851bda714d57ad792cb88a7f309100294c090441c99fb"
     },
     {
       "path": "assets/legacy/generated/thumb-visualization-consultation-800.webp",
-      "bytes": 23200,
-      "sha256": "90e72400cda7f4f8a996c843d373702a7f6eac456ca184acf449ca3b7cb9de96"
+      "bytes": 32700,
+      "sha256": "fea715da65ed02585eeec56e712f8d7e3dfb0897dfb892fbc4814e51291f71a8"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-1200.avif",
-      "bytes": 33796,
-      "sha256": "7ba398c17afd5f98d402f6f212473b15224f38821434b03f4bf6897fa90e1a5b"
+      "bytes": 43041,
+      "sha256": "db8f130d372f414e143cc487a41489108ac8c71d1c5ab033886089a2203d3608"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-1200.webp",
-      "bytes": 45610,
-      "sha256": "fe20096c1862966c40638e014cc33c085f76726f7cea7f423926ac9dae6755f4"
+      "bytes": 76922,
+      "sha256": "174abc03bd7342c13e5f567c19f353506ae4de0d63896212fea4b579d3851153"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-1536.avif",
-      "bytes": 48274,
-      "sha256": "75988dee7082ce02ebf9780d5626741f907d2169b94cbf7115532b57d33e7b92"
+      "bytes": 61609,
+      "sha256": "845af4bd68509e1d1916b4a51cde8f04a776a56f58d3ce591c045435627ca805"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-1536.webp",
-      "bytes": 62476,
-      "sha256": "466785779d855093d80735ff58cc18e5587a3e369de6da874bddb92088e2776f"
+      "bytes": 114412,
+      "sha256": "bfbfc9eb74ca5477a2174f7a1855032e168700c6fd92d93813e2874bb959d927"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-480.avif",
-      "bytes": 8755,
-      "sha256": "ef6725087c6080e3fc243feac5d689092c747bc90467a8bb5df279da7ea17bc0"
+      "bytes": 11609,
+      "sha256": "2e49f6cbae3ba7896cdbe885942540d0bea6d4310d8d893e2ea4b111502118b8"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-480.webp",
-      "bytes": 13116,
-      "sha256": "691f96367aa92ed2199a5d4cf5234ef51130fd095b943aef146639d2280a2b30"
+      "bytes": 18456,
+      "sha256": "d639f0847e3bd8d42fadc7303ac5b108b8b5145df3f97c2f929df089f15476cd"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-800.avif",
-      "bytes": 18924,
-      "sha256": "9920de81df97e43a0d5161609363bb6c80df06c92518fa4a37fd420f274e569a"
+      "bytes": 24302,
+      "sha256": "902a6124f17d482eaf1a9874e3986fe9022b8cb21db8ebf8790d7a619b551fb8"
     },
     {
       "path": "assets/legacy/generated/unique-about-panorama-800.webp",
-      "bytes": 26708,
-      "sha256": "3dd2f0c5e3a13ba4c66f6dd9eff5f86912709bdae9df20ec39f38e18b2e38aa5"
+      "bytes": 40368,
+      "sha256": "b0b4519a47f70969114b07b25f7c077162d44bb2acb87fdcc1d3263b96b59fc1"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-1200.avif",
-      "bytes": 38918,
-      "sha256": "eeb1454be0246fde742fe294567ea7d670a68949754067576c941d405abc4cab"
+      "bytes": 11332,
+      "sha256": "052b96cad8a323b8dc4650f813140e4b7ac2a29e8ceaa65ca00a8e3c75a55aca"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-1200.webp",
-      "bytes": 49592,
-      "sha256": "af07742d1bd0ff693c47ecd079dce115f4365a24b07afc95203c5e8a2747dbd7"
+      "bytes": 25704,
+      "sha256": "94b62b7c61ea5fb440d143dba4c59316fae8f33e0489f64390a0db81c960f0d6"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-1536.avif",
-      "bytes": 55856,
-      "sha256": "42021c19c53df54ff16f3061d74ecdf01e0d96a2fe253aef6033605024922b90"
+      "bytes": 14440,
+      "sha256": "ab64bba833c442041660a9ea05526349f862b4b3ea7e3806a80034d2b2348fb1"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-1536.webp",
-      "bytes": 69074,
-      "sha256": "23d8e3ce150a8bae23335dfa6d858ed4c8b88c97951031dad621b5ba6a222365"
+      "bytes": 36594,
+      "sha256": "9be841fabf24d8440c50509c50d3d0c5b80a3dff82b355f273594b8b711dde03"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-480.avif",
-      "bytes": 10325,
-      "sha256": "b62b88cc4884b90ec3570ed144bb98823d4270bdda3c7aee13210300c3e2d8de"
+      "bytes": 4342,
+      "sha256": "c124eb17ec3eb55136a08067a8e34a7c629a30d215776a3ab013d0295f9959f6"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-480.webp",
-      "bytes": 15242,
-      "sha256": "d0c147a06351f324926fc1d0932fa114313fb95b1055ec8cb431eb8416d8ec15"
+      "bytes": 7050,
+      "sha256": "33f83f83d57bcbd76ceeb387150fdf6bedbbe557100c98a389a34256eaefb9c2"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-800.avif",
-      "bytes": 21541,
-      "sha256": "d5951c0f161ef4ee086a6574ccb66825ba721ca53cb40b5a9f8ffa2246a9cee4"
+      "bytes": 7342,
+      "sha256": "8f63c0dc50292faab2555fa22eac3f9ef788d02708909846aa775c0235ff3a0d"
     },
     {
       "path": "assets/legacy/generated/unique-app-product-800.webp",
-      "bytes": 29312,
-      "sha256": "e6aba9967bba2a074ddb3cac0f668efaee0f80a146b4ea6982465f8e65300595"
+      "bytes": 14060,
+      "sha256": "19cf0aa7c9a139656b4d2175298e82c3182c93ca87e6518e259a0aa6a4c620f3"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-1200.avif",
-      "bytes": 27007,
-      "sha256": "6f0b7d1e1d06d4005cf3ae770cc8ef85da5e4fa6b736ff0316d6a81e8a330eb8"
+      "bytes": 10939,
+      "sha256": "7400f2a149efca0563e8c6642a0ce2bc88339db819618eacf206c585e8eb9fe2"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-1200.webp",
-      "bytes": 33160,
-      "sha256": "3196c24e4ded97a362843528384a1b889e87498316df185932d983176679f99a"
+      "bytes": 20782,
+      "sha256": "8273f0eac6e6e9130885b13227ac5fbe7d9f789f9e058d88b804d76e6bb98d8e"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-1536.avif",
-      "bytes": 38144,
-      "sha256": "f8364d69cbb5e295af209f4f0288cb820233c03a9a32ea3d6cf0a13eb5c14f8f"
+      "bytes": 14465,
+      "sha256": "019c61969cb9214e3dc065c72f101ba5d046b601c0dd8a7390405c3c12010e15"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-1536.webp",
-      "bytes": 46530,
-      "sha256": "a0a259be010401cfc835904d467045d8ac371a57e8efd37bf721ce49df1a3edc"
+      "bytes": 29528,
+      "sha256": "434b5eac0255c5699b707435bfd271b037f4301b0748ebba3f4322cb0bd4c8d5"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-480.avif",
-      "bytes": 7414,
-      "sha256": "3827d4a698e4fe86c19774e64c94e237e021b92323972a7f1e45d9aec8ea64de"
+      "bytes": 4148,
+      "sha256": "7ae8bd8bd2eee577e679666b9002acdab8042ca93e455c324013288a33849bf1"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-480.webp",
-      "bytes": 10200,
-      "sha256": "9f775fe0b82d3a609d52a615c07c5365d7fdf5f7aebab3f83ba2a25ab386ecaa"
+      "bytes": 6638,
+      "sha256": "e23f01882646e4fd5596577b4fe35c267f93e2d7ad9e8b633c23688a286f7604"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-800.avif",
-      "bytes": 15423,
-      "sha256": "130fa2e52c490dd6dbd37431a8bdfd0a3e16b65d7fbc4dbeb41d330d8a08fc49"
+      "bytes": 7057,
+      "sha256": "3ffb8c46b6113266f160fbcf1849238fbddbdc480547f34477ae46f83819fcba"
     },
     {
       "path": "assets/legacy/generated/unique-clinic-product-800.webp",
-      "bytes": 19718,
-      "sha256": "91620ae9442d844487d16809dd5aa06509c6f56ebc37bc6bc45895146fb9069b"
+      "bytes": 12566,
+      "sha256": "168f1ea025bec001b99ad7b43dfd9b242943852241420bb787d54743111f196a"
     },
     {
       "path": "assets/legacy/photos/clinic-consultation-desk-1200.avif",
@@ -1607,6 +1569,21 @@
       "sha256": "1df99db6862af330901a6067f5f47d7bde05af1fac2751babd6192777e27dacc"
     },
     {
+      "path": "assets/video/hero-c-face-closeup-poster.webp",
+      "bytes": 51158,
+      "sha256": "f044fd806b9737ef81e37f1ef827a35ee950e825bd2a086da8851ce0d69e3cc5"
+    },
+    {
+      "path": "assets/video/hero-c-face-closeup.mp4",
+      "bytes": 1532277,
+      "sha256": "8eeec381d0ecb9313f578894f6f28829a9e230e0baa4b2e6d29084c511f14057"
+    },
+    {
+      "path": "assets/video/hero-c-face-closeup.webm",
+      "bytes": 976945,
+      "sha256": "c505ccf94dc19ff779e73a755e46d1f0b20b4e4d6342683e59dad34f33219d37"
+    },
+    {
       "path": "b-base.css",
       "bytes": 12711,
       "sha256": "0a744741784da585e4a7c7807cd03780a7a92223af1ea6d661c84f881a4152c8"
@@ -1658,168 +1635,168 @@
     },
     {
       "path": "en/about/index.html",
-      "bytes": 18873,
-      "sha256": "36ec08a8f200fd00ba410f58952274c8169bff03a2b50850eae5107b87968bd0"
+      "bytes": 18846,
+      "sha256": "76c04d974a82b1bffb11d2b8808ba0353ff34664dcc1f8d26ffcf96a8259e742"
     },
     {
       "path": "en/careers/index.html",
-      "bytes": 12699,
-      "sha256": "0f6f94c661da6e9304fae891ef648282f0211edb6c7531b2cdcc62e975889d19"
+      "bytes": 12463,
+      "sha256": "a31f1ea4dde2c9fa8ee894911c83e86f632797cfa96ae1e2e783867f6fb89e3a"
     },
     {
       "path": "en/clinic/consultation-exports/index.html",
-      "bytes": 20440,
-      "sha256": "9dbfbbefbde9699a8b6b1275c4dc974671b24cb75a77fdf6b97741fc55256731"
+      "bytes": 19831,
+      "sha256": "71eabb392ca572ba9f03d460fe4c34d7d927d9d900e40272a182feaf0a131734"
     },
     {
       "path": "en/clinic/index.html",
-      "bytes": 28386,
-      "sha256": "caca38f17ca6cfb51574a5165b4d3c2572434c867ab257b9fc4ab6802c333e8e"
+      "bytes": 28605,
+      "sha256": "d68fc54b0c478fe28c20327cfb422ac83ecb3df638df1aa16b10ce38c4ae326e"
     },
     {
       "path": "en/clinic/injection-simulation/index.html",
-      "bytes": 22805,
-      "sha256": "b08ffc7a329b75e987f55e4ceb7a31b1ac1d92b4f060fa0628b3e68106a17bc0"
+      "bytes": 22222,
+      "sha256": "472505e8ee86b229f97ef630e7a5f42ef370812bc9fca8f42dfd172483a6f9b0"
     },
     {
       "path": "en/clinic/skin-analysis/index.html",
-      "bytes": 21002,
-      "sha256": "b81145dd546432bc917fb19eace33769060e1e4cf3015c04c3a5d3eab088b803"
+      "bytes": 20429,
+      "sha256": "ae533172f055b9f76be50d87cf573fe5c64caf7f5f4de6943f90829de8ddf3dc"
     },
     {
       "path": "en/clinic/surgery-simulation/index.html",
-      "bytes": 21481,
-      "sha256": "7ba5514e317c60772e530726f03db580c9bf0bad0ec01d857a1d1f74359bf75e"
+      "bytes": 20898,
+      "sha256": "389a62498a63ca7c89e520a85eb74acf9ebd12f1479c01700cad26231f33734a"
     },
     {
       "path": "en/clinic/thread-lift-simulation/index.html",
-      "bytes": 21099,
-      "sha256": "d80361d3c6c9cbf7ef8fab3cc319d095ac2b5e6257c5fe28d6780174a78c1eaa"
+      "bytes": 20516,
+      "sha256": "40624b4feb13819c145307a0f02ef70064fcd97509e79d997e72a648cbbafa6c"
     },
     {
       "path": "en/contact/index.html",
-      "bytes": 14006,
-      "sha256": "7872449c3aa37810fae8f3ab9393c46a2e8ba420096e666eaecc974b37066da8"
+      "bytes": 13722,
+      "sha256": "aa4c656c14ecd0d2b79fb51973dde6f8e70f0cd7a49f04764f2fe05e71d33c0d"
     },
     {
       "path": "en/credits/index.html",
-      "bytes": 70362,
-      "sha256": "59222aaccdbe8d7bf25dfb7c67a81ab0ae23e79d813d4c6c6bb85d6e10c3aa36"
+      "bytes": 76028,
+      "sha256": "09ba842ad4aa0f40bea319e463b584828b1c69b1b45c5593b2508861dcc1cc99"
     },
     {
       "path": "en/faceliora/index.html",
-      "bytes": 21298,
-      "sha256": "fe73b0c2e7a7e9497588f47b6cf570cd2792c2dbf64ae8eb06dacf9fc938d839"
+      "bytes": 21271,
+      "sha256": "96a338d98b9851f74a608c5e3baf2ae06c88017d273ccfdf098d4918b7ef3d64"
     },
     {
       "path": "en/faq/index.html",
-      "bytes": 31522,
-      "sha256": "7da31d2c366a8b1d853bbbf7418e6f78b05babdb3f204a61b8c8198ecfc6392d"
+      "bytes": 32620,
+      "sha256": "950b3d079b03af6f102b16caa9eee5715e3b7d0a5bbe74bfb9d8e72ac9701bcb"
     },
     {
       "path": "en/for-you/index.html",
-      "bytes": 25991,
-      "sha256": "36dbd8fc43da6166947007654d8402d840221abfb6806ac5a5f417697419c441"
+      "bytes": 24912,
+      "sha256": "b1d75086a653b489db911d2212e62e24307dab2357c49f900855ec73e357498b"
     },
     {
       "path": "en/index.html",
-      "bytes": 22088,
-      "sha256": "bb2221bb66c0a81d41464bb73bfd5d0bc3223c9f3d37b22b5182f7d220e155b1"
+      "bytes": 22428,
+      "sha256": "46dc8c399962f0e5dacf0579a55c02a5977e8745e788409afbfb165a78e9cca0"
     },
     {
       "path": "en/insights/botox-masseter-units/index.html",
-      "bytes": 27640,
-      "sha256": "7b447297bda319b96a8a2fcbe942391d141446857a2f35a777d1093f45b96dab"
+      "bytes": 26672,
+      "sha256": "00d6ed87b0ea36dfe0aef2c2ceb64d50354b827b4a684f058c5b2c5aa589a85e"
     },
     {
       "path": "en/insights/client-view-and-sharing/index.html",
-      "bytes": 26644,
-      "sha256": "0cc078bfc1ac30a2173be2e2060296bd8a10acc3df0d5593e30856a9be40bf3b"
+      "bytes": 25610,
+      "sha256": "b2a780a053049287bbda28983e5fad516b0138c62ccc5ff71de4da98a3529020"
     },
     {
       "path": "en/insights/clinic-software-demo-checklist/index.html",
-      "bytes": 25598,
-      "sha256": "27cc3aa15e4c1be36a8c99f6f261455362dd76295a978c1a1e746d3f61fc46f0"
+      "bytes": 24648,
+      "sha256": "f933fb4cadc57b198670d68db705ad604c5314882fc4a0fc7a4879505b448fb7"
     },
     {
       "path": "en/insights/clinic-team-workflow/index.html",
-      "bytes": 25845,
-      "sha256": "79510e75331893b9171cc0cdaaa65143d29c811aa41e3a145156571aaac3f336"
+      "bytes": 24966,
+      "sha256": "be446cc334197b7d3464281c8cca19b7aa0bc943185d3eaad63711e12dc345a2"
     },
     {
       "path": "en/insights/facial-data-privacy/index.html",
-      "bytes": 24960,
-      "sha256": "365795f300606ca30105fe460df230932bd81aa281adcc63a3dca3f9ea728788"
+      "bytes": 23995,
+      "sha256": "25005d46146ccd63bc94943c7feff775499847199473f4110a0baeb853c367ba"
     },
     {
       "path": "en/insights/facial-fat-grafting-retention/index.html",
-      "bytes": 31335,
-      "sha256": "aa6d6bf910bf3533bdb33b23eca37f2d1e1bb22fbaf569a239abd8815b01465f"
+      "bytes": 30464,
+      "sha256": "fc3451f2d2267ad3f8b071997c0fdc70ad89f49095969194867de15368f517e5"
     },
     {
       "path": "en/insights/facial-photo-preparation/index.html",
-      "bytes": 24347,
-      "sha256": "c634c69ae566cbf90065dc33625cc5e5abd9cc81ab4a8c5d56bf3aae53d38e49"
+      "bytes": 23647,
+      "sha256": "dda4215f6a0297e25e27d61a51ab44dea851d17ae6f270642c0db431e6a17d45"
     },
     {
       "path": "en/insights/filler-1cc-by-area/index.html",
-      "bytes": 31433,
-      "sha256": "e02633ae5ca46c5acb07ff7fe4baa1f9b90a8eab4dc0a43b52a9dc6e5de873a1"
+      "bytes": 30485,
+      "sha256": "0d37159dadbd098f12c83ddfb495752c93a56e0956a4b338d94c3d00d7cd384e"
     },
     {
       "path": "en/insights/index.html",
-      "bytes": 22921,
-      "sha256": "050ace743b8d1448e7b0951968ff6bb674f5e3bee112eface43e3b75cdd11154"
+      "bytes": 22299,
+      "sha256": "bb7dcba416269a7906639aa032c80f46a79d7b4f5fc2c6672f53572e9c5c2c59"
     },
     {
       "path": "en/insights/phone-3d-face-scan/index.html",
-      "bytes": 28173,
-      "sha256": "e603bf719c80ef7ce053354c445eb0c61cb2386d338e372d9db0a8ab1a9d49f7"
+      "bytes": 27285,
+      "sha256": "6c952ee5aafafb1f3793048514fb1f1dfe66f949ede62f7a92a7fa7d25536f1f"
     },
     {
       "path": "en/insights/questions-before-aesthetic-treatment/index.html",
-      "bytes": 24982,
-      "sha256": "ef21867a972e77d457a071c458c4a748f87a17f6cbe1f65c05c26dfdf9b65a13"
+      "bytes": 24362,
+      "sha256": "d498c98842615da4710adee95c46812a70e759603052ffdc523998ec1dc22234"
     },
     {
       "path": "en/insights/visualization-and-consultation/index.html",
-      "bytes": 26929,
-      "sha256": "82e7dabafe1c3a7aeaa4b5c2e5cbf4d6ba8f34958c83ef6f91a04974debf06a7"
+      "bytes": 25895,
+      "sha256": "b37e4cf09db7d0a204776001426b9d14fa0cdbcf463d8c7063df78932e274245"
     },
     {
       "path": "en/news/dashboard-to-client/index.html",
-      "bytes": 16891,
-      "sha256": "9a018953745c5a44c46acb1560a8f692a0e1ab48d4262bf784fef6613b5b752d"
+      "bytes": 16492,
+      "sha256": "b891eb9463615bd4dec787561e5a90eac5976582f06c026bd2ff09392d65fab0"
     },
     {
       "path": "en/news/elp-season-4-south-korea/index.html",
-      "bytes": 19150,
-      "sha256": "41ff00837a1df31c2e470b9393d9b804a916696b98c586ba0380f23f7ad41d38"
+      "bytes": 19017,
+      "sha256": "df5a058bde4e31239568b5b184f024a886214a106380b21b5164194e647ded08"
     },
     {
       "path": "en/news/index.html",
-      "bytes": 15912,
-      "sha256": "c066b8c492b5f55de207075c2715bca62f250aae20da43f586cffa14a9a974e0"
+      "bytes": 15618,
+      "sha256": "4b85bc02fe5d43758b71ef71abba76380e2f4afd8908e4093494fc0fcae10224"
     },
     {
       "path": "en/news/p1-regional-startup-2026/index.html",
-      "bytes": 16485,
-      "sha256": "d43d86c696e6cf0813e2ec862c2244a8fad7e9a2933ab987dde2adb03c4be3cc"
+      "bytes": 16352,
+      "sha256": "063a4e7668d8b6e4d97d7c8eb15662a883254fa4603c61103bae7973825cf9a0"
     },
     {
       "path": "en/pricing/index.html",
-      "bytes": 18855,
-      "sha256": "4a50d3b3bac51be090951f018679bd9909dab36d21a3922bedef3ec711e5080f"
+      "bytes": 32777,
+      "sha256": "d135974ad3acd11ddb642e9125742fa9cde8f13d25ebb7769dd577273787e1b1"
     },
     {
       "path": "en/privacy/index.html",
-      "bytes": 11020,
-      "sha256": "ce3d2e6c4765b05c60c7c9e5a9f50af4710b607aaf1549267d642f3a421ff5f1"
+      "bytes": 10999,
+      "sha256": "f336e8f539e9c5da13b098fa098106812cbbb14bcbc4ca6661b200f059e48cbb"
     },
     {
       "path": "en/products/index.html",
-      "bytes": 28132,
-      "sha256": "c24477e74a239853f5b8572799e237db7fc987c0ab0996136c66b447d5e8d8fc"
+      "bytes": 27518,
+      "sha256": "f2ff30821ec1088bd03439cfd4abfb080c0f403813f7646ad4857f89b004f7e8"
     },
     {
       "path": "entry.js",
@@ -1882,6 +1859,11 @@
       "sha256": "af096bdad631c02ee7af9def257789c1f5a4bb5dce1be213d4df6b23955608d5"
     },
     {
+      "path": "line-oa.js",
+      "bytes": 796,
+      "sha256": "bc8c7e332a0dfde8d448480a0290f18edb1aa3986c5e76998faf78f2eb1cbb5c"
+    },
+    {
       "path": "news-b.css",
       "bytes": 50375,
       "sha256": "fe57c0d0f69b5b072166018be4c19e646ee461d1f2f9b28513786ad158bcbfe0"
@@ -1927,174 +1909,199 @@
       "sha256": "4dccf1752fe6b5306480b011a8dfbb1991a17054d24a4ddf410db70ee0435a2d"
     },
     {
+      "path": "r33-hero.js",
+      "bytes": 1591,
+      "sha256": "cdb85de57eb9a0c31377f07e9735c01fa30c4f6a8c2615d3d05bc4165141ab7f"
+    },
+    {
+      "path": "r33.css",
+      "bytes": 2161,
+      "sha256": "de98582f5888b7a84e062e5771cd89960d3996bf6ecd69a9881ac588b0417249"
+    },
+    {
+      "path": "roi.css",
+      "bytes": 16770,
+      "sha256": "4f7ae8c0ba205ffa96a31607e1e36b8f2d8460b98df64b0cc50559363c956d76"
+    },
+    {
+      "path": "roi.js",
+      "bytes": 11597,
+      "sha256": "881b247bb03e989d3dc8dff6a1c4dd075318ce17107ed263e468a69ff040576a"
+    },
+    {
+      "path": "site-config.js",
+      "bytes": 510,
+      "sha256": "7b12644d0cc0073817d39535f50c7e352d4a9d0be9c94f55682883eac090294c"
+    },
+    {
       "path": "style.css",
       "bytes": 18383,
       "sha256": "6f525435bc25d06d0bd03f39f5ba69895eb9a3755ec7b5554ed31a517e3b04b0"
     },
     {
       "path": "th/about/index.html",
-      "bytes": 24808,
-      "sha256": "f5e67d41ed124a39231b302c3f68351267cf99488bb3abb2d0f3a04b7d75caee"
+      "bytes": 24782,
+      "sha256": "dec53f3a397c330ee2f587963a124c605a949e6efd8ed01e7471cdda931edd4a"
     },
     {
       "path": "th/careers/index.html",
-      "bytes": 15708,
-      "sha256": "ff841faf62a3b9d8c90a600506f2ab95d3b4cc15b1c1eca4d5d0fad2342db95d"
+      "bytes": 15455,
+      "sha256": "fdc77d1bfa03f36c72a42aa4e7f708817778a3ede8354aa4039ec9e0a82e0a43"
     },
     {
       "path": "th/clinic/consultation-exports/index.html",
-      "bytes": 30290,
-      "sha256": "108c8ffede5a851e75ef19131876fbdba82f84dd38cac3446af3e5390549e94c"
+      "bytes": 29357,
+      "sha256": "2bcda8880de886e272182e14fdaac2dafd13edf639495568608044e25c980649"
     },
     {
       "path": "th/clinic/index.html",
-      "bytes": 42651,
-      "sha256": "460f9cb5fe1bf326e586230988b067c3576e49058233754f814a86e3add07cc2"
+      "bytes": 43033,
+      "sha256": "9f829717f488c7174a5563676a71196cac0c4cb5b7b78b1434aa152fc2ff27b8"
     },
     {
       "path": "th/clinic/injection-simulation/index.html",
-      "bytes": 35129,
-      "sha256": "e7d0517202ebc640660de806e3db0a4fddc6fed5c019b8daf98d280945a81a5e"
+      "bytes": 34239,
+      "sha256": "a541484a10a666cba8690cceabc59ed91ec31a10b7bebf8cd9103261531f2e60"
     },
     {
       "path": "th/clinic/skin-analysis/index.html",
-      "bytes": 31516,
-      "sha256": "d91497b605d4abb1f1fe3629dd134de3bcfc8958dda1026f7a54dc3a9039cb62"
+      "bytes": 30636,
+      "sha256": "fa46053497dd9ccccb8f7c5a73a5f797264530a5f05b703a0501b9e7bd0bb75e"
     },
     {
       "path": "th/clinic/surgery-simulation/index.html",
-      "bytes": 32906,
-      "sha256": "bf48ea643dfee151c1d26ee5a03eba3879261b3f10b77d8551278b279b86de1a"
+      "bytes": 32016,
+      "sha256": "1f369e4d7b29aa0848068a22c03b8967908b82623b549d7eed675a11933d5fe9"
     },
     {
       "path": "th/clinic/thread-lift-simulation/index.html",
-      "bytes": 31119,
-      "sha256": "a49aa7462cbf6d2f63306c129eb0612b253be5da87219ca46eaf843e1bbbcea8"
+      "bytes": 30229,
+      "sha256": "cb32d81e94b6f6300d50ec3843f14bef19b8bbff96dc891e71725d041d73a259"
     },
     {
       "path": "th/contact/index.html",
-      "bytes": 17725,
-      "sha256": "f303e240bf3b6bbd0a1b3b5adc6d42ed4e99babc2b52905072099cd4e9b5bb19"
+      "bytes": 17234,
+      "sha256": "6f276fcae8f018f467b4297e3d1f32fd7771882ff8c069a0b52518e437239e0c"
     },
     {
       "path": "th/credits/index.html",
-      "bytes": 94418,
-      "sha256": "7e8aad53c9f7b8aa74a82bbc2b33365ef977df485440bd057afafc97c8054736"
+      "bytes": 98617,
+      "sha256": "4189242651803c6e017d69f65dc65a8d7ed9fc8de6f08a48bd490bf10984937c"
     },
     {
       "path": "th/faceliora/index.html",
-      "bytes": 30651,
-      "sha256": "dcb6dc47cf619a0ec65608be5adb692722e8cebe8477600860a0a928cc8f058f"
+      "bytes": 30624,
+      "sha256": "f2272ff74a876bf93fb9f6a64da9f16b5459cb3d36654d235f2c151f174ea9ee"
     },
     {
       "path": "th/faq/index.html",
-      "bytes": 44948,
-      "sha256": "33dfdbe3321e9dc1b1708b13dd7260b75794777a5e6ffe77ea9ecda1bb4c218f"
+      "bytes": 46355,
+      "sha256": "4bda43b08576230ab1803088858632a98c7f87112b85f0f0e24b90efe6f3f66d"
     },
     {
       "path": "th/for-you/index.html",
-      "bytes": 35778,
-      "sha256": "95b86b0bf768608a193b15e6d553902ab4c539911bd1e91b7669ad9aa071ea2b"
+      "bytes": 34122,
+      "sha256": "7d51fdc56ef09f0e9dad71fdea5dd3deda53f2887231293190541a5c025cd6b3"
     },
     {
       "path": "th/index.html",
-      "bytes": 29223,
-      "sha256": "eeb70b6b26bd4e13389fbcbaf32a8f631fb38930c65eb97cc56d3e970b45f1d4"
+      "bytes": 29100,
+      "sha256": "53f9350e5275ff1e181214b26d5f656af46cbe856eb2bd559820d8f7a87762ac"
     },
     {
       "path": "th/insights/botox-masseter-units/index.html",
-      "bytes": 40357,
-      "sha256": "45123de90def504a24bd1c0a6318f678debdc9576950c828e039410b3cfa01b3"
+      "bytes": 38877,
+      "sha256": "d53d06355859d95838b49dd7a2e4af0f1e07cba8905bf6c056a4a93ca1db03a2"
     },
     {
       "path": "th/insights/client-view-and-sharing/index.html",
-      "bytes": 38685,
-      "sha256": "4aed2aee0db94f40d6dea30195e441c7acedd090d217026f519c454b59e959ea"
+      "bytes": 37121,
+      "sha256": "2d90a2e743831798221eedd24888ba805787997153335d08d215b9e0af656618"
     },
     {
       "path": "th/insights/clinic-software-demo-checklist/index.html",
-      "bytes": 38443,
-      "sha256": "1dab24a3eabd6165c1392699e83a5a5e143503bb58a11835a568ac05070d7a47"
+      "bytes": 37002,
+      "sha256": "ff7867305e5f149eeb52317e91676867945ccced1e42bb2ca3a225c77df1799b"
     },
     {
       "path": "th/insights/clinic-team-workflow/index.html",
-      "bytes": 40945,
-      "sha256": "463ddb23e4e68d6cf67e03d193975e11cb0a44d2aa25211b9bbb683ea114a5a3"
+      "bytes": 39615,
+      "sha256": "711538165eefef470d3393d38dd798142190170c3ffc5430aa1126be4845a2c6"
     },
     {
       "path": "th/insights/facial-data-privacy/index.html",
-      "bytes": 37273,
-      "sha256": "4d7c38327e682cdad1fcff21be60ee33b7d05c70dc4f2a90761213eea9c269db"
+      "bytes": 35763,
+      "sha256": "6d20e60f86a913833610d24ecd583cb2b6ef49e6323da3acdbd5d503f8961fc8"
     },
     {
       "path": "th/insights/facial-fat-grafting-retention/index.html",
-      "bytes": 44906,
-      "sha256": "a16ad68632241b3b7a46508aa593ce52f934e025424fa39c9fa9aeb318f27964"
+      "bytes": 43577,
+      "sha256": "41b789dad2cb2c7b163fba3b9d2b41e29a02dfe44ab02af04de57deb44053def"
     },
     {
       "path": "th/insights/facial-photo-preparation/index.html",
-      "bytes": 36010,
-      "sha256": "b1a667cb49dd3b4d358ab353786e1d233dec659c9d868d56df762e7da0c39681"
+      "bytes": 34945,
+      "sha256": "2795955fa558996bbdaf8d61225c58340ea1bc3446fe0730623ca9498e0202f8"
     },
     {
       "path": "th/insights/filler-1cc-by-area/index.html",
-      "bytes": 46834,
-      "sha256": "37008e24233b2a691d2dabd22ba144b73e80cbf6854e1c67fd340fc3760152e2"
+      "bytes": 45394,
+      "sha256": "a676373d88f01b2036722e81e2e7eefbde89a806436bb114b0f0e2e7506ae3f6"
     },
     {
       "path": "th/insights/index.html",
-      "bytes": 30386,
-      "sha256": "e0fcd1cdc718a75a93bab7a1d559ffc323a4996152f03bf676491fca80b2d073"
+      "bytes": 29511,
+      "sha256": "79f508b88aed71c8f0b21ccd8ab33a2c9d15459869c8028b188da4d845c1c1e2"
     },
     {
       "path": "th/insights/phone-3d-face-scan/index.html",
-      "bytes": 40413,
-      "sha256": "4d2c400b74b8fcef8319dc7aa44d1cf2a06c2c2796c8b05565d26591b05ff7f8"
+      "bytes": 39074,
+      "sha256": "1dc4590c8768e9e2efc78d201c32371b66d194e9ff9a4884d07b4121170c815a"
     },
     {
       "path": "th/insights/questions-before-aesthetic-treatment/index.html",
-      "bytes": 36062,
-      "sha256": "36b7a94cb8b5ef07ca8bab3747f639e2cad92c69a72d213b4723314d11a1c020"
+      "bytes": 35187,
+      "sha256": "81c65d7fa560f6f1b927d5baf64c7cb663225aada84c5dc77f4d0cf852058ed7"
     },
     {
       "path": "th/insights/visualization-and-consultation/index.html",
-      "bytes": 39582,
-      "sha256": "24dcc76606b32379fd48b8bc8ebb620a00ed80eb81b486c5e5e56497c66ecf93"
+      "bytes": 38018,
+      "sha256": "7bf08bc762419e1dc77c92830dad2e7ad2942e6807e6c952bc428e070fc82d8c"
     },
     {
       "path": "th/news/dashboard-to-client/index.html",
-      "bytes": 21368,
-      "sha256": "fd7449a9c4aeba23964ae2cbfb8fd78ba8c45eb25ef31ac38876800ba42fc5b3"
+      "bytes": 20935,
+      "sha256": "58761fbf86ef15222370ae82b9b7bdb181782828a79f8cd28a06b56320eecd8a"
     },
     {
       "path": "th/news/elp-season-4-south-korea/index.html",
-      "bytes": 25219,
-      "sha256": "727eb4e86b395cdfde66d041c307f23cef6347af2e2a0199b775c445f7610485"
+      "bytes": 25086,
+      "sha256": "74bc71f27af1d4fc68ed201da08b471f9ee76dc3a61052ea1bf7722b16aa9549"
     },
     {
       "path": "th/news/index.html",
-      "bytes": 20374,
-      "sha256": "849172b19ad64de25f3df67027b1e2121de9f0166c82b13cae36899011dc9980"
+      "bytes": 19979,
+      "sha256": "ca4d9c253ae828cf075d747c56c8e97e9a899134fb9e229e7281151c44201f62"
     },
     {
       "path": "th/news/p1-regional-startup-2026/index.html",
-      "bytes": 21197,
-      "sha256": "a32551078b39bce44df7a0c727b45ca9e31176ed758922d680f215eaa8029ef1"
+      "bytes": 21064,
+      "sha256": "43d7dcff94a051a81813fcdf0c181ff670a25049d6d35c3ef5307da0805a4a18"
     },
     {
       "path": "th/pricing/index.html",
-      "bytes": 26391,
-      "sha256": "248ff48f5b60c3bf38a20de90105cd1a74b8792da5b7fea5d552c5039b3ca6d5"
+      "bytes": 48511,
+      "sha256": "e8c5bb361d04a2ed7d44a0bd7426b470cfc594065d28efc36b0882881693ad82"
     },
     {
       "path": "th/privacy/index.html",
-      "bytes": 14564,
-      "sha256": "7cd0e66e8f399af2f8dcbaa2f19ef6e4532e1575978f53bc125980efdd48916b"
+      "bytes": 14543,
+      "sha256": "0c773d8d0e7783c8011cc1c3e271d607b959c00514052ef87270442294e2de4f"
     },
     {
       "path": "th/products/index.html",
-      "bytes": 37812,
-      "sha256": "0673148510fa94273f9bede3ff89191484a88c541d122c7345f21a029547404c"
+      "bytes": 36793,
+      "sha256": "a8600e6ac14d30b40d3b76279152759060468d9abab1c4783e76d7b786c1b9ab"
     }
   ]
 }
