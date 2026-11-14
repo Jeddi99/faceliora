@@ -1,0 +1,60 @@
+/* R48 · additions on the R46 site for the Clinic + Scan only options. Existing tokens only (no new colours or fonts). Design review build. */
+.r48-cta{min-height:44px;padding:var(--space-xs) var(--space-md);margin-inline-start:var(--space-sm)}
+.sheet-plain a.r48-sheet-cta{display:flex;width:100%;justify-content:center;margin-block:var(--space-sm);color:var(--color-accent-ink)}
+.r48-aside{margin-top:var(--space-lg);max-width:70ch;font-size:var(--text-small);color:var(--color-muted)}
+.nb{white-space:nowrap}
+.r48-cta:focus-visible,.r48-sheet-cta:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}
+.r48-cta:active,.r48-sheet-cta:active{background:var(--color-dark)}
+.r48-newscta{margin-top:var(--space-md)}
+.r48-tips{margin-top:var(--space-md)}
+
+/* A · three plain steps instead of product cards */
+.r48-steps{list-style:none;margin:var(--space-2xl) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--color-ink)}
+.r48-steps li{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-xs);padding:var(--space-lg) var(--gap-columns) var(--space-xl) 0}
+.r48-steps li+li{padding-inline-start:var(--gap-columns);border-inline-start:1px solid var(--color-hairline)}
+.r48-n{font-size:var(--text-section);line-height:1;font-weight:300;color:var(--color-accent);font-variant-numeric:tabular-nums lining-nums}
+.r48-steps h3,.r48-cards h3{font-size:var(--text-title);font-weight:400;line-height:1.4;letter-spacing:-.015em}
+.r48-steps p{font-size:15px;line-height:1.7;max-width:46ch}
+.r48-steps .text-link{margin-top:var(--space-xs)}
+
+/* C · one product, three steps with the device that does each */
+.r48-single{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap-columns);row-gap:var(--space-lg)}
+.r48-single-head{grid-column:1/6}
+.r48-single-head h2{text-wrap:balance;font-size:var(--text-section);line-height:1.25;letter-spacing:-.025em;overflow-wrap:break-word;min-width:0}
+.r48-single-head .section-lead{margin-top:var(--space-md)}
+.r48-single-head .text-link{margin-top:var(--space-md)}
+.r48-cards{grid-column:7/13;list-style:none;margin:0;padding:0;border-top:2px solid var(--color-ink)}
+.r48-cards li{display:grid;grid-template-columns:56px minmax(0,1fr);grid-template-areas:"n h" "n d" "n p";column-gap:var(--space-md);row-gap:var(--space-3xs);padding:var(--space-lg) 0;border-bottom:1px solid var(--color-hairline)}
+.r48-cards .r48-n{grid-area:n}
+.r48-cards h3{grid-area:h}
+.r48-dev{grid-area:d;font-size:var(--text-small);font-weight:600;color:var(--color-accent)}
+.r48-cards li>p:last-child{grid-area:p;margin-top:var(--space-xs);font-size:15px;line-height:1.7}
+.r48-single>.r48-aside{grid-column:7/13;margin-top:0}
+
+/* pricing */
+.pr-row.r48-pr2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pr-row.r48-pr3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.r48-price{font-size:28px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums lining-nums;color:var(--color-ink)}
+.c-hprices.r48-hp2{grid-template-columns:repeat(2,max-content)}
+.c-chapters ol.r48-ch2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.foot-products.r48-fp2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.foot-products.r48-fp1{grid-template-columns:minmax(0,1fr)}
+.foot-products.r48-fp1 a{max-width:420px}
+
+@media(max-width:999px){
+ .r48-cta{margin-inline-start:auto;min-height:44px;padding-inline:var(--space-sm)}
+ .r48-cta+.sheet{margin-inline-start:0}
+ .sheet-plain a.r48-sheet-cta{display:none}
+ .r48-steps{grid-template-columns:minmax(0,1fr)}
+ .r48-steps li,.r48-steps li+li{padding:var(--space-lg) 0;border-inline-start:0;border-top:1px solid var(--color-hairline)}
+ .r48-steps li:first-child{border-top:0}
+ .r48-single-head,.r48-cards,.r48-single>.r48-aside{grid-column:1/-1}
+ .pr-row.r48-pr3,.pr-row.r48-pr2{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .c-chapters ol.r48-ch2,.c-chapters ol.r48-ch3{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:699px){
+ .pr-row.r48-pr3,.pr-row.r48-pr2{grid-template-columns:minmax(0,1fr)}
+ .c-hprices.r48-hp2{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+ .r48-cards li{grid-template-columns:44px minmax(0,1fr)}
+ .foot-products.r48-fp2{grid-template-columns:minmax(0,1fr)}
+}

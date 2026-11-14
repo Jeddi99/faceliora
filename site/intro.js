@@ -137,7 +137,7 @@
   const base=new URL('./',document.baseURI),url=new URL(location.href);
   if(url.origin!==base.origin||!url.pathname.startsWith(base.pathname))return;
   const route=url.pathname.slice(base.pathname.length);
-  const known=/^(th|en)\/(?:(?:for-you|clinic|pricing|faq)\/)?(?:index\.html)?$/.test(route);
+  const known=/^(th|en)\/(?:(?:clinic|pricing|faq)\/)?(?:index\.html)?$/.test(route);
   if(!known)return;
   if(window.__facelioraIntroSeen){finish('already-seen');return;}
   window.__facelioraIntroSeen=true;
