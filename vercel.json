@@ -5,5 +5,67 @@
       "design/r5-a-preview": false,
       "feat/round7-multipage": false
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/th/for-you/",
+      "destination": "/th/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/th/for-you",
+      "destination": "/th/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/th/for-you/index.html",
+      "destination": "/th/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/th/products/",
+      "destination": "/th/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/th/products",
+      "destination": "/th/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/th/products/index.html",
+      "destination": "/th/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/en/for-you/",
+      "destination": "/en/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/en/for-you",
+      "destination": "/en/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/en/for-you/index.html",
+      "destination": "/en/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products/",
+      "destination": "/en/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products",
+      "destination": "/en/clinic/",
+      "permanent": false
+    },
+    {
+      "source": "/en/products/index.html",
+      "destination": "/en/clinic/",
+      "permanent": false
+    }
+  ]
 }
