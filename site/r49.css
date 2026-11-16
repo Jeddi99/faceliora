@@ -58,3 +58,65 @@
  .r48-cards li{grid-template-columns:44px minmax(0,1fr)}
  .foot-products.r48-fp2{grid-template-columns:minmax(0,1fr)}
 }
+/* R55 logo C: wordmark lockup (assets/brand/lockup.svg, SVG = crisp at 1x/2x). SPEC heights: header 28 desktop / 24 phone; 44px target kept. */
+.brand img{display:block;height:28px;width:auto}
+footer .brand img{height:24px}
+@media(max-width:799px){.brand img{height:24px}}
+/* R60 header demo CTA (design R59 option B, manifest a8276bac…7ea) + sticky header. Existing tokens only; appended after every page's own CSS (r49.css is the last stylesheet before fl-consent.css on all 76 header pages). */
+:root{--hc-h:88px;--hc-top:calc(var(--hc-h) + var(--space-lg))}
+html{scroll-padding-top:var(--hc-top)}
+.header{position:sticky;top:0}
+.header .hcta{min-height:44px;padding:var(--space-xs) var(--space-md);flex-shrink:0}
+.hcta .hc-s{display:none}
+.hcta:active{background:var(--color-dark);border-color:var(--color-dark);color:var(--color-accent-ink);filter:none}
+.hcta[aria-current=page],.hcta[aria-current=page]:hover,.hcta[aria-current=page]:active{background:var(--color-field);border-color:var(--color-accent);color:var(--color-accent);cursor:default;filter:none}
+.sheet-body .hcta-sheet{display:none}
+/* B: outline at the top, solid after 8px of scroll (html.is-scrolled is set by hcta.js; without JS it stays outline) */
+.header .hcta{background:var(--color-clear);color:var(--color-accent)}
+.header .hcta:hover{background:var(--color-field);border-color:var(--color-hover);color:var(--color-hover)}
+.header .hcta:active{background:var(--color-dark);border-color:var(--color-dark);color:var(--color-accent-ink)}
+html.is-scrolled .header .hcta{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-accent-ink)}
+html.is-scrolled .header .hcta:hover{background:var(--color-hover);border-color:var(--color-hover)}
+html.is-scrolled .header .hcta:active{background:var(--color-dark);border-color:var(--color-dark)}
+html.is-scrolled .header{box-shadow:0 1px 0 var(--color-hairline),0 14px 24px -22px var(--color-shadow)}
+.header .hcta[aria-current=page],html.is-scrolled .header .hcta[aria-current=page]{background:var(--color-field);border-color:var(--color-accent);color:var(--color-accent)}
+@media(prefers-reduced-motion:no-preference){
+ .header .hcta{transition:background-color var(--dur-micro) var(--ease-out),border-color var(--dur-micro) var(--ease-out),color var(--dur-micro) var(--ease-out)}
+ .header{transition:box-shadow var(--dur-menu) var(--ease-out)}
+}
+/* sticky header: every existing sticky element must sit below it (header + 24px) */
+.caps-photo,.c-ch-photo,.a-rail,.b-rel,.doc .toc,.roi-b-card{top:var(--hc-top)}
+/* tablet + phone: nav is folded into the drawer (<=999px); the CTA sits left of the menu button */
+@media(max-width:999px){
+ :root{--hc-h:72px}
+ .header .hcta{margin-left:auto}
+ .header .hcta+.sheet{margin-left:0}
+ .a-rail{top:var(--hc-h)}  /* FAQ / legal group row is a flush sticky bar under the header, no gap */
+}
+/* >=1000: the sticky contents rail (FAQ, privacy, terms, credits) can be taller than the space under the header on short screens; it scrolls inside itself so every link stays reachable. Padding and negative margin cancel out (no layout shift) and keep the link hover bar and focus ring inside the scroll box. */
+@media(min-width:1000px){
+ .a-rail{max-height:calc(100vh - var(--hc-top) - var(--space-lg));max-height:calc(100dvh - var(--hc-top) - var(--space-lg));overflow-y:auto;overscroll-behavior:contain;padding:var(--space-2xs) var(--space-lg);margin:calc(-1 * var(--space-2xs)) calc(-1 * var(--space-lg))}
+}
+/* EN nav compression at 1000-1099px (the logo is squeezed otherwise) */
+@media(min-width:1000px) and (max-width:1099px){
+ html:lang(en) .header .nav-list{gap:var(--space-2xs)}
+ html:lang(en) .header .nav-link{padding-inline:var(--space-xs);min-width:44px;justify-content:center}
+}
+/* phone: 8px minimum gap between touch targets, compact pill, EN label "Demo" */
+@media(max-width:479px){
+ .header{gap:var(--space-xs)}
+ .header .hcta{padding-inline:var(--space-xs)}
+ .hcta .hc-l{display:none}
+ .hcta .hc-s{display:inline}
+}
+/* narrow phone (<=389): menu button loses its chevron + 4px padding so logo | CTA | menu | EN fit one row */
+@media(max-width:389px){
+ .header .sheet-trigger{padding-inline:var(--space-xs);min-width:44px;justify-content:center}
+ .header .sheet-trigger .chevron{display:none}
+}
+/* very narrow (<=359): the pill would crowd the EN switch, so the CTA becomes the first row of the drawer */
+@media(max-width:359px){
+ .header .hcta{display:none}
+ .header .hcta+.sheet{margin-left:auto}
+ .sheet-body .hcta-sheet{display:flex;width:100%;min-height:48px;margin-bottom:var(--space-md)}
+}

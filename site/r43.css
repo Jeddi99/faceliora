@@ -123,3 +123,7 @@
 .r43-off .r43-actions{gap:12px}
 .r43-off .r43-actions .r43-btn{min-height:44px;padding:8px 20px}
 .r43 [aria-disabled=true].r43-submit{cursor:not-allowed}
+
+/* R54: region switch (country != Thailand => email-first, no Thai-only fields) */
+main[data-region="intl"] [data-th-only]{display:none!important}
+main:not([data-region="intl"]) [data-intl-only]{display:none!important}

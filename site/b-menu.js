@@ -1,7 +1,7 @@
 'use strict';
 // R15 header menus. Each menu is a native <details>, so it opens and closes with no script at all;
 // this file only adds: one open menu at a time, Escape returns focus to its trigger, outside click and
-// focus-leave close, and closing on resize. No storage, no network.
+// focus-leave close, and closing on resize. Storage: see R52 note below.
 (() => {
  const menus=[...document.querySelectorAll('details.drop, details.sheet')];
  const close=(d,{restore=false}={})=>{if(!d.open)return;d.open=false;if(restore)d.querySelector('summary')?.focus({preventScroll:true});};
@@ -23,5 +23,12 @@
  addEventListener('pageshow',()=>{for(const d of menus)close(d);});
  // Pending intentions have no endpoint, collection or success state.
  document.querySelectorAll('[aria-disabled="true"]').forEach(b=>b.addEventListener('click',e=>e.preventDefault()));
+ // R52: plain click/Enter on the brand logo leaves a one-shot timestamp for intro.js (replay on next home load).
+ document.addEventListener('click',e=>{
+  if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+  const a=e.target.closest&&e.target.closest('a.brand');
+  if(!a||(a.target&&a.target!=='_self'))return;
+  try{sessionStorage.setItem('faceliora:intro:replay',String(Date.now()));}catch{}
+ });
  document.documentElement.classList.add('js');
 })();
