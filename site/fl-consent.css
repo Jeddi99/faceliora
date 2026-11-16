@@ -1,0 +1,60 @@
+/* R58 cookie consent, design R57 option B (corner card). Self-contained tokens (scoped to .cc) so it looks the same on every page. */
+.cc{--font-body:Manrope,Thai,sans-serif;--color-ink:#193335;--color-muted:#3f5c5f;--color-hair:#c9d6d6;--color-field:#e0eded;--color-accent:#14535d;--color-accent-ink:#f5faf9;--color-hover:#0d3d46;--color-focus:#0750b2;--color-input:#5f7778;--color-rule:#8b9c9c;--color-white:#fbfdfd;--color-shadow:rgba(10,24,29,.14);--space-xs:8px;--space-sm:12px;--space-md:16px;--radius:4px;--dur:140ms;--ease:cubic-bezier(.16,1,.3,1);
+position:fixed;z-index:60;background:var(--color-white);color:var(--color-ink);font:400 15px/1.6 var(--font-body)}
+.cc[hidden]{display:none}
+.cc-title{font-size:16px;line-height:1.4;font-weight:600;margin:0 0 4px}
+.cc-text{margin:0;color:var(--color-muted)}
+.cc-text a{color:var(--color-accent);font-weight:600;text-underline-offset:3px}
+.cc-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.cc-btn{flex:1 1 0;min-width:0;min-height:48px;padding:0 var(--space-sm);border:2px solid var(--color-accent);border-radius:var(--radius);background:var(--color-accent);color:var(--color-accent-ink);font:600 15px/1.25 var(--font-body);cursor:pointer;transition:background var(--dur) var(--ease)}
+.cc-btn:active{transform:translateY(1px)}
+.cc-btn:hover{background:var(--color-hover);border-color:var(--color-hover)}
+.cc-btn.alt{background:var(--color-white);color:var(--color-accent)}
+.cc-btn.alt:hover{background:var(--color-field)}
+.cc-link{flex:1 1 100%;min-height:44px;background:none;border:0;color:var(--color-accent);font:600 15px/1.2 var(--font-body);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.cc :focus-visible{outline:3px solid var(--color-focus);outline-offset:2px}
+.cc-panel{display:none}
+.cc.is-settings .cc-main{display:none}
+.cc.is-settings .cc-panel{display:block}
+.cc-panel h2{font-size:18px;line-height:1.4;font-weight:600;margin:0 0 4px}
+.cc-panel>p{margin:0 0 var(--space-sm);color:var(--color-muted)}
+.cc-row{display:flex;gap:var(--space-md);align-items:flex-start;justify-content:space-between;padding:var(--space-sm) 0;border-top:1px solid var(--color-hair)}
+.cc-row b{display:block;font-weight:600}
+.cc-row span.d{display:block;color:var(--color-muted);font-size:14px;line-height:1.5}
+.cc-sw{position:relative;flex:none;display:inline-flex;align-items:center;gap:var(--space-xs);min-height:44px;cursor:pointer;font-size:14px;font-weight:600}
+.cc-sw input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.cc-sw input:disabled{cursor:not-allowed}
+.cc-track{width:48px;height:28px;border-radius:14px;background:var(--color-white);border:2px solid var(--color-input);position:relative;transition:background var(--dur) var(--ease)}
+.cc-track::after{content:"";position:absolute;left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:var(--color-input);transition:transform var(--dur) var(--ease)}
+.cc-sw input:checked+.cc-track{background:var(--color-accent);border-color:var(--color-accent)}
+.cc-sw input:checked+.cc-track::after{transform:translateX(20px);background:var(--color-white)}
+.cc-sw input:disabled+.cc-track{background:var(--color-field);border-color:var(--color-rule)}
+.cc-sw input:disabled:checked+.cc-track::after{background:var(--color-muted)}
+.cc-sw input:focus-visible+.cc-track{outline:3px solid var(--color-focus);outline-offset:2px}
+.cc-sw .st{min-width:2.6em}
+.cc-panel .cc-actions .cc-btn.save{flex:1 1 100%}
+.cc-live{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* B: corner card */
+.cc-b{left:12px;right:12px;bottom:12px;border:1px solid var(--color-hair);border-radius:8px;padding:var(--space-md) var(--space-md) var(--space-xs);box-shadow:0 10px 30px var(--color-shadow)}
+.cc-b .cc-title{display:none}
+.cc-b .cc-text{font-size:14px;line-height:1.5}
+.cc-b .cc-actions{margin-top:var(--space-sm)}
+.cc-b .cc-btn{min-height:46px;font-size:14px}
+.cc-b .cc-link{min-height:44px}
+.cc-b.is-settings{max-height:calc(100vh - 24px);overflow:auto;padding:16px}
+@media(min-width:900px){
+.cc-b{left:auto;right:24px;bottom:24px;width:392px;padding:20px 20px 8px}
+.cc-b .cc-title{display:block}
+.cc-b .cc-text{font-size:14.5px}
+.cc-b.is-settings{padding:20px}
+}
+@media(max-width:899px){.cc-b{bottom:max(12px,env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:no-preference){.cc{animation:cc-in 220ms var(--ease)}@keyframes cc-in{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}}
+@media(prefers-reduced-motion:reduce){.cc,.cc-btn,.cc-track,.cc-track::after{animation:none;transition:none}}
+.cc-panel h2:focus{outline:none}
+/* footer reopen link ("ตั้งค่าคุกกี้" / "Cookie settings"): looks like the other footer links */
+.cc-open{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:44px;display:inline-flex;align-items:center}
+.foot-cols .cc-open{color:var(--color-muted,#3f5c5f);text-decoration:none}
+.foot-cols .cc-open:hover{color:var(--color-hover,#0d3d46);text-decoration:underline}
+.cc-open:focus-visible{outline:3px solid #0750b2;outline-offset:3px}
+@media(max-width:699px){footer .foot-cols li>.cc-open{padding-inline:12px;margin-inline:-12px}}

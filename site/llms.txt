@@ -1,0 +1,33 @@
+# Faceliora
+
+> Faceliora is consultation software for aesthetic clinics. Faceliora Clinic is 3D facial simulation software that doctors and clinic teams use with the client in the consultation room: injections (filler, toxin, fat), surgery across 13 facial zones, thread lifts and skin analysis, with AI facial analysis at 51 points, summarised in a consultation sheet. Faceliora Scan is an iPhone app that scans a face to build the 3D model; .glb, .obj and .zip files from other scanning apps can also be imported. Faceliora Clinic runs on Mac and Windows. The site is in English and Thai.
+
+Simulations are images for communication. They are not a diagnosis, a prediction or a guarantee of treatment results. Faceliora is software, not a treatment service.
+
+## Key pages (English)
+- [Home](https://faceliora.com/en/): what Faceliora does
+- [Faceliora Clinic](https://faceliora.com/en/clinic/): desktop consultation simulation software for clinics
+- [Faceliora Scan](https://faceliora.com/en/faceliora/): 3D face scanning with an iPhone
+- [Pricing](https://faceliora.com/en/pricing/): plans and pricing
+- [Book a demo](https://faceliora.com/en/demo/): demo request form
+- [Insights](https://faceliora.com/en/insights/): 16 guides for consultations and clinic teams
+- [FAQ](https://faceliora.com/en/faq/)
+- [About us](https://faceliora.com/en/about/)
+- [Contact us](https://faceliora.com/en/contact/)
+- [Privacy](https://faceliora.com/en/privacy/)
+- [Terms of use](https://faceliora.com/en/terms/)
+
+## Thai pages
+- [หน้าแรก](https://faceliora.com/th/)
+- [Faceliora Clinic](https://faceliora.com/th/clinic/)
+- [ราคา](https://faceliora.com/th/pricing/)
+- [นัดสาธิต](https://faceliora.com/th/demo/)
+- [บทความ](https://faceliora.com/th/insights/)
+
+## Pricing
+Pricing is quoted per clinic. Contact us for pricing: https://faceliora.com/en/demo/ (or hello@faceliora.com).
+
+## Contact
+- General and demo requests: hello@faceliora.com
+- Privacy: privacy@faceliora.com
+- Faceliora team, Mueang Ubon Ratchathani 34000, Thailand

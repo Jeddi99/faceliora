@@ -1,4 +1,4 @@
-/* R47 demo lead form (design R43 option A). Plain JS, no library, no third-party request, nothing is stored in the browser.
+/* R47 demo lead form (design R43 option A). Plain JS, no library, no third-party request. R58: reads UTM/from kept in sessionStorage by fl-consent.js (no cookies) and reports Lead only after ok:true.
  * Config: window.FACELIORA_SITE_CONFIG.LEAD_ENDPOINT_URL (site-config.js). https:// Apps Script Web App URL.
  *   Empty / invalid  -> the form shows a notice (LINE / email), the submit button is disabled and NOTHING is sent. No fake success.
  * Source of the lead: ?from=<cta-id> (a-z 0-9 hyphen, <= 60 chars), else "direct". */
@@ -11,6 +11,8 @@
       clinic: 'กรอกชื่อคลินิกหรือองค์กร',
       phone_empty: 'กรอกเบอร์โทรให้ทีมติดต่อกลับ',
       phone_bad: 'เบอร์โทรไม่ถูกต้อง ลองแบบ 081 234 5678 หรือ 02 123 4567',
+      phone_bad_intl: 'เบอร์โทรไม่ถูกต้อง ใส่รหัสประเทศด้วย เช่น +44 20 7946 0958',
+      country: 'เลือกประเทศ',
       email_empty: 'กรอกอีเมลให้ทีมติดต่อกลับ',
       email_bad: 'อีเมลไม่ถูกต้อง ลองแบบ name@gmail.com',
       line: 'LINE ID ใช้ได้ 4–20 ตัว เป็น a–z ตัวเลข จุด ขีดล่าง หรือขีดกลาง',
@@ -25,6 +27,8 @@
       clinic: 'Enter your clinic or organisation name',
       phone_empty: 'Enter a phone number so the team can call you back',
       phone_bad: 'That phone number looks wrong. Try 081 234 5678 or 02 123 4567',
+      phone_bad_intl: 'That phone number looks wrong. Include the country code, for example +44 20 7946 0958',
+      country: 'Choose your country',
       email_empty: 'Enter your email so the team can reply',
       email_bad: 'That email looks wrong. Try name@gmail.com',
       line: 'LINE ID: 4–20 characters, a–z, digits, dot, underscore or hyphen',
@@ -46,14 +50,25 @@
     if (/^0[2-57]\d{7}$/.test(s)) return s;      /* landline: 02 / 03 / 04 / 05 / 07 + 7 digits */
     return '';
   }
+  /* R54: international number: digits with optional leading +, 9-15 digits (Code.gs accepts 9-20 chars of 0-9 + - space ( )). Returns +digits / digits or ''. */
+  function intlPhone(raw) {
+    var s = String(raw || '').replace(/[\s().-]/g, '');
+    return /^\+?\d{9,15}$/.test(s) ? s : '';
+  }
+  var COUNTRY_EL = null;
+  function countryVal() { return COUNTRY_EL ? COUNTRY_EL.value : ''; }
+  /* intl = a country other than Thailand. EN: empty also counts as intl (EN audience). TH: empty counts as Thai. */
+  function isIntl() { var c = countryVal(); return LANG === 'en' ? c !== 'Thailand' : (c !== '' && c !== 'Thailand'); }
+  function phoneOk(v) { return isIntl() ? intlPhone(v) : thPhone(v); }
   var RULES = {
     name: function (v) { return norm(v).length >= 2 ? '' : M.name; },
     clinic: function (v) { return norm(v).length >= 2 ? '' : M.clinic; },
-    phone: function (v) { return !norm(v) ? M.phone_empty : (thPhone(v) ? '' : M.phone_bad); },
+    phone: function (v) { return !norm(v) ? M.phone_empty : (phoneOk(v) ? '' : (isIntl() ? M.phone_bad_intl : M.phone_bad)); },
+    country: function (v) { return LANG === 'en' && !v ? M.country : ''; },
     email: function (v) { v = norm(v); return !v ? M.email_empty : (/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : M.email_bad); },
-    line_id: function (v) { v = norm(v); return !v || /^[A-Za-z0-9._-]{4,20}$/.test(v.replace(/^@/, '')) ? '' : M.line; }
+    line_id: function (v) { v = norm(v); return isIntl() || !v || /^[A-Za-z0-9._-]{4,20}$/.test(v.replace(/^@/, '')) ? '' : M.line; }
   };
-  var ORDER = ['name', 'clinic', 'phone', 'email', 'line_id', 'consent'];
+  var ORDER = ['name', 'clinic', 'phone', 'email', 'country', 'line_id', 'consent'];
 
   function endpoint() {
     var cfg = window.FACELIORA_SITE_CONFIG || {}, url = typeof cfg.LEAD_ENDPOINT_URL === 'string' ? cfg.LEAD_ENDPOINT_URL.trim() : '';
@@ -64,6 +79,9 @@
     var form = root.querySelector('form.r43-form');
     if (!form || root.__r43) return; root.__r43 = 1;
     var summary = root.querySelector('.r43-summary');
+    COUNTRY_EL = form.elements.country;
+    var mainEl = document.querySelector('main[data-region]');
+    function applyRegion() { if (mainEl) mainEl.setAttribute('data-region', isIntl() ? 'intl' : 'th'); }
     var net = root.querySelector('.r43-net');
     var ok = root.querySelector('.r43-ok');
     var off = root.querySelector('.r43-off');
@@ -71,8 +89,11 @@
     var lbl = btn.querySelector('.r43-lbl');
     var day = form.elements.preferred_day;
     var msg = form.elements.message, cnt = root.querySelector('.r43-count');
-    var from = String(qs.get('from') || '').toLowerCase();
-    var source = /^[a-z0-9][a-z0-9-]{0,59}$/.test(from) ? from : 'direct';
+    /* read at submit time: fl-consent.js (UTM/from in sessionStorage) is loaded after this file */
+    function sourceNow() {
+      var from = String(qs.get('from') || (window.FLTrack && window.FLTrack.utm().from) || '').toLowerCase();
+      return /^[a-z0-9][a-z0-9-]{0,59}$/.test(from) ? from : 'direct';
+    }
     function setState(s) { root.setAttribute('data-state', s); root.dispatchEvent(new CustomEvent('r43:state', { detail: s, bubbles: true })); }
     function f(id) { return form.querySelector('[name="' + id + '"]'); }
     function errEl(id) { return root.querySelector('[data-err="' + id + '"]'); }
@@ -117,19 +138,27 @@
       var a = e.target.closest('a'); if (!a) return; e.preventDefault();
       var el = form.querySelector(a.getAttribute('href')); if (el) { el.focus(); el.scrollIntoView({ block: 'center' }); }
     });
+    if (COUNTRY_EL) COUNTRY_EL.addEventListener('change', function () {
+      applyRegion();
+      var pe = f('phone'); if (pe.getAttribute('aria-invalid') === 'true' || pe.dataset.touched) showErr('phone', validateOne('phone'));
+    });
+    applyRegion();
     if (day) { var d = new Date(); day.min = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
     if (msg && cnt) { var upd = function () { cnt.textContent = M.count(msg.value.length, msg.maxLength); }; msg.addEventListener('input', upd); upd(); }
 
     /* Keys = lead-form/apps-script/Code.gs HEADERS (minus received_at, set by the server) + website (honeypot). Nothing else is sent. */
     function payload() {
       var role = form.querySelector('input[name="role"]:checked');
-      return {
-        name: norm(f('name').value), clinic: norm(f('clinic').value), phone: thPhone(f('phone').value), email: norm(f('email').value).toLowerCase(),
-        line_id: norm(f('line_id').value).replace(/^@/, ''), province: f('province').value, role: role ? role.value : '',
+      var p = {
+        name: norm(f('name').value), clinic: norm(f('clinic').value), phone: isIntl() ? intlPhone(f('phone').value) : thPhone(f('phone').value), email: norm(f('email').value).toLowerCase(),
+        line_id: isIntl() ? '' : norm(f('line_id').value).replace(/^@/, ''), province: isIntl() ? '' : f('province').value, country: countryVal(), role: role ? role.value : '',
         preferred_day: day ? day.value : '', message: norm(msg.value) === '' ? '' : msg.value.trim(),
-        consent: true, consent_version: 'r43-' + LANG + '-1', lang: LANG, source_page: location.pathname, source_cta: source,
+        consent: true, consent_version: 'r54-' + LANG + '-1', lang: LANG, source_page: location.pathname, source_cta: sourceNow(),
         website: f('website').value
       };
+      var u = window.FLTrack ? window.FLTrack.utm() : {};
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) { if (u[k]) p[k] = u[k]; });
+      return p;
     }
     function send(p, url) {
       var ctl = new AbortController(), to = setTimeout(function () { ctl.abort(); }, 15000);
@@ -161,13 +190,13 @@
       var p = payload();
       if (p.website) { success(p); return; }              /* honeypot filled: look successful, send nothing */
       busy(true); setState('submitting');
-      send(p, url).then(function () { busy(false); success(p); }, function () {
+      send(p, url).then(function () { busy(false); if (window.FLTrack) window.FLTrack.lead('demo'); success(p); }, function () {
         busy(false); net.hidden = false; setState('neterror');
         net.setAttribute('tabindex', '-1'); net.focus(); net.scrollIntoView({ block: 'nearest' });
       });
     });
     var rt = root.querySelector('.r43-retry'); if (rt) rt.addEventListener('click', function () { form.requestSubmit(); });
-    root.__r43reset = function () { form.reset(); form.hidden = false; ok.hidden = true; net.hidden = true; summary.hidden = true; root.querySelectorAll('.r43-hide-ok').forEach(function (n) { n.hidden = false; }); ORDER.forEach(function (id) { showErr(id, ''); }); busy(false); applyEndpointState(); setState('idle'); if (cnt) msg.dispatchEvent(new Event('input')); };
+    root.__r43reset = function () { form.reset(); form.hidden = false; ok.hidden = true; net.hidden = true; summary.hidden = true; root.querySelectorAll('.r43-hide-ok').forEach(function (n) { n.hidden = false; }); ORDER.forEach(function (id) { showErr(id, ''); }); busy(false); applyEndpointState(); setState('idle'); if (cnt) msg.dispatchEvent(new Event('input')); applyRegion(); };
     applyEndpointState();
     setState('idle');
   }
@@ -177,5 +206,5 @@
     document.querySelectorAll('.r43-reset').forEach(function (b) { b.addEventListener('click', function () { b.closest('.r43').__r43reset(); }); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
-  window.R43 = { thPhone: thPhone, rules: RULES };
+  window.R43 = { thPhone: thPhone, intlPhone: intlPhone, rules: RULES };
 })();

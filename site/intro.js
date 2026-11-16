@@ -6,7 +6,7 @@
  const overlay=document.getElementById('intro');
  const root=document.documentElement;
  const EASE='cubic-bezier(.16,1,.3,1)',SOFT='cubic-bezier(.4,0,.2,1)';
- const COMPLETE=2050,SAFETY=2400,BUILD=600,RETARGET=1290;
+ const COMPLETE=800,SAFETY=1040,NAVCAP=900,BUILD=300,RETARGET=645;  // R55: COMPLETE 1000->800, SAFETY 1300->1040 (x0.8); NAVCAP: hand-off never later than 900 ms after navigation start (anchors to first paint under load); all other timings unchanged
  let active=false,timer=0,safety=0,build=0,retarget=0,t0=null,anims=[],spans=null,img=null,imgStyle=null;
  // Undo every hand-off trace: animations, line wrappers, run class, intro <img> inline style.
  function cleanup(){
@@ -105,21 +105,21 @@
    t0=css?css.startTime:now-BUILD;
    const m=measure(),B=m.introImg.getBoundingClientRect(),band=m.phone?'inset(38% 0% 21% 0%)':'inset(35% 0% 15% 0%)';
    const to=mapping(m,B);
-   const win=anim(m.win,[{clipPath:band},{clipPath:land(m.stage,m.box)}],{delay:800,duration:600,easing:EASE,fill:'forwards'});
-   const photo=anim(m.introImg,[{transform:'none'},{transform:to}],{delay:800,duration:600,easing:EASE,fill:'forwards'});
-   anim(m.win,[{opacity:0},{opacity:1}],{delay:900,duration:450,easing:SOFT,fill:'forwards'},'::after');
-   anim(overlay,[{opacity:1},{opacity:0}],{delay:1300,duration:200,fill:'forwards'},'::before');
-   for(const s of ['.intro-locale','#skip'])anim(overlay.querySelector(s),[{opacity:1},{opacity:0}],{delay:1300,duration:200,fill:'forwards'});
-   anim(overlay,[{visibility:'hidden'},{visibility:'hidden'}],{delay:1500,duration:1,fill:'forwards'});
-   anim(m.header,rise(-12),{delay:1330,duration:360,easing:EASE});
-   const L=wrapLines(m.h1),stagger=L.length>1?Math.min(70,120/(L.length-1)):0;
-   L.forEach((el,i)=>anim(el,rise(28),{delay:1400+i*stagger,duration:480,easing:EASE}));
-   anim(m.lead,rise(20),{delay:1540,duration:440,easing:EASE});
-   anim(m.actions,rise(16),{delay:1610,duration:400,easing:EASE});
-   anim(m.caption,[{opacity:0},{opacity:1}],{delay:1660,duration:340,easing:SOFT});
+   const win=anim(m.win,[{clipPath:band},{clipPath:land(m.stage,m.box)}],{delay:400,duration:300,easing:EASE,fill:'forwards'});
+   const photo=anim(m.introImg,[{transform:'none'},{transform:to}],{delay:400,duration:300,easing:EASE,fill:'forwards'});
+   anim(m.win,[{opacity:0},{opacity:1}],{delay:450,duration:225,easing:SOFT,fill:'forwards'},'::after');
+   anim(overlay,[{opacity:1},{opacity:0}],{delay:650,duration:100,fill:'forwards'},'::before');
+   for(const s of ['.intro-locale','#skip'])anim(overlay.querySelector(s),[{opacity:1},{opacity:0}],{delay:650,duration:100,fill:'forwards'});
+   anim(overlay,[{visibility:'hidden'},{visibility:'hidden'}],{delay:750,duration:1,fill:'forwards'});
+   anim(m.header,rise(-12),{delay:665,duration:180,easing:EASE});
+   const L=wrapLines(m.h1),stagger=L.length>1?Math.min(35,60/(L.length-1)):0;
+   L.forEach((el,i)=>anim(el,rise(28),{delay:700+i*stagger,duration:240,easing:EASE}));
+   anim(m.lead,rise(20),{delay:770,duration:220,easing:EASE});
+   anim(m.actions,rise(16),{delay:805,duration:195,easing:EASE});
+   anim(m.caption,[{opacity:0},{opacity:1}],{delay:830,duration:170,easing:SOFT});
    root.classList.add('r13-run');  // same task as the animations: CSS hold -> timeline, no frame in between
    const elapsed=now-t0;
-   clearTimeout(timer);timer=setTimeout(()=>finish('complete'),Math.max(0,COMPLETE-elapsed));
+   clearTimeout(timer);timer=setTimeout(()=>finish('complete'),Math.max(0,Math.min(COMPLETE-elapsed,NAVCAP-performance.now())));
    // SPEC §7 A: if the hero box moved after measuring (late font swap), retarget the landing before it ends.
    retarget=setTimeout(()=>{
     if(!active)return;
@@ -145,10 +145,20 @@
   const storage=window.sessionStorage;
   const seen=storage.getItem(key)==='1';
   storage.setItem(key,'1');
+  // R52: a plain click on the brand logo (b-menu.js) leaves a one-shot flag (timestamp, 30 s TTL).
+  // Consume it immediately, on any known page, so it can never replay twice.
+  const RKEY='faceliora:intro:replay';
+  const rv=storage.getItem(RKEY);storage.removeItem(RKEY);
+  const replay=rv!==null&&Math.abs(Date.now()-(+rv||0))<30000;
   const home=/^(th|en)\/(?:index\.html)?$/.test(route);
   if(!home||!overlay){finish('detail');return;}
   // Timing alone survives some restores. Require a fresh Navigation API
   // activation too; absent/ambiguous signals fail open, without tracking.
+  if(replay){
+   // Flagged logo visit: skip only the `seen` and navigation-type gates; discarded/prerender tabs still stay quiet.
+   if(document.wasDiscarded!==false||document.prerendering){finish('uncertain-entry');return;}
+   root.dataset.introReplay='1';
+  }else{
   const timing=performance.getEntriesByType('navigation')[0];
   const activation=window.navigation?.activation;
   const from=activation?.from,entry=activation?.entry;
@@ -158,6 +168,7 @@
   const initial=timing.type==='navigate'&&['push','replace'].includes(activation.navigationType);
   if(!reload&&!initial){finish('restore-or-uncertain');return;}
   if(seen&&!reload){finish('already-seen');return;}
+  }
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   if(reduced.matches||document.hidden){finish(reduced.matches?'reduced-motion':'background');return;}
   document.getElementById('skip').addEventListener('click',()=>finish('skip',true));
@@ -174,7 +185,7 @@
   reduced.addEventListener('change',()=>{if(reduced.matches)finish('reduced-motion');});
   addEventListener('error',()=>finish('error'));
   addEventListener('unhandledrejection',()=>finish('error'));
-  timer=setTimeout(()=>finish('complete'),COMPLETE);
+  timer=setTimeout(()=>finish('complete'),Math.max(0,Math.min(COMPLETE,NAVCAP-performance.now())));
   safety=setTimeout(()=>finish('safety'),SAFETY);
   build=setTimeout(handoff,BUILD);
   active=true;overlay.hidden=false;document.documentElement.dataset.introState='playing';
