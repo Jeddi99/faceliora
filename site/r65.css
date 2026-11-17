@@ -1,0 +1,226 @@
+/* R65: palette 1 "Teal Refined" (R64 p01) + header CTA solid from the top + mobile layout B (R62). Loaded LAST on every page (after fl-consent.css).
+   Parts: 1 tokens (p01, verbatim) | 2 usage sheet (R64 y-use64 + hanging bullets) | 3 phone type floor + layout A (R62, <=699px) | 4 floating CTA + folded blocks (<=699px).
+   Sources (sha256): design/round-64-palette-board/shared/tokens-p01.css 601ec3ea3ae6; design/round-64-palette-board/shared/y-use64.css e9b1115c3eed; design/round-62-yellow-layout-options/shared/layout-type14.css 913b8624b3de; design/round-62-yellow-layout-options/shared/layout-a.css 14f72212e03e
+   Logo / favicon / icons / OG / theme-color are NOT part of this sheet and are unchanged. */
+/* ===== 1. palette p01 tokens ===== */
+/* R64 palette 1: Teal Refined (ทีลปรับใหม่ (ฐานเทียบ)). Seeds P #14535D / S #D5E8E1 / A #3FCFC0; every other value derived by palette64.py; measured values in contrast-table.md */
+:root{
+ --color-paper:#F5F8F8;--color-ink:#193335;--color-muted:#3F5C5F;--color-rule:#8B9C9C;--color-hairline:#C9D6D6;--color-hair:#C9D6D6;--color-field:#D5E8E1;
+ --color-accent:#134F59;--color-accent-ink:#F5FAF9;--color-hover:#0E3940;--color-focus:#0750B2;
+ --color-dark:#142E31;--color-light:#F5FAF9;--color-light-muted:#CBDCDD;--color-light-rule:#5D7A7D;--color-focus-light:#FFEAB0;
+ --color-error:#9B2929;--color-error-field:#EFEAEA;--color-input:#5F7778;--color-white:#FBFDFD;
+ --color-shadow:rgba(20,46,49,.14);--color-veil:rgba(20,46,49,.32);--color-line-dark:rgba(203,220,221,.35);
+ --color-scrim:rgba(20,46,49,.08);
+ --y:#3FCFC0;--y-hover:#30C0B1;--y-edge:#238A80;--y-tint:#D8F1EF;--y-tint-2:#B0E8E3;--y-ink:#142E31;--y-dk:#3FCFC0;--y-press:#142E31;--y-dkb:#3FCFC0;
+ --r43-edge:#5F7778;--r43-white:#FBFDFD;--r43-err-ink:#912626;--r43-err-ink2:#5C1818;
+ --r43-scrim:rgba(20,46,49,.76);--r43-shadow-dlg:rgba(20,46,49,.45);
+}
+.cc{ --color-paper:#F5F8F8;--color-ink:#193335;--color-muted:#3F5C5F;--color-rule:#8B9C9C;--color-hairline:#C9D6D6;--color-hair:#C9D6D6;--color-field:#D5E8E1;
+ --color-accent:#134F59;--color-accent-ink:#F5FAF9;--color-hover:#0E3940;--color-focus:#0750B2;
+ --color-dark:#142E31;--color-light:#F5FAF9;--color-light-muted:#CBDCDD;--color-light-rule:#5D7A7D;--color-focus-light:#FFEAB0;
+ --color-error:#9B2929;--color-error-field:#EFEAEA;--color-input:#5F7778;--color-white:#FBFDFD;
+ --color-shadow:rgba(20,46,49,.14);--color-veil:rgba(20,46,49,.32);--color-line-dark:rgba(203,220,221,.35); }
+.r33-pause{background:rgba(20,46,49,.74)}
+.cc-open:focus-visible{outline-color:var(--color-focus)}
+
+/* ===== 2. usage sheet ===== */
+/* R64 palette board: ONE usage sheet for all 10 palettes = R63 y-use63.css (R61 usage level B + header CTA solid from the top), token-generic. R64 change: the accent no longer touches input focus (focus ring stays the palette's own distinct focus colour).
+   Tokens come from y-tokens-<key>.css:  --y fill | --y-hover | --y-edge (>=3:1 on light surfaces: rules, bullets, 24px+ numerals) | --y-tint | --y-tint-2 | --y-ink (label ON the fill) | --y-dk (accent as text/mark ON dark #142e31, >=4.5:1) | --y-press (pressed fill) | --y-dkb (border of the CTA on dark bands)
+   Rule 1: label on the fill is always --y-ink. Rule 2: on light surfaces only --y-edge is used for lines/markers/numerals; the fill is never text on light. Rule 3: never for consent buttons, error, validation or the focus ring.
+   Layout, copy, spacing, type = LIVE R60, untouched. */
+
+/* ---------- 1. primary demo CTAs (light surfaces) ---------- */
+.primary:not(.r41-go),.btn,.r43-btn:not(.r43-quiet){background:var(--y);color:var(--y-ink);border:1px solid var(--y-edge)}
+.primary:not(.r41-go):hover,.btn:hover,.r43-btn:not(.r43-quiet):hover{background:var(--y-hover);color:var(--y-ink);border-color:var(--y-edge)}
+.primary:not(.r41-go):active,.btn:active,.r43-btn:not(.r43-quiet):active{background:var(--y-press);color:var(--y-dk);border-color:var(--y-press)}
+.r43-btn[disabled],.r43-btn[aria-disabled=true]{background:var(--color-hairline,#c9d6d6);color:var(--color-ink);border-color:var(--color-rule,#8b9c9c)}
+/* "book a demo" only: buttons inside success / error / off panels keep the teal they have today */
+.r43-ok .r43-btn:not(.r43-quiet),.r43-net .r43-btn:not(.r43-quiet),.r43-off .r43-btn:not(.r43-quiet){background:var(--r43-a,#14535d);color:var(--r43-a-ink,#f5faf9);border-color:var(--r43-a,#14535d)}
+.r43-ok .r43-btn:not(.r43-quiet):hover,.r43-net .r43-btn:not(.r43-quiet):hover,.r43-off .r43-btn:not(.r43-quiet):hover{background:var(--color-hover,#0d3d46);border-color:var(--color-hover,#0d3d46);color:var(--r43-a-ink,#f5faf9)}
+
+/* dark conversion bands: accent fill on the dark band instead of the light button */
+.close .primary,.on-dark .primary:not(.r41-go){background:var(--y);color:var(--y-ink);border:2px solid var(--y-dkb)}
+.close .primary:hover,.on-dark .primary:not(.r41-go):hover{background:var(--y-hover);color:var(--y-ink);border-color:var(--y-dkb)}
+.close .primary:active,.on-dark .primary:not(.r41-go):active{background:var(--y-press);color:var(--y-dk);border-color:var(--y-dk)}
+
+/* header CTA: SOLID FROM THE TOP (replaces the R59-B outline-then-solid). Same in both scroll states; sticky header untouched. */
+.header .hcta,html.is-scrolled .header .hcta{background:var(--y);color:var(--y-ink);border-color:var(--y-edge)}
+.header .hcta:hover,html.is-scrolled .header .hcta:hover{background:var(--y-hover);color:var(--y-ink);border-color:var(--y-edge)}
+.header .hcta:active,html.is-scrolled .header .hcta:active{background:var(--y-press);color:var(--y-dk);border-color:var(--y-press)}
+.header .hcta[aria-current=page],html.is-scrolled .header .hcta[aria-current=page]{background:var(--color-field);border-color:var(--y-edge);color:var(--color-ink)}
+
+/* ---------- 2. consent card: the accent never steers the choice; both buttons equal weight and recede ---------- */
+.cc-btn,.cc-btn.alt{background:var(--color-white,#fbfdfd);color:var(--color-ink);border:2px solid var(--color-ink)}
+.cc-btn:hover,.cc-btn.alt:hover{background:var(--color-field);border-color:var(--color-ink);color:var(--color-ink)}
+.cc-btn.save{background:var(--color-ink);color:var(--color-light,#f5faf9);border-color:var(--color-ink)}
+.cc-btn.save:hover{background:var(--color-muted);border-color:var(--color-muted);color:var(--color-light,#f5faf9)}
+.cc-b{border-top:3px solid var(--y-edge)}
+
+/* ---------- 3. highlights (level A) ---------- */
+.r48-n,.c-cn,.c-lbl span{color:var(--y-edge)}                         /* step / chapter numerals 24px+ (large text, 3:1) */
+.r43-pageA .r43-eyebrow{color:var(--y-dk)}                                /* eyebrow on dark */
+.m-cat::before{content:"";display:inline-block;width:8px;height:8px;margin-inline-end:8px;background:var(--y-edge);vertical-align:.05em}
+.r43-points .n,.steps-after .n{border-color:var(--y-dk);color:var(--y-dk)}   /* numbered circles on dark bands */
+.text-link:hover,.text-link:active,.panel-list a:hover,.link-rows a:hover,.crumbs a:hover{text-decoration:underline;text-decoration-color:var(--y-edge);text-decoration-thickness:2px;text-underline-offset:5px}
+.on-dark .text-link:hover,.close .text-link:hover,.r43-pageA a:hover{text-decoration-color:var(--y-dk)}
+
+/* ---------- 4. section accents (level B) ---------- */
+.r48-steps,.c-chapters,.c-notlist,.c-facts,.facts,.c-prices,.a-toc,.a-pull,.a-prods,.roi-rows,.pr{border-top-color:var(--y-edge)}
+.feat>div,.rules{border-top-color:var(--y-edge)}
+.wire,.mini-wire,.cf-wire,.go{color:var(--y-edge)}
+.rules li,.c-notlist li{position:relative}
+.rules li::before{content:"";position:absolute;inset-block-start:calc(20px + .78em);inset-inline-start:-16px;width:8px;height:8px;background:var(--y);box-shadow:0 0 0 1px var(--y-edge)}
+.c-notlist li::before{content:"";position:absolute;inset-block-start:calc(var(--space-md) + .78em);inset-inline-start:-16px;width:8px;height:8px;background:var(--y);box-shadow:0 0 0 1px var(--y-edge)}
+.checklist li::before{border-left-color:var(--y-edge);border-bottom-color:var(--y-edge)}
+.roi-b-steps li.is-done .n::after{border-left-color:var(--y-edge);border-bottom-color:var(--y-edge)}
+.nav-link[aria-current=page]{box-shadow:inset 0 -3px 0 var(--y-edge)}
+.sheet a[aria-current=page],.sheet-group a[aria-current=page]{background:var(--y-tint);font-weight:600}
+.roi-tab[aria-selected=true]{border-bottom-color:var(--y-edge);border-bottom-width:4px}
+html.is-scrolled .header{box-shadow:inset 0 -2px 0 var(--y-edge),0 14px 24px -22px var(--color-shadow)}
+.r43-chip input:checked+span{background:var(--y-tint);color:var(--color-ink);border:2px solid var(--y-edge);padding-inline:15px;font-weight:700}
+.r43-group-t{border-top-color:var(--y-tint-2)}
+.r41-band .r41-deg{color:var(--y-dk)}                                     /* 3D dark band numerals: accent on the dark band */
+
+/* ---------- R65 contrast fix (pricing calculator, "waiting for data" values): LIVE colour #566f71 measures 4.21:1 on the p01 section tint #D5E8E1 (LIVE itself: 4.48 on its own tint = already under 4.5).
+   The muted token measures 5.66:1 on the tint. Only these value cells change; the input placeholder keeps --roi-hold. ---------- */
+.roi-row dd.dim,.roi:not(.has-result) .roi-row dd,.roi:not(.has-result) .roi-trow dd.empty,.roi.has-result .roi-trow dd.empty{color:var(--color-muted)}
+
+/* ---------- R65 geometry-neutral overrides (acceptance: >=700px differs from LIVE in colour only). Found by tests/r65_desk.cjs:
+   (1) R64 draws the dark-band CTA border 2px (LIVE 1px) = +1-2px growth -> keep LIVE 1px, colour from the accent tokens.
+   (2) R64 .m-cat::before square is a 16px inline-block = +16px on the category label and its neighbours -> pull it into the gutter (net width 0). ---------- */
+.close .primary,.on-dark .primary:not(.r41-go){border-width:1px}
+.m-cat::before{margin-inline-start:-16px}
+/* (3) lp .btn: LIVE has border:0; R64 adds a 1px border (= +2px width/height). Draw the same accent edge as an inset ring instead (no layout change). */
+.btn{border:0;box-shadow:inset 0 0 0 1px var(--y-edge)}
+.btn:hover{border:0;box-shadow:inset 0 0 0 1px var(--y-edge)}
+.btn:active{border:0;box-shadow:inset 0 0 0 1px var(--y-press)}
+.btn[disabled]{box-shadow:none}
+
+/* ===== 3. phone type floor + layout A ===== */
+/* R62 type floor (L6): generated by gen_type14.py from the LIVE css. Every LIVE rule with font-size 13px / 13.5px is re-emitted at 14px, phones only (<=699px). Desktop untouched. */
+@media(max-width:699px){
+:root{--text-label:14px}
+.intro-locale{font-size:14px}
+.fld .hint{font-size:14px}
+.r43-count{font-size:14px}
+.r43-pdpa{font-size:14px}
+.roi-privacy{font-size:14px}
+.roi-row dt small{font-size:14px}
+.roi-trow dt small{font-size:14px}
+.roi-opt-tag{font-size:14px}
+.roi-tab .sub{font-size:14px}
+.roi-opt-c .roi-det>.roi-sum .st{font-size:14px}
+.panel-offers span{font-size:14px}
+thead th{font-size:14px}
+footer{font-size:14px}
+.angles span{font-size:14px}
+}
+
+/* R62 layout A, "จัดเรียงเบา" (minimal reorder + type scale). Phones only (max-width:699px); desktop and tablet untouched (verified in metrics: 1440 pixel-identical to the yellow accent).
+   Loaded after layout-type14.css (generated type floor: every 13px rule -> 14px). B and C load this file first and add to it.
+   Fixes: L1 (home: headline first, photo second, CTA in the first screen), L2 (the CTA moves above the consent card), L3 (landing CTA full width, tighter rhythm),
+          L6 (type floor, via layout-type14.css), L7 (headline sizes), L8 (breadcrumb targets), plus rhythm (section padding) to shorten pages without removing any content. */
+@media(max-width:699px){
+
+/* ---------- L7: headline scale on phones (EN is ~25% longer than TH, so EN gets a smaller size) ---------- */
+:root h1,:root .r43-h1{font-size:34px;line-height:1.38;letter-spacing:-.03em;max-width:none}
+html[lang=en]:root h1,html[lang=en] .r43-h1{font-size:30px;line-height:1.22;letter-spacing:-.025em}
+@media(max-width:359px){:root h1,:root .r43-h1{font-size:31px}html[lang=en]:root h1,html[lang=en] .r43-h1{font-size:27px}}
+
+/* ---------- L1 + L2: home hero = copy first, photo second ---------- */
+.hero{display:flex;flex-direction:column}
+.hero-copy{order:1;padding:var(--space-lg) var(--gutter) var(--space-xl)}
+.hero-photo{order:2;width:100%;height:auto;aspect-ratio:4/3;min-height:0}
+.hero .lead{margin-top:var(--space-md)}
+.hero .actions{margin-top:var(--space-lg)}
+
+/* ---------- primary action is the widest thing in its row (thumb target); quiet buttons follow; text links stay left ---------- */
+.actions{flex-direction:column;align-items:stretch;gap:var(--space-sm)}
+.actions>.primary,.actions>.quiet,.actions>.btn,.actions>.r43-btn{width:100%}
+.actions>.text-link{align-self:flex-start}
+.a-hero .btn,.card.lf .btn{display:flex;width:100%;justify-content:center}
+
+/* ---------- L8: breadcrumb targets >= 44px ---------- */
+.r43-crumb{display:flex;flex-wrap:wrap;align-items:center;column-gap:var(--space-xs);padding-top:var(--space-xs)}
+.r43-crumb a{display:inline-flex;align-items:center;min-height:44px}
+
+/* ---------- inline privacy links: hit area >= 44px high without changing the line layout ---------- */
+.r43-pdpa a,.r43-consent-text a,.chk a,.fld a{padding-block:12px}
+
+/* ---------- rhythm: section padding 64px -> 40px; same content, ~8% shorter pages ---------- */
+.section{padding-block:var(--space-xl)}
+.c-ch{padding-block:var(--space-lg)}
+.sec{padding-block:var(--space-xl)}
+.a-hero{padding-block:var(--space-lg) var(--space-xl)}
+
+/* ---------- consent card: keeps its place (bottom) and size; sits closer to the screen edge so less of the page is covered ---------- */
+.cc-b{left:8px;right:8px;bottom:max(8px,env(safe-area-inset-bottom))}
+}
+
+/* ===== R65 part 4: layout B = floating bottom CTA + folded reference blocks. Phones only (max-width:699px); the .fl-* classes are only ever added by r65.js on phones.
+   Port of design R62 layout-acc.css + layout-b.css, with real <button aria-expanded aria-controls> instead of <details>/<summary> (SPEC part B, section 5: content stays in the HTML; collapsed = hidden="until-found"). ===== */
+.fl-sticky{display:none}
+@media(max-width:699px){
+/* ---------- floating bottom CTA (home, clinic, pricing, article, landing; never on /demo/) ---------- */
+.fl-sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--color-paper);border-top:1px solid var(--color-hairline,#c9d6d6);
+  padding:10px var(--gutter,24px) max(10px,env(safe-area-inset-bottom));box-shadow:0 -12px 24px -20px var(--color-shadow);
+  transform:translateY(100%);visibility:hidden;transition:transform 180ms var(--ease-out,ease),visibility 0s linear 180ms}
+.fl-sticky.is-on{transform:none;visibility:visible;transition:transform 180ms var(--ease-out,ease)}
+.fl-sticky :is(.primary,.btn){display:flex;align-items:center;width:100%;min-height:52px;margin:0;justify-content:center}
+@media(prefers-reduced-motion:reduce){.fl-sticky,.fl-sticky.is-on{transition:none}}
+
+/* ---------- keep keyboard focus out from under the bar (WCAG 2.2 SC 2.4.11 Focus Not Obscured): while the bar is on, r65.js puts .fl-bar-on on <html> and
+   publishes the bar height; the browser then scrolls a focused element to above the bar (Tab, focus(), fragment links). Phones only, so >=700px is untouched. ---------- */
+html.fl-bar-on{scroll-padding-bottom:calc(var(--fl-bar-h,73px) + 24px)}
+/* footer gets a little more room; images a touch shorter */
+footer{padding-bottom:calc(var(--space-lg) + 8px)}
+.r33-media,.caps-photo{aspect-ratio:3/2}
+.r33-media img,.caps-photo img{height:100%;object-fit:cover}
+
+/* ---------- folded reference blocks: the existing heading / term becomes the button; nothing is removed ---------- */
+.fl-h{margin:0;padding:0}
+.fl-btn{display:flex;align-items:center;justify-content:space-between;gap:var(--space-sm,12px);width:100%;min-height:56px;margin:0;padding:var(--space-xs,8px) 0;background:none;border:0;border-radius:0;
+  font:inherit;font-weight:600;font-size:var(--text-body,16px);line-height:1.5;letter-spacing:0;color:var(--color-ink);text-align:start;cursor:pointer;-webkit-appearance:none;appearance:none}
+.fl-btn::after{content:"";flex:none;width:9px;height:9px;margin-inline-end:6px;border-right:2px solid var(--color-ink);border-bottom:2px solid var(--color-ink);transform:rotate(45deg) translateY(-2px);transition:transform 160ms var(--ease-out,ease)}
+.fl-btn[aria-expanded=true]::after{transform:rotate(-135deg) translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.fl-btn::after{transition:none}}
+.fl-acc{border-top:1px solid var(--color-rule)}
+.fl-acc.is-open{border-top-color:var(--y-edge)}
+.fl-acc-body{padding:0 0 var(--space-md);margin:0}
+.fl-acc-body[hidden]{padding:0}
+.fl-acc-body[hidden]:not([hidden=until-found]){display:none}
+.fl-acc-body>*+*{margin-top:var(--space-sm)}
+.fl-acc-body p{max-width:none}
+
+/* clinic "what do we need": the <dl> rows become accordion rows (dt = button, dd = body) */
+dl.fl-accs{display:block;border-top:2px solid var(--y-edge);margin-top:var(--space-md)}
+dl.fl-accs>.fl-acc{padding-block:0;border-top:1px solid var(--color-rule);border-bottom:0}
+dl.fl-accs>.fl-acc:first-child{border-top:0}
+dl.fl-accs>.fl-acc.is-open{border-top-color:var(--y-edge)}
+dl.fl-accs>.fl-acc:last-child{border-bottom:1px solid var(--color-rule)}
+dl.fl-accs dt{padding:0;font-size:inherit;color:var(--color-ink);line-height:1.5}
+dl.fl-accs dd.fl-acc-body{margin:0;padding:0 0 var(--space-md);font-size:inherit}
+dl.fl-accs dd.fl-acc-body[hidden]{padding:0}
+
+/* clinic notes (PDPA / accuracy / what can be sent) */
+.fl-note{padding-block:0}
+.fl-note .fl-acc{border-top:0}
+
+/* article table of contents, pricing "how it is calculated" */
+.fl-acc-toc{margin-top:var(--space-md);border-bottom:1px solid var(--color-rule)}
+nav.a-toc.fl-toc{padding-block:0}
+.a-toc .fl-acc-toc ol{margin-top:0}
+.fl-acc-roi{border-bottom:1px solid var(--color-rule)}
+.roi-formula.fl-roi{padding-top:0;margin-top:var(--space-md)}
+
+/* demo: optional fields folded, the required ones stay open */
+.fl-opt{grid-column:1/-1;border-top:1px solid var(--color-rule);border-bottom:1px solid var(--color-rule)}
+.fl-opt.is-open{border-top-color:var(--y-edge)}
+.fl-opt>.r43-group-t{margin:0;padding:0;border:0;font-size:inherit;color:var(--color-ink)}
+.fl-opt-body{display:grid;gap:20px;padding:var(--space-xs,8px) 0 var(--space-md,16px)}
+.fl-opt-body[hidden]{padding:0}
+.fl-opt-body[hidden]:not([hidden=until-found]){display:none}
+}
+
+/* R65 (4) inline privacy links: R62 layout-a gives padding-block:12px = 43px hit area on the lp consent label (text box 19px); 13px = 45px (inline padding, no line-layout change). Must come AFTER layout-a, hence in this last part. */
+@media (max-width:699px){.r43-pdpa a,.r43-consent-text a,.chk a,.fld a{padding-block:13px}}
