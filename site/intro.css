@@ -40,12 +40,10 @@
    so no first-paint flash); a step-end animation, so CSS alone reveals the copy at 1040 ms if the script stalls;
    .r13-run (added with the hand-off animations) releases it to the Web Animations timeline. */
 @media(prefers-reduced-motion:no-preference){
- html[data-intro-state=playing]:not(.r13-run) :is(.header,.hero-copy>*,.hero-photo figcaption){animation:r13-hold 1040ms step-end both}
+ html[data-intro-state=playing]:not(.r13-run) :is(.header,.hero-copy>*,.hero-photo figcaption,.hero-model figcaption){animation:r13-hold 1040ms step-end both}
 }
 @keyframes r13-hold{from{opacity:0}to{opacity:1}}
 @keyframes r13-safety{0%,99%{visibility:visible}100%{visibility:hidden;pointer-events:none}}
 /* Headline line wrappers exist only during a hand-off (added/removed by intro.js, kept only if geometry is identical). */
 .r13-line{display:inline-block}
-/* R55 logo C: wordmark (inline SVG, on-light variant) replaces the text brand in the intro; geometry/timing untouched. */
-.intro .brand-type svg{display:block;height:44px;width:auto;margin-inline:auto}
-@media(max-width:699px){.intro .brand-type svg{height:36px}}
+/* R67: the intro wordmark is the Silver-kit lockup (img.lg-intro, sizes in r66-logo.css); the R55 inline svg rules are gone with it. */

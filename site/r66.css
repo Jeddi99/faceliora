@@ -1,0 +1,78 @@
+/* Hallmark · v2.0.0 · theme: custom inherited R4-A Quiet cinema / palette 1 Teal Refined (R65 tokens, untouched) · idea: the one real 3D scan is the proof of what Faceliora Clinic shows, placed in the first screen · genre: editorial · job: book a clinic demo · hero: split, copy left, stage right (bleeds to the right edge as the photo does today) · posture: Full palette · option: R66 hero 3D */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: V, the scan background is flat field colour by design; the head is the only picture */
+/* Hallmark · answered F15 · reuses base.css container, gap and radius; one stage radius (0 at the bleed edge, 4px as a card); the demo CTA stays the only mint fill in the first screen */
+/* Hallmark · waive 44c · Stage visual bleeding off the outer edge: .hero-model spans grid columns 6 to 13 to the container edge exactly like the .hero-photo it replaces · the stage is one rectangle flush with the edge */
+/* R66 hero 3D stage. Loaded after r65.css. Tokens come from the site (r65.css); no new palette. */
+.h3{position:relative;margin:var(--space-0)}
+.h3-stage{position:relative;overflow:clip;aspect-ratio:1/1;width:100%;background:var(--color-field);touch-action:pan-y;-webkit-user-select:none;user-select:none}
+.h3-stage[tabindex="0"]{cursor:grab}
+.h3-stage.is-drag{cursor:grabbing}
+.h3-poster,.r66-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;-webkit-mask-image:linear-gradient(to bottom,var(--color-ink) 82%,transparent 97%);mask-image:linear-gradient(to bottom,var(--color-ink) 82%,transparent 97%)}
+.h3-poster{object-fit:contain;transition:opacity 250ms var(--ease-out)}
+.h3.is-live .h3-poster{opacity:0}
+.h3-stage:focus-visible{outline:3px solid var(--color-focus);outline-offset:-3px}
+.h3 figcaption{padding:var(--space-sm) 0 var(--space-0);max-width:52ch}
+.h3 [hidden]{display:none!important}
+/* controls: one bar; below the stage on phones, over the lower-left of the stage on desktop (the consent card lives lower-right) */
+.h3-bar{display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-xs) var(--space-sm);padding-top:var(--space-sm)}
+.h3-ctl{display:flex;align-items:center;gap:var(--space-xs)}
+.h3-icon,.h3-go{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-xs);min-height:48px;border:1px solid var(--color-muted);border-radius:var(--radius-control);background:var(--color-paper);color:var(--color-ink);font:inherit;font-size:var(--text-small);font-weight:600;line-height:1.5;transition:background-color var(--dur-micro) var(--ease-out)}
+.h3-icon{min-width:48px;padding:0}
+.h3-go{padding:var(--space-sm) var(--space-lg);white-space:nowrap}
+.h3-icon:hover,.h3-go:hover{background:var(--color-field)}
+.h3-icon:active,.h3-go:active{transform:translateY(1px)}
+.h3-icon[aria-disabled=true]{opacity:.45;cursor:not-allowed}
+.h3-icon svg,.h3-go svg{width:20px;height:20px;flex:none}
+.h3-deg{font-size:var(--text-small);color:var(--color-muted);min-width:6ch;margin-inline-start:var(--space-xs);font-variant-numeric:tabular-nums}
+.h3-note{font-size:var(--text-label);line-height:1.7;color:var(--color-muted);max-width:40ch}
+.h3-note:empty{display:none}
+@media(min-width:1000px){.hero-model .h3-note[data-s=live],.hero-model .h3-note[data-s=idle]{position:absolute;width:1px;height:1px;overflow:clip;clip-path:inset(50%);white-space:nowrap}}   /* desktop: the hint stays for screen readers; the cursor already says grab */
+.h3-note[data-s=error],.h3-note[data-s=nowebgl]{color:var(--color-ink)}
+.h3 button[aria-busy=true]{cursor:progress}
+html:not(.h3-js) .h3-bar{display:none}
+.h3-pause{position:absolute;right:var(--space-md);top:var(--space-md);z-index:4;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid var(--color-rule);border-radius:var(--radius-control);background:var(--color-paper);color:var(--color-ink);opacity:0;transition:opacity 150ms var(--ease-out)}
+.h3-pause svg{width:20px;height:20px}
+.h3-pause .i-play{display:none}
+.h3-pause[aria-pressed=true] .i-play{display:block}
+.h3-pause[aria-pressed=true] .i-pause{display:none}
+.h3-pause:focus-visible,.h3-pause[aria-pressed=true],.h3-stage.is-peek .h3-pause{opacity:1}
+@media(hover:hover){.h3-stage:hover .h3-pause{opacity:1}}
+@media(prefers-reduced-motion:reduce){.h3-pause,.h3-poster,.h3-icon,.h3-go{transition:none}}
+
+/* ---------- A / C: the stage takes the place of the photo (same grid box) ---------- */
+.hero-model{grid-column:6/13;grid-row:1;display:flex;flex-direction:column;min-height:712px}
+.hero-model .h3-frame{position:relative;display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.hero-model .h3-stage{flex:1 1 auto;aspect-ratio:auto;min-height:0}
+.hero-model figcaption{padding:var(--space-sm) var(--gutter) var(--space-lg) var(--space-0)}
+@media(min-width:700px){
+ .hero-model .h3-bar{position:absolute;left:var(--space-md);bottom:var(--space-md);z-index:3;padding-top:var(--space-0);max-width:calc(100% - 2*var(--space-md))}
+}
+@media(max-width:999px){
+ .hero-model{grid-column:1;grid-row:1;min-height:0}
+ .hero-model .h3-stage{aspect-ratio:4/3;flex:none}
+ .hero-model figcaption{padding-inline:var(--gutter)}
+}
+@media(max-width:699px){
+ .hero-model{order:2;width:100%}
+ .hero-model .h3-stage{aspect-ratio:1/1}
+ .hero-model .h3-bar{position:static;padding:var(--space-sm) var(--gutter) var(--space-0)}
+}
+/* ---------- B: model card in front of the photo (the photo box is untouched, so the intro hand-off and LCP stay as live) ---------- */
+.hero-card{grid-column:6/13;grid-row:1;align-self:end;justify-self:start;z-index:3;width:360px;margin-inline-start:-48px;margin-block-end:var(--space-xl);padding:var(--space-xs);background:var(--color-paper);box-shadow:0 18px 32px -24px var(--color-shadow)}
+.hero-card .h3-bar{padding:var(--space-xs) var(--space-xs) var(--space-0)}
+.hero-card figcaption{padding:var(--space-xs) var(--space-xs) var(--space-xs)}
+@media(max-width:999px){
+ .hero-card{grid-column:1;justify-self:center;margin-inline-start:var(--space-0);width:min(420px,calc(100% - 2*var(--gutter)))}
+}
+@media(max-width:699px){
+ .hero{position:relative}
+ .hero-card{order:3;align-self:center;margin-block-start:-56px;margin-block-end:var(--space-lg);width:calc(100% - 2*var(--gutter));z-index:3}
+}
+
+/* R67 (not in the R66 design file): first visit. The cookie corner card is fixed bottom-right (392px wide from 900px). In the two-column hero band 1000-1299px the controls bar
+   (bottom-left of the panel) can reach under it, so while the card is open the bar wraps into the part of the panel left of the card. :has() is progressive: without it the R66 layout stays. */
+@media(min-width:1000px) and (max-width:1299px){
+ html:has(#cc:not([hidden])) .hero-model .h3-bar{max-width:max(96px,calc(53.4vw - 438px))}
+ html:has(#cc:not([hidden])) .hero-model .h3-ctl{flex-wrap:wrap}
+ html:has(#cc:not([hidden])) .hero-model .h3-go{white-space:normal;text-align:start;padding-inline:var(--space-xs)}
+}

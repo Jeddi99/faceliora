@@ -79,7 +79,6 @@
 html.is-scrolled .header{box-shadow:inset 0 -2px 0 var(--y-edge),0 14px 24px -22px var(--color-shadow)}
 .r43-chip input:checked+span{background:var(--y-tint);color:var(--color-ink);border:2px solid var(--y-edge);padding-inline:15px;font-weight:700}
 .r43-group-t{border-top-color:var(--y-tint-2)}
-.r41-band .r41-deg{color:var(--y-dk)}                                     /* 3D dark band numerals: accent on the dark band */
 
 /* ---------- R65 contrast fix (pricing calculator, "waiting for data" values): LIVE colour #566f71 measures 4.21:1 on the p01 section tint #D5E8E1 (LIVE itself: 4.48 on its own tint = already under 4.5).
    The muted token measures 5.66:1 on the tint. Only these value cells change; the input placeholder keeps --roi-hold. ---------- */

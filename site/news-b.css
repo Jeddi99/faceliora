@@ -538,6 +538,8 @@ a:hover>.go{transform:translateX(3px)}
 .b-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto;padding-top:var(--space-xl);border-top:1px solid var(--color-rule)}
 .b-card{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:var(--space-sm);align-content:start}
 .b-card-ph img{aspect-ratio:3/2}
+/* R71: captionless team card must not retain sibling caption-row height. */
+.b-card-about{grid-template-rows:repeat(5,auto)}
 .b-card h3{margin-top:var(--space-xs)}
 .b-card h3{font-size:var(--text-title);line-height:1.45;letter-spacing:-.015em}
 .b-card .b-sum{margin-top:var(--space-0);font-size:15px;line-height:1.7}

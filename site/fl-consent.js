@@ -108,25 +108,25 @@
     ids: function () { return { ga4: !!GA_ID, pixel: !!PX_ID }; }
   };
 
-  /* ---------- UI ---------- */
+  /* ---------- UI ---------- (R69: friendlier first-layer wording; settings-panel shortcuts keep their own explicit labels pAccept/pReject) */
   var S = {
     th: {
-      title: 'คุกกี้บนเว็บไซต์นี้', text: 'คุกกี้วิเคราะห์ (Google Analytics) และการตลาด (Meta Pixel) จะเปิดต่อเมื่อคุณยอมรับ เปลี่ยนใจได้ทุกเมื่อ', priv: 'ความเป็นส่วนตัว', privUrl: '/th/privacy/',
-      accept: 'ยอมรับทั้งหมด', reject: 'ปฏิเสธที่ไม่จำเป็น', settings: 'ตั้งค่า', ptitle: 'ตั้งค่าคุกกี้',
+      title: 'ขอใช้คุกกี้หน่อยนะคะ', text: 'เราใช้คุกกี้เพื่อดูว่าหน้าไหนมีประโยชน์ ปรับเว็บให้ดีขึ้น และวัดผลโฆษณา คุณเลือกได้ และเปลี่ยนใจได้ทุกเมื่อ', priv: 'ความเป็นส่วนตัว', privUrl: '/th/privacy/',
+      accept: 'ตกลง', reject: 'ไม่เป็นไร', settings: 'เลือกเอง', pAccept: 'เปิดทั้งหมด', pReject: 'ปิดที่ไม่จำเป็น', ptitle: 'ตั้งค่าคุกกี้',
       pintro: 'เลือกได้ว่าจะอนุญาตอะไร เปลี่ยนใจได้ทุกเมื่อที่ลิงก์ “ตั้งค่าคุกกี้” ท้ายหน้า',
       ess: 'จำเป็น', essd: 'ทำให้เว็บและฟอร์มทำงาน ปิดไม่ได้', essOn: 'เปิดตลอด',
       an: 'วิเคราะห์การใช้งาน', and: 'ให้เรารู้ว่ามีคนเปิดหน้าไหน (Google Analytics 4)',
       mk: 'การตลาด', mkd: 'วัดผลโฆษณาของเราบน Facebook และ Instagram (Meta Pixel)', on: 'เปิด', off: 'ปิด',
-      save: 'บันทึกที่เลือก', back: 'กลับ', mAccept: 'บันทึกแล้ว: ยอมรับทั้งหมด', mReject: 'บันทึกแล้ว: ปฏิเสธที่ไม่จำเป็น', mSave: 'บันทึกการตั้งค่าคุกกี้แล้ว'
+      save: 'บันทึกที่เลือก', back: 'กลับ', mAccept: 'บันทึกแล้ว: เปิดคุกกี้ทั้งหมด', mReject: 'บันทึกแล้ว: ใช้เฉพาะคุกกี้ที่จำเป็น', mSave: 'บันทึกการตั้งค่าคุกกี้แล้ว'
     },
     en: {
-      title: 'Cookies on this site', text: 'Analytics (Google Analytics) and marketing (Meta Pixel) cookies switch on only if you accept. Change your mind any time.', priv: 'Privacy', privUrl: '/en/privacy/',
-      accept: 'Accept all', reject: 'Reject non-essential', settings: 'Settings', ptitle: 'Cookie settings',
+      title: 'Mind if we use cookies?', text: 'We use cookies to see which pages are useful, improve the site and measure our ads. It\'s your choice, and you can change it any time.', priv: 'Privacy', privUrl: '/en/privacy/',
+      accept: 'Sure', reject: 'No thanks', settings: 'Let me choose', pAccept: 'Turn all on', pReject: 'Essential only', ptitle: 'Cookie settings',
       pintro: 'Choose what to allow. You can change this any time from “Cookie settings” at the bottom of each page.',
       ess: 'Essential', essd: 'Makes the site and the form work. Cannot be turned off.', essOn: 'Always on',
       an: 'Analytics', and: 'Lets us see which pages people open (Google Analytics 4).',
       mk: 'Marketing', mkd: 'Measures our ads on Facebook and Instagram (Meta Pixel).', on: 'On', off: 'Off',
-      save: 'Save my choices', back: 'Back', mAccept: 'Saved: accepted all', mReject: 'Saved: rejected non-essential', mSave: 'Cookie settings saved'
+      save: 'Save my choices', back: 'Back', mAccept: 'Saved: all cookies on', mReject: 'Saved: essential cookies only', mSave: 'Cookie settings saved'
     }
   }[LANG];
 
@@ -143,7 +143,7 @@
       '<div class="cc-panel"><h2 id="cc-pt">' + esc(S.ptitle) + '</h2><p>' + esc(S.pintro) + '</p>' +
       '<div class="cc-row"><div><b>' + esc(S.ess) + '</b><span class="d">' + esc(S.essd) + '</span></div><span class="cc-sw"><input type="checkbox" role="switch" checked disabled aria-label="' + esc(S.ess + ': ' + S.essOn) + '"><span class="cc-track" aria-hidden="true"></span><span class="st">' + esc(S.essOn) + '</span></span></div>' +
       sw('analytics', S.an, S.and) + sw('marketing', S.mk, S.mkd) +
-      '<div class="cc-actions"><button type="button" class="cc-btn save" data-cc="save">' + esc(S.save) + '</button><button type="button" class="cc-btn alt" data-cc="accept">' + esc(S.accept) + '</button><button type="button" class="cc-btn alt" data-cc="reject">' + esc(S.reject) + '</button><button type="button" class="cc-link" data-cc="back">' + esc(S.back) + '</button></div></div>';
+      '<div class="cc-actions"><button type="button" class="cc-btn save" data-cc="save">' + esc(S.save) + '</button><button type="button" class="cc-btn alt" data-cc="accept">' + esc(S.pAccept) + '</button><button type="button" class="cc-btn alt" data-cc="reject">' + esc(S.pReject) + '</button><button type="button" class="cc-link" data-cc="back">' + esc(S.back) + '</button></div></div>';
     live = document.createElement('div'); live.className = 'cc-live'; live.id = 'cc-live'; live.setAttribute('role', 'status'); live.setAttribute('aria-live', 'polite');
     var skip = document.querySelector('a.skip');
     if (skip && skip.parentNode) { skip.parentNode.insertBefore(cc, skip.nextSibling); cc.parentNode.insertBefore(live, cc.nextSibling); }
