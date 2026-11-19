@@ -58,10 +58,7 @@
  .r48-cards li{grid-template-columns:44px minmax(0,1fr)}
  .foot-products.r48-fp2{grid-template-columns:minmax(0,1fr)}
 }
-/* R55 logo C: wordmark lockup (assets/brand/lockup.svg, SVG = crisp at 1x/2x). SPEC heights: header 28 desktop / 24 phone; 44px target kept. */
-.brand img{display:block;height:28px;width:auto}
-footer .brand img{height:24px}
-@media(max-width:799px){.brand img{height:24px}}
+/* R67: logo C lockup rules removed; the Silver-kit lockup is sized by /r66-logo.css (.brand .lg-h). */
 /* R60 header demo CTA (design R59 option B, manifest a8276bac…7ea) + sticky header. Existing tokens only; appended after every page's own CSS (r49.css is the last stylesheet before fl-consent.css on all 76 header pages). */
 :root{--hc-h:88px;--hc-top:calc(var(--hc-h) + var(--space-lg))}
 html{scroll-padding-top:var(--hc-top)}

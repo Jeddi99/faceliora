@@ -78,18 +78,18 @@
   return made;
  }
  function measure(){
-  const hero=document.querySelector('.hero'),photo=hero.querySelector('.hero-photo');
+  const hero=document.querySelector('.hero'),photo=hero.querySelector('.hero-photo')||hero.querySelector('.hero-model .h3-stage'),stage3d=!photo.matches('.hero-photo');  // R67: home lands on the 3D model panel
   const stage=overlay.querySelector('.intro-stage').getBoundingClientRect(),box=photo.getBoundingClientRect();
   return {phone:matchMedia('(max-width:699px)').matches,stage,box,
-   win:overlay.querySelector('.photo-window'),introImg:overlay.querySelector('.photo-window img'),heroImg:photo.querySelector('img'),
+   win:overlay.querySelector('.photo-window'),introImg:overlay.querySelector('.photo-window img'),heroImg:stage3d?null:photo.querySelector('img'),photo,stage3d,
    header:document.querySelector('.header'),h1:hero.querySelector('h1'),lead:hero.querySelector('.lead'),
-   actions:hero.querySelector('.actions'),caption:photo.querySelector('figcaption')};
+   actions:hero.querySelector('.actions'),caption:photo.querySelector('figcaption')||hero.querySelector('.hero-model figcaption')};
  }
  const land=(S,H)=>`inset(${Math.max(0,H.top-S.top).toFixed(1)}px ${Math.max(0,S.right-H.right).toFixed(1)}px ${Math.max(0,S.bottom-H.bottom).toFixed(1)}px ${Math.max(0,H.left-S.left).toFixed(1)}px)`;
  // translate/scale that turns the intro crop into the hero crop. The intro <img> is first re-expressed once at its
  // full cover size (identical pixels while still a band) so scaling never exposes the element edge.
  function mapping(m,B){
-  const a=cover(B,m.introImg,m.introImg),b=cover(m.box,m.heroImg,m.introImg);
+  const a=cover(B,m.introImg,m.introImg),b=cover(m.box,m.heroImg||m.introImg,m.introImg);  // 3D panel: the intro photo is cover-fitted to the panel box
   if(!img){img=m.introImg;imgStyle=img.getAttribute('style');}
   // Attribute string, not img.style: Chrome re-creates an empty style="" after removal once the CSSOM object was used.
   img.setAttribute('style',`${imgStyle?imgStyle+';':''}position:absolute;max-width:none;object-fit:fill;left:${a.x-B.left}px;top:${a.y-B.top}px;width:${a.w}px;height:${a.h}px`);
@@ -107,7 +107,8 @@
    const to=mapping(m,B);
    const win=anim(m.win,[{clipPath:band},{clipPath:land(m.stage,m.box)}],{delay:400,duration:300,easing:EASE,fill:'forwards'});
    const photo=anim(m.introImg,[{transform:'none'},{transform:to}],{delay:400,duration:300,easing:EASE,fill:'forwards'});
-   anim(m.win,[{opacity:0},{opacity:1}],{delay:450,duration:225,easing:SOFT,fill:'forwards'},'::after');
+   if(!m.stage3d)anim(m.win,[{opacity:0},{opacity:1}],{delay:450,duration:225,easing:SOFT,fill:'forwards'},'::after');  // scrim = the .hero-photo:after token
+   else anim(m.win,[{opacity:1},{opacity:0}],{delay:640,duration:110,easing:SOFT,fill:'forwards'});  // R67: the landed photo dissolves into the model panel (same 650-750 ms window as the paper fade)
    anim(overlay,[{opacity:1},{opacity:0}],{delay:650,duration:100,fill:'forwards'},'::before');
    for(const s of ['.intro-locale','#skip'])anim(overlay.querySelector(s),[{opacity:1},{opacity:0}],{delay:650,duration:100,fill:'forwards'});
    anim(overlay,[{visibility:'hidden'},{visibility:'hidden'}],{delay:750,duration:1,fill:'forwards'});
@@ -124,7 +125,7 @@
    retarget=setTimeout(()=>{
     if(!active)return;
     try{
-     const box=m.heroImg.closest('.hero-photo').getBoundingClientRect();
+     const box=m.photo.getBoundingClientRect();
      if(Math.abs(box.top-m.box.top)+Math.abs(box.height-m.box.height)+Math.abs(box.left-m.box.left)+Math.abs(box.width-m.box.width)<.5)return;
      m.box=box;
      win.effect.setKeyframes([{clipPath:band},{clipPath:land(m.stage,box)}]);

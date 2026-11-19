@@ -35,10 +35,10 @@ p{margin:0}
 /* header: logo only, NOT a link */
 .lp-head{height:56px}
 .lp-head .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
-.lp-logo{display:block;height:24px;width:auto}
+.lp-logo{display:block;--lw:180px;width:var(--lw);height:auto;max-width:none;margin:calc(var(--lw)*-.072) calc(var(--lw)*-.24539) calc(var(--lw)*-.06) calc(var(--lw)*-.09183);clip-path:inset(22.5% 24.539% 18.75% 9.183%)}  /* R67: Silver-kit lockup, canvas 180 (kit minimum); empty canvas cropped by CSS only, same crop as /r66-logo.css */
 .lp-lang{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--color-input);border-radius:var(--radius);text-decoration:none;font-size:14px;font-weight:600}
 .dark .lp-lang{border-color:var(--color-light-muted)}
-@media(min-width:900px){.lp-head{height:88px}.lp-logo{height:28px}}
+@media(min-width:900px){.lp-head{height:88px}.lp-logo{--lw:200px}}
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border:0;border-radius:var(--radius);background:var(--color-accent);color:var(--color-accent-ink);font:600 16px/1.2 var(--font-body);text-decoration:none;cursor:pointer;transition:background var(--dur) var(--ease)}
 .btn:hover{background:var(--color-hover)}

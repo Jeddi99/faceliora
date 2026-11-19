@@ -1,0 +1,16 @@
+/* Hallmark · v2.0.0 · theme: custom inherited R4-A Quiet cinema / palette 1 Teal Refined (R65 tokens, untouched) · idea: the supplied Silver-kit primary logo replaces the live mark, nothing else restyled · genre: editorial · job: book a clinic demo · posture: logo-only change · option: R66 logo */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: V, the silver mark is low contrast on paper (1.75:1), shown honestly, not hidden */
+/* Hallmark · answered F15 · no new container, gap or radius; only the logo box size changes */
+/* R66 Part B: Silver-kit logo in the live chrome. Colours of the site are untouched (palette 1 teal stays). The kit SVG files are used as supplied; only the empty canvas around the artwork is cropped (clip-path + negative margins),
+   so the lockup keeps the live header height. Kit numbers: horizontal canvas 1000x320, visible artwork x 91.83..754.61, y 72..260 (icon H = 188); icon-only canvas 320x320, visible x 91.83..290, y 72..260. */
+.brand .lg{display:block;flex:none;max-width:none;height:auto}
+.brand .lg-h{--lw:180px;width:var(--lw);margin:calc(var(--lw)*-.072) calc(var(--lw)*-.24539) calc(var(--lw)*-.06) calc(var(--lw)*-.09183);clip-path:inset(22.5% 24.539% 18.75% 9.183%)}
+.brand .lg-i{--li:60px;display:none;width:var(--li);margin:calc(var(--li)*-.225) calc(var(--li)*-.09375) calc(var(--li)*-.1875) calc(var(--li)*-.28698);clip-path:inset(22.5% 9.375% 18.75% 28.698%)}
+@media(min-width:700px){.header .brand .lg-h{--lw:200px}}
+@media(min-width:1000px){.header .brand .lg-h{--lw:224px}}
+footer .brand .lg-h{--lw:200px}
+footer .foot-top{align-items:center} /* the live row is baseline-aligned to the wordmark; an image lockup has no text baseline, so centre the tagline on it */
+@media(max-width:359px){.brand:has(.lg-i) .lg-h{display:none}.brand .lg-i{display:block}}
+/* intro overlay: the kit lockup replaces the inline wordmark; same slot (.brand-type), same timing */
+.intro .brand-type .lg-intro{--lw:340px;display:block;width:var(--lw);height:auto;max-width:none;margin:calc(var(--lw)*-.072) auto calc(var(--lw)*-.06);clip-path:inset(22.5% 0 18.75% 0);position:relative;left:calc(var(--lw)*.07678)}
+@media(max-width:699px){.intro .brand-type .lg-intro{--lw:270px}}
