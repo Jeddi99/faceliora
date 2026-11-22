@@ -76,3 +76,14 @@ html:not(.h3-js) .h3-bar{display:none}
  html:has(#cc:not([hidden])) .hero-model .h3-ctl{flex-wrap:wrap}
  html:has(#cc:not([hidden])) .hero-model .h3-go{white-space:normal;text-align:start;padding-inline:var(--space-xs)}
 }
+
+/* R70 tablet portrait, direction B "split" (owner pick 2026-11-21; design/round70-intro-tablet-landing/src/r70-tablet-b.css).
+   700-999 px only: copy left, square model column right, control bar under the stage. Phones (<=699) and desktop (>=1000) never match. */
+@media (min-width:700px) and (max-width:999px){
+ .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:var(--space-lg);padding-left:var(--gutter);align-items:start}
+ .hero-copy{grid-column:1;grid-row:1;align-self:start;padding:var(--space-xl) var(--space-0) var(--space-xl)}
+ .hero-model{grid-column:2;grid-row:1}
+ .hero-model .h3-stage{aspect-ratio:1/1}
+ .hero-model .h3-bar{position:static;max-width:none;padding:var(--space-sm) var(--gutter) var(--space-0) var(--space-0)}
+ .hero-model figcaption{padding:var(--space-sm) var(--gutter) var(--space-lg) var(--space-0)}
+}

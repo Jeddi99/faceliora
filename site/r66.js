@@ -27,6 +27,7 @@
     api = await m.mountViewer(stage, { glb: el.dataset.glb, yaw0: YAW0, yawMin: YAW0 - SPAN, yawMax: YAW0 + SPAN, sway: 20 * D, swayPeriod: 14, auto: !!o.auto && !rm.matches, cls: 'r66-canvas', onProgress: f => say('loading', ' ' + Math.round(f * 100) + '%') });
     el.classList.add('is-live'); stage.tabIndex = 0; if (btn) btn.hidden = true; if (ctl) ctl.hidden = false; if (pause) pause.hidden = !(o.auto && !rm.matches);
     say('live'); readout();
+    if (o.focus) stage.focus({ preventScroll: true });   // R70: keep keyboard focus on the model (arrow keys work at once)
     stage.addEventListener('r66:interact', () => { if (api && api.auto) { api.setAuto(false); paused = true; if (pause) { pause.setAttribute('aria-pressed', 'true'); pause.setAttribute('aria-label', pause.dataset.labelPlay); } } readout(); });
     stage.addEventListener('r66:lost', () => { stop(); say('error'); if (btn) btn.hidden = false; }, { once: true });
    } catch (e) { api = null; say(e && e.message === 'nowebgl' ? 'nowebgl' : 'error'); if (btn && e && e.message !== 'nowebgl') btn.hidden = false; }
@@ -34,7 +35,7 @@
   }
   function stop() { if (api) { api.dispose(); api = null; el.classList.remove('is-live'); stage.removeAttribute('tabindex'); if (ctl) ctl.hidden = true; if (pause) pause.hidden = true; if (btn) btn.hidden = false; say('idle'); } }
   el.h3 = { start, stop, get api() { return api; } };
-  if (btn) btn.addEventListener('click', () => start({ auto: false }));
+  if (btn) btn.addEventListener('click', () => start({ auto: false, focus: true }));   // R70
   ctl && ctl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b || !api) return; if (b.dataset.rot) { if (b.getAttribute('aria-disabled') !== 'true') api.rotate(+b.dataset.rot * STEP); } else if (b.hasAttribute('data-reset')) api.reset(); readout(); });
   stage.addEventListener('keydown', e => { if (!api) return; if (e.key === 'ArrowLeft') api.rotate(-STEP); else if (e.key === 'ArrowRight') api.rotate(STEP); else if (e.key === 'Home') api.reset(); else return; e.preventDefault(); readout(); });
   if (pause) {   // R40 rule: hidden until hover / focus / paused / touch peek; the first touch tap only reveals it

@@ -1,10 +1,10 @@
 {
-  "candidate_id": "faceliora-local-r51-endpoint-v1-candidate-1",
+  "candidate_id": "R70b-on-R72",
   "files_root": "site/",
-  "source_fingerprint_sha256_of_full_reviewed_candidate": "abc6e70cf94ecbc623e362d9a3da06f8de66547ffcdfa3a071975d89462c5634",
-  "scope": "PUBLIC RELEASE build: byte-identical runtime subset of the QA-approved, CTO-verified R51 candidate (R45 prerelease+articles, R46 OG, R47 demo form, R49 clinic-only, R50 release SEO: noindex removed, robots/sitemap/hreflang/JSON-LD, R51 live lead endpoint). Omitted from deploy: image sidecars/provenance/evidence files (kept in project).",
-  "original_reviewed_file_count": 520,
-  "runtime_file_count": 499,
+  "source_fingerprint_sha256_of_full_reviewed_candidate": "3e6e9ae497a04d79c612c5ea93f928886f95c4334ae962e64b56f8710bdfb4ff",
+  "scope": "R72 cookie bar B, R70a tablet B and ad landing model; no R75 intro",
+  "original_reviewed_file_count": 554,
+  "runtime_file_count": 533,
   "omitted_nonruntime_metadata": [
     "assets/consultation-1440.webp.json",
     "assets/consultation-1440.webp.provenance.json",
@@ -28,13 +28,28 @@
     "evidence/PHOTO_LICENSE.md",
     "evidence/PHOTO_LICENSE_INHERITED.md"
   ],
-  "qa": "t_70decf94 run355 approved",
-  "cto": "t_f3e92f78 PASS",
+  "qa": "t_0589ad50 run603 approved",
+  "cto": "t_766c3b47 run606 PASS_LOCAL_ONLY",
   "files": [
     {
-      "path": "assets/3d/r41-b.css",
-      "bytes": 1139,
-      "sha256": "8ec4bc86950e34b45d12d4987a3edc4ef31f6c13440854e1d9c791d63fe616b8"
+      "path": "apple-touch-icon.png",
+      "bytes": 1423,
+      "sha256": "0b85dfd84da7e014b40680a34a5c76e4f7a872318e259fd599e2dc4214de376a"
+    },
+    {
+      "path": "assets/3d/hero-head-poster-1000.webp",
+      "bytes": 25534,
+      "sha256": "a56992134d7c23358b7a05ab3c8528795e801dd9ec572adf6130e6ca876ed1e6"
+    },
+    {
+      "path": "assets/3d/hero-head-poster-600.webp",
+      "bytes": 18686,
+      "sha256": "62fcebc0717b9574443310a946f1edf2f5c51419ac1f1001e7b066e81d8df4d7"
+    },
+    {
+      "path": "assets/3d/hero-head.glb",
+      "bytes": 833460,
+      "sha256": "1abb3e6df47dd1ef0a29b18965686ea17a10593645c657274d792e3bb893ce98"
     },
     {
       "path": "assets/3d/r41-viewer.min.js",
@@ -90,6 +105,11 @@
       "path": "assets/NotoSansThai.ttf",
       "bytes": 218652,
       "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+    },
+    {
+      "path": "assets/brand/faceliora-horizontal-primary.svg",
+      "bytes": 3623,
+      "sha256": "d28667af0e94bcdbcb2c431cc858061add03fe28992557c95146a9af91b76c35"
     },
     {
       "path": "assets/consultation-1440.webp",
@@ -1558,378 +1578,388 @@
     },
     {
       "path": "assets/og/en/about.jpg",
-      "bytes": 43240,
-      "sha256": "c3ecadfec30e384d986d3753b1dc0c16a6ec83561b73d8d820bd65d59e4577a2"
+      "bytes": 41161,
+      "sha256": "7e6291039349b5c1f74b7f66d903b3c7d579e9a56113300329e2add7fb32832a"
     },
     {
       "path": "assets/og/en/careers.jpg",
-      "bytes": 49212,
-      "sha256": "a5c9921f6e693e5358859cc356b012c0127335487a3a0adda971fd5601af7680"
+      "bytes": 47047,
+      "sha256": "bab703c9fe775a8704c72052afc23f1d4b14d369674146f67c874f1f6a5a3944"
     },
     {
       "path": "assets/og/en/clinic-consultation-exports.jpg",
-      "bytes": 86221,
-      "sha256": "b67732f4c35099ea310a941eb14812561188a534d3301698a0e44db63ad9491c"
+      "bytes": 84172,
+      "sha256": "83829de86720d6cab4c5d0c8c3a8d0f35631167ab9dda2df7f1f9637a3e850da"
     },
     {
       "path": "assets/og/en/clinic-injection-simulation.jpg",
-      "bytes": 78299,
-      "sha256": "7eb1ff2c8e23ddadb2a14258bef46506ebfcd2bb5e2074ff7118179cb2032028"
+      "bytes": 76296,
+      "sha256": "00dcc737866014c497b801d400ea85c57bb52d4aa4ba32dcce5e4053959b3c36"
     },
     {
       "path": "assets/og/en/clinic-skin-analysis.jpg",
-      "bytes": 75440,
-      "sha256": "8c6e13bd9fc2508dd5a581caa880ccce3e983cf47b084cc40db3966710a9698c"
+      "bytes": 73392,
+      "sha256": "0910f2ae63e69fdcf6a2bf6e1a530d8cb67c15076e07a8322a962033ece05b9b"
     },
     {
       "path": "assets/og/en/clinic-surgery-simulation.jpg",
-      "bytes": 80513,
-      "sha256": "8327ef9be9c8cb606417ee185e2a66525e3df23ecda79e7f4f53cd8f98587c43"
+      "bytes": 78456,
+      "sha256": "abe6772b7df3f24132d5e4e98ee9604dae3a7b1e426fc8dc6c74c4692c254bb6"
     },
     {
       "path": "assets/og/en/clinic-thread-lift-simulation.jpg",
-      "bytes": 81061,
-      "sha256": "02bb7c8b9d65248cfcc8448bf7bb28d1fc78aa4cc30dc1f51349f105fd00b9d4"
+      "bytes": 79074,
+      "sha256": "a329daffaf2c836495cf5529f5ed1add8783147fbdd3c63799afef7d5ca52d49"
     },
     {
       "path": "assets/og/en/clinic.jpg",
-      "bytes": 83512,
-      "sha256": "a43006bab6642107d8941788bd9979b86e31ad06b757f2ed5cc305223e937336"
+      "bytes": 81434,
+      "sha256": "7486a9deee16605dda75397be6ffe635c5f3cb0497b8f0824c8a46efea37356e"
     },
     {
       "path": "assets/og/en/contact.jpg",
-      "bytes": 50783,
-      "sha256": "f5b3e81dea1ab6c34b3c9e9764a9a7ecf7a940c3be40ae4dc219a4b526e513db"
+      "bytes": 48691,
+      "sha256": "acbe1fae2b638b81ebd4870c8a3fb34455f792b237fc5c6dd9daa8896b156c94"
     },
     {
       "path": "assets/og/en/credits.jpg",
-      "bytes": 63396,
-      "sha256": "87036983b7988791817a67c7b89568df31acfe1e9399d9ab95f026a543fe1829"
+      "bytes": 61286,
+      "sha256": "b02cb4fbb4fa5a83a70b7da7919e92f60915af97861982d638b94e7874b9a1d8"
     },
     {
       "path": "assets/og/en/demo.jpg",
-      "bytes": 67842,
-      "sha256": "7dd58aad79d8b42f8e6f5f79425a259252b85a2ad4f8cb5381d911e372d65efb"
+      "bytes": 65767,
+      "sha256": "23f0872a8796b68cd059fbc6b998387c80f7d008e183e1c81f240f9162c62ed1"
     },
     {
       "path": "assets/og/en/faceliora.jpg",
-      "bytes": 75316,
-      "sha256": "86a5c7bf33ca2cfd4eaed4ef50383dfb5f3b98d68a74362658e3354d196f52e4"
+      "bytes": 73280,
+      "sha256": "0b08d7692b023c78ee2ee96a454702b5ab56b9561963d299646af85d67d2aa8a"
     },
     {
       "path": "assets/og/en/faq.jpg",
-      "bytes": 60078,
-      "sha256": "72787f409e8fb057393a2b7bb0116b9df43ee7afb68a1ec086cd336655f70bd5"
+      "bytes": 57992,
+      "sha256": "2841bba3c59969f4e5b011ef7205723c2f12b3592cd7994531624bd531023cf3"
     },
     {
       "path": "assets/og/en/home.jpg",
-      "bytes": 74104,
-      "sha256": "d9d03695790dbb4d151ae5ea1541b1ded57f49078cb75d1a2c365b457dd3cd97"
+      "bytes": 72087,
+      "sha256": "26fa7ef23a2217afb9c8b133f86487edb394b7391afffbb54c31bb6ab262f4c7"
     },
     {
       "path": "assets/og/en/insights-botox-masseter-units.jpg",
-      "bytes": 66051,
-      "sha256": "9ad250339567ef11418a935599cdaea85a74402e73d2e9b91baffddbb70abd59"
+      "bytes": 63954,
+      "sha256": "4b57ab2c123ee50176eca9f069b1ae598db7c13b86ecdfcf0e2ee55ba834efe5"
     },
     {
       "path": "assets/og/en/insights-client-view-and-sharing.jpg",
-      "bytes": 68881,
-      "sha256": "4fe3ced219b3ebc81610f2825e5719f7ec951acecf74d591692f9f9df9f9fffc"
+      "bytes": 66830,
+      "sha256": "a9f2c9742bcb02cc1f7521d410247af758b60c08e691f283c87da41e7949827d"
     },
     {
       "path": "assets/og/en/insights-clinic-software-demo-checklist.jpg",
-      "bytes": 70644,
-      "sha256": "7da8ec37f01e3c971ba9e1d5ce2da58c1dc692d194c00a651d62c861893ad0b9"
+      "bytes": 68582,
+      "sha256": "7a585d1a08f19b84fab73ebfb9fa2cde48924aaffc86a2143f18ecb2a70afaf7"
     },
     {
       "path": "assets/og/en/insights-clinic-team-workflow.jpg",
-      "bytes": 69234,
-      "sha256": "e150b23c8340f7501888e6d146e76e631e350e6225c8af848d6fb5ffa2961520"
+      "bytes": 67177,
+      "sha256": "b3f9c8f115a50df14248c65ea575484e44a485ed2fbc12d8a29c50e3bd4babd3"
     },
     {
       "path": "assets/og/en/insights-do-i-look-good.jpg",
-      "bytes": 65249,
-      "sha256": "bd1edb649202d8e9d0125bed86ceb3454b0ca9223a76e43bb600b55225b4ea9d"
+      "bytes": 63169,
+      "sha256": "900453e9357885c7e6d42d83d20d57edbfd30e7a4d26a926fe0b695e13fc7da3"
     },
     {
       "path": "assets/og/en/insights-facial-data-privacy.jpg",
-      "bytes": 79009,
-      "sha256": "307643fa6419d10892f68f8adc4cee4a3f2c60ba9610672c90b50531f57dbd75"
+      "bytes": 76937,
+      "sha256": "e9d159add4c4bc8d4dddaaa70a20456e035f5c9284d54b44030f163c167c77ed"
     },
     {
       "path": "assets/og/en/insights-facial-fat-grafting-retention.jpg",
-      "bytes": 69715,
-      "sha256": "9f1dade1b79e127d6bcace46c9c743437fd5d8bfc80378bfa46d1c2db61c2e4f"
+      "bytes": 67609,
+      "sha256": "f1b95020c9275f09bd640a6df9b4ccb01a81be0993163a366b662ee5146baab4"
     },
     {
       "path": "assets/og/en/insights-facial-photo-preparation.jpg",
-      "bytes": 66054,
-      "sha256": "59a7bebdd7e73d5c463b0386b94728d0bedfdc6282870e81c942a55966136328"
+      "bytes": 63948,
+      "sha256": "4f84c2ce5cca1d312b9598456d9b1fe5850e11e4fe73d8de0e3d33751e00088b"
     },
     {
       "path": "assets/og/en/insights-filler-1cc-by-area.jpg",
-      "bytes": 58532,
-      "sha256": "858a86354aaf37f950d3558cefea4bffd4e00c65c1aae8364905389999a75be7"
+      "bytes": 56460,
+      "sha256": "1448b3f5ed43395903d4eb6abff6b6bb76085af32e066540823893907b6ddb14"
     },
     {
       "path": "assets/og/en/insights-golden-ratio-face.jpg",
-      "bytes": 64477,
-      "sha256": "333a573a443900fff1ad108696f0b0052edf074221bf151d1ea75b9278faa27c"
+      "bytes": 62390,
+      "sha256": "a8aa1e1635c76b60979003565730901b89baa24bf789e3138eb46a3b9a35c1ed"
     },
     {
       "path": "assets/og/en/insights-how-face-analysis-works.jpg",
-      "bytes": 62884,
-      "sha256": "635756d06d6446935b306ad721aec742e259ab36bf1dd91122e937e89253a01a"
+      "bytes": 60815,
+      "sha256": "ee06aa80d7165e8d7ce7d578992e04d0f878449c3077bd35c80848e75f276af6"
     },
     {
       "path": "assets/og/en/insights-phone-3d-face-scan.jpg",
-      "bytes": 64285,
-      "sha256": "cd20b893bf1bb1e9110fbda73bad500dc39a2c864ea094fa81e3b4af442babcb"
+      "bytes": 62246,
+      "sha256": "2c2e02328ebe6ca7f235f21bea2cf0f20453a5d8f215fecbd1a3f9e5ef0f135b"
     },
     {
       "path": "assets/og/en/insights-questions-before-aesthetic-treatment.jpg",
-      "bytes": 75770,
-      "sha256": "60e9a2850203267610c5c8df753259d59b53cec2bb3471e21c3a0cafa1bdfbe5"
+      "bytes": 73796,
+      "sha256": "4a16c1e1628e13f6833834f0ad143e2b3cae76339d9367b9826b3cd6c2515bad"
     },
     {
       "path": "assets/og/en/insights-thai-reference-values.jpg",
-      "bytes": 72439,
-      "sha256": "a4064019eea0bf060373abc7a168937ddf8b0de14f9d6c8d8f6b36acaf885574"
+      "bytes": 70334,
+      "sha256": "91c68c4f291de59ad2e7bdaec728d546a08592d5f0eed637c975f4393ad675eb"
     },
     {
       "path": "assets/og/en/insights-visualization-and-consultation.jpg",
-      "bytes": 69744,
-      "sha256": "c132e5bcfa039604222f721cb0a8566c3eee00e1bf413751db31289be17f40d6"
+      "bytes": 67631,
+      "sha256": "66275b95d6fc4cabeecb9dabe85f91ecf8972bd44c51fe357d92941d7e6b9bbb"
     },
     {
       "path": "assets/og/en/insights-what-a-photo-can-measure.jpg",
-      "bytes": 63487,
-      "sha256": "a5218eaebec2da9700dabccc01d7889e0c014d8ff63e6628594416aa08a6ffbc"
+      "bytes": 61401,
+      "sha256": "6a91496d51e7e88e3943adfe9159f59e7f221f41a75c15329011d854f55109d5"
     },
     {
       "path": "assets/og/en/insights.jpg",
-      "bytes": 45912,
-      "sha256": "b52977fd0cf8faf77e51e3958cd39fbecb929d983537b0d89fa1d38093bb1da4"
+      "bytes": 43780,
+      "sha256": "00fc3289ca26068d37021dee6374a07d58c02bf814ba76032f78a3bf98248708"
     },
     {
       "path": "assets/og/en/news-dashboard-to-client.jpg",
-      "bytes": 68219,
-      "sha256": "d7c3fc15a936dda1f9bef16171e29e9d2232b318310c3c5ebb352afc79571479"
+      "bytes": 66140,
+      "sha256": "9ab0011aa07f50a89d73bda01f585726fd8ff5bece2b467185daf142954a7e16"
     },
     {
       "path": "assets/og/en/news-elp-season-4-south-korea.jpg",
-      "bytes": 63049,
-      "sha256": "aadf115c80c88af3a36302f28ec37aa7722d1fa1211e9d9b6c5eec7f707cdbdc"
+      "bytes": 60983,
+      "sha256": "3e9cda9a22cf037887731297d0ea5aa0ee08a2c8f69e046a7a8e8d0141f6c558"
     },
     {
       "path": "assets/og/en/news-p1-regional-startup-2026.jpg",
-      "bytes": 68060,
-      "sha256": "5ed69102c245119b0ee880aa6b4e6943526ad2cadee76834308b5c8a292af54f"
+      "bytes": 65972,
+      "sha256": "21161fea047648014fbbc378e8efb7fbbb5de09e98e9b2a7da2c5cb80a051ac9"
     },
     {
       "path": "assets/og/en/news.jpg",
-      "bytes": 53407,
-      "sha256": "77149c55f1db009b7a4916e5b2b3bdf8802f17d65c7c9c700ec32a4261704aba"
+      "bytes": 51290,
+      "sha256": "100ef258f986cb271b1a7ef676f108d8345f49d90e8eab462d5bf24083c34ea2"
     },
     {
       "path": "assets/og/en/pricing.jpg",
-      "bytes": 59977,
-      "sha256": "ce2223f026449b9953533cb43e9b62eae2f8eeec1af82d2c3dba6e9b902c8c1a"
+      "bytes": 56417,
+      "sha256": "b5280f8dd458f838c146268c1df2c6794b43f72e2b1c075eb11ee73955378d28"
     },
     {
       "path": "assets/og/en/privacy.jpg",
-      "bytes": 50700,
-      "sha256": "185623a2127fffce71184df95b9b637dd7a29d678534a5c8734cff2035e12de9"
+      "bytes": 48605,
+      "sha256": "08c8dfab0242de1666490390e50cb89ca506c5dedfe9f10d25a0acce4a42c587"
     },
     {
       "path": "assets/og/en/root.jpg",
-      "bytes": 53606,
-      "sha256": "3175c0ddbf06461a78d023ee7ce5ab0b2c5f5693e3bdbbc8e65a71f5bf7bd52f"
+      "bytes": 51478,
+      "sha256": "1bb3f780b2a45554fcbd387696b623b57a78198a8b3064e534be624cfed99462"
+    },
+    {
+      "path": "assets/og/en/terms.jpg",
+      "bytes": 47104,
+      "sha256": "09063a247351a524a90f0ea677a7ca54acfa0602b590e103309c94c3c9831cb7"
     },
     {
       "path": "assets/og/th/about.jpg",
-      "bytes": 44820,
-      "sha256": "787788b2bdb8d45c6fc6bf3fb4844376dbbea2c7273f9080bc39e1e26513d5e8"
+      "bytes": 42713,
+      "sha256": "d5ab1ade3fe40b970e0b6cb5623649c26ccbc4884d9bfa369fee43cab100b000"
     },
     {
       "path": "assets/og/th/careers.jpg",
-      "bytes": 50745,
-      "sha256": "83afb02ff52f8fb73d595249191c43e0dc1a2fd769e01abcb25a9dcf5b172f9e"
+      "bytes": 48637,
+      "sha256": "1ea696dd250f5b5568114ab454601af043fc7b5322140f193e27f647e2a483e1"
     },
     {
       "path": "assets/og/th/clinic-consultation-exports.jpg",
-      "bytes": 72954,
-      "sha256": "273fab6d16afe5ab6e18a55eff16f8dd46f20b2645058a11c29ef94fea4846e5"
+      "bytes": 70881,
+      "sha256": "1adc7318bc24fd9793ea400cafd8dcbdc5a8386ea71df282cb1246857581ef7a"
     },
     {
       "path": "assets/og/th/clinic-injection-simulation.jpg",
-      "bytes": 76825,
-      "sha256": "cf8d0d070edf187403e1f33dfcbcbd21a5cabac374afd61a0dd5777759f4a850"
+      "bytes": 74788,
+      "sha256": "459fadcb881840773e3ba16463ce332d1896750e282e59bbfb32a1e21cd16fe5"
     },
     {
       "path": "assets/og/th/clinic-skin-analysis.jpg",
-      "bytes": 69870,
-      "sha256": "ae2ab934e02d7ffd7db8c03691c88b43221ed8ef0eb55a2fc94c2183532e085d"
+      "bytes": 67742,
+      "sha256": "f5ac5d1ec5c1fa45574771abe5ce2964b5cdd5ad733bc2062645c3cea773858e"
     },
     {
       "path": "assets/og/th/clinic-surgery-simulation.jpg",
-      "bytes": 69080,
-      "sha256": "0cfcd718b5fed4aff33984f5346fa8bbe9bede3161ff033da1349ba021c124de"
+      "bytes": 67013,
+      "sha256": "74d15e311fcb6c2c128e80ee215c9c339edfa7a26ec804d090c32b8f342cf27d"
     },
     {
       "path": "assets/og/th/clinic-thread-lift-simulation.jpg",
-      "bytes": 72651,
-      "sha256": "62e2d3e723773c285a83da41eb0cb2258b032dab942ad286a9bc2d5a95aca269"
+      "bytes": 70587,
+      "sha256": "888081ec891a3494da937b4d6191abf894d959b355ac21b165c9a5017161b8e3"
     },
     {
       "path": "assets/og/th/clinic.jpg",
-      "bytes": 67853,
-      "sha256": "947f049137641bb8df94ab4ec27bd30d3b02658f22019b505c3f33519f1ae055"
+      "bytes": 65798,
+      "sha256": "10b46162c58a48f567cb990f613618f899e3e64ffc067f627a6e9f03773b352b"
     },
     {
       "path": "assets/og/th/contact.jpg",
-      "bytes": 46010,
-      "sha256": "a3c92f7edcaac3d4920fec0d7564128da0880a7a142c53a6bc767b08fc672e98"
+      "bytes": 43891,
+      "sha256": "959bebcc2a7daa4e2522ae9c18af01af00f452f5304b03923dd8de9a5fbf7119"
     },
     {
       "path": "assets/og/th/credits.jpg",
-      "bytes": 58708,
-      "sha256": "5c64dbd83dc7bdb0d55170b13edc507b1971b2bd6375cec76baecdd0abff0e7b"
+      "bytes": 56626,
+      "sha256": "946e121320d5fc4c4eded198d0eb7cf2b120e3e8bf90bba8248d9e84d82fc60d"
     },
     {
       "path": "assets/og/th/demo.jpg",
-      "bytes": 62851,
-      "sha256": "5b45fa83d9e96138f1345b13ff32786af662787ca045acbb9372352d85d7b929"
+      "bytes": 60758,
+      "sha256": "9aebfc71a5c63a749ac30091ea540f6d4251bc3fb5965eebd1d596679f7490c4"
     },
     {
       "path": "assets/og/th/faceliora.jpg",
-      "bytes": 65115,
-      "sha256": "cc4b8da9d2e7f7c520300bc1f404c86c69e460684066fa242702d53da8afe346"
+      "bytes": 63042,
+      "sha256": "6b9f6aa84ac215b948000f22d7d6730b9802d3aec1e708efb0e6ece585f244fb"
     },
     {
       "path": "assets/og/th/faq.jpg",
-      "bytes": 55372,
-      "sha256": "358601ce359b499ae031c61fc14e20504ee05c50201ff7e85333d75c32383aa0"
+      "bytes": 53287,
+      "sha256": "a637b5f816cf6aa9fe2fb989ac831392e96ab26b129404670d5308404e8f6005"
     },
     {
       "path": "assets/og/th/home.jpg",
-      "bytes": 67327,
-      "sha256": "3fe5f2efb468ac263d5f4c9ed047a6fbada350d70a8eba1bf2266f6025294a00"
+      "bytes": 65295,
+      "sha256": "faa150638e1c7f727054e99b387ebfeed69ad0deb16c06722ed0775ccaa8ef1d"
     },
     {
       "path": "assets/og/th/insights-botox-masseter-units.jpg",
-      "bytes": 54465,
-      "sha256": "4f8e9c374259c40619e550f6147e4d037c7f467f0c301e19e927bf2f59ee5cb3"
+      "bytes": 52338,
+      "sha256": "983e96100d7f6e4187677e0a5c99f259a79a00417f77eca63c3be5ff8b91548f"
     },
     {
       "path": "assets/og/th/insights-client-view-and-sharing.jpg",
-      "bytes": 57943,
-      "sha256": "e006f7fcf986225531b97c57fccdeabdf0c7a7cf7cc02510b5b726bbc760b5fb"
+      "bytes": 55872,
+      "sha256": "4fa9871ec56cd93c0225ada62cbe9efcf3654422d67de619c8ebe3d57696d3f1"
     },
     {
       "path": "assets/og/th/insights-clinic-software-demo-checklist.jpg",
-      "bytes": 60486,
-      "sha256": "c52017f7efc3c4c290d0caee8b9fff0be53b8944531887f47f31dfb0cbe4deb1"
+      "bytes": 58429,
+      "sha256": "ac1aa27c66326d81f56a79b50c1912df3351d9ef8d9e3de7319f08119f39cf78"
     },
     {
       "path": "assets/og/th/insights-clinic-team-workflow.jpg",
-      "bytes": 64407,
-      "sha256": "be8b39b903f8144769bb0a0500bccf42d5b481e386fbb49ee5986ba30b392950"
+      "bytes": 62353,
+      "sha256": "64ca375ad6a0d723f47a4bcb8f75f62519c1c1d162673bd9e03b47437c672e51"
     },
     {
       "path": "assets/og/th/insights-do-i-look-good.jpg",
-      "bytes": 60434,
-      "sha256": "cd3a7d8fd54c6cb661b40c1ac903e62a1a5df14137ff319b80642c37c8db7bd3"
+      "bytes": 58338,
+      "sha256": "2d237b45d2779782923ca95c3bf7ececf87c8cbba80719855a5e3dd6a5d54e02"
     },
     {
       "path": "assets/og/th/insights-facial-data-privacy.jpg",
-      "bytes": 63341,
-      "sha256": "0dec6aea14f50f194a65cb2f42d103a10ec98b607fee2629ea630e02361e7c12"
+      "bytes": 61219,
+      "sha256": "ab0b6a5b5dd50dcb4ecaaa7b57ab10f1d59a832e2e95f5f6161329917c535359"
     },
     {
       "path": "assets/og/th/insights-facial-fat-grafting-retention.jpg",
-      "bytes": 65014,
-      "sha256": "539f5a5bcceee5e762e3d8b66524469caf5e6154da1252f5625dbd8c28655e97"
+      "bytes": 62886,
+      "sha256": "6199e9a89d04ecb2372b2cab02cc41d1ac2e1febf3aa7a6e8f25b1a0fc86df69"
     },
     {
       "path": "assets/og/th/insights-facial-photo-preparation.jpg",
-      "bytes": 61791,
-      "sha256": "2426dfba6da126d2eb3516f026f18750fc2c817df9e0fdccf7cbb1a82e439ed5"
+      "bytes": 59678,
+      "sha256": "128e1209c167683e4ceee7e44f5fedee2bc7e798ab72998d5d4722c0232aad7e"
     },
     {
       "path": "assets/og/th/insights-filler-1cc-by-area.jpg",
-      "bytes": 59309,
-      "sha256": "da3836ad9bced2b08a7112007c357a784019e4ca23d35ab7ae37c8419c8dfe86"
+      "bytes": 57209,
+      "sha256": "9a1153a98c8b07c23566ea9e85fa8103e4b40fe5b03397187c298a0f4d602de9"
     },
     {
       "path": "assets/og/th/insights-golden-ratio-face.jpg",
-      "bytes": 54949,
-      "sha256": "6914b31c374f5fe4473725cf618521dfbc5726a9409a4d0be3f3f83b53aa46b7"
+      "bytes": 52839,
+      "sha256": "87926e1f51762ece7cbcd4476f194767a105daa598c90d200ecee230b9bb998c"
     },
     {
       "path": "assets/og/th/insights-how-face-analysis-works.jpg",
-      "bytes": 64063,
-      "sha256": "c1feec7324b0fa1f731a926a04a4e39aadca01bd5f64ab845d43af6f6a673642"
+      "bytes": 61973,
+      "sha256": "2fcdfa2a2fe5a227986179415697518e45a518d9cabb5d12f57be1694827132e"
     },
     {
       "path": "assets/og/th/insights-phone-3d-face-scan.jpg",
-      "bytes": 61204,
-      "sha256": "51cddd608e4d6601f483b6998f2046f75bb0a93140f2d0dc8629f1de8ea13223"
+      "bytes": 59090,
+      "sha256": "677b16403e42efb8fa4ec4d96f84788660b7d9e4b62bca1d80168136bfe935d0"
     },
     {
       "path": "assets/og/th/insights-questions-before-aesthetic-treatment.jpg",
-      "bytes": 63873,
-      "sha256": "4bcda25beb6413190d37fa6077ce3e88a77bfe89b99c111bc4030fee9db3b2c2"
+      "bytes": 61809,
+      "sha256": "ba46ca101224c1f5bc715da7d1988ee0653e75f85536d6c78eb0b1f8bac75de7"
     },
     {
       "path": "assets/og/th/insights-thai-reference-values.jpg",
-      "bytes": 67459,
-      "sha256": "948ce0bef528737572c14536b6e088fa6c1f60c7baac75c26776fcd40742739c"
+      "bytes": 65382,
+      "sha256": "bff1c5b6ee3fbeb9dcde979af5469d13705c2810f6d4173b49d7ae03b6b26719"
     },
     {
       "path": "assets/og/th/insights-visualization-and-consultation.jpg",
-      "bytes": 63046,
-      "sha256": "cc7755fef9a36ec724193918a0d44a3f9ee9bc5327ce46e506e70d49fb139306"
+      "bytes": 60979,
+      "sha256": "59c29d2cb6e6795f1f4fadcb9dbec00106e6cfaa44d1a6384857ad614a64d10e"
     },
     {
       "path": "assets/og/th/insights-what-a-photo-can-measure.jpg",
-      "bytes": 63584,
-      "sha256": "4663f4bbe4e83a90dbf67df87723f369e02d381a56ccdc61805f3ff0de9e6237"
+      "bytes": 61477,
+      "sha256": "82073eb46778c400472f5fc5c9368785386ecb52e7785d19b697d97d5f2e6e2b"
     },
     {
       "path": "assets/og/th/insights.jpg",
-      "bytes": 41206,
-      "sha256": "1b049877539b4c90d0b43354fb87578c522d3a961f483daef7b4bd452644aa8d"
+      "bytes": 39065,
+      "sha256": "1255bffdf0b8e458a62fe8f2fd1814c8497a21f89f18e42f273facb7654c73db"
     },
     {
       "path": "assets/og/th/news-dashboard-to-client.jpg",
-      "bytes": 65741,
-      "sha256": "b25c9d84d2bfe7993069cd593ceb9d5b29a1163393ec65a2f5c97ae13d47ed11"
+      "bytes": 63651,
+      "sha256": "fd95ab9c65256f3e16d7dba8e00be24c8c46e64bd6279c5f5d4202aae80ae6b8"
     },
     {
       "path": "assets/og/th/news-elp-season-4-south-korea.jpg",
-      "bytes": 59127,
-      "sha256": "0cde6da937ab4dadc46de011889db0912d7b104cc4cf97f35c0c8d4c964aff01"
+      "bytes": 57050,
+      "sha256": "05c7e500593932a053c8d1f135bbde779f09eded741ee89ca3e62751a3dbcd63"
     },
     {
       "path": "assets/og/th/news-p1-regional-startup-2026.jpg",
-      "bytes": 62945,
-      "sha256": "e47478b6771d66555205965232a05d0f99397dd12d30c91c08c8909409e9f353"
+      "bytes": 60828,
+      "sha256": "6c74fc4c7c224a488b5a810f8532b1c4f0ba9b05f526739fb9b45c84aaec039e"
     },
     {
       "path": "assets/og/th/news.jpg",
-      "bytes": 53263,
-      "sha256": "a9837322aa236ee1c7c19be25e73a4701a9e22876d589883d5259ac765560f19"
+      "bytes": 51158,
+      "sha256": "ca9c7fe7e78ffe5ab2f19e3502d669032e2a6c8053370ce2cf28230e61420cb8"
     },
     {
       "path": "assets/og/th/pricing.jpg",
-      "bytes": 55307,
-      "sha256": "d55fe33fee479fa28b64da743af33d665eaa4a173ecbf1cb88548ac3f6aa1516"
+      "bytes": 51484,
+      "sha256": "d94036ba3d91d2abb3a9bfdcae7bc887f43b4e41db6eded49f55455799152ffd"
     },
     {
       "path": "assets/og/th/privacy.jpg",
-      "bytes": 47538,
-      "sha256": "639f64f7806cc0dbe88fda66698a61ffae9fdb66f37881c1b86f5641c79b53cf"
+      "bytes": 45396,
+      "sha256": "a8fec24238424750e86f62af4351b19abb7c5a5f47944c80a16d6327f869d8ca"
+    },
+    {
+      "path": "assets/og/th/terms.jpg",
+      "bytes": 55833,
+      "sha256": "3d9a55ced2768a3dc38ea1a1ef2118c6f4067e9bfc92028cb8cf8c81bac5f757"
     },
     {
       "path": "assets/room-1200.webp",
@@ -1993,8 +2023,8 @@
     },
     {
       "path": "b-menu.js",
-      "bytes": 1567,
-      "sha256": "c4783696a25209a04e14ad3a8d3a6bb45f71ec49770178d3073c86aabca9bc17"
+      "bytes": 2009,
+      "sha256": "31f6c7ec0396cb91bcaf61116eee9a1d750eb1bb3df9d70ed2d0fea024f8e3f6"
     },
     {
       "path": "clinic-c.css",
@@ -2013,188 +2043,198 @@
     },
     {
       "path": "en/about/index.html",
-      "bytes": 14591,
-      "sha256": "f2167ae1be60d365454c6f1f604ffa65ac2de8ad6c6ecf800f708566dbf1d846"
+      "bytes": 14270,
+      "sha256": "c834b99c6071b797b3487a22c95a20d728abc47789e97a7cb494c5b62f17a9ca"
     },
     {
       "path": "en/careers/index.html",
-      "bytes": 9904,
-      "sha256": "e35842e19facc07acbbd21682ed7aa826905e9122c6cfbec74c51dd4b3a58b85"
+      "bytes": 10316,
+      "sha256": "5763f04dc31fa8ac6f06866c241d88e0293b06e6a7ed051d6bc9b3511406f54e"
     },
     {
       "path": "en/clinic/consultation-exports/index.html",
-      "bytes": 17039,
-      "sha256": "86126af37f4fc826c89293d2625c1c81f2a539d16fb613c2bf6edb68e4a90cdb"
+      "bytes": 17395,
+      "sha256": "04fd1cc412266799d12b41d4c6944cadd8660735f7e17def48654e57e289da8c"
     },
     {
       "path": "en/clinic/index.html",
-      "bytes": 26891,
-      "sha256": "7d94f45cfa6ae81b5c07e05578274476e501f68f3a5e80d2cae2599e0dd790da"
+      "bytes": 26132,
+      "sha256": "c5732aa6ef70197690c52814ec344fc2af075888ba103a1a0b4d9bc57de6d85c"
     },
     {
       "path": "en/clinic/injection-simulation/index.html",
-      "bytes": 19434,
-      "sha256": "fa662de895d22247f2f7216e50a80832f1440b1aa785b6d01180db240dca0606"
+      "bytes": 19830,
+      "sha256": "2c14b7cebf68050ccaa8b91b3fd5e7719ccf07740b52b0a2850772b792739254"
     },
     {
       "path": "en/clinic/skin-analysis/index.html",
-      "bytes": 17598,
-      "sha256": "579ab27f5887ff0b07914decc59ca6e6f85d00b89063ae849082b21c061fca41"
+      "bytes": 17928,
+      "sha256": "e1598ba888a03775a9ff7dad05382f71dc06bb96226d639cdeb5604e86e6b236"
     },
     {
       "path": "en/clinic/surgery-simulation/index.html",
-      "bytes": 18118,
-      "sha256": "80ff61f646e8da589212dfdcfbe2a939b32c9c489d0547c83ee11000fb73b05a"
+      "bytes": 18492,
+      "sha256": "fac0860298546ad83745af377b8f6fe30cbf2dc5b1e0c2b7a5bd1ad2f4dc74f7"
     },
     {
       "path": "en/clinic/thread-lift-simulation/index.html",
-      "bytes": 17721,
-      "sha256": "cb6c774803c669aa7bac4e6dad54e91822d87323d62d5e8479132242c5e72f0a"
+      "bytes": 18079,
+      "sha256": "67128d4ddc0e2056d659271a4435694fa41d1b630d797173fdfcb6851d4b2e48"
     },
     {
       "path": "en/contact/index.html",
-      "bytes": 9990,
-      "sha256": "6ae7d3a55731041bd91b5d93fd44b73d31dcb8a715126e8c83d9464ccc84f32f"
+      "bytes": 10717,
+      "sha256": "567dce403e24e33dd4be64e6e8321edf7719fddeac300288a104992448502efb"
     },
     {
       "path": "en/credits/index.html",
-      "bytes": 71707,
-      "sha256": "41cb551d594823c520594cc7f0394a22b8cbddb0f7b07a819ab0d8e5a86eaad0"
+      "bytes": 70881,
+      "sha256": "761f76a6b002f4dcc5c5aab5ed4e89959c2efbc497c160afff87ec1a525bed5b"
     },
     {
       "path": "en/demo/index.html",
-      "bytes": 18614,
-      "sha256": "a41f78cb221efb1da2795b530018c4d66539ecd2b86d2b501a9f512707ae1c15"
+      "bytes": 31834,
+      "sha256": "e1a680f311bc28b61fb3f32ec5d4add7beace06d269e7c4bae76d2e5b0cfadae"
     },
     {
       "path": "en/faceliora/index.html",
-      "bytes": 18826,
-      "sha256": "279afcba693c8619cd085da8cc5c979fe12eef0b768317b2d0f1034474db4915"
+      "bytes": 18943,
+      "sha256": "48aa107dc44c1a090635405edcaac66c3fb4d078a8da78017b38b2a958557bdf"
     },
     {
       "path": "en/faq/index.html",
-      "bytes": 24886,
-      "sha256": "8526b64271c3b05c531afbabb42328d8407f25a2b2a65a9ec7b4e03ce0246730"
+      "bytes": 25174,
+      "sha256": "60f67f460ee6e27648b579fcf9f0c75f8be11f9ac62ed951271549caa2216f1c"
     },
     {
       "path": "en/index.html",
-      "bytes": 20776,
-      "sha256": "f730ccf77fe4e11c3c345847a335e04ee6492cd268058c39abb80e7d535d857b"
+      "bytes": 20636,
+      "sha256": "1013b2f402acd5a0d13ffc38bb2b7c782be10828aceaecb390d72cb599a0a262"
     },
     {
       "path": "en/insights/botox-masseter-units/index.html",
-      "bytes": 23413,
-      "sha256": "8540d671450740efbdb9ada1e7d1605c1dfdb8a81b3e757a3cdced22dc15b55f"
+      "bytes": 24151,
+      "sha256": "ce2849a2389576f1129526ab826969edf915e1b8a98546be117ae08a776dd282"
     },
     {
       "path": "en/insights/client-view-and-sharing/index.html",
-      "bytes": 20310,
-      "sha256": "0a355d4f186a00fcd77f93526620bc77feedfb286c75516cfc266f907c3c8984"
+      "bytes": 21030,
+      "sha256": "e0b336de939d33b4a41a882c8cf64f86929018ed4c8fe6a3f095ce9397840e75"
     },
     {
       "path": "en/insights/clinic-software-demo-checklist/index.html",
-      "bytes": 21135,
-      "sha256": "31dd54814dd179ded33905c70ce7f2251fe7da1c8d8dc075a7d72c95b60c217c"
+      "bytes": 21865,
+      "sha256": "1e8fea189b54889a05b902f189f59ec62e1e9b49344b2c16dbad676957b36f71"
     },
     {
       "path": "en/insights/clinic-team-workflow/index.html",
-      "bytes": 21890,
-      "sha256": "392db33a62f0b3a9c40f1715a01110067568145302e3fe6849578db838630ab0"
+      "bytes": 22610,
+      "sha256": "6a6515fdaa2df59e78548a2f85116daecbb71dc07102537c65fde5429b16c3fb"
     },
     {
       "path": "en/insights/do-i-look-good/index.html",
-      "bytes": 17815,
-      "sha256": "b1b8d3d62f2bb082311c0ec3966f2f9e90255b442b13833342fde474b3955980"
+      "bytes": 18507,
+      "sha256": "351fe24f76adee28d08b3227ec070b35f9afe72b2429b3f1cbb5c0e24faf36e9"
     },
     {
       "path": "en/insights/facial-data-privacy/index.html",
-      "bytes": 20771,
-      "sha256": "a0960178a0095f51158670382baac8ef02fb68737164915ee35aa9eafd848374"
+      "bytes": 21509,
+      "sha256": "c2bea1fa06eee56e70a818432cc75caf2a79d0880738fb2081b5b37e23e3f104"
     },
     {
       "path": "en/insights/facial-fat-grafting-retention/index.html",
-      "bytes": 27244,
-      "sha256": "812215a29ae9df141b96620102d9c4e09cbd05c616310d90a7a2c403d40b3cd2"
+      "bytes": 27938,
+      "sha256": "ddf52def0456f2ed693f552718c9e573437c704d8372fe02ede02607da9d799e"
     },
     {
       "path": "en/insights/facial-photo-preparation/index.html",
-      "bytes": 20507,
-      "sha256": "cd443823ee1c7e8e0f51eeeb58891f1320c32b72c329c5c8a730dee92312a042"
+      "bytes": 21243,
+      "sha256": "c24f69df77f0736d3d839ebbcfd0eebd41f805698756e43c12f45e75ffa439d6"
     },
     {
       "path": "en/insights/filler-1cc-by-area/index.html",
-      "bytes": 27225,
-      "sha256": "cf699d35bf7b6145290abb10a165d8ffecf7f57f8f406d672f6d08bd580ccd94"
+      "bytes": 27943,
+      "sha256": "38c3b1a190115b4777da29da00bd5bfc5fa029f57400cda0466e4f873f980b4f"
     },
     {
       "path": "en/insights/golden-ratio-face/index.html",
-      "bytes": 17026,
-      "sha256": "5370f1cc4f59dcddc42ecc8bed1a04ab1cb6eaee1dc5cfd705d7a12b30945ecb"
+      "bytes": 17726,
+      "sha256": "18101b7e887a77fa8b0f71b9afc9b5585b82bb2910f9abd0b352e734b5257be7"
     },
     {
       "path": "en/insights/how-face-analysis-works/index.html",
-      "bytes": 17899,
-      "sha256": "330326b61e1c6b527def8457257d0b8bfc9322012d8c0c7abdf313b64e938f82"
+      "bytes": 18547,
+      "sha256": "24cc21ba0dc258cf0bd996cc6a98dc56514b44d344f3a518610abb50a94e3a4c"
     },
     {
       "path": "en/insights/index.html",
-      "bytes": 25570,
-      "sha256": "b949118bdb0ab826c9111515b63df72a954d86188681bd6314442a0e8fa91001"
+      "bytes": 26146,
+      "sha256": "813b98c5e5279a9a1665c627b0688dfbb809ff9b6ced40e4d2bbc9b426337e89"
     },
     {
       "path": "en/insights/phone-3d-face-scan/index.html",
-      "bytes": 24123,
-      "sha256": "beef5e944df1f2902ed312ee4a4af776c2a805a383a23a53632773b0b3f2f56d"
+      "bytes": 24670,
+      "sha256": "f80b308d104971db7e9a72450fddb839423923e2e67bcab53f89095adadb6346"
     },
     {
       "path": "en/insights/questions-before-aesthetic-treatment/index.html",
-      "bytes": 25110,
-      "sha256": "ed128368f4dd26b534e103180ce13298b1ea4223060a84a8baf770d686bb47c6"
+      "bytes": 25858,
+      "sha256": "d96afec2994742cca49c1247ce85f788cd62544b558bbf2c894fe779f3fda316"
     },
     {
       "path": "en/insights/thai-reference-values/index.html",
-      "bytes": 16579,
-      "sha256": "5deecf94cd235c1a2f31705575e8d0b6e1813b16f5e48766e0c62ac61525e476"
+      "bytes": 17313,
+      "sha256": "f10eccf930b3f6179de8f0c43388aaa88c7c42cd950f84e4fac93274b741b542"
     },
     {
       "path": "en/insights/visualization-and-consultation/index.html",
-      "bytes": 21423,
-      "sha256": "f9695e9b53bba9df0e6b905c640e852a5ee9523addd6eca2653ce6c8e3994493"
+      "bytes": 22179,
+      "sha256": "ad11fc6b6f5d6c059f41c579b1df9a8c9eddef4b7156e44b58af69210d5062ce"
     },
     {
       "path": "en/insights/what-a-photo-can-measure/index.html",
-      "bytes": 20701,
-      "sha256": "36f1f87fcf708b887638faa58349ab2fdf06d87e4d876c23151750fa6178c0cc"
+      "bytes": 21353,
+      "sha256": "2f5bf498435719b688dfcfc091819607369c429dab7e4f975048005bcd917b48"
+    },
+    {
+      "path": "en/lp/clinic-demo/index.html",
+      "bytes": 11763,
+      "sha256": "52cbc1cf0d47583dbe3f3fd8d27f8efaeb4ba4ef3a57b62631e9af12a5a5c55b"
     },
     {
       "path": "en/news/dashboard-to-client/index.html",
-      "bytes": 13594,
-      "sha256": "55cb40a524db16df305829f7f3494d96980f37831acb5a9a07d101f9b78fb62f"
+      "bytes": 13815,
+      "sha256": "ad04931faf1209c95675dbff2dde8d2377585c68865306277928702289880b19"
     },
     {
       "path": "en/news/elp-season-4-south-korea/index.html",
-      "bytes": 15825,
-      "sha256": "b4bf3e30b0a14019e65e589f36e2402757a3d1da8fd359c0469901eef3a25aee"
+      "bytes": 15819,
+      "sha256": "fd329b0bc295b37331050caf4d87fdd96802c174b3342e4d36b931d3fbbdf6b9"
     },
     {
       "path": "en/news/index.html",
-      "bytes": 13081,
-      "sha256": "a9e08d6d5bb898497a1b88fa56182ce7447ffd4077d1197ec6b8e71540e4176f"
+      "bytes": 12793,
+      "sha256": "1384a880d41a7051261476134f459fc30fee5109ad13463b2d4c1a54ac05a259"
     },
     {
       "path": "en/news/p1-regional-startup-2026/index.html",
-      "bytes": 13183,
-      "sha256": "e14b261d2c6e4b9eab15714d31e9c9a3366c6d336edea0a65235b99f176ebafc"
+      "bytes": 13258,
+      "sha256": "a0dac7fddf4db6054a4edc99539d3da2f37f89b90213baf8299ce95f79eebd4c"
     },
     {
       "path": "en/pricing/index.html",
-      "bytes": 25229,
-      "sha256": "22be0224e739188019ac20f38066ccc0a3ce6b61c06336e579b6e5d9a7bb10df"
+      "bytes": 23783,
+      "sha256": "465a85a7d8e8cd358f238ce3004a81b27c74da0ee4ab29f30a418ff7c22594a7"
     },
     {
       "path": "en/privacy/index.html",
-      "bytes": 9887,
-      "sha256": "04eef448d06918c80050f5a877758e088259ea37fba4a99eb3ddb9c47b3b9d10"
+      "bytes": 17195,
+      "sha256": "b221ad19d8d51a0f15a8efc44ff5756e0faac87ea59920a7bea5c77737d0c3a5"
+    },
+    {
+      "path": "en/terms/index.html",
+      "bytes": 11876,
+      "sha256": "770cb5b71094b65ad932aab8ac89066eaea4a6274d1669d6467a3ebe208e1bca"
     },
     {
       "path": "entry.js",
@@ -2212,9 +2252,49 @@
       "sha256": "a4b1d8d4f60c2833c1e0c164e2e1a7ca3f18bb2d4d63320dc8cfca3930c0ae46"
     },
     {
+      "path": "favicon.ico",
+      "bytes": 1616,
+      "sha256": "abb8becce76502bec91ff631dbfeea97da1230f20afdd08c68f518390a77bc9a"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 475,
+      "sha256": "9aca04835b36be4531a950a3497d2f0c38b2543915d456ba32f186914700fb7c"
+    },
+    {
+      "path": "fl-consent.css",
+      "bytes": 5315,
+      "sha256": "164799afb777988e5c754ac0e7fb6fc5cceba8f882d81ac74ad9e868157542f6"
+    },
+    {
+      "path": "fl-consent.js",
+      "bytes": 16689,
+      "sha256": "16ae6dad37f3ddcb921c3275d53a6befe000703b889a62d1d7d9963301124af3"
+    },
+    {
+      "path": "hcta.js",
+      "bytes": 391,
+      "sha256": "96163840769ffb144e32b019e88d615b3a17f6ac6631881a58481b5e911d129b"
+    },
+    {
+      "path": "icon-192.png",
+      "bytes": 3009,
+      "sha256": "95502c9c6b875a0fc5259012045aa1694663033cec5750daf4f7f71a83de5ac7"
+    },
+    {
+      "path": "icon-512.png",
+      "bytes": 8628,
+      "sha256": "ca1a5a125239fd9a1ee4da11aeed832ed1b39ffd70e2c259d5932a6258c7b1cc"
+    },
+    {
+      "path": "icon-maskable-512.png",
+      "bytes": 3862,
+      "sha256": "3f89f6962104682ab284d5de0d5081f493732ce9fec5030dccb31498a497c377"
+    },
+    {
       "path": "index.html",
-      "bytes": 1665,
-      "sha256": "2d569e0a9a08db9b9cdaf6f8ba9be16905f33e03105174b2cd326e2cd9d1da55"
+      "bytes": 1951,
+      "sha256": "88b96bbb22a3534351d7e9af66c87e0f2c7f6bfdb12762d82f25f9ec53355b58"
     },
     {
       "path": "insights-a.css",
@@ -2223,13 +2303,13 @@
     },
     {
       "path": "intro.css",
-      "bytes": 4686,
-      "sha256": "2738a74e9ff84b2ffa79cbd0e6cbaaab07b66d55f9e49142cfd6cc9835150c20"
+      "bytes": 4843,
+      "sha256": "e2a9b1b78afd9d5eaeb281e9e4e12fcbc1458ea158c81994ba3a9f5011013228"
     },
     {
       "path": "intro.js",
-      "bytes": 11063,
-      "sha256": "92c40c4700b867808c041b2db9233ecaaf5058ec8115964f1f5de8ec923b3233"
+      "bytes": 12442,
+      "sha256": "7575db288e74cd1bd435550ad8895fb78e8d1722f71e392b9e7fd69e171b3dfa"
     },
     {
       "path": "legal-a.css",
@@ -2247,14 +2327,34 @@
       "sha256": "bc8c7e332a0dfde8d448480a0290f18edb1aa3986c5e76998faf78f2eb1cbb5c"
     },
     {
+      "path": "llms.txt",
+      "bytes": 2067,
+      "sha256": "761c9b47b22c5215fc23f712f40307409a3627dfbc0e01714798c1a7b61ce796"
+    },
+    {
+      "path": "lp.css",
+      "bytes": 12025,
+      "sha256": "9c9aebe9a0c28359424428e8ee78eeae1e5633164d07489af79455200ed5637c"
+    },
+    {
+      "path": "lp.js",
+      "bytes": 5902,
+      "sha256": "242187e2fab1c3fe839c78ef1e1b090dc0b0a0b6e0a512e913cb0170ac802adb"
+    },
+    {
       "path": "news-b.css",
-      "bytes": 50375,
-      "sha256": "fe57c0d0f69b5b072166018be4c19e646ee461d1f2f9b28513786ad158bcbfe0"
+      "bytes": 50501,
+      "sha256": "f632d9ee43290b9c38c208789f502a3271e782617971b0a73cb2c43ba09ae958"
     },
     {
       "path": "news.js",
       "bytes": 1898,
       "sha256": "3440f92d122cf17b475c47b0d29e7236b98461b1e11da7a1b7bf2077c96cd532"
+    },
+    {
+      "path": "organization-logo-512.png",
+      "bytes": 8628,
+      "sha256": "ca1a5a125239fd9a1ee4da11aeed832ed1b39ffd70e2c259d5932a6258c7b1cc"
     },
     {
       "path": "preview.js",
@@ -2298,18 +2398,58 @@
     },
     {
       "path": "r43.css",
-      "bytes": 11972,
-      "sha256": "004bb44096e03c6b8ff68c4dbc2d26718c89588752a865c5f797101fb5f88109"
+      "bytes": 12192,
+      "sha256": "49d74b3a1c800af2ceee5747daabf44d460988f2fe9bc4fb40c3914e531a0018"
     },
     {
       "path": "r43.js",
-      "bytes": 12345,
-      "sha256": "229bc1c1a4e2448a08748acf8b0a899419f10002194ec3498dad48849f47ce41"
+      "bytes": 14636,
+      "sha256": "69d1f6f6bc79a727a5e8c340b7d58e6655ea97c1563a5664455b07076e7e17b1"
     },
     {
       "path": "r49.css",
-      "bytes": 4255,
-      "sha256": "2673d4721dc3b8768e35c7649540c5808acb0ff2b1c0a4152d1287fa282a0503"
+      "bytes": 8680,
+      "sha256": "40dc2a5c3d81bed755e7e9439dcbcdcc9cf3815311fb99924759e5cce6255587"
+    },
+    {
+      "path": "r65.css",
+      "bytes": 18630,
+      "sha256": "1b158f915b475a8d931d74d3b3dc3bdb969c8517f78c908cd942537f90fb6f6e"
+    },
+    {
+      "path": "r65.js",
+      "bytes": 10016,
+      "sha256": "a39f23e96d1024eb2bdc4adac5b7e30849b1632ee25b299c7d4f8a822639bb11"
+    },
+    {
+      "path": "r66-logo.css",
+      "bytes": 2240,
+      "sha256": "79e50ee297607675b4bbd57ff8ca76b60a1f87ad50cc25d88cd09f67686d2563"
+    },
+    {
+      "path": "r66.css",
+      "bytes": 7810,
+      "sha256": "0c92980de8e1e4911e2026065237e1bc931f81ed50969168db6b9e19dc22835c"
+    },
+    {
+      "path": "r66.js",
+      "bytes": 6438,
+      "sha256": "5ef9743c9fd67883ccd9185276c2de8f426ab0ee58f863d4384367ee9b92fe17"
+    },
+    {
+      "path": "r72/r72-b.css",
+      "bytes": 3217,
+      "sha256": "7bd94386883ed6d6aa4462a8c57c9840138355395330935563286e60768d4ffc"
+    },
+    {
+      "path": "r72/r72-bar.css",
+      "bytes": 6588,
+      "sha256": "55ec6f05994d925a8c58d22f98882c22b51e384cc19a4c1908607d2d428e2334"
+    },
+    {
+      "path": "r72/reserve.js",
+      "bytes": 1336,
+      "sha256": "9cc2f559c3705a7500fbcf46528cf6c1473006a8223f0d6f94baada05d1269d0"
     },
     {
       "path": "robots.txt",
@@ -2323,18 +2463,23 @@
     },
     {
       "path": "roi.js",
-      "bytes": 11597,
-      "sha256": "881b247bb03e989d3dc8dff6a1c4dd075318ce17107ed263e468a69ff040576a"
+      "bytes": 9802,
+      "sha256": "cd8911a8077b0a142c7c961e5996980d15f1fdf26276dd0bc4d2ca3955b9e382"
     },
     {
       "path": "site-config.js",
-      "bytes": 918,
-      "sha256": "e15d1378103aec051969d1cfed0fd96cb9fb64553b3877017f3dae087ec67392"
+      "bytes": 1371,
+      "sha256": "1c35acfa678a109305b902abfc18bf173510052de532965d78c9242b3362dadf"
+    },
+    {
+      "path": "site.webmanifest",
+      "bytes": 480,
+      "sha256": "3af593a2493def92788edb33178e3f046d6f7fea40a04639388f48f49bb0f65a"
     },
     {
       "path": "sitemap.xml",
-      "bytes": 28305,
-      "sha256": "7737fe24b74ca4c2f59503f79d2d5e9fdd0916042fbae1890f0bbc7f16e4c36e"
+      "bytes": 28959,
+      "sha256": "2a504027845440c25b40d980c2f9847081cfbdc399b72d69f9c581c8162552c0"
     },
     {
       "path": "style.css",
@@ -2343,188 +2488,213 @@
     },
     {
       "path": "th/about/index.html",
-      "bytes": 18978,
-      "sha256": "8e309f2ae543d8780c0b90d838376434f7248e3b86ba5dca454b60e74803ba40"
+      "bytes": 18133,
+      "sha256": "1d7b8577ed0516ba23e872c60bea2c76313539569d3cca3bb94407fddfca9890"
     },
     {
       "path": "th/careers/index.html",
-      "bytes": 12050,
-      "sha256": "b2213f8364aeb9922c59ba171ae767a67c81047513ac673b778af0e784f742a8"
+      "bytes": 12316,
+      "sha256": "7b940037f83b51c315f9ef1ac5dd7925da8197ea9179a95e879c433d9685a35c"
     },
     {
       "path": "th/clinic/consultation-exports/index.html",
-      "bytes": 25697,
-      "sha256": "11792b3e4971cc6446918c0a4f0758c3563f0c955b755a05e7f5e52681ec49ee"
+      "bytes": 25981,
+      "sha256": "d77befe7e004609178d1691bc3ecf0084566161ee340f0e4ea1971cff8b5f49e"
     },
     {
       "path": "th/clinic/index.html",
-      "bytes": 40489,
-      "sha256": "b87783d1d33b24a8ba715b881a76e08e316dd6496a90e39e4ec0265d54ea444d"
+      "bytes": 38206,
+      "sha256": "99e0edb9276a678302b835c5c671e8638e0ffc772270dcd1730cc30180d92c56"
     },
     {
       "path": "th/clinic/injection-simulation/index.html",
-      "bytes": 30658,
-      "sha256": "ea18631a77f690595914ee9df5527f62ffb5f7d30b4475a1272f402dd887002b"
+      "bytes": 30942,
+      "sha256": "89670cc5c8c3a6628bc26604b905b152a85ef371bd31d4d49e7341edd9effaa2"
     },
     {
       "path": "th/clinic/skin-analysis/index.html",
-      "bytes": 26987,
-      "sha256": "fb37c14a2278b35b490b7f88afd3b5a88f95be94060635371f7ff012156e351f"
+      "bytes": 27271,
+      "sha256": "d71fb1e9cc144edb925365cad91e372ae3c582a2f1220108aff0e8c963812810"
     },
     {
       "path": "th/clinic/surgery-simulation/index.html",
-      "bytes": 28376,
-      "sha256": "174cc014edf7bd344264cdd466bae465dd41607f97fe5eb78087930f5861b4ea"
+      "bytes": 28544,
+      "sha256": "89ebc820f7f442fd6632cae7e535784e88c279cd97b557ac50ab207ada0ce8d7"
     },
     {
       "path": "th/clinic/thread-lift-simulation/index.html",
-      "bytes": 26570,
-      "sha256": "99a0e68ea1208e7f190082daa71196f4be94d6c4b6e938d31bed80fc9b8fd63a"
+      "bytes": 26854,
+      "sha256": "eccaae7cca6a937cef778075e3ab3db8998760abc482aa27eb136e42208ed867"
     },
     {
       "path": "th/contact/index.html",
-      "bytes": 12458,
-      "sha256": "bdc2989aadd06949a2aa6886a7cd217d1d32bde6b1713111744daa4b78d73e58"
+      "bytes": 13252,
+      "sha256": "034d753422cba97a2f6dd03d8ca372353cc9e3d3e55f9a6b1808ad725290af5e"
     },
     {
       "path": "th/credits/index.html",
-      "bytes": 95437,
-      "sha256": "4c6fb1c63f7998ef34e3eb3110448aef116b29146d73b77cc597985a4bb19379"
+      "bytes": 94354,
+      "sha256": "48844164af6c6dddb19e37f49b96c819a59de2723838df5f5750cf24314b93c0"
     },
     {
       "path": "th/demo/index.html",
-      "bytes": 23233,
-      "sha256": "6c0e7a112716063e00c5962f0038ec8845e6ca9b45c199581d8ed60f052aa2e0"
+      "bytes": 42061,
+      "sha256": "bed7df6ce01d60010e9058af838e10c9de893b6c61de24411dd91bf3f8706d5a"
     },
     {
       "path": "th/faceliora/index.html",
-      "bytes": 27239,
-      "sha256": "fd6a6080c23b52e634c3f03863b611de0634223d24092d8b9ad185ac75234552"
+      "bytes": 27066,
+      "sha256": "b1059a2b124b943cdcdea15bcbfe4d9c8f2be09da18b373f761d80afa1af5a62"
     },
     {
       "path": "th/faq/index.html",
-      "bytes": 35388,
-      "sha256": "ef340b0799481d0f4537a8d30f05b42616ad2eeebb6166b05cc3900f67c7c959"
+      "bytes": 35360,
+      "sha256": "de1653311ec4ad60f839d248696b76a24a178ff71561354ae3cd763957563341"
     },
     {
       "path": "th/index.html",
-      "bytes": 27342,
-      "sha256": "689378ecd8398252236998e27efc904d3c45bbc623595af439f11090fcc69953"
+      "bytes": 26353,
+      "sha256": "df0a850c9373d51f6d72d47a8017ceb42453b4771556a1ab293e217625e58fb1"
     },
     {
       "path": "th/insights/botox-masseter-units/index.html",
-      "bytes": 34661,
-      "sha256": "6a58c49f2b3a9659c70545c536a072c19fc5a17a3e3c9028d823e559b2188cbc"
+      "bytes": 35447,
+      "sha256": "d9c4655eef12671b2c8ddeacf7e5762f3d20378cbf6382a11c7da3f864c50cd3"
     },
     {
       "path": "th/insights/client-view-and-sharing/index.html",
-      "bytes": 29884,
-      "sha256": "d34731f94783f9b72c8d7569b9fe03ed4d1f5d7c100784324422417641e9c10e"
+      "bytes": 30670,
+      "sha256": "2bb06db2c8988387e348246f3ed40d8ac11ffd2d78b4ee7bcbbc279475a67813"
     },
     {
       "path": "th/insights/clinic-software-demo-checklist/index.html",
-      "bytes": 32439,
-      "sha256": "d6718b652f5463c70584b82076c953c4cb4b6ef927e6038b2bb5ed59eed5cffc"
+      "bytes": 33202,
+      "sha256": "d152d246ee8ed885c743dc6b693325f5d157080c61f3420d8d4496357c2d7dc7"
     },
     {
       "path": "th/insights/clinic-team-workflow/index.html",
-      "bytes": 35595,
-      "sha256": "49634fe97030d1e2034bd71a89ca03972bf7bdbe3a89f91a1dcfcb68978f2f36"
+      "bytes": 36329,
+      "sha256": "7b4111f171eb62b3e719ef5c47e6cf4b44cf793fa6cc725bb79e61fa5b7e0e95"
     },
     {
       "path": "th/insights/do-i-look-good/index.html",
-      "bytes": 26651,
-      "sha256": "216436fd89b1a87084fc01a0cebfa493290b1eab730c21f61dd5c7dc97a54522"
+      "bytes": 27521,
+      "sha256": "e466ef64a99b8ab8d4017818fe1658f2e75e9029624eb1c13ae7966c60d4f792"
     },
     {
       "path": "th/insights/facial-data-privacy/index.html",
-      "bytes": 31610,
-      "sha256": "bb63ce5189abd67058039ff0e5dc9452b6c10007731dfec5a84c8f7e07cace6d"
+      "bytes": 32414,
+      "sha256": "e95a703b8b130c08b38229093c46c71c9b51549b5d9d659c3217b4c0a8bc4025"
     },
     {
       "path": "th/insights/facial-fat-grafting-retention/index.html",
-      "bytes": 39462,
-      "sha256": "abc5076b21a6f282cb1a8453aa8bce0c9884a34a435d385487bb76d3744da316"
+      "bytes": 40100,
+      "sha256": "595662c8b5e099f48357a1d9078b04343581e0a02fda1f0487d948b0a12f627f"
     },
     {
       "path": "th/insights/facial-photo-preparation/index.html",
-      "bytes": 30775,
-      "sha256": "c47fff9bc778397d7d37ed70d0c30f78b0354a25df4552d7fab56134f2e354d3"
+      "bytes": 31609,
+      "sha256": "208de71e489848723e306f7060f0bc320a56426ff8edee3a1e905bf2fa7a9a8f"
     },
     {
       "path": "th/insights/filler-1cc-by-area/index.html",
-      "bytes": 41173,
-      "sha256": "09ef9838dd304707fc25d5899f7f24e80f3b7c01000e24cc7d3c95f26bd54dac"
+      "bytes": 41881,
+      "sha256": "a2cff327ce4285df05517910d4e114db470eb808873ecfd84a1d65d1c77beefb"
     },
     {
       "path": "th/insights/golden-ratio-face/index.html",
-      "bytes": 25408,
-      "sha256": "6731c3593097ff3ec1620dce7a10df0310a15bdfb424a6ef9bd392bb886b0bb4"
+      "bytes": 26194,
+      "sha256": "677be1d3f8c09657771e5efddb3ddf0cdd86bbd85a7b768c75fa1fe295b7afe3"
     },
     {
       "path": "th/insights/how-face-analysis-works/index.html",
-      "bytes": 27089,
-      "sha256": "e4f2e7b8af806bce43b25e29bfef7403c0c01a510b6f2251188601381d850351"
+      "bytes": 27753,
+      "sha256": "43c99ca1b70f82c15f347729bc4e600f2ac688d8b9f5da6d588e96de860db24e"
     },
     {
       "path": "th/insights/index.html",
-      "bytes": 33606,
-      "sha256": "d0b9b1c9a3f51b058d05a3e704ab3299ace3cf6b4a98dcda431b3da61e18db34"
+      "bytes": 34235,
+      "sha256": "d9f198efc4e7bd1f76209d9ff084ec8d9c0f5799cf119a2c3cfa4ed4e7be901d"
     },
     {
       "path": "th/insights/phone-3d-face-scan/index.html",
-      "bytes": 35110,
-      "sha256": "45bfcf823b81b55731b3014c4e19b372760bb55739002a85bf171dd1f17ee4ac"
+      "bytes": 35661,
+      "sha256": "a79ea62e503c3bafc81e7421986dbd74d9f245ebac0f374339deb125f4f235b5"
     },
     {
       "path": "th/insights/questions-before-aesthetic-treatment/index.html",
-      "bytes": 38932,
-      "sha256": "262940d28e6c06404171cb08e9713a9d72ee72227980e5554765332076e87232"
+      "bytes": 39748,
+      "sha256": "66d820b20dd187b356c11ad03e78de26433db949894741c858bfb8f782d00f2d"
     },
     {
       "path": "th/insights/thai-reference-values/index.html",
-      "bytes": 24842,
-      "sha256": "d8628538993992af1911376807b01cbc456a65a7661e6f2c0319922eb8402a0d"
+      "bytes": 25538,
+      "sha256": "8c97743da4382f8f084db57585626e9332324ca12ebf73b24f79a45545732a8d"
     },
     {
       "path": "th/insights/visualization-and-consultation/index.html",
-      "bytes": 32174,
-      "sha256": "eba41814ffaa968e5e8dc182fe3635e653665b229f6e48c57ff7fec7c0886cf4"
+      "bytes": 32996,
+      "sha256": "615fa9941bc876207192118cd202aff90260cdb3f856da44cb29837c19402e0b"
     },
     {
       "path": "th/insights/what-a-photo-can-measure/index.html",
-      "bytes": 32611,
-      "sha256": "811abc52cf8a546b289ed57b5bc369955a32e32ab9e9e6588b607f998ee2a02d"
+      "bytes": 33343,
+      "sha256": "0e720c92155796346bfb178c6ae7eb9d2b9e80ca717ad79c482276860be34772"
+    },
+    {
+      "path": "th/lp/clinic-demo/index.html",
+      "bytes": 16045,
+      "sha256": "5abf537265be0d351897baf873c6e200cb922b02d25188283361d6853ae8f212"
     },
     {
       "path": "th/news/dashboard-to-client/index.html",
-      "bytes": 16997,
-      "sha256": "578ba0bb292c64f930e258578e5d92cdffb20fe723f1d8e48f627b346920a7c6"
+      "bytes": 17081,
+      "sha256": "a2db41af9088bee3a88280cdc0df7d8794dc0bc36866766858dba06182021877"
     },
     {
       "path": "th/news/elp-season-4-south-korea/index.html",
-      "bytes": 20769,
-      "sha256": "9c98b438936ed3f2f9b4c336dccd5d7273cd739f25aa265e8817f7332991b170"
+      "bytes": 20397,
+      "sha256": "ce86ef68c075efaf951bdd27e51d748b22f5dd708d090292c4e895ce4a425227"
     },
     {
       "path": "th/news/index.html",
-      "bytes": 16634,
-      "sha256": "ea93ced8862bd8f53c429f4f4d792afb19c9e6e8372d8bf55ca6ce6b1bdde27c"
+      "bytes": 15902,
+      "sha256": "80848e97cfed869224a87295492d7f91395321890ef4011b45823cfa0a578bef"
     },
     {
       "path": "th/news/p1-regional-startup-2026/index.html",
-      "bytes": 16800,
-      "sha256": "aa384b6339796a437aa52d35943073aa8d9053865f51dc11421036c1728222a6"
+      "bytes": 16685,
+      "sha256": "0df8541d6e520d13f7abfa15514416f477dab41b9ed946a525db586dd8b66234"
     },
     {
       "path": "th/pricing/index.html",
-      "bytes": 37556,
-      "sha256": "eb4c7debfe92955936b3353f2d087753b5c32cd5ef56a14bf9cac11e6401721c"
+      "bytes": 34300,
+      "sha256": "3be88cf32e945b6bce518cfcaa4c02ab98ea7dfe78be1ed5c9be0e0bdb3530f2"
     },
     {
       "path": "th/privacy/index.html",
-      "bytes": 13759,
-      "sha256": "43278a0b8fab9f5817df7996808defc5fa0b288add145343f04521525cb235c6"
+      "bytes": 28459,
+      "sha256": "5f3add01ad3871ce81fc27d1d5c2016322643e4c0a31d00096ea3f1999adfae2"
+    },
+    {
+      "path": "th/terms/index.html",
+      "bytes": 17384,
+      "sha256": "7f14cf5c749c5c238b1fea1bcfa5f68b16dec6936c504ba02eae4cf4d1ad664f"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 3413,
+      "sha256": "546eb4e29770440bba90846a264f7c2fc12c4757f38ef010d84731772c6deec6"
+    },
+    {
+      "path": "viewer/r66-viewer.min.js",
+      "bytes": 624410,
+      "sha256": "0891a243473548ce65bca597cfdc6b45142b419ca93fbc86417cfe8fda44b4ec"
+    },
+    {
+      "path": "viewer/three-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
     }
   ]
 }

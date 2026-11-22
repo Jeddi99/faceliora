@@ -1,0 +1,74 @@
+/* Hallmark · v2.0.0 · theme: custom inherited palette 1 Teal Refined (R65 tokens, untouched) · idea: the consent choice becomes one calm full-width bar at the bottom edge, text left and the two equal answers right, like the owner's reference · genre: editorial · job: answer the cookie question and get back to the page · hero: unchanged site hero, the bar never covers its demo action on desktop · posture: component, existing site · option: R72 shared bar structure */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: V, a consent bar is a utility surface and stays quiet on purpose */
+/* Hallmark · answered F15 · one container width (1440 cap, site gutter), one radius (4px buttons, 0 for the bar), the two answers share one button style per option */
+/* R72 cookie bar: STRUCTURE shared by options A, B and C (design mockup, not production code).
+   Loaded after fl-consent.css, r65.css and r66.css. Works on the markup fl-consent.js already builds:
+   .cc.cc-b > .cc-main (h2.cc-title, p.cc-text + privacy link, .cc-actions: accept, reject, settings link) and .cc-panel (settings).
+   No change to fl-consent.js copy, order, storage, defaults or tracking. Colour lives in r72-a/b/c.css only. */
+
+/* ---------- tokens of the bar (sizes only; colours come from the option file) ---------- */
+.cc{--cc-max:1440px;--cc-gutter:16px;--cc-pad-top:14px;--cc-pad-bottom:max(12px,env(safe-area-inset-bottom));--cc-gap:8px;--cc-col-gap:48px;--cc-btn-w:10rem}
+@media(min-width:360px){.cc{--cc-gutter:24px}}
+@media(min-width:700px){.cc{--cc-gutter:clamp(24px,5.55vw,80px);--cc-pad-top:20px;--cc-pad-bottom:max(20px,env(safe-area-inset-bottom))}}
+
+/* ---------- 1. the bar: flush to the bottom edge, full width (replaces the R58/R65 corner card) ---------- */
+.cc.cc-b,.cc.cc-b.is-settings{left:0;right:0;bottom:0;width:auto;max-width:none;border:0;border-radius:0;padding:0;box-shadow:none}
+.cc.cc-b .cc-main,.cc.cc-b .cc-panel{box-sizing:border-box;width:100%;max-width:var(--cc-max);margin-inline:auto;padding:var(--cc-pad-top) var(--cc-gutter) var(--cc-pad-bottom)}
+
+/* ---------- 2. first layer, phones (< 700px): text, then the two equal answers and "choose" on one row ---------- */
+.cc.cc-b .cc-title{display:none}
+.cc.cc-b .cc-text{font-size:14px;line-height:1.5;text-wrap:pretty}  /* pretty: avoids a lone word on the last line */
+.cc.cc-b .cc-text a{white-space:nowrap}  /* "ความเป็นส่วนตัว" never splits across two lines */
+.cc.cc-b .cc-main .cc-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:var(--cc-gap);align-items:center;margin-top:12px}
+.cc.cc-b .cc-main .cc-btn{min-width:0;min-height:46px;padding:0 8px;font-size:14px}
+.cc.cc-b .cc-btn:active{transform:translateY(1px)}  /* same press feedback as fl-consent.css, restated so the bar file is complete */
+.cc.cc-b .cc-title,.cc.cc-b .cc-panel>h2{text-wrap:balance}
+.cc.cc-b :focus-visible{outline:3px solid var(--color-focus);outline-offset:2px}  /* = fl-consent.css, restated; instant (no transition on outline) */
+.cc.cc-b .cc-main .cc-link{flex:none;width:auto;min-height:44px;padding:0 8px;font-size:14px;white-space:nowrap}
+/* English at 320px: "Let me choose" does not fit beside two readable buttons, so it takes its own row (Thai fits) */
+@media(max-width:359px){html[lang=en] .cc.cc-b .cc-main .cc-actions{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}html[lang=en] .cc.cc-b .cc-main .cc-link{grid-column:1/-1}}
+
+/* ---------- 3. tablet (700 to 999px): title back, text full width, answers on one row under it ---------- */
+@media(min-width:700px){
+.cc.cc-b .cc-title{display:block;font-size:16px;line-height:1.4;margin:0 0 4px}
+.cc.cc-b .cc-text{font-size:15px;line-height:1.6;max-width:75ch}
+.cc.cc-b .cc-main .cc-actions{grid-template-columns:var(--cc-btn-w) var(--cc-btn-w) auto;justify-content:start;margin-top:16px}
+.cc.cc-b .cc-main .cc-btn{min-height:48px;font-size:15px;padding:0 12px}
+.cc.cc-b .cc-main .cc-link{font-size:15px}
+}
+
+/* ---------- 4. desktop (>= 1000px): text left, answers right, like the reference ---------- */
+@media(min-width:1000px){
+.cc.cc-b .cc-main{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:var(--cc-col-gap);align-items:center}
+.cc.cc-b .cc-title{grid-column:1;grid-row:1}
+.cc.cc-b .cc-text{grid-column:1;grid-row:2;max-width:none}  /* one or two lines across the free width, as in the reference */
+.cc.cc-b .cc-main .cc-actions{grid-column:2;grid-row:1/3;margin:0}
+}
+
+/* ---------- 5. settings ("เลือกเอง" / "Let me choose"): opens inside the same bar, same role=region, same controls ---------- */
+.cc.cc-b.is-settings .cc-main{display:none}  /* the first layer must stay hidden while settings are open, at every width (the desktop grid above would otherwise win) */
+.cc.cc-b.is-settings{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain}
+.cc.cc-b .cc-panel .cc-actions{display:flex;flex-wrap:wrap;gap:var(--cc-gap);margin-top:12px}
+.cc.cc-b .cc-panel .cc-btn{flex:1 1 0;min-height:46px;font-size:14px}
+.cc.cc-b .cc-panel .cc-btn.save{flex:1 1 100%}
+.cc.cc-b .cc-panel .cc-link{flex:1 1 100%;font-size:14px}
+@media(min-width:700px){
+.cc.cc-b .cc-panel>p{max-width:75ch}
+.cc.cc-b .cc-panel .cc-actions{flex-wrap:nowrap;align-items:center;margin-top:16px}
+.cc.cc-b .cc-panel .cc-btn,.cc.cc-b .cc-panel .cc-btn.save{flex:1 1 0;min-height:48px;font-size:15px}
+.cc.cc-b .cc-panel .cc-link{flex:none;width:auto;padding:0 12px;font-size:15px}
+}
+@media(min-width:1000px){
+/* the three categories side by side, so the open panel stays about a third of a 900px-high screen */
+.cc.cc-b.is-settings .cc-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px;align-items:start}
+.cc.cc-b .cc-panel>h2,.cc.cc-b .cc-panel>p,.cc.cc-b .cc-panel>.cc-actions{grid-column:1/-1}
+.cc.cc-b .cc-panel .cc-actions{justify-content:flex-end}
+.cc.cc-b .cc-panel .cc-btn,.cc.cc-b .cc-panel .cc-btn.save{flex:0 0 auto;min-width:var(--cc-btn-w);padding:0 16px}
+}
+
+/* ---------- 6. room for the bar: the page can always scroll its last lines (and keyboard focus) above it ----------
+   r72/reserve.js sets html.r72-cc-on and --r72-cc-h (the bar's measured height) while the bar is visible. Without the script nothing changes. */
+html.r72-cc-on{scroll-padding-bottom:calc(var(--r72-cc-h,0px) + 16px)}
+html.r72-cc-on body{padding-bottom:var(--r72-cc-h,0px)}
+
+/* ---------- 7. motion: keeps the existing 220ms rise of fl-consent.css (transform + opacity); reduced motion = none (existing rule) ---------- */

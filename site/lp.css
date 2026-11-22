@@ -133,19 +133,17 @@ p{margin:0}
 
 /* R58 additions: tokens expected by assets/3d/r41.css, 3D block on the landing, form states, honeypot */
 :root{--radius-control:4px;--color-clear:#fbfdfd;--text-label:14px;--ease-out:var(--ease);--dur-micro:140ms;--space-0:0}
-.lp-3d{--r41-ar:1/1}
-@media(min-width:900px){.lp-3d{--r41-ar:4/5}}
-.lp-3d .r41-stage{border-radius:0}
-.lp-3d .r41-poster{mix-blend-mode:multiply;object-fit:cover;object-position:50% 38%;-webkit-mask-image:none;mask-image:none}
-.lp-3d .r41-actions{margin:0;padding:var(--space-md) var(--gutter) 0;background:var(--color-field)}
-.lp-3d .r41-ctl{margin:0;padding:var(--space-sm) var(--gutter) 0;background:var(--color-field)}
-.lp-3d .r41-note{margin:0;padding:var(--space-xs) var(--gutter) 0;background:var(--color-field);max-width:none}
-.lp-3d .r41-note:empty{display:none}
-.lp-3d figcaption{padding:var(--space-md) var(--gutter) var(--space-lg);font-size:var(--text-small);color:var(--color-muted);line-height:1.6;background:var(--color-field)}
-.lp-3d .lp-go{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border:1px solid var(--color-input);border-radius:var(--radius);background:var(--color-white);color:var(--color-ink);font:600 15px/1.2 var(--font-body);cursor:pointer}
-.lp-3d .lp-go:hover{background:var(--color-paper)}
-.lp-3d .r41-icon{border-color:var(--color-input);background:var(--color-white);min-width:48px;min-height:48px}
-.lp-3d .r41-deg{color:var(--color-muted)}
+/* R70: the landing shows Home's .h3 model (r66.css + r66.js); rules from design/round70-intro-tablet-landing/src/r70-lp-model.css.
+   lp.css loads before r66.css, so the two rules that tie with r66.css (.h3 figcaption, .h3-icon:hover) carry .lp to keep the design cascade. */
+.lp-h3{background:var(--color-field)}
+.lp-h3 .h3-stage{aspect-ratio:1/1}
+.lp-h3 .h3-bar{padding:var(--space-md) var(--gutter) var(--space-0);gap:var(--space-xs) var(--space-sm)}
+.lp-h3.is-live .h3-bar{padding-top:28px}
+.lp-h3 .h3-go{border-color:var(--color-input);background:var(--color-white);font-size:15px;padding:var(--space-0) 20px}
+.lp-h3 .h3-go:hover{background:var(--color-paper)}
+.lp .lp-h3 .h3-icon{border-color:var(--color-input);background:var(--color-white)}
+.lp-h3 .h3-note{flex:1 1 100%;font-size:var(--text-small);max-width:none}
+.lp .lp-h3 figcaption{max-width:none;padding:var(--space-md) var(--gutter) var(--space-lg);font-size:var(--text-small);color:var(--color-muted);line-height:1.6}
 .lp .r41-pause{background:rgba(20,46,49,.74);color:var(--color-light)}
 .hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
 .lf .net{display:none;margin-bottom:var(--space-md);padding:var(--space-sm) var(--space-md);background:var(--color-error-field);border:1px solid var(--color-error);color:var(--color-error);font-size:14px}
