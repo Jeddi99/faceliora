@@ -1,0 +1,30 @@
+/* Hallmark · v2.0.0 · theme: custom inherited palette 1 Teal Refined (R65 tokens, untouched) · idea: option B, a deep teal band like the dark strip in the owner's reference, light text and two equal light answers · genre: editorial · job: answer the cookie question and get back to the page · hero: unchanged site hero · posture: component, existing site · option: R72 B deep teal band */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: R, the dark band is the loudest thing at the bottom of the first screen until it is answered */
+/* R72 option B "แถบทีลเข้ม / Deep teal band". Load after r72-bar.css. Colours are R65 tokens (dark #142E31 family) already declared on .cc and :root.
+   First layer: both answers are the same solid light button. Focus ring switches to the R65 on-dark focus colour. */
+.cc.cc-b{--r72-bg:var(--color-dark);--r72-text:var(--color-light);--r72-body:var(--color-light-muted);--r72-rule:var(--color-light-rule);--r72-btn-bg:var(--color-light);--r72-btn-ink:var(--color-dark);--r72-btn-hover:var(--color-light-muted);--r72-focus:var(--color-focus-light)}
+
+.cc.cc-b{background:var(--r72-bg);color:var(--r72-text);border-top:1px solid var(--r72-rule)}
+.cc.cc-b .cc-title,.cc.cc-b .cc-panel h2,.cc.cc-b .cc-row b{color:var(--r72-text)}
+.cc.cc-b .cc-text,.cc.cc-b .cc-panel>p,.cc.cc-b .cc-row span.d{color:var(--r72-body)}
+.cc.cc-b .cc-text a{color:var(--r72-text)}
+.cc.cc-b :focus-visible,.cc.cc-b .cc-sw input:focus-visible+.cc-track{outline-color:var(--r72-focus)}
+/* first layer: identical solid light answers */
+.cc.cc-b .cc-main .cc-btn{background:var(--r72-btn-bg);color:var(--r72-btn-ink);border:2px solid var(--r72-btn-bg)}
+.cc.cc-b .cc-main .cc-btn:hover{background:var(--r72-btn-hover);border-color:var(--r72-btn-hover);color:var(--r72-btn-ink)}
+.cc.cc-b .cc-link{color:var(--r72-text)}
+/* settings: save = solid light; "turn all on" and "essential only" = the same light outline */
+.cc.cc-b .cc-panel .cc-btn,.cc.cc-b .cc-panel .cc-btn.alt{background:transparent;color:var(--r72-text);border:2px solid var(--r72-text)}
+.cc.cc-b .cc-panel .cc-btn:hover,.cc.cc-b .cc-panel .cc-btn.alt:hover{background:var(--r72-rule);color:var(--r72-text);border-color:var(--r72-text)}
+.cc.cc-b .cc-panel .cc-btn.save{background:var(--r72-btn-bg);color:var(--r72-btn-ink);border-color:var(--r72-btn-bg)}
+.cc.cc-b .cc-panel .cc-btn.save:hover{background:var(--r72-btn-hover);border-color:var(--r72-btn-hover)}
+.cc.cc-b .cc-row{border-top-color:var(--r72-rule)}
+/* switches on the dark band: state is also written as text (เปิด / ปิด), never colour alone */
+.cc.cc-b .cc-sw{color:var(--r72-text)}
+.cc.cc-b .cc-track{background:transparent;border-color:var(--r72-body)}
+.cc.cc-b .cc-track::after{background:var(--r72-body)}
+.cc.cc-b .cc-sw input:checked+.cc-track{background:var(--r72-text);border-color:var(--r72-text)}
+.cc.cc-b .cc-sw input:checked+.cc-track::after{background:var(--r72-bg)}
+.cc.cc-b .cc-sw input:disabled+.cc-track{background:var(--r72-rule);border-color:var(--r72-rule)}
+.cc.cc-b .cc-sw input:disabled:checked+.cc-track::after{background:var(--r72-text)}
+.cc.cc-b.is-settings{scrollbar-color:var(--r72-rule) var(--r72-bg)}
